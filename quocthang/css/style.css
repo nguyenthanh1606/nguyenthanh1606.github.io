@@ -609,3 +609,4 @@ form>div{
 .footer-pc{display: flex;}
 .m1024 .menu ul li:last-child{padding-right: 0}
 .pd-1e5{padding-top: 1.5rem}
+.sticky {  position: fixed;  top: 0;  width: 100%;}
