@@ -178,7 +178,7 @@ ul{
 	font-family: Exo-SemiBold;
 	color: #ec1c23;
 	font-size: 24px;
-	margin-bottom: 2.5rem;
+	margin-bottom: 2rem;
 }
 #about img{
 	max-height: 500px; 
@@ -194,11 +194,11 @@ ul{
 }
 #about .detail-about{
 	padding-top: 2rem;
-	max-width: 500px;
 }
 #about .title{
 	font-family: OpenSans-SemiBold;
 	font-size: 18px;
+	text-align: justify;
 }
 #about .more{
 	font-family: OpenSans-Regular;
@@ -214,6 +214,7 @@ button{
 	background-color: #ec1c23;
 	color: #fff;
 }	
+.btn{padding: 1rem 3rem !important;border-radius: .35rem}
 
 
 #category{
