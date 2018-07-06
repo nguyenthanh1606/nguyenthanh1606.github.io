@@ -6,7 +6,8 @@ $(document).ready(function() {
 
 window.onscroll = function() {myFunction()};
 var header = document.getElementById("headMain");
-var sticky = header.offsetTop;
+var h = document.getElementById("header");
+var sticky = h.offsetHeight;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
