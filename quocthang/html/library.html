@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="../css/responsive.css">
 </head>
 <body>
-	<header class="header wrap-page pc">
+	<header class="header wrap-page pc" id="header">
 		<div class="row text-right float-right lang">
 			<a href="#"><img src="../images/icon-lang-vi.png" alt="Tiếng việt"></a>
 			<a href="#"><img src="../images/icon-lang-en.png" alt="English"></a>
@@ -129,7 +129,7 @@
 	</header>
 	<!-- end header -->
 	<div id="banner-top">
-		<div class="head-main text-center">
+		<div class="head-main text-center" id="headMain">
 			<ul class="rounded m-auto d-inline-block">
 				<li><a href="../html/library.html">Hình ảnh</a></li>
 				<li class="active"><a href="../html/library.html">Video</a></li>
@@ -279,5 +279,18 @@
 	<script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
 	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="../js/jquery.js" type="text/javascript"></script>
+	<script>
+			window.onscroll = function() {myFunction()};
+			var header = document.getElementById("headMain");
+			var h = document.getElementById("header");
+			var sticky = h.offsetHeight;
+			function myFunction() {
+				if (window.pageYOffset > sticky) {
+					header.classList.add("sticky");
+				} else {
+					header.classList.remove("sticky");
+				}
+			}
+		</script>
 </body>
 </html>
