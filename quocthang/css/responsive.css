@@ -132,4 +132,5 @@
     .main-slide{padding-top: .25rem}
     #about .detail-about{flex: 0 0 100%;max-width: 100%;padding-right: 20px}
     #about .btn{margin: auto; display: block}
+    .social{text-align: left !important; line-height: 2; margin-top: 0.25rem}
 }
