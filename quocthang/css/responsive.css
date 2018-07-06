@@ -112,7 +112,7 @@
         max-width: 100%;
     }
         .main-slide{background-size: 100%;}
-.hexa{
+    .hexa{
         width: 210px;
         height: 243px;
     }.pd-1e5{padding-top: 0;border-bottom: 1px solid #fff !important}
@@ -123,4 +123,6 @@
         margin-bottom: 2rem;
     }
     .contact-form .row{margin-bottom: 0;}
+    header.mobile .logo{padding: 10px; margin: auto 0; flex: 0 0 66.66667%;max-width: 66.66667%}
+    header.mobile .lang{padding: 10px; margin: auto 0; flex: 0 0 33.33333%;max-width: 33.33333%;flex-direction: row;}
 }

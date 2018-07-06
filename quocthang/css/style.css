@@ -70,7 +70,7 @@ ul{
 	padding-left: 0;
 }
 .lang{
-	margin: 0;
+	margin: auto 0;
 	line-height: 1;
 }
 .lang>*{
@@ -207,7 +207,6 @@ ul{
 }
 button{
 	font-family: OpenSans-Regular;
-	padding: 20px 70px !important;
 	color: #000;
 	background-color: #fff;
 }
@@ -234,11 +233,13 @@ button{
 	font-size: 20px;
 	margin-top: 1rem;
 }
-
+#category .hexa img{width: 100%; transition: linear .2s}
 #category a:hover p{
   	color: #ec1c23;  	
 }
-
+#category a:hover .hexa img{
+	transform: scale(1.1);
+}
 
 #content{
 	margin-top: 3rem;
