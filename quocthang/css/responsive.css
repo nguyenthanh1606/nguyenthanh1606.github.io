@@ -123,6 +123,12 @@
         margin-bottom: 2rem;
     }
     .contact-form .row{margin-bottom: 0;}
+<<<<<<< HEAD
     header.mobile .logo{padding: 10px; margin: auto 0; flex: 0 0 66.66667%;max-width: 66.66667%}
     header.mobile .lang{padding: 10px; margin: auto 0; flex: 0 0 33.33333%;max-width: 33.33333%;flex-direction: row;}
 }
+=======
+	header.mobile .logo{padding: 10px; margin: auto 0; flex: 0 0 66.66667%;max-width: 66.66667%}
+    header.mobile .lang{padding: 10px; margin: auto 0; flex: 0 0 33.33333%;max-width: 33.33333%;flex-direction: row;}
+}
+>>>>>>> 005507b3115c69ad2167db99af35a82fdd03f445
