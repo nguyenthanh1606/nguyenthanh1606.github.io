@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 window.onscroll = function() {myFunction()};
-var header = document.getElementByClass("head-main");
+var header = document.getElementsByClassName("head-main");
 var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
