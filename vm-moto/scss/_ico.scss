@@ -1,0 +1,20 @@
+.ico:before,.ico:after{
+    font-style: normal;
+    font-family: 'Mini-Ico';
+}
+.ico-share:before{
+    content: '\e86c';
+    text-indent: 0;
+}
+.ico-search:before{
+    content: '\e869';
+    text-indent: 0;
+}
+.ico-my-mini:before{
+    content: '\e855';
+    text-indent: 0;
+}
+.ico-next:after{
+    content: '\e808';
+    text-indent: 0;
+}

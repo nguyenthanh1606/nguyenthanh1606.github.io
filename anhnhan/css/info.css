@@ -1,0 +1,15 @@
+.content-ad .item{background:#d9dadc;padding-bottom:20px}
+.content-ad .item .title{font-family:UTM;padding:10px;color:#6b6c6e}
+.content-item{font-size:14px}
+.content-name h4{font-family:Myriad-BoldCond;font-size:48px}
+.content-item .note{font-weight:700; margin-top: 17px}
+.title-nav{background-image:url(../images/tab.png);background-color:#fff;background-repeat:repeat-x;border:1px solid #ccc}
+.title-nav>ul>li>a{display: inline-block;padding-bottom: 10px}
+.list-nav ul li{list-style-type:none;margin-top:10px}
+.list-nav ul>li{padding-left:15px;background:url(../images/icon-line.png) no-repeat left top}
+.list-nav ul>li>a{font-family:Roboto-Bold}
+.sub-nav{border-top:1px solid #ccc}
+.sub-nav li{padding-left:20px; padding-top: 5px}
+.sub-nav li{padding-left:5px;background:url(../images/icon-next2.png) no-repeat left!important}
+.sub-nav li{margin-top:0!important}
+.sub-nav li a{font-family:Roboto!important;border-image:url(../images/icon-line.png)}

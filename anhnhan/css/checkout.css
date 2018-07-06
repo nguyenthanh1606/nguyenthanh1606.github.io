@@ -1,0 +1,97 @@
+.table-checkout{border:1px solid #ccc;background:#fff}
+.sub-checkout ul{list-style-type:none;margin:0}
+.sub-checkout ul li{display:inline-block;padding:0 20px;line-height:40px;border-right:1px solid #ccc}
+.sub-checkout ul li:last-child{border-right:none}
+.sub-checkout ul li a{color:#0b59a2;text-decoration:underline}
+.table{font-family:}
+.table thead tr th{border:none}
+.table tbody tr td{font-weight:400;vertical-align:middle}
+.table tbody tr td img{max-width:200px}
+.table tbody tr td ul li{font-family:Roboto!important;font-size:11px;color:#2d2e2e}
+.table .btn-primary,.main-product-detail .btn-primary{background:#e8e8e8;color:#2d2e2e;border:#e8e8e8}
+#demo3{text-align:center}
+.table .name-product p{font-family:Myriad-Condensed;font-size:18px;color:#0366a5}
+.table .list-detal li:before{content:"-";padding-right:10px}
+.table .price{font-family:UTM;font-size:14px}
+.table .price-total{font-family:UTM-Bold;color:#db1010}
+.title-cart{border-bottom:2px solid red;width:23%;height:83%;font-family:Myriad-Cond;font-size:24px}
+.cart-right{float:right;max-width:49%}
+.cart-right a{font-family:UTM;font-size:12px;padding-right:2%;text-decoration:underline;color:blue}
+.title{width:100%;background-image:url(../images/tab.png);background-repeat:repeat-x;height:50px;line-height:35px;border:1px solid #ccc;border-bottom:0}
+.payment{border:1px solid #d7d8d8;background-color:#e4e5e6}
+.payment .title-payment{font-family:Myriad-Cond;font-size:18px;line-height:20px;padding:10px 20px;border-bottom:1px solid #d7d8d8}
+.payment .detail-payment{padding:10px 20px}
+.detail-payment .price{font-family:UTM;color:#0154a1;font-size:18px}
+.detail{font-size:12px;font-family:Roboto;color:rgba(0,0,0,0.8);line-height:1.2;text-align:right;text-align:left}
+.detail a,.text-decoratant{text-decoration:underline;font-size:12px;font-family:"Roboto";color:#0154a1}
+.payment-btn{background:#9e1a1a;width:100%;font-family:Myriad-BoldCond;font-size:18px;margin-top:10px}
+.p1-checkout .at{background:#fff;border-left:5px solid #b21008}
+.checkout-title{padding:10px 0;border-bottom:1px solid #ccc;border-left:1px solid #ccc;color:#2d2e2e}
+.checkout-title:first-child{border-top:1px solid #ccc}
+.checkout-title p{font-family:Myriad-Condensed;font-size:24px;margin-bottom:auto}
+.checkout-title span{font-family:UTM;font-style:italic;font-size:11px}
+.link-checkout{border:1px solid #ccc;background:#e2e4e7; }
+.link-checkout ol li{display:inline-block;padding:5px 30px 5px 10px;border-image:url(../images/line3.png) 30 round}
+.link-checkout ol li a span:last-child{color:#0b3a74;font-size:18px;font-family:Myriad-Condensed}
+.link-checkout .active{background:#8eb9e5}
+.circle{display:inline-block;width:25px;margin-right:10px;background:#8eb9e5;color:#fff;text-align:center;border:2px solid #7ba7d5}
+.active span:first-child{background:#fff!important;color:#0b3a74!important}
+.bank span{padding-left:20px}
+.bank:first-child{padding-left:0}
+.main-form .img{padding-top:20px;padding-bottom:20px}
+.price-checkout{width: 25%}
+.co-mobile{display: none}
+.breadcrumb{padding: 0.3em 0}
+#step-title-checkout ul{display: inline-flex;}
+		#step-title-checkout ul li{background: #afcae5}
+		#step-title-checkout ul li a{
+			display: block;
+			float: left;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			padding: 0 30px 0 20px;
+			background: #e2e4e7;
+			position: relative;
+			margin-right: 31px;
+		}
+		#step-title-checkout ul li a:before{
+			content: "";
+			border-top: 40px solid #e2e4e7;
+			border-left: 25px solid transparent;
+			position: absolute;
+			left: -25px;
+			top: 0;
+		}
+		#step-title-checkout ul li a:after{
+			content: "";
+			border-bottom: 40px solid #e2e4e7;
+			border-right: 25px solid transparent;
+			position: absolute;
+			right: -25px;
+			top: 0;
+		}
+		#step-title-checkout ul li:first-child a:before{
+			display: none;
+		}
+		.step-title-checkout-none a:after{display: none;}
+		.step-title-checkout-none a{padding: 0 !important; margin: 0 !important}
+		.active a{background: #8eb9e5 !important}
+		.active a:before{
+			border-top: 40px solid #8eb9e5 !important;
+		}
+		.active a:after{
+			border-bottom: 40px solid #8eb9e5 !important;
+		}
+		#step-title-checkout .circle{
+			margin-top: 8px;
+		    height: 25px;
+		    width: 25px;
+		    line-height: 22px;
+		}
+		#step-title-checkout ul li a span:last-child{
+			color: #0b3a74;
+		    font-size: 19px;
+		    font-family: Myriad-Condensed;
+		}
+		.bread{height: 42px; border: 1px solid #ccc; background: #e2e4e7}

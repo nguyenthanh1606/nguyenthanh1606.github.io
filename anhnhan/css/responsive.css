@@ -1,0 +1,203 @@
+
+
+@media only screen and (max-width: 1024px){
+    .pd-left{padding-left:10px}
+    .pd-right{padding-right:10px}
+    .form-header{flex: 0 0 50%;
+        max-width: 50%;}
+    .cs-destop{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .top .sub-menu li {
+    margin-right: 15px;
+}
+    #menu{padding-left: .5rem;}
+}
+@media only screen and (max-width: 768px) {
+    header .top .sub-menu, header .bot-header .cs-destop{
+    	display: none;
+    }
+    header .cs-mobie{
+    	display: inherit;
+    }
+    .p1-checkout{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .pay{
+        margin-top: 10px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+    header .top .support{
+	    flex: 0 0 100%;
+		max-width: 100%;
+    }
+    .form-header {
+        flex: 0 0 66.666%;
+        max-width: 66.666%;
+    }
+    .product-list .col-md-3{
+    	flex: 0 0 50%;
+		max-width: 50%;
+    }
+    .product{border-top: 0 !important}
+    .title{border-bottom: 1px solid #ccc !important}
+    .img-banner{
+    	display: none;
+    }
+    .main-product .col-md-9{
+    	flex: 0 0 100%;
+		max-width: 100%;
+    }
+    .content-list .col-md-3,.content{
+    	flex: 0 0 50%;
+		max-width: 50%;
+    }
+    .footer-1, .footer-2{
+    	flex: 0 0 100%;
+		max-width: 100%;
+    }
+    .footer-2>.row>div{width: 33.33%}
+    .button-cat ul{
+        display: none;
+    }
+    .main-product-detail .main-detail{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .main-product-detail .more-detail{
+        flex: 0 0 75%;
+        max-width: 75%;
+        margin: auto;
+    }
+    #form-customer{width: 75%}
+    .table-checkout{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 425px) {
+	.product-list .col-sm-12,.content-list .col-md-3{
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+    .select-search{display: none;}
+    .text-search{width: 80%;}
+    .submit-search{width: 20%}
+    .logo{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .user-more div:first-child{flex: 0 0 50%;
+        max-width: 50%;}
+    .user-more div:last-child{flex: 0 0 50%;
+        max-width: 50%;}
+    .address-select div:first-child{flex: 0 0 50%;
+        max-width: 50%;}
+    .address-select div:last-child{flex: 0 0 50%;
+        max-width: 50%;}
+    .link-fb,.link-gg{background-position: 28% 50%;}
+    .top-header-mobile{display: flex;}
+    header{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    header .col-md-9{
+        padding-right: 0 !important;
+    }
+    footer .text-dk{display: none;}
+    footer .form-email{border-left: 5px solid #224f79;padding: 10px;width: 100%;}
+    .form-email .text-email{width: 75%;}
+    footer .footer-2{display: none;}
+	header .cs-mobie{
+    	margin-top: 10px;
+    }
+    .footer{padding-left: 18px !important}
+    .hotline{display: block !important}
+    #header .top{display: none;}
+    .footer-2>.row>div{width: 50%}
+    #menu .menu-right span{
+        display: none;
+    }
+    .custom{height: 24px; padding-left: 23px}
+    .form-header{flex: 0 0 100%;
+        max-width: 100%;}
+    #form-customer{width: 94%}
+    .title-pc{display: none;}
+    .title-mobile{display: block;}
+    .cs-mobie{display: none !important;}
+    .menu-right-pc{display: none !important;}
+    .product{
+       border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        border-top: 0;
+    }
+    .product-list .title{border-bottom: 1px solid #ccc !important}
+    .content-list .title li{padding: 0 20px}
+    .detail-payment .row .pro-price{flex: 0 0 33.33%;max-width: 33.33%}
+    .detail-payment .row .pro-amount{flex: 0 0 25%;max-width: 25%}
+    .detail-payment .row .pro-total{flex: 0 0 41.67%;max-width: 41.67%}
+
+    .sidenav h3 {padding-top: 8px;
+    padding-bottom: 7px;
+    margin-bottom: 0;
+    padding-left: 16px}
+    .sidenav a {font-size: 18px;}
+    .nav-sub-menu{display: flex;flex: 0 0 50%;max-width: 50%;text-align: center;}
+    /*Check out*/
+    .img-product-checkout, .table .list-detal{display: none;}
+    .price-checkout{width: 46%}
+    .sub-checkout ul li{padding: 0 8px;}
+    .detail-payment div>div:first-child{flex: 0 0 66.66%;
+        max-width: 66.66%;}
+    .detail-payment div>div:last-child{flex: 0 0 33.334%;
+        max-width: 33.334%;}
+    .total-payment .col-md-6{flex: 0 0 50% !important;
+        max-width: 50% !important;}
+    #step-title-checkout ul li a span:last-child{display: none;}
+    #step-title-checkout ul .active a span:last-child{display: inline-block;padding-left: 10px}
+    #step-title-checkout ul li a{padding-left: 5px; padding-right: 5px}
+    #step-title-checkout ul li a span{margin-right: 0}
+    #step-title-checkout ul li a span:last-child{
+            font-size: 17px;
+        }
+    /*.step-title-checkout ul li a span:last-child{display: none}
+    .step-title-checkout li{padding-right: 5px !important}
+    .step-title-checkout .active{padding-right: 30px !important;}
+    .step-title-checkout ul .active a span:last-child{display: inline-block;}*/
+    .co-mobile{display: flex;}
+    .link-checkout .pd-left{padding-left: 0!important}
+    .co-pc{display: none;}
+    #cat .cat-child ul li{display: none;}
+    #cat .cat-child ul .active{display: inline-block;}
+    .pd-mobile{padding: 0 60px !important}
+    .content-list .col-md-3,.content{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .list-nav{display: none;}
+    .pd-an{padding: 0 8px !important}
+    #detail-content-an .content-list,#detail-content-an .content-ad{display: none !important;}
+    .pro-det-mb{display: flex;}
+    .pro-det-pc{display: none;}
+    .pro-det-mb .sl{flex: 0 0 50%;max-width: 50%}
+    .pro-det-mb .add-ca{flex: 0 0 50%;max-width: 50%}
+    .main-product-detail .more-detail{display: none;}
+    .table-specs tr td:first-child{width: 50%}
+    .pro-det-mb .add-cart .st:before{content: url(../images/icon-next2.png);padding-right: 10px;vertical-align: text-bottom;}
+    .main-product-detail{    max-width: 400px;
+    margin: auto;
+    margin-top: 15px;}
+    .product-list .product {
+    flex: 0 0 100%;
+    max-width: 100%;}
+    /*#filler-brand,#filler-size{display: none;}*/
+    .product-list .title .col-md-6>select{display: none;}
+    .st-mb{display: flex;flex: 0 0 40%; max-width: 40%}
+    .st-pc{display: none;}
+    .side-mb{flex:0 0 60%;max-width: 60%}
+}

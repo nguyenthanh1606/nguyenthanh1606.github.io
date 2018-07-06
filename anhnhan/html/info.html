@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" href="../images/logo.png" type="image/png" />
+	<title>Home - An Nhân Computer</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/info.css">
+	<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body id="myBody">
+	<div id="mySidenav" class="sidenav">
+		<div class="cnav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<h3>MENU</h3>
+			<ul>
+				<li class="act"><a href="../html/info-page.html">THÔNG TIN CÔNG TY</a>
+					<ul class="nav-child-menu">
+						<li class="sel"><a href="html/info-page.html">Giới thiệu công ty</a></li>
+						<li><a href="../html/info-page.html">Đối tác chiến lược</a></li>
+						<li><a href="../html/info-page.html">Khách hàng doanh nghiệp</a></li>
+						<li><a href="../html/info-page.html">Thông tin liên hệ</a></li>
+					</ul>
+				</li>
+				<li><a href="../html/info-page.html">DỊCH VỤ</a>
+					<ul class="nav-child-menu">
+						<li><a href="../html/info-page.html">Lắp đặt - Cài đặt</a></li>
+						<li><a href="../html/info-page.html">Dịch vụ sữa chữa</a></li>
+						<li><a href="../html/info-page.html">Bảo trì - Thay thế</a></li>
+					</ul>
+				</li>
+				<li><a href="../html/info-page.html">CHÍNH SÁCH</a>
+					<ul class="nav-child-menu">
+						<li><a href="../html/info-page.html">Chính sách bảo hành</a></li>
+						<li><a href="../html/info-page.html">Chính sách đổi trả</a></li>
+						<li><a href="../html/info-page.html">Giao nhận - Lắp đặt</a></li>
+						<li><a href="../html/info-page.html">Chính sách bán hàng Online</a></li>
+					</ul>
+				</li>
+				<li><a href="../html/info-page.html">THÔNG TIN CẬP NHẬT</a>
+					<ul class="nav-child-menu">
+						<li><a href="../html/info-page.html">Hoạt động công ty</a></li>
+						<li><a href="../html/info-page.html">Thông tin công nghệ</a></li>
+						<li><a href="../html/info-page.html">Khuyễn mãi - Ưu đãi</a></li>
+						<li><a href="../html/info-page.html">Thông tin tuyển dụng</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="top-header-mobile row" style="margin: 0; padding: 0">
+				<div class="tel" style="flex: 0 0 100%;max-width: 100%;padding-bottom: 40px">
+					<img src="../images/telephone.png" alt="tel: 880 3816 0251">
+					<a href="tel:88038160251"><span><strong> Hotline: </strong>880 3816 0251</span></a>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="top-header-mobile row">
+		<div class="tel">
+			<img src="../images/telephone.png" alt="tel: 880 3816 0251">
+			<a href="tel:88038160251"><span><strong> Hotline: </strong>880 3816 0251</span></a>
+		</div>
+		<div class="cs-mobile text-right">
+			<a href="../html/login.html">
+				<div class="custom" style="background-image: url('../images/user.png');background-size: 22px;">
+				</div>
+			</a>
+			<a href="../html/checkout.html">
+				<div class="custom" style="background-image: url('../images/cart.png');background-size: 22px;">
+				</div>
+			</a>
+		</div>
+	</div>
+	<header class="pd-left pd-right row wrap-page" id="header">
+		<div class="logo col-md-3 col-sm-6">
+			<a href="../html/index.html"><img src="../images/logo.png" class="img-fluid" alt="Anh Nhân Computer"></a>
+		</div>
+		<div class="nav-sub-menu">
+			<span class="openbtn" onclick="openNav()">&#9776;</span>
+		</div>
+		<div class="col-md-9">
+			<div class="top">
+				<div class="support col-md-6">
+					<div>
+						<img src="../images/telephone.png" alt="tel: 880 3816 0251">
+						<a href="tel:88038160251"><span><strong> Hotline: 880 3816 0251</strong></span></a>
+					</div>
+					<div>
+						<img src="../images/support.png" alt="hỗ trợ trực tuyến">
+						<a href="../html/info-page.html"><span><strong>Hỗ trợ trực tuyến</strong></span></a>
+					</div>
+				</div>
+				<div class="sub-menu col-md-6 text-right" st>
+					<ul>
+						<li><a href="../html/info-page.html">Về chúng tôi</a></li>
+						<li><a href="../html/info-page.html">Dịch vụ</a></li>
+						<li><a href="../html/info-page.html">Thông tin</a></li>
+						<li><a href="../html/info-page.html">Hỗ trợ</a></li>
+						<li><a href="../html/info-page.html">Tuyển dụng</a></li>
+					</ul>
+				</div>				
+			</div>
+			<div class="bot-header row">
+				<div class="col-md-7 col-sm-9 form-header pr-0">
+					<form action="POST">
+						<input type="text" class="form-control text-search" placeholder="Tìm kiếm sản phẩm">
+						<select class="form-control select-search">
+							<option>Tất cả</option>
+							<option>Laptop</option>
+							<option>Máy bàn</option>
+							<option>Linh kiện máy tính</option>
+							<option>Các loại phụ kiện</option>
+							<option>Thiết bị văn phòng</option>
+							<option>Thiết bị mạng</option>
+							<option>Phần mềm bản quyền</option>
+						</select>
+						<button type="submit" class="btn btn-danger submit-search"><img src="../images/icon-search.png" class="rounded mx-auto d-block" alt="search"></i></button>
+					</form>
+				</div>
+				<div class="col-sm-3 cs-mobie" style="padding-right: 0">
+					<a href="../html/login.html">
+						<div class="custom" style="background-image: url('../images/user.png');">
+						</div>
+					</a>
+					<a href="../html/checkout.html">
+						<div class="custom" style="background-image: url('../images/cart.png');">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-5 cs-destop" style="padding-right: 0">					
+					<a href="../html/checkout.html">
+						<div class="custom" style="background-image: url('../images/cart.png');">
+							<div class="text-custom">
+								<span><strong>GIỎ HÀNG</strong></span><br>
+								<span style="font-size: smaller;">Chưa có sản phẩm</span>
+							</div>						
+						</div>
+					</a>
+					<a href="../html/login.html">
+						<div class="custom" style="background-image: url('../images/user.png');">
+							<div class="text-custom">
+								<span><strong>TÀI KHOẢN</strong></span><br>
+								<span style="font-size: smaller;">Đăng nhập & Đăng ký</span>
+							</div>						
+						</div>
+					</a>
+				</div>					
+			</div>
+		</div>
+	</header>
+	<div class="clearfix"></div>
+	<!-- end header -->
+	<!-- menu -->
+	<div id="menu">
+		<div class="wrap-page pd-left pd-right">
+			<nav class="main-nav">
+				<img style="margin-right: 10px;" src="../images/list.png" alt=""><span>DANH MỤC SẢN PHẨM</span>
+				<ul>
+					<li><a href="../html/layoutCate.html"><img src="../images/icon-laptop.png" alt=""><span>Laptop</span></a>
+						<ul class="lv2-menu">
+							<li class="title-menu">LapTop</li>
+							<li><a href="../html/layoutCate.html">Dell</a></li>
+							<li><a href="../html/layoutCate.html">Asus</a></li>
+							<li><a href="../html/layoutCate.html">Hp</a></li>
+							<li><a href="../html/layoutCate.html">Samsung</a></li>
+							<li><a href="../html/layoutCate.html">Acer</a></li>
+						</ul>
+					</li>
+					<li><a href="../html/layoutCate.html"><img src="../images/icon-pc.png" alt=""><span>Máy bàn</span></a>
+						<ul class="lv2-menu">
+							<li class="title-menu">Máy bàn</li>
+							<li><a href="../html/layoutCate.html">Dell</a></li>
+							<li><a href="../html/layoutCate.html">Asus</a></li>
+							<li><a href="../html/layoutCate.html">Hp2</a></li>
+							<li><a href="../html/layoutCate.html">Samsung</a></li>
+							<li><a href="../html/layoutCate.html">Acer</a></li>
+						</ul>
+					</li>
+					<li><a href="../html/layoutCate.html"><img src="../images/icon-linhkien.png" alt=""><span>Linh kiện máy tính</span></a>
+						<ul class="lv2-menu">
+							<li class="title-menu">Linh kiện máy tính</li>
+							<li><a href="../html/layoutCate.html">Màn hình</a></li>
+							<li><a href="../html/layoutCate.html">Thùng máy</a></li>
+							<li><a href="../html/layoutCate.html">CPU</a></li>
+							<li><a href="../html/layoutCate.html">Mainboard</a></li>
+							<li><a href="../html/layoutCate.html">RAM</a></li>
+							<li><a href="../html/layoutCate.html">Card đồ họa</a></li>
+							<li><a href="../html/layoutCate.html">Ổ cứng</a></li>
+							<li><a href="../html/layoutCate.html">Bộ nguồn</a></li>
+						</ul>
+					</li>
+					<li><a href="../html/layoutCate.html"><img src="../images/icon-phukien.png" alt=""><span>Các loại phụ kiện</span></a></li>
+					<li><a href="../html/layoutCate.html"><img src="../images/icon-thietbi.png" alt=""><span>Thiết bị văn phòng</span></a></li>
+					<li><a href="../html/layoutCate.html"><img src="../images/icon-mang.png" alt=""><span>Thiết bị mạng</span></a></li>
+					<li><a href="../html/layoutCate.html"><img src="../images/icon-software.png" alt=""><span>Phần mềm bản quyền</span></a></li>
+				</ul>
+			</nav>
+			<div class="menu-right">
+				<div class="menu-right-pc">
+					<a href="../html/info.html"><img src="../images/khuyenmai.png" alt="khuyến mãi"><span><i>Khuyến mãi - Ưu đãi</i></span></a>
+					<a href="../html/info-page.html"><img src="../images/chinhsach.png" alt="khuyến mãi"><span><i>Các chính sách chung</i></span></a>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<!-- end menu -->
+	<div id="title-cat"></div>
+	<!-- end title cat -->
+	<div class="clearfix"></div>
+	<!-- body -->
+	<div class="container-fluid">
+		<div class="title-link  wrap-page pd-left pd-right">
+			<ol class="breadcrumb">
+				<li><a href="../index.html">TRANG CHỦ</a></li>
+				<li><a href="../html/info.html">THÔNG TIN CẬP NHẬT</a></li>
+				<li><a href="../html/info.html">THÔNG TIN CÔNG NGHỆ</a></li>
+			</ol>
+		</div>
+		<div id="cat">
+			<div class="wrap-page pd-left pd-right row">
+				<div class="cat-name">Thông tin cập nhật</div>
+				<div class="cat-child" style="margin-left: 5px;">
+					<ul>
+						<li><a href="../html/info.html">HOẠT ĐỘNG CÔNG TY</a></li>
+						<li class="active"><a href="../html/info.html">THÔNG TIN CÔNG NGHỆ</a></li>
+						<li><a href="../html/info.html">KHUYẾN MÃI/ƯU ĐÃI</a></li>
+						<li><a href="../html/info.html">THÔNG TIN TUYỂN DỤNG</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- main content -->
+		<div class="wrap-page pd-left pd-right pd-mobile" style="margin-top: 20px;">
+			<div class="row" style="margin: 0">
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-2.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-3.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+				<div class="content col-md-3">
+					<div class="img-content">
+						<a href="../html/info-detail.html">
+							<figure>
+								<img src="../images/content-1.png" class="mx-auto d-block" width="100%" alt="content 1">
+							</figure>
+						</a>
+					</div>
+					<div class="detail-content">
+						<a href="../html/info-detail.html"><h5>Cooler Master ra mắt dòng sản phẩm TUF Gaming</h5></a>
+						<span class="user-create">Anh Nhân</span>
+						<span class="date-create">Thứ 4 24/05/2018</span>
+						<p class="detail">Nhằm bổ sung thêm sản phẩm trong dự án Asus TUF của mình, Asus đã hợp tác cùng Cooler Master để cho ra dòng sản phẩm mang thương hiệu TUF Gamming bao gồm thùng máy, bộ tản</p>
+					</div>
+				</div>
+			</div>
+			<nav class="float-right" style="margin-top: 10px;">
+				<div class="sub-pagination d-inline-block float-left">Trang <strong>1/10 </strong></div>
+				<div class="main-pagination float-right">
+					<ul class="pagination justify-content-end">
+						<li class="page-item icc disabled"><a class="page-link" href="html/info-page.html" tabindex="-1">&lt;&lt;</a></li>
+						<li class="page-item icc disabled"><a class="page-link" href="html/info-page.html" tabindex="-1">&lt;</a></li>
+						<li class="page-item active"><a class="page-link" href="html/info-page.html">1</a></li>
+						<li class="page-item"><a class="page-link" href="html/info-page.html">2</a></li>
+						<li class="page-item"><a class="page-link" href="html/info-page.html">3</a></li>
+						<li class="page-item"><a class="page-link" href="html/info-page.html">4</a></li>
+						<li class="page-item"><a class="page-link" href="html/info-page.html">5</a></li>
+						<li class="page-item"><a class="page-link" href="html/info-page.html">6</a></li>
+						<li class="page-item icc"><a class="page-link" href="html/info-page.html">&gt;</a></li>
+						<li class="page-item icc"><a class="page-link" href="html/info-page.html">&gt;&gt;</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>		
+		<!-- end main content -->		
+	</div>
+	<div class="clearfix"></div>
+	<!-- end body -->
+	<footer id="footer">
+		<div class="dk-email">
+			<div class="pd-left wrap-page row" >
+				<div class="col-md-3 text-dk">
+					<p>Đăng kí nhận tin từ Anh Nhân để cập nhật thông tin sản phẩm, ưu đãi mới nhất.</p>
+				</div>
+				<div class="col-md-5 form-email">
+					<form action="POST">
+						<input type="text" class="form-control text-email" placeholder="Nhập email của bạn">
+						<button type="submit" class="btn btn-danger button-email">SUMMIT</button>
+					</form>
+				</div>
+				<div class="col-md-4 text-right pd-right fanpage">
+					<span>Theo dõi Anh Nhân Computer tại </span>	
+					<a href="../html/info.html"><img src="../images/fb-icon.png" alt=""></a>
+					<a href="../html/info.html"><img src="../images/youtube-icon.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="pd-left pd-right wrap-page row footer">
+			<div class="hotline col-md-4">
+				<p>Hotline:&nbsp; <strong>0251.816.880</strong></p>
+				<p>Kinh doanh:&nbsp; <strong>0251.816.880</strong></p>
+				<p>Kỹ thuật:&nbsp; <strong>0251.816.880</strong></p>
+			</div>					
+			<div class="col-md-4 footer-1" >
+				<a href="../html/index.html"><img src="../images/logo-2.png" alt="Anh Nhan Computer"></a>
+				<p>CÔNG TY TNHH TIN HỌC ANH NHÂN</p>
+				<span>158 Phan Đình Phùng - Phường Trung Dũng - Tp.Biên Hòa - ĐN</span><br>
+				<span>Điện thoại: 0251.3816880 - 3810001 - 3810003 Fax: 0251.3816881 </span><br>
+				<span>Email: anhnhanpc@yahoo.com Website:www.anhnhan.vn</span><br>
+
+				<p>TRUNG TÂM SỬA CHỮA - BẢO HÀNH</p>
+				<span>158 Phan Đình Phùng - Phường Trung Dũng - Tp.Biên Hòa - ĐN</span><br>
+				<span>Điện thoại: 0251.3816880 - 3810001 - 3810003 Fax: 0251.3816881 </span><br>
+			</div>
+			<div class="col-md-8 footer-2 pd-left">
+				<div class="row">
+					<div class="contact">
+						<p><strong>Về chúng tôi</strong></p>
+						<ul>
+							<li><a href="../html/info-page.html"><span>Giới thiệu</span></a></li>
+							<li><a href="../html/info-page.html"><span>Đối tác</span></a></li>
+							<li><a href="../html/info-page.html"><span>Tuyển dụng</span></a></li>
+							<li><a href="../html/info-page.html"><span>Liên hệ</span></a></li>
+						</ul>
+					</div>					
+					<div class="chinhsach">
+						<p><strong>Chinh sách</strong></p>
+						<ul>
+							<li><a href="../html/info-page.html"><span>Chính sách bảo hành</span></a></li>
+							<li><a href="../html/info-page.html"><span>Chính sách đổi trả</span></a></li>
+							<li><a href="../html/info-page.html"><span>Giao nhận lắp đặt</span></a></li>
+							<li><a href="../html/info-page.html"><span>Mua hàng online</span></a></li>
+						</ul>
+					</div>
+					<div class="dichvu">
+						<p><strong>Dịch vụ</strong></p>
+						<ul>
+							<li><a href="../html/info-page.html"><span>Dịch vụ sửa chữa</span></a></li>
+							<li><a href="../html/info-page.html"><span>Dịch vụ lắp đặt</span></a></li>
+							<li><a href="../html/info-page.html"><span>Cung ứng thiết bị</span></a></li>
+						</ul>
+					</div>
+					<div class="thongtin">
+						<p><strong>Thông tin</strong></p>
+						<ul>
+							<li><a href="../html/info-page.html"><span>Tin hoạt động</span></a></li>
+							<li><a href="../html/info-page.html"><span>Tin khuyến mãi</span></a></li>
+							<li><a href="../html/info-page.html"><span>Tin công nghệ</span></a></li>
+						</ul>
+					</div>
+					<div class="hotro">
+						<p><strong>Hỗ trợ</strong></p>
+						<ul>
+							<li><a href="../html/info-page.html"><span>Câu hỏi thường gặp</span></a></li>
+							<li><a href="../html/info-page.html"><span>Download</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="hotline col-md-4">
+						<span>Hotline:&nbsp; <strong>0251.816.880</strong></span>
+						<span>Kinh doanh:&nbsp; <strong>0251.816.880</strong></span>
+						<span>Kỹ thuật:&nbsp; <strong>0251.816.880</strong></span>
+					</div>
+					<div class="text-right col-md-8">
+						<img src="../images/bocongthuong.png" alt="Bộ công thương">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<div class="row wrap-page pd-left pd-right">
+			<div class="copyright">
+				<span>© 2018 - 2007. Công Ty TNHH Tin học Anh Nhân / GPĐKKD số 0304------ do Sở KHĐT Đồng Nai cấp</span>
+				<br>
+				<span>Website được thiết kế & phát triển bởi ZENNERS</span>
+				<a href="http://zenners.com"><img src="../images/zenners.png" alt="ZENNERS"></a>
+			</div>
+		</div>
+	</footer>
+	<script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="../js/script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+#signUp{width:50%;margin:auto}
+#form-customer{width: 33.33%;margin: auto; margin-top: 15px;}
+.form-style{background:#fff;margin-top:15px;padding-bottom:20px;border:1px solid #ccc}
+.title-form{background-image:url(../images/tab.png);background-repeat:repeat-x;border-bottom:1px solid #ccc;height:40px}
+.title-form span{font-family:Myriad-Condensed;font-size:24px;color:#2d2e2e;margin:0;line-height:40px;padding:5px 10px;border-bottom:3px solid #b21008}
+.main-form{padding:10px 20px}
+.main-form p{font-family:Roboto;font-size:13px}
+.main-form .gender-radio{border-top:1px solid #ced4da;color:#495057;padding:10px 5px;margin:0}
+.main-form .gender-radio input{margin-right:5px}
+.main-form .gender-radio span{font-family:Roboto;font-size:12px;margin-right:15px}
+.footer-form{padding:10px 20px;color:#495057}
+.footer-form>*{margin-bottom:10px}
+.link-fb{background:url(../images/icon-fb.png) no-repeat 10% 50% #434c9a;border:1px solid #434c9a}
+.link-gg{background:url(../images/icon-gg.png) no-repeat 10% 50% #d53206}
+.sm-signUp{background:#d53206}
+.submit-style{width:100%;font-family:UTM-Bold;font-size:14px;line-height:2em}
+.user-more a{font-family:Roboto;color:#696262}
+.user-more a:hover{text-decoration:underline!important;color:#085699!important}
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea::-webkit-input-placeholder,
+textarea:focus,
+.form-control,
+.form-control:focus
+{
+	color: #070707
+}
+.address-select,.address-select>.form-group{margin-bottom: 0 !important}

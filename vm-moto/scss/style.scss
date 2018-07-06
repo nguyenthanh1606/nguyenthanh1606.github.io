@@ -1,0 +1,294 @@
+@font-face{font-family:'Mini-Ico';src:url('../fonts/md-icon.woff') format('woff');font-weight:normal;font-style:normal}
+// @font-face{font-family:'Mini-SBold';src:url('../fonts/') format('woff');font-style:normal}
+@font-face{font-family:'Mini-SRegular';src:url('../fonts/mini_sans_serif-regular-web.woff') format('woff');font-style:normal}
+@font-face{font-family:'Mini-Bold';src:url('../fonts/mini_serif-bold-web.woff') format('woff');font-style:normal}
+@font-face{font-family:'Mini-Regular';src:url('../fonts/mini_serif-regular-web.woff') format('woff');font-style:normal}
+// @font-face{font-family:'Mini-Italic';src:url('../fonts/mini_serif-italic-web.woff') format('woff');font-style:italic}
+@import 'ico';
+
+$Mini-SR: 'Mini-SRegular';
+$Mini-B: 'Mini-Bold';
+$Mini-R: 'Mini-Regular';
+
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+    font-family: $Mini-R;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $Mini-B;
+    margin-bottom: 0;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 1.375rem;
+}
+.wrapper{    padding: 0 20px;
+}
+$color-main: #000;
+ul,ol{list-style-type: none; margin-bottom: 0; display: block;font-size: 0;}
+ul>li, ol>li{display: inline-block; font-size: 1rem;}
+a,a:hover,a:focus{text-decoration: none; color: $color-main}
+.row{padding: 0}
+
+@mixin border-radius($var){
+    -moz-border-radius: $var;
+    -webkit-border-radius: $var;
+    border-radius: $var;
+}
+@mixin box-shadow($var){
+    box-shadow: $var;
+    -webkit-box-shadow: $var;
+    -moz-box-shadow: $var;
+}
+
+%ul-li{
+    ul{            
+        li{
+            display: inline-block;
+            a{
+                font-family: $Mini-SR,Arial,sans-serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                color: $color-main;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+#header{
+    margin: auto 0;
+    min-height: 58px;
+    padding-left: 11px;
+    .logo{
+        flex: 0 0 12%;
+        max-width: 12%;
+        padding-top: 11px;
+        height: 58px;
+        img{
+            height: 35px;
+        }
+    }
+    .menu-popup{
+        @extend %ul-li;        
+        ul{
+            li{
+                padding: 21px 10px;
+                line-height: 1rem;
+            }
+            li:hover{
+                background: #f1f1f1;
+            }
+        }
+    }
+    .link-search{
+        flex: 0 0 21.3333337%;
+        max-width: 21.3333337%;
+        ul{
+            li:nth-child(1),li:nth-child(2){
+                padding: 22px 3px 16px 20px;
+            }
+            li:last-child{
+                padding: 21px 5px 10px 5px;
+                margin: 0 10px;
+            }
+        }
+        @extend %ul-li;
+        i{
+            font-size: 15px;
+        }
+    }
+}
+
+#banner{    
+    .carousel-item{
+        .head-product{
+            margin-top: 14px;
+            padding: 7px 31px 7px 11px;
+            height: 125px;
+            p{
+                font-size: 1.375rem;
+                font-family: $Mini-B;
+            }
+        }
+    }
+}
+#list-product{       
+    .dk{
+        padding: 10px 0 0 20px;
+        span{
+            padding-top: 13px;
+            font-size: 14px;
+            font-family: $Mini-SR;
+        }
+    }
+    .list-product{
+        border-top: 1px solid #d7d8d9;
+        ul{
+            background-color: #f5f6f7;
+            display: flex;
+            flex-flow: row wrap;
+            overflow: visible;
+            vertical-align: baseline;
+            width: 100%;            
+            .item{
+                width: 16.66666667%;
+                .product-item{                    
+                    position: relative;                    
+                    .head-pro{
+                        opacity: 0;
+                        width: 218.33px;
+                        position: absolute;
+                        top:-80px;
+                        height: 80px;
+                        @include box-shadow(0 0 8px 2px #a5a5a5);
+                        ul{  
+                            background-color: #fff;                          
+                            height: 110%;
+                            padding-top: 10px;
+                            li{
+                                display: block;
+                                width: 100%;
+                                line-height: 1;
+                                a{
+                                    color: $color-main;
+                                    font-family: $Mini-SR;
+                                    vertical-align: -webkit-baseline-middle;
+                                    font-size: 14px;
+                                }
+                            }                            
+                        }
+                    }
+                }
+                .item-img{
+                    padding-bottom: 1rem;
+                    h5{
+                        display: inline-block;
+                        line-height: 25px;
+                        font-family: $Mini-SR;
+                        font-size: .8749999999999999rem;
+                        padding-bottom: 3px;
+                    }
+                }
+            }
+            .item:hover{
+                background-color: #fff;
+                @include box-shadow(0 0 8px 2px #a5a5a5);
+                transition: .5s;
+                .product-item{
+                    .head-pro{
+                        opacity: 1;
+                        transition: .5s;
+                    }                    
+                }
+                .item-img{
+                    h5{
+                        box-shadow: inset 0 -2px #000;
+                    }
+                }
+            }
+        }
+    }
+}
+//-------------
+.btn-black{
+    display: inline-block;
+    line-height: 11px;
+    padding: 12px 12px 9px;
+    vertical-align: middle;
+    font-size: .75rem;
+    color: #fff;
+    font-family: $Mini-SR;
+    background: #000;
+    transition: .5s;
+    border: 1px solid #fff;
+}
+.btn-black:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.bg-black{
+    background-color: #000;
+    color: #fff;
+}
+
+
+.container-fluid{
+    padding: 0;
+}
+//--------------
+#content{
+    padding-top: 60px;
+    .head-content{
+
+    }
+    .list-content{
+        padding: 0 10px;
+        .item-content{
+            padding: 15px 10px 0;
+            .content-img{
+                margin-bottom: 40px;
+            }
+            .detail{
+                h3{
+                    font-family: $Mini-B;                
+                    margin-bottom: 1rem;
+                    line-height: 1;
+                }
+                p{
+                    font-family: $Mini-R,'Georgia',serif;
+                }
+                a{
+                    @extend .btn-black;
+                    font-size: 16px;
+                    line-height: 1;
+                    padding: 10px 20px;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                    border: 2px solid #000;                
+                }
+            }
+        }
+    }
+}
+
+#moto{
+    padding: 0 30px;
+    .head-moto{
+        padding-top: 60px;
+        h4{
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #fff;
+        }
+    }
+    .item-moto{
+        padding: 60px 10px 0;
+        h4{
+            margin-bottom: 15px;
+        }
+        h3{
+            margin: 15px 0;
+        }
+        .detail-moto{
+            height: 245px;
+            position: relative;
+            p:last-child{
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}
+.form-control{@include border-radius(50%)}
