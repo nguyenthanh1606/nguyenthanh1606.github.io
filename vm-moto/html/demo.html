@@ -20,6 +20,12 @@
         .sub-menu{position: absolute; width: 100%;background-color: gray;opacity: 0;transition: .2s;left: 0; top:43px}
         .menu li:hover .sub-menu{opacity: 1}
     </style>
+    <script>
+        var count = document.getElementsByTagName('div');
+        function deleteElement(){
+            console.log(count.length);
+        }
+    </script>
   </head>
   <body>
       <ul class="menu">
@@ -36,33 +42,26 @@
             <li><a href="#">Video</a></li>
             <li><a href="#">Contact</a></li>
       </ul>
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId">
-        Launch
-      </button>
-      
-      <!-- Modal -->
-      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-                      <h4 class="modal-title" id="modelTitleId">Modal title</h4>
-                  </div>
-                  <div class="modal-body">
-                      <div class="container-fluid">
-                          Add rows here
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save</button>
-                  </div>
-              </div>
-          </div>
-      </div>
+
+    <div>Lẻ</div>
+    <div>Chẵn</div>
+    <div>Lẻ</div>
+    <div>Chẵn</div>
+    <div>Lẻ</div>
+    <div>Chẵn</div>
+    <div>Lẻ</div>
+    <div>Chẵn</div>
+    <div>Lẻ</div>
+    <div>Chẵn</div>
+    <div>Lẻ</div>
+    <div>Chẵn</div>
+    <div>Lẻ</div>
+    <div>Chẵn</div>
+    <div>Lẻ</div>
+    <div>Chẵn</div>
+    <button onclick="deleteElement">Remove</button>
+    
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
