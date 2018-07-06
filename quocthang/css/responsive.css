@@ -126,4 +126,5 @@
     header.mobile .logo{padding: 10px; margin: auto 0; flex: 0 0 66.66667%;max-width: 66.66667%}
     header.mobile .lang{padding: 10px; margin: auto 0; flex: 0 0 33.33333%;max-width: 33.33333%;flex-direction: row;}
     #content .head ul li a{padding-left: 0 !important}
+    .main-slide{padding-top: .25rem}
 }
