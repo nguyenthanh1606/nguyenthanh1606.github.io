@@ -137,6 +137,7 @@
     .social{text-align: left !important; line-height: 2; margin-top: 0.25rem}
     .main-slide .carousel-indicators{
         justify-content: center;
+	margin-right:0;
     }
     .main-body .wrap-page {
         padding:2.5rem 15px !important;}
