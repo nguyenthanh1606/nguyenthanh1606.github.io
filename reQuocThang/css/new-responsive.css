@@ -147,6 +147,7 @@
 }
 @media only screen and (max-width: 375px){
     #content .head ul li{display: block;line-height: 2}
+    .contact-item .item{margin-right: 0}
 }
 @media only screen and (max-width: 320px) {
     .contact-item .item{margin-right: 10px}
