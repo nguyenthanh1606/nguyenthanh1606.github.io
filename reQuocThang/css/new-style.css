@@ -606,7 +606,7 @@ form>div{
     top: 44%;
     z-index: 0;
 }
-#category .top{margin-bottom: 2rem}
+#category .top{margin-bottom: 2rem; display:flex}
 #category h3 {
     font-family: Exo-SemiBold;
     font-size: 26px;
@@ -614,7 +614,6 @@ form>div{
     padding-right: 2rem;
     z-index: 2;
     background: #5c8da2;
-    width: 370px;
     margin: auto;
     position: relative;
     text-align: center;
