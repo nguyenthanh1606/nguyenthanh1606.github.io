@@ -138,6 +138,7 @@
     .main-slide .carousel-indicators{
         justify-content: center;
 	margin-right:0;
+	margin-left:0;
     }
     .main-body .wrap-page {
         padding:2.5rem 15px !important;}
