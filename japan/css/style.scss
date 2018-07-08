@@ -1,0 +1,377 @@
+@font-face{font-family: 'Koz-Bold'; src:url('../fonts/KozMinPr6N-Bold.otf')};
+@font-face{font-family: 'Koz-ExLight'; src:url('../fonts/KozMinPr6N-ExtraLight.otf')};
+@font-face{font-family: 'Koz-Heavy'; src:url('../fonts/KozMinPr6N-Heavy.otf')};
+@font-face{font-family: 'Koz-Light'; src:url('../fonts/KozMinPr6N-Light.otf')};
+@font-face{font-family: 'Koz-Medium'; src:url('../fonts/KozMinPr6N-Medium.otf')};
+@font-face{font-family: 'Koz-Regular'; src:url('../fonts/KozMinPr6N-Regular.otf')};
+@font-face{font-family: 'Mei'; src:url('../fonts/meiryo.ttc')};
+@font-face{font-family: 'Mei-Bold'; src:url('../fonts/meiryob.ttc')};
+@font-face{font-family: 'Yu-Bold'; src:url('../fonts/YuGothB.ttc')};
+@font-face{font-family: 'Yu-Light'; src:url('../fonts/YuGothL.ttc')};
+@font-face{font-family: 'Yu-Medium'; src:url('../fonts/YuGothM.ttc')};
+@font-face{font-family: 'Yu-Regular'; src:url('../fonts/YuGothR.ttc')};
+@font-face{font-family: 'Shin-Regular'; src:url('../fonts/ShinGoPro-Regular.otf')};
+@font-face{font-family: 'Shin-Debold'; src:url('../fonts/ShinGoPro-DeBold.otf')};
+@font-face{font-family: 'Shin-Medium'; src:url('../fonts/ShinGoPro-Medium.otf')};
+@font-face{font-family: 'DIN-Bold'; src:url('../fonts/DIN-Bold.ttf')};
+
+$Din-B:"DIN-Bold";
+$Mei:"Mei";
+$Shin-DB:"Shin-Debold";
+$Shin:"Shin-Medium";
+$Shin-R:"Shin-Regular";
+
+$color-second: #0f5c9b;
+$bg-btn: #578db9;
+$text-color-main: #878787;
+
+@mixin border-radius($var) {
+    border-radius: $var;
+    -webkit-border-radius: $var;
+    -moz-border-radius: $var;
+    -o-border-radius: $var;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $Mei;
+    font-weight: 500;
+    font-size: 18px;
+
+    box-sizing: border-box;
+
+    border-top: 3px solid $color-second;
+}
+
+h3,h2,h1,.tel>a{
+    font-family: $Din-B;
+}
+h1{
+    font-size: 2rem;
+}
+p{
+    font-family: $Shin-DB;
+}
+span{
+    font-family: $Mei;
+    color: #555555;
+}
+a,a:hover,a:focus{text-decoration: none; color: #000;}
+.wrap-page{
+    max-width: 950px;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.clearfix{
+    clear: both;
+}
+.float-right{float: right !important;}
+.right{flex-direction: row-reverse;}
+.text-center{text-align: center !important}
+.toupper{text-transform: uppercase}
+.mr-auto{margin: auto}
+.text-deco{text-decoration: underline}
+.d-block{display: block !important;}
+.fluid{width: 100%;}
+.btn{
+    margin-top: .5rem;
+    padding: 5px 20px 5px 10px;
+    background-color: $color-second; 
+    display: inline-flex;
+    color: #fff;
+    transition: all .5s;
+    border: 1px solid transparent;
+    &::before{
+        content: url('../images/dot.png');
+        padding-right: 10px;
+        margin-top: -4px;
+    }
+}
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+        flex: 0 0 (100%*$i/12);
+        max-width: (100%*$i/12);
+    }
+}
+
+%menu-p{
+    p:first-child{
+        color: #000;
+        font-size: .9rem;
+    }
+    p:nth-child(2){
+        color: #0e5b9a;
+        font-family: $Din-B !important;
+        font-size: .6rem;
+        text-transform: uppercase;
+    }
+}
+%row-contact{
+    .tel{
+        text-align: center;
+        margin: auto 0;
+        a{
+            font-size: 1.9rem;
+            display: block;
+            color: $text-color-main;
+            &::before{
+                content: url('../images/icon-tel.png');
+                padding-right: 5px;
+            }            
+        }
+        span{
+            color: #000;
+            font-size: .6rem;
+        }
+    }
+    .email{
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        background-color: #ffed4d;
+        transition: .3s;
+        cursor: pointer;
+        p{
+            padding: 10px 15px;
+            
+            font-size: .9rem;
+            color: #fd7e00;
+            &::before{
+                content: url('../images/ico-mail.png');
+                padding-right: 10px;
+            }
+        }
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
+header{
+    .img-logo{
+        display: inline-block;
+        position: relative;
+        bottom: -12px;        
+    }
+    .name-logo{
+        display: inline-block;
+        text-align: center;
+        padding-left: 15px;
+        h1{
+            color: $text-color-main;
+            letter-spacing: .2rem;
+        }
+        p{
+            font-size: .9rem;
+        }
+    }
+    @extend %row-contact;
+    div.col-7{
+        padding-top: 22px;
+    }
+}
+#menu{
+    margin-top: 1.5rem;
+    ul{
+        display: block;
+        font-size: 0;
+        li{
+            display: inline-block;
+            margin: auto;
+            text-align: center;
+            font-size: 1rem;
+            padding-bottom: 18px;
+            border-bottom: 4px solid transparent;
+            a{
+                padding: 0 36.5px;
+                display: inline-block;
+                border-right: 1px solid #ccc;                
+                @extend %menu-p;
+            }
+            &:first-child a{
+                    border-left: 1px solid #ccc;
+                }
+            &:hover{
+                border-bottom: 4px solid #dddddd;
+            }
+            
+        }
+    }
+}
+#banner{
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    min-height: 420px;
+    
+    text-align: center;
+    .title-banner{
+        margin: auto;
+        display: inline-block;
+        padding: 16px;
+        border: 1px solid #fff;
+        font-family: $Shin-R;
+        font-weight: unset;
+        color: #fff;
+    }
+}
+main{
+    padding-top: 80px;
+    #contact{
+        padding: 30px 0;
+        border: 1px solid #ccc;
+        .contact-name{
+            border-right: 1px solid #ccc;
+            @extend %menu-p;
+            p{
+                font-size: .8rem !important;
+                line-height: 2;
+                &:first-child{
+                    font-size: 1.2rem !important;
+                }
+            }
+            .btn:hover{
+                opacity: .8;
+                color: #fff;
+            }
+        } 
+        .contact-link{
+            padding-left: 35px;
+            margin: auto 0;
+            span{
+                display: inline-block;
+                line-height: 2;
+                color:$color-second;
+                padding-right: 10px;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }       
+    }
+    #service{
+        margin-top: 80px;
+        background: #eeeeee;
+        .head-service{
+            padding-top: 56px;
+            flex-direction: column;
+            @extend %menu-p;
+            p{
+                font-size: 1.4rem !important;
+                &:nth-child(2){
+                    font-size: .8rem !important;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+        .list-service{
+            margin: auto;
+            min-height: 300px;            
+            .item-service{
+                background-image: url('../images/border-img.png');
+                background-size: auto;
+                background-repeat: no-repeat;
+                background-position: center;
+                padding: 53px;
+                .item{
+                    height: 215px;
+                    display: table;
+                    width: 100%;
+                    padding-top: 17%;
+                    transition:all .5s;
+                    img.hide{
+                        display: none
+                    }
+                    .btn{
+                        padding: 5px 40px 5px 20px;
+                    }
+                    &:hover{    
+                        background-color: $color-second;                
+                        color: #fff;
+                        img.show{
+                            display: none;
+                        }
+                        img.hide{
+                            display: inline-block;
+                        }    
+                        .btn{
+                            background-color: #fff;
+                            color: $color-second;
+                            &::before{
+                                content: url('../images/dot-hover.png')
+                            }
+                        }            
+                    }                   
+                }                
+            }
+        }
+    }
+    #alson{
+        .alson-img{
+            padding-right: 20px;
+            .start{
+                position: absolute;
+                right: 0;
+                top: 45%;
+            }
+        }
+        
+        .detail{
+            margin: auto;
+            padding: 0 40px 0;
+            h3{
+                padding-right: 15%;
+                line-height: 1.5;
+                font-family: $Shin-DB;
+                margin-bottom: 2rem;
+                font-size: 1.2rem;
+            }
+            span{
+                font-size: .9rem;
+                
+            }
+            .btn{
+                margin-top: 1.5rem;
+                padding: 10px 40px 10px 20px;
+            }
+            .btn:hover{
+                opacity: .8;
+                color: #fff;
+            }
+        }
+        
+    }
+}
+#contact-form{
+    background-image: url('../images/contact-form.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 40px;
+    height: -webkit-fill-available;
+    .btn{
+        padding: 5px 40px 5px 20px;
+        border: 1px solid #fff;
+        &:before{
+            content: "";
+        }
+        &:hover{
+            opacity: .8;
+            color: #fff;
+        }
+    }
+    @extend %row-contact;
+}
