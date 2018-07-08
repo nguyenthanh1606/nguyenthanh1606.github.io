@@ -194,6 +194,9 @@ button{
 	color: #fff;
 }	
 .btn{padding: 1rem 3rem !important;border-radius: .35rem}
+.btn.focus, .btn:focus{
+	box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.7)
+}
 
 
 #category{
