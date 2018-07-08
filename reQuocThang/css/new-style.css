@@ -649,3 +649,84 @@ div#category .top {
     width: 100%;
     float: left;
 }
+
+.img-slider.ratio4_3 {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+
+    .img-slider.ratio4_3:before {
+        content: "";
+        margin-top: 75%;
+        display: block;
+    }
+
+    .img-slider.ratio4_3 a, .mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        float: left;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+    }
+
+div#video {
+    overflow: hidden;
+}
+
+.fixed-ratio {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+    .fixed-ratio:before {
+        content: "";
+        margin-top: 100%;
+        display: block;
+    }
+
+.ratio1_1:before {
+    margin-top: 100%;
+}
+
+.ratio2_1:before {
+    margin-top: 50%;
+}
+
+.ratio4_3:before {
+    margin-top: 75%;
+}
+
+.fixed-ratio img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.fixed-ratio figure {
+    height: 100%;
+    max-height: 100%;
+}
+
+ul.slider-library .owl-item {
+    position: relative;
+}
+
+ul.slider-library li img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+}
+
+.hover {
+    opacity: 1;
+    transition: all linear 0.2s;
+}
+
+    .hover:hover {
+        opacity: 0.7;
+        transition: all linear 0.2s;
+    }

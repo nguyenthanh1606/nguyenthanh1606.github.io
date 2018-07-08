@@ -93,6 +93,8 @@
     }
 }
 @media only screen and (max-width: 425px) {
+    .sub-new .col-md-2{flex: 0 0 50%; max-width: 50%;}
+    .sub-new .col-md-8{display: none}
 	footer .contact .contact-item{
         width: auto;
     }

@@ -147,7 +147,7 @@
 			<img src="../images/contact-banner.png" alt="">
 		</div>
 		<div class="name-banner">
-			<p>LIÊN HỆ VỚI CHÚNG TÔI</p>
+			<p>VIDEO</p>
 		</div>
 	</div>
 	<div class="clearfix"></div>
@@ -274,18 +274,73 @@
 	<script src="../js/jquery-3.2.1.min.js" type="text/javascript"></script>
 	<script src="../js/bootstrap.min.js" type="text/javascript"></script>
 	<script src="../js/jquery.js" type="text/javascript"></script>
+
+	<script src="../js/jquery.unobtrusive-ajax.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/jquery.validate.unobtrusive.js"></script>
+
+    <script src="/Scripts/owl.carousel.js"></script>
+
 	<script>
-			window.onscroll = function() {myFunction()};
-			var header = document.getElementById("headMain");
-			var h = document.getElementById("header");
-			var sticky = h.offsetHeight;
-			function myFunction() {
-				if (window.pageYOffset > sticky) {
-					header.classList.add("sticky");
-				} else {
-					header.classList.remove("sticky");
-				}
+		window.onscroll = function() {myFunction()};
+		var header = document.getElementById("headMain");
+		var h = document.getElementById("header");
+		var sticky = h.offsetHeight;
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
 			}
-		</script>
+		}
+	</script>
+	 <script>
+        $(document).ready(function () {
+            var url = window.location;
+            // Will only work if string in href matches with location
+            $('.menu_intro ul a[href="' + url + '"]').parents('li').addClass('active');
+
+            // Will also work for relative and absolute hrefs
+            $('.menu_intro ul a').filter(function () {
+                return this.href == url;
+            }).parents('li').addClass('active');
+
+        });
+
+        $('#searchbt').bind("keydown", function (event) {
+            //var keycode = (event.keyCode ? event.keyCode : event.which);
+            //input.on('keydown', function () {
+            var keycode = event.keyCode || event.charCode;
+
+            //    if (key == 8 || key == 46)
+            //        return false;
+            //});
+            if (keycode == 13) {
+                event.preventDefault();
+                var keyword = $("#searchbt").val();
+                if ((keyword != null) && (keyword != "")) {
+                    window.location = "/Search/kw?q=" + keyword;
+                }
+            }
+            else {
+
+            }
+        });
+     
+        $(document).ready(function () {
+            var url = window.location;
+            // Will only work if string in href matches with location
+            $('.navbar-nav a[href="' + url + '"]').parents('li').addClass('active');
+
+            // Will also work for relative and absolute hrefs
+            $('.navbar-nav a').filter(function () {
+                return this.href == url;
+            }).parents('li').addClass('active');
+
+            $(".lang a").removeAttr("data-ajax");
+
+        });
+    </script>
+
 </body>
 </html>
