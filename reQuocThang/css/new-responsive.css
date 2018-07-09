@@ -132,6 +132,7 @@
     .contact-form .row{margin-bottom: 0;}
     header.mobile .logo{padding: 10px; margin: auto 0; flex: 0 0 66.66667%;max-width: 66.66667%}
     header.mobile .lang{padding: 10px; margin: auto 0; flex: 0 0 33.33333%;max-width: 33.33333%;flex-direction: row;}
+    #content .head .col-md-8{padding: 0}
     #content .head ul li a{padding-left: 0 !important}
     .main-slide{padding-top: .25rem}
     #about .detail-about{flex: 0 0 100%;max-width: 100%;padding-right: 20px}
