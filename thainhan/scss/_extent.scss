@@ -1,0 +1,78 @@
+%img-header{
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 72%;
+}
+
+%menu-h{
+    ul{
+        font-size: 0;
+        display: block;
+        margin-bottom: .5rem;
+        li{
+            display: inline-block;
+            vertical-align: middle;
+            a{
+                color: #fff;
+            }
+        }
+    }
+}
+
+%btn-design{
+    padding: 8px 60px 8px 30px;
+    border-radius: 10rem;
+    box-shadow: 0 0 20px 1px rgba(157, 153, 153, .5);
+    position: relative;
+    vertical-align: baseline;
+    color: $cGray2;
+    background-color: #fff;
+    transition: box-shadow .5s ease-in-out, color .5s linear;
+    &::after{
+        content: url('../images/button.png');
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding-left: 30px;
+    }
+    &:hover{
+        box-shadow:0 0 10px 1px $bgTitle;
+        color: $bgTitle;
+    }
+}
+%btn-child{
+    width: 30px;
+    height: 30px;
+    background-color: $bgTitle;
+    position: relative;
+    float: right;
+    border-radius: 50%;
+    display: inline-block;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    &::after{
+        font-family: 'FontAwesome';
+        content: '\f0da';        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-25%,-50%);
+    }
+    &:hover{
+        background-color: #fff;
+        color: $bgTitle;
+        box-shadow: 0 0 10px 1px $bgTitle;
+    }
+}
+
+%h5-head-title{       
+    padding-left: 5%;
+    &::after{
+        content: url('../images/dot.png');
+        position: absolute;
+        top: 0;
+        left: 0;
+        line-height: 1rem;
+        transform: translateX(-50%);
+    }
+}

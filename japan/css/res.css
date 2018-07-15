@@ -1,0 +1,12 @@
+@media screen and (max-width: 425px) {
+  main #contact .contact-name {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  .mb {
+    display: block; }
+
+  .pc {
+    display: none; } }
+
+/*# sourceMappingURL=res.css.map */

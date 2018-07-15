@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+    font-family: $fUTM-R;
+    font-weight: 500;
+}
+
+.wrapper{
+    max-width: 1166px;
+    margin: 0 auto !important;
+}
+.row{
+    margin: 0;
+}
+a,a:hover,a:focus{text-decoration: none;}
+p{color: $cGray}
+h5{ margin-bottom: 1.5rem; font-family: $fUTM-B; color: $bgTitle;}
+textarea{resize: none}
+button:focus{
+    outline: 0;
+}
+
+// ----------------------------
+.toUpper{text-transform: uppercase;}
+.text-bold{font-weight: bold;}
+// ----------------------------

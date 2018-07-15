@@ -143,4 +143,11 @@ main #alson .detail .btn:hover { opacity: .8; color: #fff; }
 #contact-form .btn:before { content: ""; }
 #contact-form .btn:hover { opacity: .8; color: #fff; }
 
+#demo { background-color: #878787; }
+#demo .square-box { position: relative; width: 50%; overflow: hidden; background: #4679BD; }
+#demo .square-box:before { content: ""; display: block; padding-top: 100%; }
+#demo .square-content { position: absolute; top: 0; left: 0; bottom: 0; right: 0; color: white; text-align: center; }
+
+.mb { display: none; }
+
 /*# sourceMappingURL=style.css.map */

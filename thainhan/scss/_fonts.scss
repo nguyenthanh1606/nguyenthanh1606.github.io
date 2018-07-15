@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'UTM-R';
+    src: 
+        url('../fonts/UTM-Avo-Regular.ttf') format('truetype'),
+        url('../fonts/UTM-Avo-Regular.eot') format('embedded-opentype'),
+        url('../fonts/UTM-Avo-Regular.otf') format('opentype'),
+        url('../fonts/UTM-Avo-Regular.woff') format('woff');        
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTM-B';
+    src:
+        url('../fonts/UTM-Avo-Bold.ttf') format('truetpye'),
+        url('../fonts/UTM-Avo-Bold.eot') format('embedded-opentype'),
+        url('../fonts/UTM-Avo-Bold.woff') format('woff'),
+        url('../fonts/UTM-Avo-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GOUDY-B';
+    src: url('../fonts/goudy_old_style_bold-webfont.woff2') format('woff2'),
+         url('../fonts/goudy_old_style_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad-R';
+    src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+         url('../fonts/MyriadPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'UTM-Flame';
+    src: url('../fonts/UTM-Flamenco.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

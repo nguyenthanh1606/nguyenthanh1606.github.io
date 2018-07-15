@@ -1,0 +1,485 @@
+@import 'fonts';
+// ----------------------------------
+@import 'var';
+// ----------------------------------
+@import 'config';
+//-----------------------------------
+@import 'extent';
+// ----------------------------------
+.img-home, .img-about, .img-content, .img-category,
+.img-page, .img-product-header, .img-content-detail{
+    @extend %img-header;
+}
+
+.img-home{
+    background-image: url('../images/banner-01.jpg');
+}
+.img-about{
+    background-image: url('../images/banner-02.jpg');
+}
+.img-content{
+    background-image: url('../images/banner-03.jpg');
+}
+.img-category{
+    background-image: url('../images/banner-04.jpg');
+}
+.img-content-detail{
+    background-image: url('../images/banner-05.jpg');
+}
+.img-product-header{
+    background-image: url('../images/banner-06.jpg');
+}
+
+.full-display{height: 100vh;}
+.router-2{border-radius: 2%}
+.header{
+    height: 130px;
+    .logo{
+        position: relative;
+        img{
+            position: absolute;
+            bottom: 0;
+            left: 1rem;
+        }
+    }
+    .menu{
+        position: relative;
+        @extend %menu-h;
+        ul{
+            position: absolute;
+            right: 20px;
+            bottom: 0;
+            .menu-item{
+                margin-left: .5rem;
+                font-size: 0.9rem;
+                padding: 5px 15px;
+                color: #fff;
+                background-color: transparent;
+                border-radius: 10rem;
+                transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+                &:hover{
+                    box-shadow: 0 0 1px 1px $bgTitle;
+                    background-color: $bgTitle;
+                }
+            }
+        }
+    }
+}
+
+.contactUs{
+    *{
+        margin-bottom: 1.5rem;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height:80vh;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+    padding-left: 40px;
+    h3{
+        font-size: 2rem;
+        padding-right: 10%;
+    }
+    .btn-design{
+        @extend %btn-design;
+        padding: 8px 60px 8px 30px;
+        width: 190px;
+    }
+}
+
+.title{
+    flex: 0 0 35%;
+    max-width: 35%;
+    max-height: 400px;
+    .title-head{
+        position: relative;
+        h3{
+            font-family: $fUTM-B;
+            font-size: 22px;
+            position: absolute;
+            right: 15px;
+            bottom: 10px;
+            text-align: right;
+            color: #fff;
+            line-height: 1.3;
+        }
+    }
+}
+.detail{
+    position: relative;
+    padding-top: 80px;
+    padding-right: 5%;
+    bottom: 0;
+    flex: 0 0 55%;
+    max-width: 55%;
+    border-right: 1px solid #ecebeb;
+    h5{       
+        padding-right: 10%;
+        &::after{
+            content: url('../images/dot.png');
+            position: absolute;
+            top: 80px;
+            right: 0;
+            transform: translateX(50%)
+        }
+    }
+    p{
+        padding-left: 10%;
+        text-align: justify;
+    }
+    a{
+        @extend %btn-design;
+        // padding: 10px 50px 10px 25px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateY(50%)
+    }
+}
+
+#about{
+    margin-top: 2rem !important;
+    padding-top: 3rem !important;
+    img{padding-right: 5px}
+    img:last-child{
+        padding-top: 5px;
+    }
+}
+
+#product, #content, #contact{
+    margin-top: 5rem !important;
+    background-image: url('../images/line.png');
+    background-repeat: repeat-x;
+    .title{
+        flex: 0 0 15%;
+        max-width: 15%;
+    }
+    .list{
+        display: flex;
+        flex: 0 0 85%;
+        max-width: 85%;
+        h5.head-title{       
+            @extend %h5-head-title;
+        }
+        .list-item{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-radius: 1rem;
+            box-shadow: 0 0 20px 1px rgba(157, 153, 153, .5);
+            background-color: #fff;
+            margin-left: 4%;
+            &:last-child{
+                margin-right: 4%;
+            }
+            >*{
+                margin-bottom: 1rem;
+            }
+            .content-name{
+                margin-bottom: .5rem !important;
+            }
+        }
+    }
+}
+#product{
+    .list-item{        
+        padding: 20px 30px;
+        flex: 0 0 44%;
+        max-width: 44%;        
+        .img-product{
+            height: 75px;
+        }
+        .img-app{
+            height: 36px;
+        }
+        p.product-detail{
+            font-size: .9rem;
+            text-align: justfify;
+        }
+        p.product-name{
+            margin-bottom: 0 !important;
+            color: #3d3a3a;
+        }
+        p.product-subname{
+            color: $cText2;
+            font-weight: bold;
+        }
+        h5{
+            margin-top: 1.5rem;
+            font-size: 1.15rem;
+        }
+        &:last-child{
+            margin-right: 4%;
+        }
+        a{
+            @extend %btn-design;
+            position: absolute;
+            right: 50%;
+            bottom: 0;
+            transform: translate(50%,50%);
+            margin-bottom: 0 !important;
+        }
+    }
+}
+#services{
+    margin-top: 3rem !important;
+    padding-top: 3rem !important;
+    img{padding-right: 5px}
+    img:last-child{
+        padding-top: 5px;
+    }
+}
+
+#content{
+    .list-item{
+        padding-bottom: 20px;        
+        flex: 0 0 28%;
+        max-width: 28%;        
+        .content-img img{
+            width: 100%;
+            height: 185px;
+        }  
+        .content-name{
+            padding: 0 20px; 
+        }
+        .link-content{
+            padding: 0;
+        }
+        .content-name>.col-md-9{
+            padding: 0;
+        }      
+        h5{
+            color: #000;
+            height: 95px;
+            overflow-y: hidden;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin-bottom: 0 !important;
+        }
+        .content-detail{
+            text-align: justify;
+            padding: 0 20px;
+            font-size: .9rem;
+        }
+        .btn-child{
+            @extend %btn-child;
+        }
+    }
+}
+
+#contact{
+    margin-bottom: 5rem !important;
+    .item-1{
+        flex: 0 0 30%;
+        max-width: 30%;
+        padding: 20px 30px;
+        h5{
+            color: $cGray4;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+        ul{
+            font-size: 0;
+            list-style-type: none;
+            li{
+                font-size: .9rem;
+                display: block;
+                padding-left: 8%;
+                color: $cGray;
+                span{
+                    font-family: 'FontAwesome';
+                    margin-right: 20px;
+                    color: $cText2;
+                }
+                a{
+                    color: $cGray;
+                }
+            }
+        }
+    }
+    .item-2{
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 10px 30px;
+        label{
+            font-size: .9rem;
+            color: #030303;
+        }
+        input{
+            margin-bottom: 8px;
+        }
+        textarea{
+            margin-bottom: 2.5rem;
+        }
+        .form-control:focus{
+            border-color: transparent;
+            box-shadow: 0 0 10px 1px rgba(157, 153, 153, .5);
+        }
+    }
+    .btn-design{
+        @extend %btn-design;
+        cursor: pointer;
+        border: 0 solid transparent;
+        position: absolute;
+        right: 50%;
+        bottom: 0;
+        transform: translate(50%,50%);
+        margin-bottom: 0 !important;
+    }
+}
+
+footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    >div:not(:last-child){
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .logo,.follow{margin: auto}
+    .company-name p{
+        font-size: 0.75rem;
+        margin-bottom: 0;
+    }
+    .follow{
+        span{
+            font-size: .75rem;
+            font-weight: bold;
+        }
+        .follow-right{
+            float: right;
+            a{
+                span{
+                    font-family: 'FontAwesome';
+                    width: 30px;
+                    height: 30px;
+                    font-size: 1rem;
+                    line-height: 1.8rem;
+                    display: inline-block;
+                    border-radius: 50%;
+                    border: 1px solid $cGray;
+                    color: $cGray2;
+                    text-align: center;
+                }
+                &:not(:last-child){
+                    margin-right: 5px;
+                }
+            }
+        }
+    } 
+    .designBy{
+        p{
+            margin-bottom: 0;
+            font-size: .8rem;
+        }
+    }
+}
+.about-detail{
+    position: relative;
+    bottom: 0;
+    flex: 0 0 65%;
+    max-width: 65%;
+    border-left: 1px solid #ecebeb;
+    h5.head-title{       
+        @extend %h5-head-title;
+    }
+    p.sub-detail{
+        font-family: $fUTM-B;
+        color: #000;
+    }
+    p{
+        padding-left: 5%;
+        text-align: justify;
+    }
+}
+
+.list-content, .list-product{
+    margin-left: 3%;
+    flex: 0 0 80% !important;
+    max-width: 80% !important;
+    border-left: 1px solid #ecebeb;
+    margin-bottom: 3rem;
+    h5.head-title{
+        margin-bottom: 4.5rem;
+    }
+    .list-item{
+        margin-bottom: 4%;
+    }
+}
+.list-product .list-item{
+    margin-bottom: 6% !important;
+}
+
+.page{
+    margin-left: 3%;
+    flex: 0 0 80% !important;
+    max-width: 80% !important;
+    border-left: 1px solid #ecebeb;
+    margin-bottom: 1rem;
+    h5.head-title{
+        @extend %h5-head-title;
+        padding-left: 10px;
+        margin-bottom: 1.5rem;
+    }
+    .page-left{
+        padding: 0 20px;
+        .head{
+            min-height: 152px;
+        }
+        .page-name{
+            font-family: $fUTM-F;
+            font-size: 2.3rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+        }
+        .page-author{
+            font-family: $fUTM-B;
+            font-size: .9rem;
+            padding-right: .8rem;
+            border-right: 1px solid #3d3a3a;
+            color: #727577;
+        }
+        .page-createDate{
+            font-size: .9rem;
+            padding-left: .8rem;
+            color: #727577;
+        }
+        .page-content{
+            border-right: 1px solid #ecebeb;
+            position: relative;
+            >*{
+                margin-bottom: 1.5rem !important;
+            }
+            p,h4{
+                text-align: justify;
+                padding-right: 20px;
+            }
+            h4.page-subName{                
+                color: #21628e;
+                font-family: $fUTM-B;
+                font-size: 1rem;
+                margin-top: 1.5rem;                
+                &::after{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    line-height: 0;
+                    transform: translate(50%,-50%);
+                    content: url('../images/dot.png');
+                }
+            }
+            p.page-readmore{
+                margin-top: 2.5rem;
+                margin-bottom: 0 !important;
+            }
+            img{
+                display: flex;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+        }
+    }
+    .page-img{
+        padding-top: 4rem;
+    }
+}

@@ -732,4 +732,14 @@ ul.slider-library li img {
     .hover:hover {
         opacity: 0.7;
         transition: all linear 0.2s;
-    }
+	}
+
+.product-item .detail-product,.product-item ul li{
+	text-align: justify;
+}
+.product-item{margin-bottom: 1rem;}
+/* .product-item{border-right: 1px solid #ccc;}
+.product-item:nth-child(3n){border-right: 0;}
+.product-item .name-product{
+	border-top: 1px solid #ccc;
+} */
