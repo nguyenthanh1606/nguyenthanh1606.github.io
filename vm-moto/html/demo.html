@@ -8,60 +8,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <style>
-        *{margin: 0;padding: 0}
-        .menu{display: block; list-style-type: none;font-size: 0; width: 80%; margin: 20px auto 0;position: relative;border: 1px solid #ccc;}
-        .menu li{font-size: 1rem; display: inline-block; padding: 10px 20px;transition: .2s}
-        .menu li a{color: #000;}
-        .menu li a:hover,.menu li a:focus{text-decoration: none}
-        .menu li:hover{background-color: gray;}
-        .menu li:hover a{color: #fff;}
-        .sub-menu{position: absolute; width: 100%;background-color: gray;opacity: 0;transition: .2s;left: 0; top:43px}
-        .menu li:hover .sub-menu{opacity: 1}
-    </style>
-    <script>
-        var count = document.getElementsByTagName('div');
-        function deleteElement(){
-            console.log(count.length);
-        }
-    </script>
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/style-demo.css">
   </head>
   <body>
-      <ul class="menu">
-            <li><a href="#">Home</a>
-                <ul class="sub-menu">
-                    <li><a href="#">Home 1</a></li>
-                    <li><a href="#">Home 2</a></li>
-                    <li><a href="#">Home 3</a></li>
-                    <li><a href="#">Home 4</a></li>
-                </ul>
-            </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Video</a></li>
-            <li><a href="#">Contact</a></li>
-      </ul>
-
-    <div>Lẻ</div>
-    <div>Chẵn</div>
-    <div>Lẻ</div>
-    <div>Chẵn</div>
-    <div>Lẻ</div>
-    <div>Chẵn</div>
-    <div>Lẻ</div>
-    <div>Chẵn</div>
-    <div>Lẻ</div>
-    <div>Chẵn</div>
-    <div>Lẻ</div>
-    <div>Chẵn</div>
-    <div>Lẻ</div>
-    <div>Chẵn</div>
-    <div>Lẻ</div>
-    <div>Chẵn</div>
-    <button onclick="deleteElement">Remove</button>
-    
-    
+    nav.menu#menu>a*5.menu-parent
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

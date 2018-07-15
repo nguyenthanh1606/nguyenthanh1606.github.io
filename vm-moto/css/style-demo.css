@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'Mini-Ico';
+  src: url("../fonts/md-icon.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Mini-SRegular';
+  src: url("../fonts/mini_sans_serif-regular-web.woff") format("woff");
+  font-style: normal; }
+@font-face {
+  font-family: 'Mini-Bold';
+  src: url("../fonts/mini_serif-bold-web.woff") format("woff");
+  font-style: normal; }
+@font-face {
+  font-family: 'Mini-Regular';
+  src: url("../fonts/mini_serif-regular-web.woff") format("woff");
+  font-style: normal; }
+.ico:before, .ico:after {
+  font-style: normal;
+  font-family: 'Mini-Ico'; }
+
+.ico-share:before {
+  content: '\e86c';
+  text-indent: 0; }
+
+.ico-search:before {
+  content: '\e869';
+  text-indent: 0; }
+
+.ico-my-mini:before {
+  content: '\e855';
+  text-indent: 0; }
+
+.ico-next:after {
+  content: '\e808';
+  text-indent: 0; }
+
+.ico-pre::after {
+  content: '\e806';
+  text-indent: 0; }
+
+.btn-black {
+  display: inline-block;
+  line-height: 11px;
+  padding: 10px;
+  vertical-align: middle;
+  font-size: .75rem;
+  color: #fff;
+  font-family: "Mini-SRegular";
+  background: #000;
+  transition: .5s;
+  border: 2px solid #000; }
+  .btn-black:hover {
+    color: #000;
+    background-color: #fff; }
+
+.slider-container {
+  position: relative;
+  margin: auto;
+  width: 80%; }
+  .slider-container .item {
+    display: block; }
+    .slider-container .item img {
+      width: 100%;
+      object-fit: cover;
+      height: 400px;
+      object-position: center; }
+  .slider-container .pre, .slider-container .next {
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+    left: 0; }
+  .slider-container .next {
+    left: auto;
+    right: 0; }
+  .slider-container i {
+    font-size: 24px;
+    line-height: 24px; }
+
+.view {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1280px; }
+  .view ul {
+    padding: 0;
+    font-size: 0;
+    display: block; }
+    .view ul .item {
+      font-size: 1rem;
+      height: 480px;
+      display: inline-block; }
+
+/*# sourceMappingURL=style-demo.css.map */

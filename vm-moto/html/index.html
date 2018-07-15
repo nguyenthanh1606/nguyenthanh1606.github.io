@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
@@ -65,12 +66,10 @@
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
+          <i class="pre ico ico-pre btn-black"></i>
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
+          <i class="next ico ico-next btn-black"></i>
         </a>
       </div>
     </div>
@@ -79,7 +78,7 @@
       <div id="list-product">      
         <div class="row list-product">
           <ul>
-            <li class="item item1">
+            <li class="item item1 col-md-2 col-sm-4">
               <div class="product-item">
                 <div class="head-pro">
                   <ul>
@@ -93,7 +92,7 @@
                 </div>
               </div>
             </li>
-            <li class="item item2">
+            <li class="item item2 col-md-2 col-sm-4">
               <div class="product-item">
                 <div class="head-pro">
                   <ul>
@@ -107,7 +106,7 @@
                 </div>
               </div>
             </li>
-            <li class="item item3">
+            <li class="item item3 col-md-2 col-sm-4">
               <div class="product-item">
                 <div class="head-pro">
                   <ul>
@@ -121,7 +120,7 @@
                 </div>
               </div>
             </li>
-            <li class="item item4">
+            <li class="item item4 col-md-2 col-sm-4">
               <div class="product-item">
                 <div class="head-pro">
                   <ul>
@@ -135,7 +134,7 @@
                 </div>
               </div>
             </li>
-            <li class="item item5">
+            <li class="item item5 col-md-2 col-sm-4">
               <div class="product-item">
                 <div class="head-pro">
                   <ul>
@@ -154,7 +153,7 @@
       </div>
       <div class="clearfix"></div>
       <div id="content" class="wrapper">
-        <div class="head-content text-right">
+        <div class="head-content text-right p-sticky">
           <a class="btn-black" href="#">LÁI THỬ</a>
           <a class="btn-black" href="#">THƯ GIỚI THIỆU</a>
         </div>
@@ -189,20 +188,99 @@
         <div class="head-moto">
           <h4>LỊCH SỬ & MÔ TÔ THỂ THAO</h4>
         </div>
-        <div class="item-moto row">
-          <div class="col-md-6">
-            <img class="img-fluid" src="../images/moto-01.jpg" alt="Moto">
-          </div>
-          <div class="col-md-6">
-            <h4>JOHN COOPER WORKS</h4>
-            <h3>MỘT HUYỀN THOẠI RA ĐỜI</h3>
-            <div class="detail-moto">
-              <p>Khoảng 50 năm trước, quá trình lịch sử đã được thay đổi mãi mãi. Mini đột nhiên bùng nổ trên sân khấu cuộc đua xe thể thao đã thiết lập nên cuộc cạnh tranh lớn hơn và gây sốc cho những người hâm mộ. Người tiên phong đua xe huyền thoại, John Cooper đã chạm tay vào chiếc xe nhỏ biểu tượng và biến nó thành một nhà vô địch. Đó là sự khởi đầu của một sự hợp tác rất thành công giữa Mini và John Cooper. Một người đã để lại di sản đến ngày nay là chiếc John Cooper Works.</p>
-              <p>Khám phá những di sản của chúng tôi.</p>
+        
+        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleControls2" data-slide-to="0" class="active">
+              <span class="dot"></span>
+            </li>
+            <li data-target="#carouselExampleControls2" data-slide-to="1">
+                <span class="dot"></span>
+            </li>
+          </ol>
+          <div class="carousel-inner" >
+            <div class="carousel-item active">
+              <div class="item-moto row">
+                <div class="col-md-6">
+                  <img class="img-fluid" src="../images/moto-01.jpg" alt="Moto">
+                </div>
+                <div class="col-md-6">
+                  <h4>JOHN COOPER WORKS</h4>
+                  <h3>MỘT HUYỀN THOẠI RA ĐỜI</h3>
+                  <div class="detail-moto">
+                    <p>Khoảng 50 năm trước, quá trình lịch sử đã được thay đổi mãi mãi. Mini đột nhiên bùng nổ trên sân khấu cuộc đua xe thể thao đã thiết lập nên cuộc cạnh tranh lớn hơn và gây sốc cho những người hâm mộ. Người tiên phong đua xe huyền thoại, John Cooper đã chạm tay vào chiếc xe nhỏ biểu tượng và biến nó thành một nhà vô địch. Đó là sự khởi đầu của một sự hợp tác rất thành công giữa Mini và John Cooper. Một người đã để lại di sản đến ngày nay là chiếc John Cooper Works.</p>
+                    <p>Khám phá những di sản của chúng tôi.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="item-moto row">
+                <div class="col-md-6">
+                  <img class="img-fluid" src="../images/moto-01.jpg" alt="Moto">
+                </div>
+                <div class="col-md-6">
+                  <h4>KHÔI PHỤC MỘT TRONG NHỮNG CHIẾC MINI CỔ ĐIỂN LÂU ĐỜI NHẤT</h4>
+                  <h3> KHÁM PHÁ LẠI MỘT HUYỀN THOẠI</h3>
+                  <div class="detail-moto">
+                    <p>Trong một phát hiện bất ngờ, một trong những chiếc MINI đầu tiên đã từng được sản xuất gần đây đã được phát hiện trong một kho ở Hà Lan. Nhờ dự án MINI ReBorn (Tái sản sinh MINI), kho tàng lịch sử này được yêu mến khôi phục trước vinh quang dĩ vãng của nó với sự giúp đỡ của một đội ngũ chuyên gia và cộng đồng MINI. Bạn có thể đọc tất cả về câu chuyện hồi sinh tuyệt vời của nó ở đây.</p>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+            <i class="pre ico ico-pre btn-black"></i>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+            <i class="next ico ico-next btn-black"></i>
+          </a>
+        </div>          
+
+      </div>
+      <div id="teaser" class="row">
+        <div class="col-md-6 teaser-img">
+          <img src="../images/moto-02.jpg" class="img-fluid d-block m-auto" alt="">
         </div>
-      </div>    
+        <div class="col-md-6 text-teaser">
+          <h4 class="toUpper">john cooper works</h4>
+          <div class="divider"></div>
+          <h2 class="toUpper">Mini thrill maximised.</h2>
+          <ul class="list-style-dot">
+            <li>Bánh lái Da  John cooper works</li>        
+            <li>Bộ dụng cụ khí động lực học John Cooper works</li>        
+            <li>Cánh gió sau xe</li>        
+            <li>Bánh xe John Cooper Works</li>        
+            <li>Các ngưỡng cửa lối vào John Cooper Works</li>        
+            <li>Tay nắm cần gạt sang số John Cooper Works</li>        
+            <li>Bàn đạp và chỗ để chân bằng thép không gỉ</li>
+          </ul>
+          <a class="btn-red toUpper" href="">Thiết lập cấu hình</a>
+        </div>
+      </div>
+      <div id="jcw" class="bg-black">
+        <div class="head-jcw row toUpper">
+          <h4>về mini</h4>
+        </div>
+        <section>
+          <div id="teaser" class="row">
+            <div class="col-md-6 teaser-img">
+              <img src="../images/moto-03.jpg" class="img-fluid d-block m-auto" alt="">
+            </div>
+            <div class="col-md-6 text-teaser">
+              <h4 class="toUpper">john cooper works</h4>
+              <h2 class="toUpper">Mini thrill maximised.</h2>
+              <span>Đây là điều xảy ra khi chúng tôi áp dụng trí tưởng tượng không hạn chế, tinh thần tiên phong và động cơ đua để tạo ra chiếc xe thể thao hiệu năng cao cho tương lai. Đó là John Cooper Works.</span><br>
+              <a class="btn-red toUpper" href="">hãy trở thành những người tiên phong</a>
+            </div>
+          </div>
+        </section>
+        <div class="bot-jcw row">
+          <div class="col-md-6 toUpper"><a href="#"> lái thử</a></div>
+          <div class="col-md-6 toUpper"><a href="#"> tờ giới thiệu</a></div>
+        </div>
+      </div>
     </div>
   </main>
     <!-- Optional JavaScript -->
@@ -210,5 +288,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
