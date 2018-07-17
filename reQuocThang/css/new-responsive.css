@@ -10,7 +10,11 @@
 
 @media only screen and (max-width: 1024px) {
     .m1024{
-        display: flex;
+        display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Chrome */
+        display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
         padding-top: 9px;
     }
     .hexa{
@@ -34,20 +38,54 @@
     .head-main ul li{margin: 0 1rem;}
     #about .detail-about{flex: 0 0 50%;max-width: 50%;}
     #about .btn{margin-top: 0}
+    .list-content .detail-content{
+        padding: 5%;
+    }
+    .content{padding-left: 10px; padding-right: 10px;}
+    .main-body .detail{
+        margin-bottom: 1rem;
+    }
+    .detail-content h3 a{font-size: 24px;}
 }
-    
+@media only screen and (max-width: 980px){
+    .hexa{
+        width: 180px;
+        height: 221px;
+    }
+    #content .head ul li{
+        padding: 0 2%;
+    }
+    #content .head ul li a{
+        padding-left: 7px !important;
+        padding-right: 7px !important;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #banner-top .head-main ul li{
+        width: 45%;
+    }
+}
 @media only screen and (max-width: 768px) {
-    .product-item{flex: 0 0 100%;
-    max-width: 100%;    border-bottom: 1px solid #ccc;
-    margin-bottom: 2rem;
-    padding-bottom: 1rem;}
+    .product-item{
+        flex: 0 0 100%;
+        max-width: 100%;    
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+    .hexa{
+        width: 150px;
+        height: 200px;
+    }
     .list-content button{
         left: 0 !important;
     }
     footer .contact{
         padding-top: 5rem;
     } 
-    #content .head ul li{padding: 0;}
+    #content .head ul li{
+        padding: 0;
+    }
     .main-body .wrap-page .note-1 p{
         font-size: 20px;
     }
@@ -55,20 +93,21 @@
         font-size: 24px !important;
     }
     .list-content .content{
-        flex: 0 0 50%;
-        max-width: 50%;
-        padding: 0 10px !important;
-    }.hexa{
-        width: 162px;
-        height: 185px;
-    }.social>* {
-    margin-left: 0.5rem;
-}
-    .info,.contact-footer{
         flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 1rem;
+        max-width: 100%;
+        padding: 0 10px !important;
     }
+    .social>* {
+    margin-left: 0.5rem;
+    }
+    .info,.contact-footer
+    {
+        flex: 0 0 100%;
+        flex-direction: 
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    .menu ul li {padding-right: 17px;}  
     .menu ul li a{
         font-size: 20px;
     }
@@ -89,8 +128,40 @@
         display: none;
     }
     .mobile{
-        display: flex;
+        display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;    /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Chrome */
+        display: flex;         /* NEW, Spec - Opera 12.1, Firefox 20+ */
     }
+    .logo{order: 2;}
+    .lang{order: 1; padding-top: 10px;}
+    header>div:last-child{
+        order: 3;
+    }
+    .main-cat>div.col-md-3{flex: 0 0 50%;
+        max-width: 50%}
+    .hexa{
+        width: 270px;
+        height: 315px;
+    }
+    .main-cat img{
+        transform: translate(0,0) scale(1.1) !important;
+        -webkit-transform: translate(0,0) scale(1.1) !important;
+    }
+    .main-cat img:hover{
+        transform: translate(0,0) scale(1) !important;
+        -webkit-transform: translate(0,0) scale(1) !importants;
+    }
+    #about .detail-about{
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .copyright>.wrap-page>.col-md-3{width: 50%;};
+}
+@media only screen and (max-width: 600px){
+    .main-cat>div.col-md-3{flex: 0 0 100%;
+        max-width: 100%}
 }
 @media only screen and (max-width: 425px) {
     .sub-new .col-md-2{flex: 0 0 50%; max-width: 50%;}
@@ -114,6 +185,7 @@
     .name-title h3 {
         font-size: 20px !important;
     }
+    
     .list-content .content{
         flex: 0 0 100%;
         max-width: 100%;
@@ -123,7 +195,8 @@
     .hexa{
         width: 210px;
         height: 243px;
-    }.pd-1e5{padding-top: 0;border-bottom: 1px solid #fff !important}
+    }
+    .pd-1e5{padding-top: 0;border-bottom: 1px solid #fff !important}
     #content h3{margin-bottom: 1rem}
     .contact-form .col{
         flex-basis: auto;
@@ -131,7 +204,7 @@
     }
     .contact-form .row{margin-bottom: 0;}
     header.mobile .logo{padding: 10px; margin: auto 0; flex: 0 0 66.66667%;max-width: 66.66667%}
-    header.mobile .lang{padding: 10px; margin: auto 0; flex: 0 0 33.33333%;max-width: 33.33333%;flex-direction: row;}
+    header.mobile .lang{padding: 10px; margin: auto 0; flex-direction: row; order: 1}
     #content .head .col-md-8{padding: 0}
     #content .head ul li a{padding-left: 0 !important}
     .main-slide{padding-top: .25rem}
@@ -139,6 +212,7 @@
     #about .btn{margin: auto; display: block}
     .social{text-align: left !important; line-height: 2; margin-top: 0.25rem}
     .main-slide .carousel-indicators{
+        width: auto;
         justify-content: center;
 	margin-right:0;
 	margin-left:0;
@@ -147,6 +221,15 @@
         padding:2.5rem 15px !important;}
     .name-banner p{padding-left: 0}
     .contact-form{padding: 5rem 1rem 3rem}
+    #about .detail-about{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .copyright>.wrap-page>.col-md-3{width: 100%;};
+
+    #content .head ul li{padding: 10px;}
+    #content .head ul li a{padding-left: 5px;padding-right: 5px;}
+
 }
 @media only screen and (max-width: 375px){
     #content .head ul li{display: block;line-height: 2}
