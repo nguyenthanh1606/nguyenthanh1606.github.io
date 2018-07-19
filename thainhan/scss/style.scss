@@ -6,28 +6,15 @@
 //-----------------------------------
 @import 'extent';
 // ----------------------------------
-.img-home, .img-about, .img-content, .img-category,
-.img-page, .img-product-header, .img-content-detail{
+.img{
     @extend %img-header;
-}
-
-.img-home{
-    background-image: url('../images/banner-01.jpg');
-}
-.img-about{
-    background-image: url('../images/banner-02.jpg');
-}
-.img-content{
-    background-image: url('../images/banner-03.jpg');
-}
-.img-category{
-    background-image: url('../images/banner-04.jpg');
-}
-.img-content-detail{
-    background-image: url('../images/banner-05.jpg');
-}
-.img-product-header{
-    background-image: url('../images/banner-06.jpg');
+    &-home{background-image: url('../images/banner-01.jpg');}
+    &-about{background-image: url('../images/banner-02.jpg');}
+    &-content{background-image: url('../images/banner-03.jpg');}
+    &-category{background-image: url('../images/banner-04.jpg');}
+    &-content-detail{background-image: url('../images/banner-05.jpg');}
+    &-product-header{background-image: url('../images/banner-06.jpg');}
+    &-contact{background-image: url('../images/banner-07.jpg');}
 }
 
 .full-display{height: 100vh;}
@@ -295,6 +282,10 @@
                 }
                 a{
                     color: $cGray;
+                    transition: all .3s ease;
+                    &:hover{
+                        color: #007acd;
+                    }
                 }
             }
         }
@@ -360,9 +351,15 @@ footer{
                     border: 1px solid $cGray;
                     color: $cGray2;
                     text-align: center;
+                    transition: all .3s ease-in-out;
                 }
                 &:not(:last-child){
                     margin-right: 5px;
+                }
+                &:hover span{
+                    background-color: #007acd;
+                    color: #fff !important;
+                    box-shadow: 0 0 5px 1px #007acd;
                 }
             }
         }
@@ -481,5 +478,28 @@ footer{
     }
     .page-img{
         padding-top: 4rem;
+    }
+}
+
+.page-contact{
+    margin-top: 3rem;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    .line-dot{
+        width: 1px;
+        margin: 0 1.5rem;
+        background-color: #ecebeb;
+        position: relative;
+        &::before{
+            content: url(../images/dot.png);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(-50%,-50%);
+            line-height: 0;
+        }
+    }
+    .item-1{
+        margin-left: 0 !important;
     }
 }
