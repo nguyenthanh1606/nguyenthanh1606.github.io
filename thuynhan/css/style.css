@@ -31,7 +31,7 @@ button:focus { outline: 0; }
 .header .menu ul li { display: inline-block; vertical-align: middle; }
 .header .menu ul li a { color: #fff; }
 
-.contactUs .btn-design, .detail a, #product .list-item a, #contact .btn-design { padding: 8px 60px 8px 30px; border-radius: 10rem; box-shadow: 0 0 20px 1px rgba(157, 153, 153, 0.5); position: relative; vertical-align: baseline; color: #181818; background-color: #fff; transition: box-shadow .5s ease-in-out, color .5s linear; }
+.contactUs .btn-design, .detail a, #product .list-item a, #contact .btn-design { padding: 8px 60px 8px 30px; border-radius: 10rem; min-width: 156px; box-shadow: 0 0 20px 1px rgba(157, 153, 153, 0.5); position: relative; vertical-align: baseline; color: #181818; background-color: #fff; transition: box-shadow .5s ease-in-out, color .5s linear; }
 .contactUs .btn-design::after, .detail a::after, #product .list-item a::after, #contact .btn-design::after { content: url("../images/button.png"); position: absolute; top: 5px; right: 5px; padding-left: 30px; }
 .contactUs .btn-design:hover, .detail a:hover, #product .list-item a:hover, #contact .btn-design:hover { box-shadow: 0 0 10px 1px #007acd; color: #007acd; }
 
@@ -62,10 +62,10 @@ button:focus { outline: 0; }
 .header .menu ul .menu-item { margin-left: .5rem; font-size: 0.9rem; padding: 5px 15px; color: #fff; background-color: transparent; border-radius: 10rem; transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out; }
 .header .menu ul .menu-item:hover { box-shadow: 0 0 1px 1px #007acd; background-color: #007acd; }
 
-.contactUs { display: flex; flex-direction: column; justify-content: flex-end; min-height: 80vh; flex: 0 0 33.333%; max-width: 33.333%; padding-left: 40px; }
+.contactUs { display: flex; flex-direction: column; justify-content: flex-end; min-height: 500px; flex: 0 0 33.333%; max-width: 33.333%; padding-left: 40px; }
 .contactUs * { margin-bottom: 1.5rem; }
 .contactUs h3 { font-size: 2rem; padding-right: 10%; }
-.contactUs .btn-design { padding: 8px 60px 8px 30px; width: 190px; }
+.contactUs .btn-design { padding: 8px 60px 8px 30px; width: 180px; }
 
 .title { flex: 0 0 35%; max-width: 35%; max-height: 400px; margin-bottom: 1.5rem; }
 .title .title-head { position: relative; width: 178px; height: 249px; border-radius: 10px; background-color: #007acd; }
