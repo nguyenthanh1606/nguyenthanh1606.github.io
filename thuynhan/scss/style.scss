@@ -19,6 +19,8 @@
 
 .full-display{height: 100vh;}
 .logo-mb{display: none;}
+.img-1{    width: 175px;    height: 245px;}
+.img-2{    width: 355px;}
 .header{
     height: 130px;
     .logo{
@@ -82,8 +84,8 @@
     margin-bottom: 1.5rem;
     .title-head{
         position: relative;
-        width: 178px;
-        height: 249px;
+        width: 175px;
+        height: 245px;
         border-radius: 10px;
         background-color: $bgTitle;
         .h3{
@@ -334,7 +336,7 @@ footer{
     >div:not(:last-child){
         border-right: 1px solid rgba(0, 0, 0, 0.1);
     }
-    .logo,.follow{margin: auto}
+    .logo,.follow{margin:0 auto}
     .company-name p{
         font-size: 0.75rem;
         margin-bottom: 0;

@@ -3,6 +3,24 @@
     background-size: auto 173px !important;
   }
 }
+@media screen and (max-width: 1024px) {
+  .full-display {
+    height: auto;
+  }
+
+  body {
+    padding: 0 15px;
+  }
+
+  .title .title-head, .title img.img-1 {
+    width: 156px;
+    height: 226px;
+  }
+
+  .title img.img-2 {
+    width: 318px;
+  }
+}
 @media screen and (max-width: 960px) {
   .header .menu {
     padding-right: 5px;
@@ -19,38 +37,176 @@
     flex: 0 0 50%;
     max-width: 50%;
   }
-}
-@media screen and (max-width: 825px) {
+
+  .header .menu ul .menu-item {
+    margin: 0;
+  }
+
   .img-home {
     background-size: 85vw !important;
   }
 
-  .logo {
+  .btn-design {
+    width: 180px;
+  }
+  .btn-design::after {
+    top: 4px;
+    right: 4px;
+  }
+
+  #about img, #services img {
+    display: none;
+  }
+
+  #product .title, #content .title, #contact .title {
+    flex-basis: auto;
+    max-width: none;
+  }
+  #product .list, #content .list, #contact .list {
     flex: 0 0 100%;
     max-width: 100%;
   }
 
-  .menu {
-    flex: 0 0 100%;
-    max-width: 100%;
+  #content .title {
+    order: 1;
+  }
+  #content .list {
+    order: 2;
+  }
+  #content .list-item h5 {
+    height: 105px;
   }
 
-  .contactUs {
-    flex: 0 0 50%;
-    max-width: 50%;
+  footer .logo, footer .designBy {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+  footer .company-name, footer .follow {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+}
+@media screen and (max-width: 825px) {
+  html {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
   .img-home {
-    background-size: 100vw !important;
+    background-size: 71vw !important;
+  }
+
+  .header {
+    height: 115px;
   }
 
   .contactUs {
-    flex: 0 0 100%;
-    max-width: 100%;
+    min-height: 300px;
   }
   .contactUs h3 {
     padding-right: 0;
+  }
+
+  .title img {
+    display: none;
+  }
+
+  .btn-design {
+    width: 180px;
+  }
+
+  #about {
+    padding-left: 27px;
+  }
+
+  footer {
+    padding: 0 27px;
+    padding-top: 2rem;
+  }
+  footer > div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  footer > div:not(:last-child) {
+    border-right: 0px;
+  }
+  footer > div:first-child {
+    border-right: 1px solid #e8e8e8;
+  }
+  footer .logo {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin: 0;
+    padding-right: 10px !important;
+  }
+  footer .company-name {
+    padding-left: 10px !important;
+    text-align: center;
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+  footer .follow {
+    border-bottom: 1px solid #e8e8e8;
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  footer .follow span {
+    font-size: 14px !important;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 1.4rem;
+  }
+  footer .follow .follow-right {
+    text-align: center !important;
+    float: none;
+  }
+  footer .designBy {
+    margin: auto;
+    width: 100%;
+    text-align: center !important;
+  }
+
+  #product, #content, #contact {
+    padding: 0 27px;
+  }
+  #product .title, #content .title, #contact .title {
+    display: flex;
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+  #product .list, #content .list, #contact .list {
+    display: flex;
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  #product .list-item, #content .list-item, #contact .list-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+  #product .list .list-item, #content .list .list-item, #contact .list .list-item {
+    margin-left: 0;
+  }
+
+  #product .title, #contact .title {
+    margin-right: 10px;
+  }
+
+  #services .title, #content .title {
+    margin-left: 10px;
+  }
+
+  #services {
+    padding: 0 27px;
+  }
+  #services .title {
+    margin-left: 0 !important;
+    justify-content: flex-end;
   }
 }
 @media screen and (max-width: 767px) {
@@ -65,6 +221,11 @@
   .detail h5::after {
     top: 0 !important;
     line-height: 0;
+  }
+
+  .contactUs .btn-design::after, .detail a::after, #product .list-item a::after, #contact .btn-design::after {
+    top: 3px;
+    right: 3px;
   }
 
   .img {
@@ -97,10 +258,6 @@
     padding: 0 27px;
   }
 
-  .title img {
-    display: none;
-  }
-
   .detail {
     padding: 0 1rem;
     flex: 0 0 65%;
@@ -110,40 +267,18 @@
     padding-left: 0;
   }
 
-  #product, #content, #contact {
-    padding: 0 27px;
-  }
-  #product .title, #content .title, #contact .title {
-    display: flex;
-    flex: 0 0 35%;
-    max-width: 35%;
-    margin-right: 10px;
-  }
-  #product .list, #content .list, #contact .list {
-    display: flex;
-    flex: 0 0 60%;
-    max-width: 60%;
-  }
-  #product .list-item, #content .list-item, #contact .list-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 3rem;
-  }
-  #product .list .list-item, #content .list .list-item, #contact .list .list-item {
-    margin-left: 0;
-  }
-
-  #services {
-    padding: 0 27px;
-  }
-  #services .title {
-    margin-left: 0 !important;
-    justify-content: flex-end;
-  }
-
   #content .title {
     display: flex;
     justify-content: flex-end;
+  }
+  #content .content-name h5 {
+    height: 70px;
+  }
+  #content .col-md-9 {
+    width: 80%;
+  }
+  #content .col-md-3 {
+    width: 20%;
   }
 
   #contact .item-2 {
@@ -152,7 +287,7 @@
     margin-left: -45% !important;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) and (min-width: 401px) {
   .contactUs {
     flex: 0 0 100% !important;
     max-width: 100% !important;
@@ -160,9 +295,40 @@
     min-height: 217px !important;
   }
 
-  .title, .detail {
+  #about .title, #about .list, #about .detail, #content .title, #content .list, #content .detail, #product .title, #product .list, #product .detail, #services .title, #services .list, #services .detail, #contact .title, #contact .list, #contact .detail {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  #services .title {
+    order: 1;
+  }
+
+  #services .detail {
+    order: 2;
+  }
+
+  #content .title {
+    order: 1;
+  }
+
+  #content .list {
+    order: 2;
+  }
+  #content .list .list-item h5 {
+    height: 70px;
+  }
+  #content .list .col-md-9 {
+    width: 80%;
+  }
+  #content .list .col-md-3 {
+    width: 20%;
+  }
+
+  #contact .item-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: 0 !important;
   }
 }
 @media screen and (max-width: 400px) {
@@ -183,6 +349,7 @@
     min-width: 142px;
     padding-left: 30px !important;
     padding-right: 30px !important;
+    width: auto;
   }
   .btn-design::after {
     right: 3px !important;
@@ -202,8 +369,8 @@
   }
 
   .title {
-    flex: 0 0 35%;
-    max-width: 35%;
+    flex: 0 0 35% !important;
+    max-width: 35% !important;
   }
   .title .title-head {
     width: 103px;
@@ -215,8 +382,8 @@
   }
 
   .detail {
-    flex: 0 0 65%;
-    max-width: 65%;
+    flex: 0 0 65% !important;
+    max-width: 65% !important;
   }
 
   #about {
@@ -243,51 +410,15 @@
     max-width: 20%;
   }
 
-  footer > div {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-  footer > div:not(:last-child) {
-    border-right: 0px;
-  }
-  footer > div:first-child {
-    border-right: 1px solid #e8e8e8;
-  }
-  footer .logo {
-    flex: 0 0 30%;
-    max-width: 30%;
-    margin: 0;
-    padding-right: 10px !important;
-  }
-  footer .company-name {
-    padding-left: 10px !important;
-    text-align: center;
-    flex: 0 0 70%;
-    max-width: 70%;
-  }
-  footer .follow {
-    border-bottom: 1px solid #e8e8e8;
-    text-align: center;
-  }
-  footer .follow span {
-    font-size: 14px !important;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 1.4rem;
-  }
-  footer .follow .follow-right {
-    text-align: center !important;
-    float: none;
-  }
-  footer .designBy {
-    text-align: center !important;
-  }
-
   .contactUs .btn-design {
     width: 10px;
   }
 }
 @media screen and (max-width: 320px) {
+  body {
+    padding: 0 5px;
+  }
+
   .title .title-head {
     width: 85px;
     height: 128px;
@@ -296,6 +427,14 @@
   .full-display .contactUs {
     flex: 0 0 70% !important;
     max-width: 70% !important;
+  }
+
+  #content .list-item .content-name {
+    padding: 0 10px;
+  }
+
+  #contact .item-1 {
+    padding: 20px 15px;
   }
 }
 
