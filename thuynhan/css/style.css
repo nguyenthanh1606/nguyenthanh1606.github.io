@@ -31,7 +31,7 @@ button:focus { outline: 0; }
 .header .menu ul li { display: inline-block; vertical-align: middle; }
 .header .menu ul li a { color: #fff; }
 
-.contactUs .btn-design, .detail a, #product .list-item a, #contact .btn-design { padding: 8px 60px 8px 30px; border-radius: 10rem; min-width: 156px; box-shadow: 0 0 20px 1px rgba(157, 153, 153, 0.5); position: relative; vertical-align: baseline; color: #181818; background-color: #fff; transition: box-shadow .5s ease-in-out, color .5s linear; }
+.contactUs .btn-design, .detail a, #product .list-item a, #contact .btn-design { padding: 8px 60px 8px 30px; border-radius: 10rem; min-width: 156px; width: 180px; box-shadow: 0 0 20px 1px rgba(157, 153, 153, 0.5); position: relative; vertical-align: baseline; color: #181818; background-color: #fff; transition: box-shadow .5s ease-in-out, color .5s linear; }
 .contactUs .btn-design::after, .detail a::after, #product .list-item a::after, #contact .btn-design::after { content: url("../images/button.png"); position: absolute; top: 5px; right: 5px; padding-left: 30px; }
 .contactUs .btn-design:hover, .detail a:hover, #product .list-item a:hover, #contact .btn-design:hover { box-shadow: 0 0 10px 1px #007acd; color: #007acd; }
 
@@ -42,6 +42,35 @@ button:focus { outline: 0; }
 #product .list h5.head-title, #content .list h5.head-title, #contact .list h5.head-title, .about-detail h5.head-title, .page h5.head-title { padding-left: 5%; }
 #product .list h5.head-title::after, #content .list h5.head-title::after, #contact .list h5.head-title::after, .about-detail h5.head-title::after, .page h5.head-title::after { content: url("../images/dot.png"); position: absolute; top: 0; left: 0; line-height: 0; transform: translateX(-50%); }
 
+.nav-menu { float: right; display: none; position: relative; width: 20px; height: 20px; top: 15px; right: 0px; }
+.nav-menu bun::before { content: ''; position: absolute; width: 100%; height: 20%; background: #2daeef; transition: all 0.5s cubic-bezier(0.1, 0.9, 0, 1.2); top: 10%; right: 0; }
+.nav-menu bun:after { content: ''; position: absolute; width: 100%; height: 20%; background: #2daeef; transition: all 0.5s cubic-bezier(0.1, 0.9, 0, 1.2); bottom: 10%; left: 0; }
+.nav-menu bun bunger { position: absolute; display: flex; align-items: center; height: 20px; width: 20px; }
+.nav-menu bun bunger::before, .nav-menu bun bunger::after { content: ''; position: absolute; width: 100%; height: 20%; background: #2daeef; transition: all 0.5s cubic-bezier(0.1, 0.9, 0, 1.2); }
+.nav-menu input { display: block; position: absolute; opacity: 0; z-index: 1; width: 20px; height: 20px; cursor: pointer; }
+.nav-menu input:hover ~ bun::before, .nav-menu input:hover ~ bun::after, .nav-menu input:hover ~ bun ::before, .nav-menu input:hover ~ bun ::after { background: #15a5ed; }
+.nav-menu input:checked ~ bun::before, .nav-menu input:checked ~ bun::after { width: 0; }
+.nav-menu input:checked ~ bun bunger::before { transform: rotate(135deg); }
+.nav-menu input:checked ~ bun bunger::after { transform: rotate(45deg); box-shadow: 0 0 0 0 #d3eefc; }
+
+#menu-mobile { position: fixed; top: 0; right: 0; height: 100vh; background-color: #d3d1d1; }
+#menu-mobile * { font-family: 'UTM-B'; color: #fff; }
+#menu-mobile .nav-head { background-color: #232323; padding: 10px 24px; margin-bottom: 0; font-size: 1.5rem; }
+#menu-mobile ul { font-size: 0; display: block; }
+#menu-mobile ul li { position: relative; font-size: 1rem; display: block; text-align: left; cursor: pointer; padding: 10px 24px 10px 38px; background-color: #d3d1d1; border-bottom: 1px solid #c4c3c3; }
+#menu-mobile ul li a { font-size: 1.2rem; font-family: 'UTM-R' !important; color: #404041; text-decoration: none; transition-delay: .5s; transition: color .3s ease; text-transform: uppercase; }
+#menu-mobile ul li::before { content: url("../images/dot-2.png"); margin-right: 20px; position: absolute; top: 50%; left: 24px; transform: translateY(-50%); line-height: 0; }
+#menu-mobile ul li:hover a, #menu-mobile ul li:active a { font-family: 'UTM-B' !important; color: #1b4580; }
+
+.hide { display: none; width: 0; transition: width .5s ease-in-out; transition-delay: .5s; }
+
+.show { display: block; position: fixed; width: 200px; transition: width .5s ease-in-out; transition-delay: .5s; }
+
+.open { left: -185px; transition: all .3s; }
+.open .nav-menu { right: 15px; }
+
+.close-s { left: 0; transition: all .3s; }
+
 .img-home { background-image: url("../images/banner-01.jpg"); }
 .img-about { background-image: url("../images/banner-02.jpg"); }
 .img-content { background-image: url("../images/banner-03.jpg"); }
@@ -49,6 +78,8 @@ button:focus { outline: 0; }
 .img-content-detail { background-image: url("../images/banner-05.jpg"); }
 .img-product-header { background-image: url("../images/banner-06.jpg"); }
 .img-contact { background-image: url("../images/banner-07.jpg"); }
+
+body { position: relative; }
 
 .full-display { height: 100vh; }
 

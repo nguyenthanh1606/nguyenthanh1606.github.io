@@ -193,12 +193,12 @@
     margin-left: 0;
   }
 
-  #product .title, #contact .title {
-    margin-right: 10px;
+  .list-content, .list-product {
+    flex: 0 0 90% !important;
+    max-width: 90% !important;
   }
-
-  #services .title, #content .title {
-    margin-left: 10px;
+  .list-content .list-item, .list-product .list-item {
+    margin-bottom: 3rem !important;
   }
 
   #services {
@@ -214,6 +214,10 @@
     font-size: 12px;
   }
 
+  .nav-menu {
+    display: block;
+  }
+
   .header {
     height: 57px;
   }
@@ -221,6 +225,20 @@
   .detail h5::after {
     top: 0 !important;
     line-height: 0;
+  }
+
+  .img:not(.img-home) {
+    background-size: 65vw !important;
+  }
+
+  #product, #content, #contact {
+    margin-top: 3rem !important;
+  }
+
+  .about-detail {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 10px;
   }
 
   .contactUs .btn-design::after, .detail a::after, #product .list-item a::after, #contact .btn-design::after {
@@ -267,10 +285,6 @@
     padding-left: 0;
   }
 
-  #content .title {
-    display: flex;
-    justify-content: flex-end;
-  }
   #content .content-name h5 {
     height: 70px;
   }
@@ -281,10 +295,21 @@
     width: 20%;
   }
 
+  #contact .page {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding-left: 20px;
+  }
   #contact .item-2 {
     flex: 0 0 135%;
     max-width: 135%;
     margin-left: -45% !important;
+  }
+
+  #contact .page-contact .item-2 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
   }
 }
 @media screen and (max-width: 425px) and (min-width: 401px) {
@@ -310,6 +335,8 @@
 
   #content .title {
     order: 1;
+    display: flex;
+    justify-content: flex-end;
   }
 
   #content .list {
@@ -343,6 +370,8 @@
 
   .logo-mb {
     display: block !important;
+    bottom: 50% !important;
+    transform: translateY(50%);
   }
 
   .btn-design {
@@ -412,6 +441,10 @@
 
   .contactUs .btn-design {
     width: 10px;
+  }
+
+  #contact .page {
+    padding-left: 10px;
   }
 }
 @media screen and (max-width: 320px) {

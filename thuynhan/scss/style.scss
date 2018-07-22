@@ -6,6 +6,8 @@
 //-----------------------------------
 @import 'extent';
 // ----------------------------------
+@import 'navMobi';
+
 .img{
     @extend %img-header;
     &-home{background-image: url('../images/banner-01.jpg');}
@@ -17,6 +19,7 @@
     &-contact{background-image: url('../images/banner-07.jpg');}
 }
 
+body{position: relative;}
 .full-display{height: 100vh;}
 .logo-mb{display: none;}
 .img-1{    width: 175px;    height: 245px;}

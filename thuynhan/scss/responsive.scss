@@ -174,17 +174,24 @@
             }
         }        
     }
-
-    #product, #contact{
-        .title{
-            margin-right: 10px;
+    .list-content, .list-product{
+        flex: 0 0 90% !important;
+        max-width: 90% !important;
+        .list-item{
+            margin-bottom: 3rem !important;
         }
+        
     }
-    #services, #content{
-        .title{
-            margin-left: 10px;
-        }
-    }
+    // #product, #contact{
+    //     .title{
+    //         margin-right: 10px;
+    //     }
+    // }
+    // #services, #content{
+    //     .title{
+    //         margin-left: 10px;
+    //     }
+    // }
 
     #services{
         padding: 0 27px;
@@ -200,8 +207,20 @@
     html{
         font-size: 12px;
     }
+    .nav-menu{display: block}
     .header{height: 57px;}   
     .detail h5::after{top: 0 !important; line-height: 0} 
+    .img:not(.img-home){
+        background-size: 65vw !important;
+    }
+    #product, #content, #contact{
+        margin-top: 3rem !important;
+    }
+    .about-detail{
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 10px;
+    }
     .contactUs .btn-design::after, .detail a::after, #product .list-item a::after, #contact .btn-design::after{
         top: 3px;
         right: 3px;
@@ -242,11 +261,7 @@
             padding-left: 0;
         }
     }
-    #content{
-        .title{
-            display: flex;
-            justify-content: flex-end;
-        }
+    #content{        
         .content-name h5{
             height: 70px;
         }
@@ -258,11 +273,23 @@
         }
     }
     #contact{
+        .page{
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+            padding-left: 20px;
+        }
         .item-2{
             flex: 0 0 135%;
             max-width: 135%;
             margin-left: -45% !important;
         }       
+    }
+    #contact .page-contact{
+        .item-2{
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+            margin-left: 0 !important;
+        }
     }
     
 }
@@ -282,7 +309,11 @@
     }
     #services .title{order: 1;}
     #services .detail{order: 2;}
-    #content .title{order: 1;}
+    #content .title{
+        order: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
     #content .list{
         order: 2;
         .list-item h5{
@@ -301,7 +332,9 @@
     body{padding-left: 20px;
     padding-right: 20px;}
     .logo-pc{display: none !important}
-    .logo-mb{display: block !important}
+    .logo-mb{display: block !important;
+        bottom: 50% !important;
+        transform: translateY(50%);}
     .btn-design{
         min-width: 142px;
         padding-left: 30px !important;
@@ -361,6 +394,11 @@
     }
     .contactUs .btn-design {
         width: 10px;
+    }
+    #contact{
+        .page{
+            padding-left: 10px;
+        }
     }
 }
 @media screen and (max-width: 320px){

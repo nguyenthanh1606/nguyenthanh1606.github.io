@@ -15,11 +15,31 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
 </head>
-<body class="img img-about">
-
+<body id="pushMenu" class="img img-about close-s">
+    <div class="nav-menu">
+        <input type="checkbox" onclick="navClick()" name="" id="">
+        <bun>
+            <bunger></bunger>
+        </bun>
+    </div>
+    <nav id="menu-mobile" class="hide">
+        <h4 class="nav-head toUpper">menu</h4>
+        <ul>
+            <li><a href="about.html">giới thiệu</a></li>
+            <li><a href="category.html">sản phẩm</a></li>
+            <li><a href="#">dịch vụ</a></li>
+            <li><a href="#">dự án</a></li>
+            <li><a href="#">hỗ trợ</a></li>
+            <li><a href="content.html">chia sẻ</a></li>
+            <li><a href="contact.html">liên hệ</a></li>
+        </ul>
+    </nav>
     <header class="header wrapper row" id="header">
         <div class="col-md-3 col-sm-6 logo">
-            <a href="index.html"><img class="img-fluid" src="../images/logo.png" alt="phamthuynhan-productions"></a>
+            <a href="index.html">
+                <img class="img-fluid logo-pc" src="../images/logo.png" alt="phamthuynhan-productions">
+                <img class="img-fluid logo-mb" src="../images/logo-mobile.png" alt="phamthuynhan-productions">
+            </a>
         </div>
         <div class="col-md-9 text-right menu" id="menu">
             <ul>
@@ -40,8 +60,8 @@
             <div class="title-head" style="margin-right: 5px;">
                 <a href="about.html" class="toUpper h3">về <br> chúng tôi</a>
             </div>
-            <img class="img-fluid" src="../images/about-1.jpg" alt="">       
-            <img class="img-fluid" src="../images/about-2.jpg" alt="">
+            <img class="img-fluid img-1" src="../images/about-1.jpg" alt="">       
+            <img class="img-fluid img-2" src="../images/about-2.jpg" alt="">
             
         </div>
         <div class="about-detail">

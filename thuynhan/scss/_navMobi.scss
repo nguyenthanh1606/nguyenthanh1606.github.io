@@ -1,0 +1,157 @@
+$color: #2daeef;
+$size: 20px;
+
+@mixin pill(){
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: $color;
+    // box-shadow: 0 0 0 $size/10 lighten($color, 35);
+    transition: all .5s cubic-bezier(.1,.9,0,1.2);
+}
+
+.nav-menu{
+    float: right;
+    display: none;
+    position: relative;
+    width: $size;
+    height: $size;
+    top: 15px;
+    right: 0px;
+    bun{
+        &::before{
+            @include pill();
+            top: 10%;
+            right: 0;
+        }
+        &:after{
+            @include pill();
+            bottom: 10%;
+            left: 0;
+        }
+
+        bunger{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            height: $size;
+            width: $size;
+
+            &::before, &::after{
+                @include pill();
+            }
+        }
+    }
+    input{
+        display: block;
+        position: absolute;
+        opacity: 0;
+        z-index: 1;
+        width: $size;
+        height: $size;
+        cursor: pointer;
+
+        &:hover ~ bun{
+            &::before, &::after, ::before, ::after{
+                background: darken($color, 5)
+            }
+        }
+
+        &:checked ~ bun{
+            &::before, &::after{
+                width: 0;
+            }
+            bunger{
+                &::before{
+                    transform: rotate(135deg);
+                }
+                &::after{
+                    transform: rotate(45deg);
+                    box-shadow: 0 0 0 0 lighten($color, 35);
+                }
+            }
+        }
+    }
+}
+
+#menu-mobile{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #d3d1d1;
+    *{
+        font-family: 'UTM-B';
+        color: #fff;
+    }
+    .nav-head{
+        background-color: #232323;
+        padding: 10px 24px;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+    ul{
+        font-size: 0;
+        display: block;
+        li{
+            position: relative;
+            font-size: 1rem;
+            display: block;
+            text-align: left;
+            cursor: pointer;
+            padding: 10px 24px 10px 38px;
+            background-color: #d3d1d1;
+            a{
+                font-size: 1.2rem;
+                font-family: 'UTM-R' !important;
+                color: #404041;
+                text-decoration: none;
+                transition-delay: .5s;
+                transition: color .3s ease;     
+                text-transform: uppercase;
+            }
+            &::before{
+                content: url('../images/dot-2.png');
+                margin-right: 20px;
+                position: absolute;
+                top: 50%;
+                left: 24px;
+                transform: translateY(-50%);
+                line-height: 0;
+            }
+            &:hover, &:active{
+                a{
+                    font-family: 'UTM-B' !important;
+                    color: #1b4580;
+                }
+            }
+            border-bottom: 1px solid #c4c3c3;
+        }
+    }
+}
+
+.hide{
+    display: none;
+    width: 0;
+    transition:width .5s ease-in-out;
+    transition-delay: .5s;
+}
+.show{
+    display: block;
+    position: fixed;
+    width: 200px;
+    transition:width .5s ease-in-out;
+    transition-delay: .5s;
+}
+.open{
+    left: -185px;
+    transition: all .3s;
+    .nav-menu{
+        right: 15px;
+    }
+}
+.close-s{
+    left: 0;
+    transition: all .3s;
+}
