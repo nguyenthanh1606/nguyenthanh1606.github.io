@@ -1,0 +1,170 @@
+@import 'var';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+    font-family: $Segoe-R;
+    font-weight: 500;
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto !important;
+}
+.row{
+    margin: 0;
+}
+a{color: #104799; transition: color .2s linear;}
+a:hover,a:focus{text-decoration: none;color: $red-w}
+.title-a{font-family: $UTM-Penu;font-size: 1.1rem;display: block}
+textarea{resize: none}
+.h5{}
+button:focus{
+    outline: 0;
+}
+.home{
+    i::before, i::after{
+        font-size: 1rem;
+    }
+}
+// ----------------------------
+.toUpper{text-transform: uppercase;}
+.text-bold{font-weight: bold;}
+// ----------------------------
+
+.no-wrap{
+    flex-wrap: nowrap;
+}
+.no-padding{
+    padding: 0;
+}
+.full-width{
+    width: 100%;
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.read-more{
+    display: inline-block;
+    min-width: 12px;
+    min-height: 12px;
+    background-color: #ed4122;
+    color: #fff;
+    font-size: 10px;
+    text-align: center;
+    transition: all .2s;
+    &:hover{color: $blue-w}
+    &::before{
+        line-height: 13px;
+    }
+    &-2{
+        padding: 0 5px;
+    }
+}
+
+.count-item{
+    display: inline-block;
+    min-width: 30px;
+    min-height: 36px;
+    line-height: 1.2;
+    padding-top: 3px;
+    background-color: $blue-w;
+    font-family: $UTM-Rock;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.ico{
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 7px;
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+    padding-top: 3px;
+}
+
+.bg-blue{
+    background-color: $blue-w;
+    transition: background-color .3s ease;
+    &:hover{
+        background-color: $red-w;
+    }
+}
+.bg-linkin{
+    background-color: #007bb6;
+    transition: background-color .3s ease;
+    &:hover{
+        background-color: $red-w;
+    }
+}
+.bg-red{
+    background-color: $red-w;
+    transition: background-color .3s ease;
+    &:hover{
+        background-color: $blue-w;
+    }
+}
+
+.btn-email{
+    background-color: #14467a;
+    display: inline-block;
+    width: 13%;
+    height: 42px;
+    position: relative;
+    &::before{
+        content: url('../images/ico-email.png');
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+.breadcrumb{
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-left: 28px;
+    a{
+        font-family: 'UTM-San';
+        font-size: .8rem;
+        color: #5d5e5f;
+        position: relative;
+        padding-right: 10px;
+        &:not(:first-child){
+            padding-left: 8px;
+        }
+        &:last-child{
+            pointer-events: none;
+            padding-right: 0;
+            color: #5b85c4;
+            &:after{
+                content: "";
+            }
+        }
+        &::after{
+            content: url('../images/dot-next-bream.png');
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            line-height: 0;
+        }
+        &:hover{
+            color: #ed4122;
+        }
+    }  
+}
+.border-1{
+    border-bottom: 1px solid rgba($color: #ccc, $alpha: 0.55);
+}
