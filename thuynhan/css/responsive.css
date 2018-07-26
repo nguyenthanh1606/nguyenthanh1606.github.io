@@ -77,6 +77,11 @@
     height: 105px;
   }
 
+  .page {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
   footer .logo, footer .designBy {
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
@@ -295,12 +300,15 @@
     width: 20%;
   }
 
-  #contact .page {
+  #contact .page, #product .page {
     flex: 0 0 100% !important;
     max-width: 100% !important;
     padding-left: 20px;
   }
-  #contact .item-2 {
+  #contact .page .page-content, #product .page .page-content {
+    padding-right: 20px;
+  }
+  #contact .item-2, #product .item-2 {
     flex: 0 0 135%;
     max-width: 135%;
     margin-left: -45% !important;
