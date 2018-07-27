@@ -8,7 +8,7 @@
     // transition: all .4s ease;
     border-radius: .8rem;
     &::before{
-        content: url('../images/dot-next.png');
+        content: url('../images/ThemeVTA/dot-next.png');
         line-height: 0;
         position: absolute;
         left: 19px;
@@ -18,7 +18,7 @@
     &:hover{
         color: $title;
         &::before{
-            content: url('../images/dot-next-hover.png');
+            content: url('../images/ThemeVTA/dot-next-hover.png');
         }
     }
 }
@@ -39,6 +39,7 @@
             display: inline-block;
             padding: 0 34px;
             position: relative;
+            transition: color .3s ease;
             &::after{
                 content: "";
                 position: absolute;
@@ -49,11 +50,14 @@
                 background-color: $red-w;
             }
         }
+        a:hover h3{
+            color: $red-w;
+        }
     }
     .head-sub{
         font-family: $UTM-San-I;
         text-align: center;
-        padding: 5px 138px 10px;
+        padding: 5px 12% 10px;
         color: #463f3f;
         font-size: .9rem;
     }
@@ -93,6 +97,7 @@
         }
     }
     .detail{
+        text-align: justify;
         font-size: .9rem;
     }
 }

@@ -1,0 +1,386 @@
+@media screen and (max-width: 1130px){
+    body>*{
+        padding:0 15px;
+    }
+    .row-menu .menu > li:not(:last-child){
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 1024px){
+    
+}
+@media screen and (max-width: 960px){
+    
+}
+
+@media screen and (max-width: 825px){
+    
+}
+@media screen and (max-width: 768px){
+    body>*{
+        padding: 0 30px;
+    }
+    .menu-pc{
+        display: none;
+    }
+    .menu-mb{
+        display: flex !important;
+    }
+    .menu-2{
+        display: block;
+    }
+    header .head-right{display: none !important}
+    #sub-nav .square {
+        flex: 0 0 70%;
+        max-width: 70%;
+        p{
+            display: none;
+        }
+        .item img{
+            top: 50%;
+        }
+    }
+
+    #whychose, #about-vta, #bdh-vta, #tintuc, #bieuphi, #list-ttv, #list-hinhanh, #list-qa, #dktt, #contact, #list-vbm{
+        margin-top: -31px;
+    }
+
+    //news
+    #news{
+        .news-first, .news-order{
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+    }
+    //need
+    #need{
+        .need-left, .about{
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+        .need-left{
+            order: 2;
+        }
+        .about{
+            order: 1;
+            margin-bottom: .7rem;
+        }
+    }
+    //views
+    #views{
+        .item{
+            flex: 0 0 49.5% !important;
+            max-width: 49.5% !important;
+        }
+    }
+
+    //footer
+    .bot-footer, .sEmail{
+        margin: 0 -30px;
+    }
+    .sEmail{
+        height: auto;
+        .email-left, .sEmail-form{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .sEmail-form{
+            margin-bottom: 1rem;
+            padding-left: 8%;
+            padding-right: 20%
+        }
+    }
+    .main-footer{
+        .footer-left, .footer-right{
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+            margin-bottom: 1rem;
+        }
+        .footer-left{            
+            img{
+                width: auto !important;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .logo{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+    #sub-nav .square {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .banner{
+        .banner-detail{
+            padding-top: 15px;
+            left: 3px;
+            padding-right: 30%;
+        }
+        height: 170px;
+        h5{
+            display: none;
+        }
+        h2{
+            font-size: 1.1rem;
+            margin-bottom: .5rem;
+        }
+        p{
+            font-size: .7rem;
+            color: #fff;
+        }
+        a{
+            display: none;
+        }
+    }
+    .main-right{
+        display: none;
+    }
+    .mr-top-head{
+        margin-top: -14px !important;
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+    #whychose{
+        .img-item{
+            flex: 0 0 39%;
+            max-width: 39%;
+            padding-left: 25px;
+            padding-right: 10px;
+        }
+        .detail-item{
+            flex: 0 0 60%;
+            max-width: 60%;
+            padding-right: 0;
+            a.title{
+                font-size: .85rem !important;
+                padding: 0 0 0 12px;
+                line-height: 1.5;
+                &::before{
+                    top: 4px;
+                    left: 0;
+                }
+            }
+            p{
+                margin-top: 0;
+                line-height: 1.3;
+            }
+        }
+    }
+    #news, #need, #views{
+        .head-title{
+            width: 100%;
+            h3::after{
+                width: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .head-sub{
+            padding: 0;
+        }        
+    } 
+    
+    #need{
+        .need-left, .about, .qd, .qa{
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+        .need-left{
+            margin-bottom: 1.5rem;
+        }
+        a.read-more{
+            margin-bottom: 1rem;
+        }
+        .head-qa{
+            margin-bottom: 1rem;
+        }
+    }
+
+    //views
+    #views{
+        .views-list{
+            justify-content: center;
+            .item{
+                flex: 0 0 80% !important;
+                max-width: 80% !important;
+            }
+        }
+    }
+
+    footer{
+        .footer-right{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 525px){
+    
+    .logo-pc{display: none}
+    .logo-mb{display: block}
+
+    nav.menu-pc{
+        display: none;
+    }
+
+    .banner{
+        h2{
+            font-size: 0.9rem;
+            margin-bottom: .5rem;
+        }
+        p{
+            font-size: .65rem;
+            color: #fff;
+        }
+    }    
+
+    //news
+           
+    #news .news-first{
+        margin-bottom: 1rem;
+    }
+    #news .news-first, #news .news-order{
+        flex: 0 0 100%;
+        max-width: 100%;    
+    }
+    .news-order{
+        .item{
+            .news-order-img{
+                flex: 0 0 39%;
+                max-width: 39%;
+                padding-right: 10px;
+                img{
+                    height: auto !important;
+                }
+            }
+            .news-detail{
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+        }
+    }
+
+    //need
+    #need{
+        .need-left{
+            order: 1;
+        }
+        .about{
+            order: 2;
+        }
+        
+    }
+
+
+    // footer
+    footer{
+        padding: 0 15px;
+    }
+    .sEmail{
+        margin: 0 -15px;
+        height: auto !important;
+        .email-left, .text-title, .text-detail, .sEmail-form{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        }
+        .text-title{
+            margin-bottom: 0;
+            position: relative;
+            border-right: 0;
+            p{
+                margin-bottom: 0;
+                float: left;
+                padding-left: 20px;
+                margin-left: 20px;
+                margin-bottom: 0;
+                border-color: transparent;
+                &::before{
+                    content: "";
+                    width: 4px;
+                    height: 200%;
+                    top: 10px;
+                    left: 20px;
+                    background-color: #14467a;
+                    position: absolute;
+                }
+            }
+        }
+        .text-detail{
+            padding-left: 20px;
+            p{
+                margin-top: 0px !important;
+            }
+        }
+    }
+    .sEmail-form{
+        padding: 0 20px;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+        .iput{
+            flex: 0 0 80% !important;
+            max-width: 80% !important;
+            margin-bottom: 1rem;
+        }
+        button{
+            flex: 0 0 60%;
+            max-width: 60%;
+            margin-left: 0 !important;
+        }
+    }
+
+    .main-footer{
+        .footer-left, .logo, .address, .link-follow{
+            flex: 0 0 100% !important;
+            max-width: 100% !important;
+        }
+        a.text{
+            font-size: .7rem !important;
+        }
+        margin-bottom: 1rem !important;
+    }
+    .bot-footer{
+        margin: 0 -15px;
+        .copyright, .designby{
+            >*{
+                font-size: .75rem;
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 375px){
+    .main-footer .footer-left img{
+        width: 100% !important;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 320px){
+    body>*{
+        padding: 0;
+    }
+    .menu-mb{
+        padding-left: 10px;
+    }
+    #news, #need, #views{
+        .head-sub{
+            padding: 0 15px;
+        }
+    }
+    .sEmail, .bot-footer{
+        margin-right: 0px !important;
+    }
+    footer{
+        padding-left: 10px;
+        .logo img{
+            width: 90% !important;
+        }
+    }
+}

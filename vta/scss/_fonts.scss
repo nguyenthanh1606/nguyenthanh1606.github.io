@@ -1,21 +1,23 @@
 @font-face {
     font-family: 'UTM-R';
+    src: url('../fonts/UTMRegular/UTM-Avo-Regular.eot');
     src: 
-        url('../fonts/UTM-Avo-Regular.ttf') format('truetype'),
-        url('../fonts/UTM-Avo-Regular.eot') format('embedded-opentype'),
-        url('../fonts/UTM-Avo-Regular.otf') format('opentype'),
-        url('../fonts/UTM-Avo-Regular.woff') format('woff');        
+        url('../fonts/UTMRegular/UTM-Avo-Regular.ttf') format('truetype'),
+        url('../fonts/UTMRegular/UTM-Avo-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMRegular/UTM-Avo-Regular.otf') format('opentype'),
+        url('../fonts/UTMRegular/UTM-Avo-Regular.woff') format('woff');        
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'UTM-B';
+    src: url('../fonts/UTMBold/UTM-Avo-Bold.eot');
     src:
-        url('../fonts/UTM-Avo-Bold.ttf') format('truetpye'),
-        url('../fonts/UTM-Avo-Bold.eot') format('embedded-opentype'),
-        url('../fonts/UTM-Avo-Bold.woff') format('woff'),
-        url('../fonts/UTM-Avo-Bold.otf') format('opentype');
+        url('../fonts/UTMBold/UTM-Avo-Bold.ttf') format('truetpye'),
+        url('../fonts/UTMBold/UTM-Avo-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMBold/UTM-Avo-Bold.woff') format('woff'),
+        url('../fonts/UTMBold/UTM-Avo-Bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -29,8 +31,11 @@
 
 @font-face{
     font-family: 'UTM-Penu';
-    src: url('../fonts/UTM Penumbra.ttf') format('truetype');
-    font-weight: normal;
+    src: url('../fonts/UTMPenumbra/UTMPenumbra.eot');
+    src: url('../fonts/UTMPenumbra/UTMPenumbra.woff') format('woff'),
+         url('../fonts/UTMPenumbra/UTMPenumbra.ttf') format('truetype'),
+         url('../fonts/UTMPenumbra/UTMPenumbra.eot?#iefix') format('embedded-opentype');
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -43,7 +48,10 @@
 
 @font-face{
     font-family: 'Segoe-R';
-    src: url('../fonts/SegoeRg.ttf') format('truetype');
+    src: url('../fonts/segoeui/segoeui.ttf') format('truetype'),
+         url("../fonts/segoeui/segoeui.woff") format('woff'),
+         url("../fonts/segoeui/segoeui.woff2") format('woff2'),
+	     url("../fonts/segoeui/segoeui.eot#iefix") format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -70,14 +78,20 @@
 
 @font-face{
     font-family: 'Segoe-B';
-    src: url('../fonts/SegoeBd.ttf') format('truetype');
+    src: url('../fonts/segoeuibold/segoeuibold.eot');
+    src: url('../fonts/segoeuibold/SegoeUI-Bold.woff') format('woff'),
+         url('../fonts/segoeuibold/SegoeUI-Bold.ttf') format('truetype'),
+         url('../fonts/segoeuibold/segoeuibold.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face{
     font-family: 'Segoe-BI';
-    src: url('../fonts/SegoeBI.ttf') format('truetype');
+    src: url('../fonts/segoeuibolditalic/SegoeUI-BoldItalic.eot');
+    src: url('../fonts/segoeuibolditalic/SegoeUI-BoldItalic.woff') format('woff'),
+         url('../fonts/segoeuibolditalic/SegoeUI-BoldItalic.ttf') format('truetype'),
+         url('../fonts/segoeuibolditalic/SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }

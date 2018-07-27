@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
-<body>
+<body id="menuPush" style="left: 0">
     <header class="header">
         <div class="wrapper">
             <div class="header-top row no-wrap">
                 <div class="logo">
-                    <a href="index.html"><img src="../images/logo.png" alt="VTA - Trung tâm trọng tài thương nhân Việt Nam"></a>
+                    <a href="index.html">
+                        <img class="logo-pc" src="../images/ThemeVTA/logo.png" alt="VTA - Trung tâm trọng tài thương nhân Việt Nam">
+                        <img class="logo-mb" src="../images/ThemeVTA/logo-2.png" alt="VTA - Trung tâm trọng tài thương nhân Việt Nam">
+                    </a>
                 </div>
                 <div class="full-width head-right">
                     <div class="search">
@@ -33,15 +37,45 @@
             </div>
         </div>        
     </header>
+    <nav id="menu-mobile" class="menu-2" style="left: -100%;">
+        <p class="head toUpper">menu</p>
+        <ul class="menu-mb-lv1">
+            <li class="active"><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a>
+                <a href="#item-2" data-toggle="collapse" role="button" aria-controls="item-3" aria-expanded="false" >
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul id="item-2" class="collapse menu-mb-lv2">
+                    <li><a href="#">Giải quyết tranh chấp thương mại</a></li>
+                    <li><a href="#">Sứ mệnh - Tầm nhìn - Giá trị cốt lõi</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Vì sao chọn VTA?</a>
+                <a href="#item-3" data-toggle="collapse" role="button" aria-controls="item-3" aria-expanded="false" >
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul id="item-3" class="collapse menu-mb-lv2">
+                    <li><a href="#">vta giải quyết tranh chấp thương mại</a></li>
+                    <li><a href="#">tầm nhìn - sứ mệnh - giá trị cốt lõi</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Thỏa thuận trọng tài</a></li>
+            <li><a href="#">Tố tụng trọng tài</a></li>
+            <li><a href="ds-trongtaivien.html">trọng tài viên</a></li>
+            <li><a href="#">hòa giải</a></li>
+            <li><a href="#">thư viện</a></li>
+            <li><a href="contact.html">liên hệ</a></li>
+        </ul>
+    </nav>
     <!-- end header -->
     <div class="row-menu">        
-        <nav class="row wrapper">            
+        <nav class="row wrapper menu-pc">            
             <ul class="menu">
                 <li class="home"><a href="index.html"><i class="fa fa-home"></i></a></li>
-                <li><a href="#">giới thiệu</a>
+                <li><a href="gioithieu.html">giới thiệu</a>
                     <ul class="menu-sub">
-                        <li><a href="#">Giới thiệu VTA</a></li>
-                        <li><a href="#">Ban điều hành</a></li>
+                        <li><a href="gioithieu.html">Giới thiệu VTA</a></li>
+                        <li><a href="gioithieu-bandieuhanh.html">Ban điều hành</a></li>
                         <li><a href="#">Ban thư ký</a></li>
                     </ul>
                 </li>
@@ -51,18 +85,70 @@
                         <li><a href="#">Sứ mệnh - Tầm nhìn - Giá trị cốt lõi</a></li>
                     </ul>
                 </li>
-                <li><a href="#">thỏa thuận trọng tài</a></li>
-                <li><a href="#">tố tụng trọng tài</a></li>
-                <li><a href="#">trọng tài viên</a></li>
-                <li><a href="#">hòa giải</a></li>
-                <li><a href="#">thư viện</a></li>
-                <li><a href="#">liên hệ</a></li>
+                <li><a href="#">thỏa thuận trọng tài</a>
+                    <ul class="menu-sub">
+                        <li><a href="#">Quy định thoả thuận trọng tài</a></li>
+                        <li><a href="dieukhoantrongtai.html">Điều khoản trọng tài mẫu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">tố tụng trọng tài</a>
+                    <ul class="menu-sub">
+                        <li><a href="#">Luật trọng tài thương mại</a></li>
+                        <li><a href="#">Quy tắc đạo đức trọng tài</a></li>
+                        <li><a href="#">Quy tắc tố tụng</a></li>
+                        <li><a href="#">Quy trình tố tụng</a></li>
+                        <li><a href="bieuphi.html">Biểu phí</a></li>
+                    </ul>
+                </li>
+                <li><a href="ds-trongtaivien.html">trọng tài viên</a>
+                    <ul class="menu-sub">
+                        <li><a href="ds-trongtaivien.html">Danh sách trọng tài viên</a></li>
+                        <li><a href="#">Điều kiện trở thành trọng tài viên</a></li>                        
+                    </ul>
+                </li>
+                <li><a href="#">hòa giải</a> 
+                    <ul class="menu-sub">
+                        <li><a href="#">Quy tắc hoà giải</a></li>
+                        <li><a href="#">Biểu phí hoà giải</a></li>
+                        <li><a href="#">Điều khoản mẫu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">thư viện</a>
+                    <ul class="menu-sub">
+                        <li><a href="#">Bản tin</a></li>
+                        <li><a href="vanbanmau.html">Văn bản mẫu</a></li>
+                        <li><a href="#">Ấn phẩm</a></li>
+                        <li><a href="#">Góc nhìn trọng tài viên</a></li>
+                        <li><a href="hinhanh.html">Hình ảnh & Video</a></li>
+                        <li><a href="hoidap.html">Hỏi đáp</a></li>
+                        <li><a href="gioithieu-tintuc.html">Tin tức</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">liên hệ</a></li>
             </ul>
         </nav>
+        <div class="row wrapper menu-mb">
+            <div class="item-left">
+                <button onclick="pushMenu()"><i id="ico-bar" class="fas fa-bars"></i></button>
+            </div>
+            <div id="menu-item-right" class="item-right">
+                <button class="btn-search" onclick="pushSearch()"><i id="ico-search" class="fas fa-search"></i></button>
+                <div class="lang lang-mb">
+                    <ul>
+                        <li><a class="toUpper active" href="#">tiếng việt</a></li>
+                        <li><a class="toUpper" href="#">english</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="fSearch-mb" class="search search-mb" style="right: -100%;">
+                <input type="text" class="form-control" id="" placeholder="Tìm kiếm...">
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
     </div>
     <!-- end menu -->
     <div class="banner banner-home">
-        <div class="wrapper row" style="height: 100%;">
+        <div class="wrapper row" style="height: 100%; position: relative;">
             <div class="col-md-6 banner-detail">
                 <h5>VIETNAM TRADERS ARBITRATION EVENT DAY</h5>
                 <h2>Arbitration Challenged -  Smart in your world</h2>
@@ -93,7 +179,7 @@
             <div class="clearfix"></div>
             <div class="row whychose-item" style="margin-top: .5rem;">
                 <div class="col-md-4 img-item">
-                    <a href="#"><img src="../images/page-01.png" class="img-fluid" alt=""></a>
+                    <a href="#"><img src="../images/content/page-01.png" class="img-fluid" alt=""></a>
                 </div>
                 <div class="col-md-8 detail-item">
                     <a href="#" class="title h3 toUpper">VTA GIẢI QUYẾT TRANH CHẤP THƯƠNG MẠI</a>
@@ -108,7 +194,7 @@
             </div>
             <div class="row whychose-item">
                     <div class="col-md-4 img-item">
-                        <a href="#"><img src="../images/page-02.png" class="img-fluid" alt=""></a>
+                        <a href="#"><img src="../images/content/page-02.png" class="img-fluid" alt=""></a>
                     </div>
                     <div class="col-md-8 detail-item">
                         <a href="#" class="title h3 toUpper">SỨ MỆNH - TẦM NHÌN - GIÁ TRỊ CỐT LÕI</a>
@@ -126,38 +212,50 @@
             <div id="sub-nav">
                 <div class="square">
                     <div class="item">
-                        <img src="../images/ico-bieumau.png" alt="">
-                        <p>Điều khoản trọng tài mẫu</p>
+                        <a href="dieukhoantrongtai.html">
+                            <img src="../images/ThemeVTA/ico-bieumau.png" alt="">
+                            <p>Điều khoản trọng tài mẫu</p>
+                        </a>
                     </div>
                 </div>
                 <div class="square">
                     <div class="item">
-                        <img src="../images/ico-totung.png" alt="">
-                        <p>Quy tắc tố tụng</p>
+                        <a href="">
+                            <img src="../images/ThemeVTA/ico-totung.png" alt="">
+                            <p>Quy tắc tố tụng</p>
+                        </a>
                     </div>
                 </div>
                 <div class="square">
                     <div class="item">
-                        <img src="../images/ico-danhsach.png" alt="">
-                        <p>Danh sách trọng tài viên</p>
+                        <a href="ds-trongtaivien.html">
+                            <img src="../images/ThemeVTA/ico-danhsach.png" alt="">
+                            <p>Danh sách trọng tài viên</p>
+                        </a>
                     </div>
                 </div>
                 <div class="square">
                     <div class="item">
-                        <img src="../images/ico-vanban.png" alt="">
-                        <p>Văn bản mẫu</p>
+                        <a href="vanbanmau.html">
+                            <img src="../images/ThemeVTA/ico-vanban.png" alt="">
+                            <p>Văn bản mẫu</p>
+                        </a>
                     </div>
                 </div>
                 <div class="square">
                     <div class="item">
-                        <img src="../images/ico-bieuphi.png" alt="">
-                        <p>Biểu phí</p>
+                        <a href="bieuphi.html">
+                            <img src="../images/ThemeVTA/ico-bieuphi.png" alt="">
+                            <p>Biểu phí</p>
+                        </a>
                     </div>
                 </div>
                 <div class="square">
                     <div class="item">
-                        <img src="../images/ico-hoidap.png" alt="">
-                        <p>Hỏi đáp</p>
+                        <a href="hoidap.html">
+                            <img src="../images/ThemeVTA/ico-hoidap.png" alt="">
+                            <p>Hỏi đáp</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -165,7 +263,7 @@
         <!-- end-page-1 -->
         <div id="news">
             <div class="head-title text-center">
-                <a href="#"><h3 class="toUpper">tin tức cập nhật</h3></a>
+                <a href="gioithieu-tintuc.html"><h3 class="toUpper">tin tức cập nhật</h3></a>
             </div>
             <p class="head-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget aliquet sem. 
                 Vivamus tincidunt eu nisl sit amet dictum. Vestibulum eu felis nunc. Ut blandit nisl quis nisi eleifend, 
@@ -174,55 +272,55 @@
             <div class="row wrapper main-list">
                 <div class="news-first">
                     <div class="new-first-img">
-                        <a href="#"><img src="../images/content-detail-01.jpg" alt=""></a>
+                        <a href="tintuc.html"><img src="../images/content/content-detail-01.jpg" alt=""></a>
                     </div>
                     <div class="news-detail">
-                        <a href="#" class="title toUpper">hòa giải thương mại đã tiệm cận thông lệ quốc tế</a>
+                        <a href="tintuc.html" class="title toUpper">hòa giải thương mại đã tiệm cận thông lệ quốc tế</a>
                         <p class="create-date">11/08/2016 11:26</p>
                         <p class="detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget aliquet sem. 
                                 Vivamus tincidunt eu nisl sit amet dictum. Vestibulum eu felis nunc. Ut blandit nisl quis nisi eleifend, 
                                 et volutpat mi porttitor. Donec sed elem
-                            <a href="#" class="read-more fas fa-chevron-right"></a>
+                            <a href="tintuc.html" class="read-more fas fa-chevron-right"></a>
                         </p>
                     </div>                    
                 </div>
                 <div class="news-order">
                     <div class="item row">
                         <div class="news-order-img">
-                            <a href="#"><img src="../images/content-detail-02.jpg" alt=""></a>
+                            <a href="tintuc.html"><img src="../images/content/content-detail-02.jpg" alt=""></a>
                         </div>
                         <div class="news-detail">
-                            <a href="#" class="title toUpper">Lệnh cấm khởi kiện tại tòa án - Khả năng thực thi tại Indonesia</a>
+                            <a href="tintuc.html" class="title toUpper">Lệnh cấm khởi kiện tại tòa án - Khả năng thực thi tại Indonesia</a>
                             <p class="create-date">11/08/2016 11:26</p>
                             <p class="detail">Tại Indonesia, đã rất nhiều lần xảy ra tình huống quy trình tố tụng tại
                                 Tòa án trong nước và tố tụng tại trung tâm trọng tài nước ngoài diễn ra đồng thời đối với cùng một tranh chấp
-                                <a href="#" class="read-more fas fa-chevron-right"></a>
+                                <a href="tintuc.html" class="read-more fas fa-chevron-right"></a>
                             </p>
                         </div>                        
                     </div>
                     <div class="item row">
                         <div class="news-order-img">
-                            <a href="#"><img src="../images/content-detail-03.jpg" alt=""></a>
+                            <a href="tintuc.html"><img src="../images/content/content-detail-03.jpg" alt=""></a>
                         </div>
                         <div class="news-detail">
-                            <a href="#" class="title toUpper">Lệnh cấm khởi kiện tại tòa án - Khả năng thực thi tại Indonesia</a>
+                            <a href="tintuc.html" class="title toUpper">Lệnh cấm khởi kiện tại tòa án - Khả năng thực thi tại Indonesia</a>
                             <p class="create-date">11/08/2016 11:26</p>
                             <p class="detail">Tại Indonesia, đã rất nhiều lần xảy ra tình huống quy trình tố tụng tại
                                 Tòa án trong nước và tố tụng tại trung tâm trọng tài nước ngoài diễn ra đồng thời đối với cùng một tranh chấp
-                                <a href="#" class="read-more fas fa-chevron-right"></a>
+                                <a href="tintuc.html" class="read-more fas fa-chevron-right"></a>
                             </p>
                         </div>                        
                     </div>
                     <div class="item row">
                         <div class="news-order-img">
-                            <a href="#"><img src="../images/content-detail-04.jpg" alt=""></a>
+                            <a href="tintuc.html"><img src="../images/content/content-detail-04.jpg" alt=""></a>
                         </div>
                         <div class="news-detail">
-                            <a href="#" class="title toUpper">Doanh nghiệp Việt Nam cần khai thác tốt hơn các lợi thế của AEC</a>
+                            <a href="tintuc.html" class="title toUpper">Doanh nghiệp Việt Nam cần khai thác tốt hơn các lợi thế của AEC</a>
                             <p class="create-date">11/08/2016 11:26</p>
                             <p class="detail">Tại Indonesia, đã rất nhiều lần xảy ra tình huống quy trình tố tụng tại
                                 Tòa án trong nước và tố tụng tại trung tâm trọng tài nước ngoài diễn ra đồng thời đối với cùng một tranh chấp
-                                <a href="#" class="read-more fas fa-chevron-right"></a>
+                                <a href="tintuc.html" class="read-more fas fa-chevron-right"></a>
                             </p>
                         </div>                        
                     </div>
@@ -293,10 +391,10 @@
                         </div>
                     </div>
                     <div class="qa">
-                        <a href="#" class="title-a toUpper">Hỏi đáp</a>
+                        <a href="hoidap.html" class="title-a toUpper">Hỏi đáp</a>
                         <div class="head-qa row">
                             <div class="head-1">
-                                <img src="../images/ico-hoidap-2.png" alt="">
+                                <img src="../images/ThemeVTA/ico-hoidap-2.png" alt="">
                             </div>
                             <div class="head-2">
                                 <p class="head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget aliquet
@@ -315,17 +413,17 @@
                             tài và các phương thức giải quyết tranh chấp thương mại khác theo quy định của pháp luật; hỗ trợ về hành 
                             chính, văn phòng và các trợ giúp khác trong quá trình trọng tài và các phương thức giải quyết tranh chấp thương mại khác.
                         </p>
-                        <a href="#" class=" read-more  read-more-2" style="margin-left: 35px">xem tiếp</a>
+                        <a href="hoidap.html" class=" read-more  read-more-2" style="margin-left: 35px">xem tiếp</a>
                     </div>
                 </div>
                 <div class="about">
-                    <a href="#" class="title-a toUpper">giới thiệu về VTA</a>
+                    <a href="gioithieu.html" class="title-a toUpper">giới thiệu về VTA</a>
                     <div class="about-img">
-                        <img src="../images/content-detail-05.jpg" alt="">
+                        <a href="gioithieu.html"> <img src="../images/content/content-detail-05.jpg" alt=""></a>
                     </div>
                     <p>In imperdiet in lectus placerat tempor. Vivamus ante diam, venenatis ac leo vel, lacinia dignissim nisl. Cras scelerisque condimentum erat et tristique. Aliquam vitae dictum mauris. Ut imperdiet magna non ante dignissim dignissim. Vivamus interdum, libero quis iaculis dapibus, metus eros pellentesque sem, vel mattis justo urna in nunc. </p>
                     <p>Nam imperdiet velit ultrices orci finibus ultricies. Suspendisse nibh ligula, aliquam ac pulvinar sed, rutrum ornare tortor. Donec laoreet quis dui quis sollicitudin. Suspendisse potenti. Suspendisse feugiat dictum ex, quis venenatis eros finibus dictum. </p>
-                    <a href="#" class=" read-more  read-more-2">xem tiếp</a>
+                    <a href="gioithieu.html" class=" read-more  read-more-2">xem tiếp</a>
                 </div>
             </div>
         </div>
@@ -341,7 +439,7 @@
             <div class="views-list wrapper row">
                 <div class="item">
                     <div class="item-img">
-                        <a href="#"><img src="../images/content-detail-06.jpg" alt=""></a>
+                        <a href="#"><img src="../images/content/content-detail-06.jpg" alt=""></a>
                     </div>
                     <div class="views-detail">
                         <a href="#" class="title toUpper">Lo ngại luật cho toà án nước ngoài vào xử tranh chấp trong đặc khu</a>
@@ -353,7 +451,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <a href="#"><img src="../images/content-detail-06.jpg" alt=""></a>
+                        <a href="#"><img src="../images/content/content-detail-06.jpg" alt=""></a>
                     </div>
                     <div class="views-detail">
                         <a href="#" class="title toUpper">Lo ngại luật cho toà án nước ngoài vào xử tranh chấp trong đặc khu</a>
@@ -365,7 +463,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <a href="#"><img src="../images/content-detail-06.jpg" alt=""></a>
+                        <a href="#"><img src="../images/content/content-detail-06.jpg" alt=""></a>
                     </div>
                     <div class="views-detail">
                         <a href="#" class="title toUpper">Lo ngại luật cho toà án nước ngoài vào xử tranh chấp trong đặc khu</a>
@@ -377,7 +475,7 @@
                 </div>
                 <div class="item">
                     <div class="item-img">
-                        <a href="#"><img src="../images/content-detail-06.jpg" alt=""></a>
+                        <a href="#"><img src="../images/content/content-detail-06.jpg" alt=""></a>
                     </div>
                     <div class="views-detail">
                         <a href="#" class="title toUpper">Lo ngại luật cho toà án nước ngoài vào xử tranh chấp trong đặc khu</a>
@@ -395,24 +493,27 @@
     <footer>
         <div class="sEmail">
             <div class="sEmail-main row wrapper">
-                <div class="text-title">
-                    <p class="toUpper">đăng ký nhận bản tin</p>
-                </div>
-                <div class="text-detail">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Curabitur eget aliquet sem. Vivamus tincidunt eu nisl sit amet dictum. Vestibulum eu felis nunc. 
-                    </p>
+                <div class="email-left row">
+                    <div class="text-title">
+                        <p class="toUpper">đăng ký nhận bản tin</p>
+                    </div>
+                    <div class="text-detail">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Curabitur eget aliquet sem. Vivamus tincidunt eu nisl sit amet dictum. Vestibulum eu felis nunc. 
+                        </p>
+                    </div>
                 </div>
                 <div class="sEmail-form">
-                    <input type="text" class="form-control" id=""><span class="btn-email"></span>
+                    <div class="iput"><input type="text" class="form-control" id=""><span class="btn-email"></span></div>
                     <button class="btn btn-danger toUpper">đăng ký</button>
-                </div>
+                </div>                                
             </div>
         </div>
         <div class="main-footer row wrapper">
             <div class="footer-left">
                 <div class="logo">
-                    <a href="#"><img src="../images/logo-footer.png" alt=""></a>
+                    <a class="logo-pc" href="index.html"><img src="../images/ThemeVTA/logo-footer.png" alt=""></a>
+                    <a class="logo-mb" href="index.html"><img src="../images/ThemeVTA/logo-footer-2.png" alt=""></a>
                 </div>
                 <div class="address">
                     <span>250 Nguyễn Thị Minh Khai, Phường 6, Quận 3, Tp. Hồ Chí Minh</span><br>
@@ -438,8 +539,8 @@
                 <ul class="menu-footer">
                     <li class="item toUpper">giới thiệu
                         <ul class="sub-menu">
-                            <li><a href="#" >Giới thiệu VTA</a></li> 
-                            <li><a href="#" >Ban điều hành</a></li>
+                            <li><a href="gioithieu.html" >Giới thiệu VTA</a></li> 
+                            <li><a href="gioithieu-bandieuhanh.html" >Ban điều hành</a></li>
                             <li><a href="#" >Ban thư ký</a></li>
                         </ul>
                     </li>
@@ -452,18 +553,18 @@
                     <li class="item toUpper">thỏa thuận trọng tài
                         <ul class="sub-menu">
                             <li><a href="#" >Quy định thoả thuận trọng tài</a></li> 
-                            <li><a href="#" >Điều khoản trọng tài mẫu</a></li>
+                            <li><a href="dieukhoantrongtai.html" >Điều khoản trọng tài mẫu</a></li>
                         </ul>
                     </li>
                     <li class="item toUpper">thư viện
                         <ul class="sub-menu">
                             <li><a href="#" >Bản tin</a></li> 
-                            <li><a href="#" >Văn bản mẫu</a></li> 
+                            <li><a href="vanbanmau.html" >Văn bản mẫu</a></li> 
                             <li><a href="#" >Ấn phẩm</a></li> 
                             <li><a href="#" >Góc nhìn trọng tài viên</a></li> 
-                            <li><a href="#" >Hình ảnh & Video</a></li> 
-                            <li><a href="#" >Hỏi đáp</a></li> 
-                            <li><a href="#" >Tin tức</a></li>
+                            <li><a href="hinhanh.html" >Hình ảnh & Video</a></li> 
+                            <li><a href="hoidap.html" >Hỏi đáp</a></li> 
+                            <li><a href="gioithieu-tintuc.html" >Tin tức</a></li>
                         </ul>
                     </li>
                     <li class="item toUpper">tố tụng trọng tài
@@ -472,12 +573,12 @@
                             <li><a href="#" >Quy tắc đạo đức trọng tài</a></li> 
                             <li><a href="#" >Quy tắc tố tụng</a></li> 
                             <li><a href="#" >Quy trình tố tụng</a></li> 
-                            <li><a href="#" >Biểu phí</a></li> 
+                            <li><a href="bieuphi.html" >Biểu phí</a></li> 
                         </ul>
                     </li>
                     <li class="item toUpper">trọng tài viên
                         <ul class="sub-menu">
-                            <li><a href="#" >Danh sách trọng tài viên</a></li> 
+                            <li><a href="ds-trongtaivien.html" >Danh sách trọng tài viên</a></li> 
                             <li><a href="#" >Điều kiện trở thành trọng tài viên</a></li> 
                         </ul>
                     </li>
@@ -504,9 +605,9 @@
         </div>
     </footer>
     <!-- import javascipt -->
-    <script src="../jquery/jquery-3.2.1.min.js"></script>
-    <script src="../jquery/bootstrap.min.js"></script>
-    <script src="../jquery/popper.min.js"></script>
-    <script src="../jquery/script.js"></script>
+    <script src="../scripts/jquery-3.2.1.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/popper.min.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 </html>
