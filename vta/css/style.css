@@ -161,7 +161,7 @@ body::before { content: ""; height: 5px; width: 18.1559%; min-width: 170px; back
 .row-menu .menu-sub li a { display: block; font-family: "UTM-R"; font-size: .8rem; text-transform: none; color: #444546; }
 .row-menu .menu-sub li:hover { background-color: #014282; }
 .row-menu .menu-sub li:hover a { color: #ed4122; }
-.row-menu .menu-mb { padding-right: 15px; overflow-x: hidden; display: none; height: 100%; position: relative; justify-content: space-between; }
+.row-menu .menu-mb { padding-right: 15px; overflow: hidden; display: none; height: 100%; position: relative; justify-content: space-between; }
 .row-menu .menu-mb .item-left { position: relative; }
 .row-menu .menu-mb .item-right { display: flex; position: relative; }
 .row-menu .menu-mb button { background-color: transparent; border-color: transparent; cursor: pointer; line-height: 1; position: absolute; color: #86b7e6; font-size: 1.7rem; top: 50%; left: 0; transform: translateY(-50%); }
