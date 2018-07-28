@@ -37,7 +37,7 @@ function pushSearch(){
     var y = document.getElementById('menu-item-right')
     if(x.style.right == '-100%'){
         x.style.right = '0px';
-        y.style.width = '245px';
+        y.style.width = '52%';
     }                
     else{
         x.style.right = '-100%';
