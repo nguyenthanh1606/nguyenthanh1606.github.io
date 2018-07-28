@@ -74,7 +74,8 @@
   .main-footer a.text { font-size: .7rem !important; }
   .bot-footer { margin: 0 -15px; }
   .bot-footer .copyright > *, .bot-footer .designby > * { font-size: .75rem; } }
-@media screen and (max-width: 375px) { .main-footer .footer-left img { width: 100% !important; padding-right: 15px; } }
+@media screen and (max-width: 375px) { .main-footer .footer-left img { width: 100% !important; padding-right: 15px; }
+  body > * { padding: 0 15px; } }
 @media screen and (max-width: 320px) { body > * { padding: 0; }
   .menu-mb { padding-left: 10px; }
   #news .head-sub, #need .head-sub, #views .head-sub { padding: 0 15px; }
