@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'UTM-San';
+    src: url('../fonts/UTMNeoSanIntel/UTMNeoSansIntel.eot');
+    src:
+        url('../fonts/UTMNeoSanIntel/UTMNeoSansIntel.ttf') format('truetpye'),
+        url('../fonts/UTMNeoSanIntel/UTMNeoSansIntel.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMNeoSanIntel/UTMNeoSansIntel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTM-SanBold';
+    src: url('../fonts/UTMNeoSanIntelBold/UTMNeoSansIntelBold.eot');
+    src:
+        url('../fonts/UTMNeoSanIntelBold/UTMNeoSansIntelBold.ttf') format('truetpye'),
+        url('../fonts/UTMNeoSanIntelBold/UTMNeoSansIntelBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMNeoSanIntelBold/UTMNeoSansIntelBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../fonts/ProximaNova-Regular/ProximaNova-Regular.eot');
+    src:
+        url('../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf') format('truetpye'),
+        url('../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova-B';
+    src: url('../fonts/ProximaNova-Bold/VL-ProximaNova-Bold.eot');
+    src:
+        url('../fonts/ProximaNova-Bold/VL-ProximaNova-Bold.ttf') format('truetpye'),
+        url('../fonts/ProximaNova-Bold/VL-ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold/VL-ProximaNova-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
