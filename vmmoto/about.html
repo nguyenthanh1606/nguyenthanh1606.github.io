@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/Site.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
-<body>
+<body id="menuPush" style="left: 0;">
     <header class="header">
         <div class="sub-menu row wrapper">
             <ul>
@@ -29,8 +30,12 @@
             <div class="line"></div>
             <div class="wrapper row">
                 <div class="logo">
-                    <a href="index.html"><img src="images/ThemeVMMoto/logo.png" alt=""></a>
+                    <a href="index.html">
+                        <img class="logo-pc" src="images/ThemeVMMoto/logo.png" alt="">
+                        <img class="logo-mb" src="images/ThemeVMMoto/logo-mb.png" alt="">
+                    </a>
                 </div>
+                <button class="btn-menu-mb" onclick="pushMenu()"><i id="ico-bar" class="fas fa-bars"></i></button>
                 <div class="main-menu">
                     <ul>
                         <li><a href="index.html">Trang chủ</a></li>
@@ -65,7 +70,7 @@
                                 <li><a href="#">Miền Bắc</a></li>
                             </ul>
                         </li>
-                        <li><a href="contact.html">Tin tức</a></li>
+                        <li><a href="content.html">Tin tức</a></li>
                         <li><p class="search" id="search-btn" ><i class="fas fa-search"></i></p>
                             <div class="form-search" id="search-form">
                                 <input type="text" class="form-control" placeholder="Tim kiem...">
@@ -76,7 +81,44 @@
                 </div>
             </div>
         </div>        
-    </header>   
+    </header>    
+    <nav id="menu-mobile" class="menu-2" style="right: -100%;">
+        <p class="head toUpper">menu</p>
+        <ul class="menu-mb-lv1">
+            <li class="active"><a href="index.html">Trang chủ</a></li>
+            <li><a href="gioithieu.html">Giới thiệu</a>
+                <a href="#menu-mb-2" data-toggle="collapse" role="button" aria-controls="item-3" aria-expanded="false">
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul id="menu-mb-2" class="collapse menu-mb-lv2">
+                    <li><a href="#">Lịch sử hình thành và phát triển</a></li>
+                    <li><a href="#">Sứ mệnh - Tinh thần - Định hướng chiến lược</a></li>
+                    <li><a href="#">Dự án lắp ráp xe CKD</a></li>
+                    <li><a href="#">Định hướng phát triển thương hiệu</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Sản phẩm</a>
+                <a href="#menu-mb-3" data-toggle="collapse" role="button" aria-controls="item-3" aria-expanded="false">
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul id="menu-mb-3" class="collapse menu-mb-lv2">
+                    <li><a href="#">Sản phẩm A</a></li>
+                    <li><a href="#">Sản phẩm B</a></li>
+                    <li><a href="#">Sản phẩm C</a></li>
+                    <li><a href="#">Sản phẩm D</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch vụ & Phụ tùng</a></li>
+            <li><a href="#">Đại lý</a></li>
+            <li><a href="ds-trongtaivien.html">Tin tức</a></li>
+            <li>
+                <div class="form-search2">
+                    <input type="text" class="form-control" placeholder="Tim kiem...">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                </div>
+            </li>            
+        </ul>
+    </nav>    
     <div id="banner" class="banner-page">
         <img src="images/banners/banner-about.png" alt="">
     </div>
@@ -247,20 +289,6 @@
 				header.classList.remove("sticky");
 			}
 		}
-    </script>
-    <script>
-        $("#search-btn").click(function(){
-            if($("#search-btn i").hasClass("fa-search")){                
-                $("#search-btn i").removeClass("fa-search");
-                $("#search-btn i").addClass("fa-times");
-                $("#search-form").addClass("show");                
-            }
-            else{
-                $("#search-btn i").addClass("fa-search");
-                $("#search-btn i").removeClass("fa-times");
-                $("#search-form").removeClass("show");
-            }
-        });
     </script>
 </body>
 </html>

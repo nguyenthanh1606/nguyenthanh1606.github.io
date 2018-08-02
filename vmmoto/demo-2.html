@@ -17,7 +17,7 @@
     <script src="scripts/jquery-3.2.1.min.js"></script>
     <script src="scripts/owl.carousel.min.js"></script>
 </head>
-<body id="menuPush" style="left: 0;">
+<body>
     <header class="header">
         <div class="sub-menu row wrapper">
             <ul>
@@ -35,12 +35,8 @@
             <div class="line"></div>
             <div class="wrapper row">
                 <div class="logo">
-                    <a href="index.html">
-                        <img class="logo-pc" src="images/ThemeVMMoto/logo.png" alt="">
-                        <img class="logo-mb" src="images/ThemeVMMoto/logo-mb.png" alt="">
-                    </a>
+                    <a href="index.html"><img src="images/ThemeVMMoto/logo.png" alt=""></a>
                 </div>
-                <button class="btn-menu-mb" onclick="pushMenu()"><i id="ico-bar" class="fas fa-bars"></i></button>
                 <div class="main-menu">
                     <ul>
                         <li><a href="index.html">Trang chủ</a></li>
@@ -86,44 +82,7 @@
                 </div>
             </div>
         </div>        
-    </header>    
-    <nav id="menu-mobile" class="menu-2" style="right: -100%;">
-        <p class="head toUpper">menu</p>
-        <ul class="menu-mb-lv1">
-            <li class="active"><a href="index.html">Trang chủ</a></li>
-            <li><a href="gioithieu.html">Giới thiệu</a>
-                <a href="#menu-mb-2" data-toggle="collapse" role="button" aria-controls="item-3" aria-expanded="false">
-                    <i class="fa fa-angle-down"></i>
-                </a>
-                <ul id="menu-mb-2" class="collapse menu-mb-lv2">
-                    <li><a href="#">Lịch sử hình thành và phát triển</a></li>
-                    <li><a href="#">Sứ mệnh - Tinh thần - Định hướng chiến lược</a></li>
-                    <li><a href="#">Dự án lắp ráp xe CKD</a></li>
-                    <li><a href="#">Định hướng phát triển thương hiệu</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Sản phẩm</a>
-                <a href="#menu-mb-3" data-toggle="collapse" role="button" aria-controls="item-3" aria-expanded="false">
-                    <i class="fa fa-angle-down"></i>
-                </a>
-                <ul id="menu-mb-3" class="collapse menu-mb-lv2">
-                    <li><a href="#">Sản phẩm A</a></li>
-                    <li><a href="#">Sản phẩm B</a></li>
-                    <li><a href="#">Sản phẩm C</a></li>
-                    <li><a href="#">Sản phẩm D</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Dịch vụ & Phụ tùng</a></li>
-            <li><a href="#">Đại lý</a></li>
-            <li><a href="ds-trongtaivien.html">Tin tức</a></li>
-            <li>
-                <div class="form-search2">
-                    <input type="text" class="form-control" placeholder="Tim kiem...">
-                    <button class="btn-search"><i class="fas fa-search"></i></button>
-                </div>
-            </li>            
-        </ul>
-    </nav>   
+    </header>   
     <div id="banner" class="banner-page">
         <img src="images/banners/banner-contact-2.png" alt="">
         <div class="name h4 text-b text-right toUpper">tên sản phẩm</div>
@@ -203,7 +162,7 @@
         <div id="2" class="product-2">
             <div class="head text-center pd-bot-2">
                 <a href="" class="name color-main h4 toUpper">nội thất</a>
-                <p class="sub-title">Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
+                <p class="sub-title" style="padding: 0 25%; line-height: 2">Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
             </div>
             <div class="row wrapper list">
                 <div class="first">
@@ -355,7 +314,7 @@
         </div>
         <div id="6" style="background-color: #f6f6f6">
             <p class="h4 text-center toUpper color-main pd-bot-2">thông số kỹ thuật</p>
-            <img src="images/products/tskt.jpg" class="d-block img-fluid m-auto" alt="">
+            <img src="images/products/tskt.jpg" class="d-block m-auto" alt="">
         </div>
         <div id="7" class="download">
             <p class="h4 text-center toUpper color-main pd-bot-2">Download</p>
@@ -563,7 +522,6 @@
             });
         
             function open($content){
-                $('body').css('overflow', 'hidden');
                 $('.container').addClass('pop');
                 var $gallery = $content.clone().prop({class:'popup'});
                 $('body').append($gallery);
@@ -573,9 +531,9 @@
                 setTimeout(function(){
                     $('.popup').addClass('pop');
                 }, 100);
+                
             }
             function close(){
-                $('body').css('overflow', 'auto');
                 var $closer = $('article').find('img, .close-btn');
                 $closer.addClass('closepopup');
                 setTimeout(function(){

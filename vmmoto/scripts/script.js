@@ -1,3 +1,18 @@
+// buttom search
+$("#search-btn").click(function(){
+    if($("#search-btn i").hasClass("fa-search")){                
+        $("#search-btn i").removeClass("fa-search");
+        $("#search-btn i").addClass("fa-times");
+        $("#search-form").addClass("show");                
+    }
+    else{
+        $("#search-btn i").addClass("fa-search");
+        $("#search-btn i").removeClass("fa-times");
+        $("#search-form").removeClass("show");
+    }
+});
+
+
 $(document).ready(function () {
     // Add smooth scrolling to all links
     $("a").on('click', function (event) {
@@ -33,6 +48,63 @@ $('.groupMenu').slick({
     variableWidth: true
 });
 
+//popup images
+$(document).ready(function(){
+            
+    $('.p-content').on('click', function(){
+        open($(this));
+    });
+
+    $(document).on('click', '.popup img', function(){
+        return false;
+    }).on('click', '.popup', function(){
+        close();
+    });
+
+    function open($content){
+        $('.container').addClass('pop');
+        var $gallery = $content.clone().prop({class:'popup'});
+        $('body').append($gallery);
+        $gallery.append('<div class="close-btn"><i class="icon-cancel"></i></div>');
+        $gallery.children().wrapAll("<article></article>");
+        
+        setTimeout(function(){
+            $('.popup').addClass('pop');
+        }, 100);
+    }
+    function close(){
+        var $closer = $('article').find('img, .close-btn');
+        $closer.addClass('closepopup');
+        setTimeout(function(){
+            $('.container').removeClass('pop');
+            $('.popup').remove()
+        }, 200);
+    }
+})
+
+//menu mobile
+function pushMenu(){
+    var a = document.getElementById('menuPush');
+    var b = document.getElementById('menu-mobile');
+    if(a.style.left == '0px'){
+        a.style.left = '-218px';
+        b.style.right = '0';
+    }
+    else{
+        a.style.left = '0px';
+        b.style.right = '-100%';
+    }
+
+    var x = document.getElementById('ico-bar');
+    if(x.classList[1] == 'fa-bars'){
+        x.classList.remove('fa-bars');
+        x.classList.add('fa-times');
+    }
+    else{
+        x.classList.remove('fa-times');
+        x.classList.add('fa-bars');
+    }
+}
 
 // window.onscroll = function() {myFunction()};
 // var header = document.getElementById("menu-pro");
@@ -97,3 +169,4 @@ $('.groupMenu').slick({
 //         document.getElementsByClassName("next")[0].style.display = "block";
 //     }
 // }
+
