@@ -435,6 +435,9 @@
         }
     }   
     #content{
+        .list-content{
+            flex-direction: column;
+        }
         .item{
             flex-direction: column;
         }
