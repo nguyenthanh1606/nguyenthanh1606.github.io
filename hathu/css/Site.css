@@ -107,6 +107,9 @@ ul { list-style-type: none; }
   to { opacity: 1; } }
 .prev_button, .next_button { display: none !important; }
 
+.fix-top { position: absolute; top: 10px; right: 10px; padding: 2px 5px 5px; cursor: pointer; outline-color: transparent !important; background-color: transparent; border: none; }
+.fix-top i { font-size: 1.5rem; color: #fff; }
+
 header { padding-top: 20px; padding-bottom: 30px; }
 header .logo { padding-left: 60px; }
 header .right { padding-top: 24px; padding-left: 56px; }
@@ -334,5 +337,7 @@ footer ul.link span { padding-left: 45px; }
 .menu-2 ul.menu-mb-lv1 > li .menu-mb-lv2 li:not(:first-child) { padding-bottom: 11px; }
 .menu-2 ul.menu-mb-lv1 > li .menu-mb-lv2 li:before { content: ""; position: absolute; top: 23px; left: 0; width: 9px; height: 3px; background-color: red; }
 .menu-2 ul.menu-mb-lv1 .active a { font-family: 'UTM-Bold' !important; color: #c49736 !important; }
+
+#hide { position: absolute; z-index: 201; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=Site.css.map */

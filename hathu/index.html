@@ -23,7 +23,8 @@
     <script src="scripts/jquery.skitter.min.js"></script>
 
 </head>
-<body id="menuPush" style="left: 0">
+<body>
+    <div id="hide" style="display: none"></div>
     <header class="row wrapper">
         <div class="col-md-6 logo">
             <img src="images/ThemeSite/logo-pc.png" class="img-fluid logo-pc" alt="">
@@ -71,7 +72,7 @@
             </form>
         </div>
         <div class="row menu-mb .justify-sp">
-            <div class="left"><button onclick="pushMenu()"><i id="ico-bar" class="fas fa-bars"></i></button></div>
+            <div class="left"><button onclick="pushMenuOpen()"><i class="fas fa-bars"></i></button></div>
             <div class="right">
                 <input id="search-mobi" type="text" class="form-control sOn" placeholder="Tim Kiem...">
                 <button onclick="searchmb()"><i id="ico-s" class="fas fa-search"></i></button>
@@ -79,6 +80,7 @@
         </div>
     </div>
     <nav id="menu-mobile" class="menu-2" style="left: -100%;">
+        <button class="fix-top" onclick="pushMenuClose()"><i class="fas fa-times"></i></button>
         <p class="head toUpper">menu</p>
         <ul class="menu-mb-lv1">
             <li class="active"><a href="index.html">Trang chủ</a></li>
@@ -355,6 +357,7 @@
             </div>
         </div>   
     </footer>
+    
     <!-- import script -->
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
