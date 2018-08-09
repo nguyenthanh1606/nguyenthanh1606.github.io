@@ -27,6 +27,7 @@
         overflow-x: hidden;
     }
     body{
+        overflow-x: hidden;
         position: relative;
         transition: left .4s ease;
     }
@@ -91,6 +92,6 @@
         display: none;
     }
     .scrollToTop{
-        right: 20px;
+        right: 10px;
     }
 }
