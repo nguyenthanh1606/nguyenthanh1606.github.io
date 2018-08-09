@@ -1,0 +1,78 @@
+@media screen and(max-width: 1160px){
+
+}
+@media screen and(max-width: 1024px) and (min-width: 769px){
+
+}
+@media screen and (max-width: 900px){
+
+}
+@media screen and(max-width: 768px){
+
+}
+
+@media screen and(max-width: 600px){  
+
+}
+
+@media screen and(max-width: 475px){
+
+}
+@media screen and(max-width: 375px){
+    
+}
+@media screen and(max-width: 320px){
+    html{
+        font-size: 14px !important;
+    }
+    header{
+        padding-top: 10px;
+        .logo{
+            padding:  0 !important;
+        }
+    }
+    .logo-pc{
+        display: none;
+    }
+    .logo-mb{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+    .follow-mb{
+        display: block;
+    }
+    .img{
+        margin-bottom: 1rem;
+    }
+    p.title{
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+    .whychose{
+        p.title{
+            padding: 0 10px;
+        }
+        .row > div{
+            margin-bottom: .5rem;
+        }
+    }
+    footer ul.link{
+        padding-top: 1.5rem;
+        padding-left: 20px;
+    }
+    footer .right{
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+        padding-left: 35px ;
+    }
+    .cpr{
+        display: none;
+    }
+    .scrollToTop{
+        right: 10px;
+    }
+}
