@@ -63,3 +63,20 @@ function pushMenuClose(){
     let c = document.getElementById('hide');
     c.style.display = 'none';
 }
+function searchmb(){
+    let fsearch = document.getElementById('search-mobi');
+    let icoSearch = document.getElementById('ico-s');
+    if(fsearch.classList == 'form-control sOn')
+    {
+        fsearch.classList.remove('sOn');
+        fsearch.classList.add('sOff');
+        icoSearch.classList.remove('fa-search');
+        icoSearch.classList.add('fa-times');
+    }
+    else{
+        fsearch.classList.remove('sOff');
+        fsearch.classList.add('sOn');
+        icoSearch.classList.remove('fa-times');
+        icoSearch.classList.add('fa-search');
+    }
+}

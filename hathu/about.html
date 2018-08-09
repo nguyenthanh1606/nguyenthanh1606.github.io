@@ -16,9 +16,11 @@
 
 </head>
 <body>
+<div id="hide" style="display: none"></div>
     <header class="row wrapper">
         <div class="col-md-6 logo">
-            <img src="images/ThemeSite/logo-pc.png" class="img-fluid" alt="">
+            <img src="images/ThemeSite/logo-pc.png" class="img-fluid logo-pc" alt="">
+            <img src="images/ThemeSite/logo-mb.png" class="img-fluid logo-mb m-auto" alt="">
         </div>
         <div class="col-md-6 right">
             <div class="hotline">
@@ -29,6 +31,11 @@
                 <p class="text-b c-black">Giờ mở cửa:</p>
                 <p>8h00 - 12h00 | 14h00 - 20h00</p>
             </div>
+        </div>
+        <div class="link-search-f follow-mb">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-google-plus-g"></a>
+            <a href="#" class="fas fa-caret-right"></a>
         </div>
     </header>
     <div id="menu">
@@ -42,18 +49,47 @@
                     <li><a href="contact.html">Liên hệ</a></li>
                 </ul>
             </nav>
-            <div class="link-follow">
-                <a href="#" class="fab fa-facebook-f"></a>
-                <a href="#" class="fab fa-google-plus-g"></a>
-                <a href="#" class="fas fa-caret-right"></a>
+            <div class="right">
+                <div class="link-follow">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-google-plus-g"></a>
+                    <a href="#" class="fas fa-caret-right"></a>
+                </div>
                 <button id="ico-search" onclick="search()" class="fas fadeIn fa-search"></button>
             </div>
+            
             <form id="fsearch" action="" class="fsearch row wrapper searchOff">
                 <input type="text" class="form-control" placeholder="Nhập nội dung tìm kiếm">
                 <button type="submit" class="btn btn-info"><i class="fa fa-search"></i></button>
             </form>
         </div>
+        <div class="row menu-mb .justify-sp">
+            <div class="left"><button onclick="pushMenuOpen()"><i class="fas fa-bars"></i></button></div>
+            <div class="right">
+                <input id="search-mobi" type="text" class="form-control sOn" placeholder="Tim Kiem...">
+                <button onclick="searchmb()"><i id="ico-s" class="fas fa-search"></i></button>
+            </div>
+        </div>
     </div>
+    <nav id="menu-mobile" class="menu-2" style="left: -100%;">
+        <button class="fix-top" onclick="pushMenuClose()"><i class="fas fa-times"></i></button>
+        <p class="head toUpper">menu</p>
+        <ul class="menu-mb-lv1">
+            <li class="active"><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a>
+                <!-- <a href="#item-2" data-toggle="collapse" role="button" aria-controls="item-3" aria-expanded="false">
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul id="item-2" class="collapse menu-mb-lv2">
+                    <li><a href="#">Giải quyết tranh chấp thương mại</a></li>
+                    <li><a href="#">Sứ mệnh - Tầm nhìn - Giá trị cốt lõi</a></li>
+                </ul> -->
+            </li>
+            <li><a href="services.html">Dịch vụ</a></li>
+            <li><a href="tintuc.html">Tin tức</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
     <div class="row wrapper" style="position: relative;">
         <a href="#" class="scrollToTop"></a>
     </div>
@@ -97,7 +133,7 @@
                     <div class="fsize-9 text-justify detail">
                         <p class="c-black">Our clinic's Chief Medical Officer, Dr. Mark Hoffman has been working in this field of medical specialization since 2002. After founding his own clinic in 2010 he brought all his experience here. Most of all he loves to see you walk out with a bright wide smile!</p>
                     </div>
-                    <div class="link-follow m-auto d-block">
+                    <div class="link-follow">
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-google-plus-g"></a>
                         <a href="#" class="fab fa-twitter"></a>
@@ -112,7 +148,7 @@
                     <div class="fsize-9 text-justify detail">
                         <p class="c-black">Leslie is one of the most experienced dental hygienists in the county. She works at our dental clinic since day 1. No one contributed more to our customer's satisfaction and concerns resolving than she.</p>
                     </div>
-                    <div class="link-follow m-auto d-block">
+                    <div class="link-follow">
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-google-plus-g"></a>
                         <a href="#" class="fab fa-twitter"></a>
@@ -127,7 +163,7 @@
                     <div class="fsize-9 text-justify detail">
                         <p class="c-black">Dana previously served as a senior practical nurse at the Mayo clinic. She obtained her license by working hard after graduating from a medical college with cum laude honors. She truly represents all the care that our dental office is surrounded with and our patients feel that every time.</p>
                     </div>
-                    <div class="link-follow m-auto d-block">
+                    <div class="link-follow">
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-google-plus-g"></a>
                         <a href="#" class="fab fa-twitter"></a>
@@ -142,7 +178,7 @@
                     <div class="fsize-9 text-justify detail">
                         <p class="c-black">Kimberly worked for numerous dental offices in the US and Canada during her 20 years long career. And while she will not drill your teeth personally, she will make sure that everything is running smoothly before, during and after your appointment!</p>
                     </div>
-                    <div class="link-follow m-auto d-block">
+                    <div class="link-follow">
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-google-plus-g"></a>
                         <a href="#" class="fab fa-twitter"></a>
@@ -238,7 +274,7 @@
         </div>  
         <div class="copyright">
             <div class="row wrapper">
-                <div class="col-md-6 hidden">
+                <div class="col-md-6 hidden cpr">
                     © Nha Khoa Ha Thu. All rights reserved
                 </div>
                 <div class="col-md-6 text-center link-search-f">

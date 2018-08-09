@@ -279,6 +279,7 @@ header{
         }
         a{
             display: block;
+            font-size: 1.2rem;
         }
     }
 }
@@ -443,6 +444,14 @@ footer{
         >div{
             padding-left: 40px;
             padding-right: 40px;
+            position: relative;
+            >.link-follow{
+                display: flex;
+                position: absolute;
+                bottom: -30px;
+                left: 50%;
+                @include transform(translateX(-50%));
+            }
         }
         .img{
             padding-bottom: 1rem;
@@ -687,6 +696,8 @@ footer{
             border-color: #e5c78c !important;
         }
         button{
+            flex: 0 0 17%;
+            max-width: 17%;
             background-color: #58595b;
         }
     }
