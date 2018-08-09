@@ -20,7 +20,7 @@
 @media screen and (max-width: 768px) { html { font-size: 14px !important; }
   body { overflow-x: hidden; position: relative; transition: left .4s ease; }
   header { padding-top: 10px; padding-bottom: 1rem; }
-  header .right { display: flex; flex-direction: row; justify-content: space-around; }
+  header .right { display: flex; justify-content: space-around; }
   header .right > div { margin-bottom: .5rem; }
   header .logo { padding: 0 !important; }
   .menu-2 { display: block; }
@@ -60,6 +60,7 @@
   .main-post { margin-bottom: 1rem; }
   .post > div { margin-bottom: 2rem; } }
 @media screen and (max-width: 475px) { .left-contact .item { flex: 0 0 100%; max-width: 100%; }
+  header .right .hotline { margin-right: 15px; }
   .patients .img-patients img { width: 120px; height: 120px; }
   header .right { display: block; padding-left: 20px; }
   .slidershow-container img { height: 250px; }
