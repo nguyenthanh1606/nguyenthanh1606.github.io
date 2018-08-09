@@ -46,3 +46,25 @@ function search(){
     }
 }
       
+function pushMenu(){
+    let a = document.getElementById('menuPush');
+    let b = document.getElementById('menu-mobile');
+    if(a.style.left == '0px'){
+        a.style.left = '218px';
+        b.style.left = '0';
+    }
+    else{
+        a.style.left = '0px';
+        b.style.left = '-100%';
+    }
+
+    let x = document.getElementById('ico-bar');
+    if(x.classList[1] == 'fa-bars'){
+        x.classList.remove('fa-bars');
+        x.classList.add('fa-times');
+    }
+    else{
+        x.classList.remove('fa-times');
+        x.classList.add('fa-bars');
+    }
+}

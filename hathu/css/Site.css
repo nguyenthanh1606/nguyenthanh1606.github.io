@@ -123,28 +123,33 @@ header .right { padding-top: 24px; padding-left: 56px; }
 
 .open::before { content: url("../images/ThemeSite/ico-clock.png"); position: absolute; top: 50%; left: 0; line-height: 0; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
-#menu { background-color: #fff; }
+#menu { background-color: #fff; height: 48px; }
 
-.menu { position: relative; height: 48px; padding-top: 11px; border-top: 1px solid #dedfdf; border-bottom: 1px solid #dedfdf; justify-content: space-between; }
+.menu, .menu-mb { border-top: 1px solid #dedfdf; border-bottom: 1px solid #dedfdf; padding-top: 8px; height: 100%; position: relative; justify-content: space-between; }
 
 .fsearch { background-color: #fff; position: absolute; z-index: 201; top: 0; left: 0; transition: all .4s ease-in-out; height: 46px; }
-.fsearch input { display: inline-block; width: 93%; float: left; }
-.fsearch button { float: left; display: inline-block; width: 5%; background: #fff; }
+.fsearch input { display: inline-block; width: 91%; background-color: #e5c78c; border-radius: 0; }
+.fsearch input:hover, .fsearch input:focus { background-color: #e5c78c !important; box-shadow: none !important; border-color: transparent !important; }
+.fsearch button { display: inline-block; width: 5%; background: #fff; }
 .fsearch button i { font-size: 22px; line-height: 0; color: #c49736; }
 .fsearch button i:hover { color: #0056b3; }
-.fsearch input, .fsearch button { border-color: transparent; }
-.fsearch input:hover, .fsearch input:focus, .fsearch input:active, .fsearch button:hover, .fsearch button:focus, .fsearch button:active { background: #fff !important; box-shadow: none !important; border-color: transparent !important; }
+.fsearch button { border-color: transparent; }
+.fsearch button:hover, .fsearch button:focus, .fsearch button:active { background: #fff !important; box-shadow: none !important; border-color: transparent !important; }
 
-.menu-pc { padding-left: 60px; }
+.menu-pc { padding-top: 3px; padding-left: 60px; }
 .menu-pc ul { margin-bottom: 0; display: flex; justify-content: flex-end; }
 .menu-pc ul li { display: inline-block; }
 .menu-pc ul li a { font-family: 'UTM-Bold'; text-transform: uppercase; padding-right: 25px; }
 .menu-pc ul li:not(:first-child) a { padding-left: 25px; }
 
+.link-follow { display: inline-block; }
 .link-follow a { background-image: url("../images/ThemeSite/ico-chat.png"); background-repeat: no-repeat; width: 26px; height: 25px; display: inline-block; color: #c49736; text-align: center; line-height: 25px; font-size: 13px; margin-right: 25px; transition: color .3s ease; }
-.link-follow button.fa-search, .link-follow button.fa-times { padding-left: 50px; padding-right: 30px; font-size: 22px; width: 30px; line-height: 0; z-index: 300; position: relative; color: #c49736; border: none; cursor: pointer; }
-.link-follow button.fa-search:focus, .link-follow button.fa-times:focus { outline-color: transparent; }
-.link-follow button.fa-search:hover, .link-follow button.fa-times:hover { color: #0056b3; }
+
+#menu .right { display: flex; }
+#menu .right button.fa-search, #menu .right button.fa-times { font-size: 22px; margin-right: .5rem; width: 30px; height: 30px; background-color: #fff; line-height: 0; z-index: 300; position: relative; color: #c49736; border: none; cursor: pointer; }
+#menu .right button.fa-search:focus, #menu .right button.fa-times:focus { outline-color: transparent; }
+#menu .right button.fa-search:hover, #menu .right button.fa-times:hover { color: #0056b3; }
+#menu .right button.fa-search:before, #menu .right button.fa-times:before { position: absolute; top: 50%; left: 0; }
 
 .banner { height: 276px !important; }
 .banner img { width: 100%; height: 276px !important; object-fit: cover; object-position: center; }
@@ -307,5 +312,27 @@ footer ul.link span { padding-left: 45px; }
 .follow-mb { display: none; position: absolute; top: 10px; right: 0px; }
 
 .logo-mb { display: none; }
+
+.menu-mb { display: none; padding-left: 20px; padding-right: 20px; position: relative; }
+.menu-mb button { display: inline-block; padding: 5px; background-color: transparent; border: none; cursor: pointer; }
+.menu-mb button:focus { outline: none; }
+.menu-mb button i { font-size: 1.5rem; }
+.menu-mb .right input { box-shadow: 0 0 5px 1px #c2c2c2; position: absolute; transition: all .4s ease; z-index: 200; width: 96%; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); height: 44px; display: inline-block; }
+.menu-mb .right input.sOn { top: 50%; opacity: 0; pointer-events: none; }
+.menu-mb .right input.sOff { top: 110%; opacity: 1; pointer-events: inherit; }
+
+.menu-2 { overflow-y: scroll; z-index: 500; transition: left 0.3s ease-in-out; width: 218px; top: 0; display: none; position: fixed; background-color: #b7b7b7; height: 100%; padding-left: 20px; padding-right: 20px; }
+.menu-2::before { content: ""; width: 40%; top: 0; left: 0; position: absolute; height: 4px; z-index: 1; background-color: red; }
+.menu-2 p.head { color: #fff; font-family: 'UTM-Bold'; font-size: .9rem; padding-top: 15px; margin: 0 -20px; padding-left: 20px; padding-bottom: 14px; background-color: #c49736; }
+.menu-2 ul.menu-mb-lv1 { display: block; }
+.menu-2 ul.menu-mb-lv1 * { text-transform: uppercase !important; }
+.menu-2 ul.menu-mb-lv1 > li { position: relative; display: block; padding-left: 3px; padding-top: 11px; padding-bottom: 11px; }
+.menu-2 ul.menu-mb-lv1 > li i { position: absolute; top: 16px; right: 0; font-size: .9rem; }
+.menu-2 ul.menu-mb-lv1 > li:not(:last-child) { border-bottom: 1px solid #a3a2a2; }
+.menu-2 ul.menu-mb-lv1 > li a { font-family: 'UTM-R'; font-size: .9rem; color: black; line-height: 1; }
+.menu-2 ul.menu-mb-lv1 > li .menu-mb-lv2 li { padding-left: 15px; padding-top: 11px; position: relative; }
+.menu-2 ul.menu-mb-lv1 > li .menu-mb-lv2 li:not(:first-child) { padding-bottom: 11px; }
+.menu-2 ul.menu-mb-lv1 > li .menu-mb-lv2 li:before { content: ""; position: absolute; top: 23px; left: 0; width: 9px; height: 3px; background-color: red; }
+.menu-2 ul.menu-mb-lv1 .active a { font-family: 'UTM-Bold' !important; color: #c49736 !important; }
 
 /*# sourceMappingURL=Site.css.map */

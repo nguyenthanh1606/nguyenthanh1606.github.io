@@ -25,11 +25,25 @@
     html{
         font-size: 14px !important;
     }
+    body{
+        position: relative;
+        transition: left .4s ease;
+    }
     header{
         padding-top: 10px;
+        padding-bottom: 1rem;
+        .right{
+            padding-left: 20px;
+            >div{
+                margin-bottom: .5rem;
+            }
+        }
         .logo{
             padding:  0 !important;
         }
+    }
+    .menu-2{
+        display: block;
     }
     .logo-pc{
         display: none;
@@ -39,6 +53,9 @@
     }
     .menu{
         display: none;
+    }
+    .menu-mb{
+        display: flex;
     }
     .follow-mb{
         display: block;
