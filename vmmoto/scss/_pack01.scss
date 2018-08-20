@@ -1,0 +1,22 @@
+//product detail
+
+figcaption {
+    display: none;
+}
+.fancybox-caption{
+    p{
+        color: #fff;
+    }
+    
+} 
+a.fancybox-button{
+    border-radius: 50%;
+    text-align: center;
+    i{
+        font-size: 1.5rem;
+    }
+}
+
+.fancybox-is-open .fancybox-bg{
+    opacity: 0.95;
+}
