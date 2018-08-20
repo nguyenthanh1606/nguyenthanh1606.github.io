@@ -71,6 +71,9 @@
     .menu-product ul li:not(:last-child){
         padding-right: 10px;
     }
+    .owl-nav{
+        display: none;
+    }
 }
 @media screen and (max-width: 900px){
     #banner{
@@ -505,6 +508,9 @@
             margin-bottom: 1rem;
             order: 1;
         }
+    }
+    .fancybox-caption{
+        padding: 0 !important;
     }
 }
 @media screen and(max-width: 375px){
