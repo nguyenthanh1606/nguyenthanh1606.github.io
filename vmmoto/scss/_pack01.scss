@@ -4,10 +4,20 @@ figcaption {
     display: none;
 }
 .fancybox-caption{
-    p{
-        color: #fff;
+    text-align: center;
+    padding: 0 20% !important;
+    *{
+        color: #000;
     }
-    
+    p{
+        color: #000;
+    }
+    &::before{
+        background-image: none !important; 
+    }
+    &:after{
+        border: none !important;
+    }
 } 
 a.fancybox-button{
     border-radius: 50%;
@@ -18,5 +28,13 @@ a.fancybox-button{
 }
 
 .fancybox-is-open .fancybox-bg{
-    opacity: 0.95;
+    background: #fff;
+}
+
+.fancybox-slide--image{
+    padding-top: 0 !important;
+    padding-bottom: 140px !important;
+}
+.fancybox-navigation .fancybox-button{
+    top: 40% !important;
 }

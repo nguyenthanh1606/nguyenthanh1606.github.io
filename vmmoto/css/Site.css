@@ -495,11 +495,19 @@ main.content .first-content { padding-top: 2rem !important; }
 
 figcaption { display: none; }
 
-.fancybox-caption p { color: #fff; }
+.fancybox-caption { text-align: center; padding: 0 20% !important; }
+.fancybox-caption * { color: #000; }
+.fancybox-caption p { color: #000; }
+.fancybox-caption::before { background-image: none !important; }
+.fancybox-caption:after { border: none !important; }
 
 a.fancybox-button { border-radius: 50%; text-align: center; }
 a.fancybox-button i { font-size: 1.5rem; }
 
-.fancybox-is-open .fancybox-bg { opacity: 0.95; }
+.fancybox-is-open .fancybox-bg { background: #fff; }
+
+.fancybox-slide--image { padding-top: 0 !important; padding-bottom: 140px !important; }
+
+.fancybox-navigation .fancybox-button { top: 40% !important; }
 
 /*# sourceMappingURL=Site.css.map */

@@ -163,7 +163,7 @@
                             <a href="images/products/demo.jpg" data-fancybox="images">
                                 <img src="images/products/demo.jpg" alt="">
                                 <figcaption>
-                                    <h3>Kính chiếu hậu</h3>
+                                    <h3 class="text-b toUpper">Kính chiếu hậu</h3>
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
                                 </figcaption>   
                             </a>                                                     
@@ -177,7 +177,7 @@
                             <a href="images/contents/content-02.png" data-fancybox="images">
                                 <img src="images/contents/content-02.png" alt="">
                                 <figcaption>
-                                    <h3>Kính chiếu hậu</h3>
+                                    <h3 class="text-b toUpper">Kính chiếu hậu</h3>
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
                                 </figcaption>   
                             </a>
@@ -191,7 +191,7 @@
                             <a href="images/contents/content-03.png" data-fancybox="images">
                                 <img src="images/contents/content-03.png" alt="">
                                 <figcaption>
-                                    <h3>Kính chiếu hậu</h3>
+                                    <h3 class="text-b toUpper">Kính chiếu hậu</h3>
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
                                 </figcaption>   
                             </a>
@@ -205,7 +205,7 @@
                             <a href="images/contents/content-01.png" data-fancybox="images">
                                 <img src="images/contents/content-01.png" alt="">
                                 <figcaption>
-                                    <h3>Kính chiếu hậu</h3>
+                                    <h3 class="text-b toUpper">Kính chiếu hậu</h3>
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
                                 </figcaption>   
                             </a>
@@ -219,7 +219,7 @@
                             <a href="images/contents/content-03.png" data-fancybox="images">
                                 <img src="images/contents/content-03.png" alt="">
                                 <figcaption>
-                                    <h3>Kính chiếu hậu</h3>
+                                    <h3 class="text-b toUpper">Kính chiếu hậu</h3>
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
                                 </figcaption>   
                             </a>
@@ -315,7 +315,7 @@
                             <a href="images/contents/content-01.png" data-fancybox="images">
                                 <img src="images/contents/content-01.png" alt="">
                                 <figcaption>
-                                    <h3>Kính chiếu hậu</h3>
+                                    <h3 class="text-b toUpper">Kính chiếu hậu</h3>
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
                                 </figcaption>   
                             </a>
@@ -329,7 +329,7 @@
                             <a href="images/contents/content-02.png" data-fancybox="images">
                                 <img src="images/contents/content-02.png" alt="">
                                 <figcaption>
-                                    <h3>Kính chiếu hậu</h3>
+                                    <h3 class="text-b toUpper">Kính chiếu hậu</h3>
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
                                 </figcaption>   
                             </a>
@@ -343,7 +343,7 @@
                             <a href="images/contents/content-03.png" data-fancybox="images">
                                 <img src="images/contents/content-03.png" alt="">
                                 <figcaption>
-                                    <h3>Kính chiếu hậu</h3>
+                                    <h3 class="text-b toUpper">Kính chiếu hậu</h3>
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
                                 </figcaption>   
                             </a>
@@ -357,7 +357,7 @@
                             <a href="images/contents/content-02.png" data-fancybox="images">
                                 <img src="images/contents/content-02.png" alt="">
                                 <figcaption>
-                                    <h3>Kính chiếu hậu</h3>
+                                    <h3 class="text-b toUpper">Kính chiếu hậu</h3>
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
                                 </figcaption>   
                             </a>
@@ -368,10 +368,10 @@
                     </div>
                     <div class="item">
                         <div class="item-img scale p-content">
-                            <a href="images/banners/banner-01.png" data-fancybox="images">
-                                <img src="images/banners/banner-01.png" alt="">
+                            <a href="images/contents/content-02.png" data-fancybox="images">
+                                <img src="images/contents/content-02.png" alt="">
                                 <figcaption>
-                                    <h3>Kính chiếu hậu</h3>
+                                    <h3 class="text-b toUpper">Kính chiếu hậu</h3>
                                     <p>Lorem Ipsum has been the industry's standard dummy text ever, when an unknown printer took a galley of type he industry's standard dummy.</p>
                                 </figcaption>   
                             </a>
@@ -540,9 +540,9 @@
             afterLoad : function(instance, current) {
                 var pixelRatio = window.devicePixelRatio || 1;
 
-                if ( pixelRatio > 1.5 ) {
-                    current.width  = current.width  / (pixelRatio);
-                    current.height = current.height / (pixelRatio);
+                if ( pixelRatio < 1.5 ) {
+                    current.width  = current.width  / (pixelRatio * 1.25);
+                    current.height = current.height / (pixelRatio * 1.25);
                 }
             }
         });
@@ -561,7 +561,18 @@
                 "close"
             ],
             transitionEffect: "slide",
-            btnTpl:{
+            baseTpl:
+                '<div class="fancybox-container" role="dialog" tabindex="-1">' +
+                '<div class="fancybox-bg"></div>' +
+                '<div class="fancybox-inner">' +
+                '<div class="fancybox-toolbar">{{buttons}}</div>' +
+                '<div class="fancybox-navigation">{{arrows}}</div>' +
+                '<div class="fancybox-stage">'+
+                '<div class="fancybox-caption"></div>' +
+                '</div>' +
+                "</div>" +
+                "</div>", 
+            btnTpl:{                
                 // Arrows
                 arrowLeft:
                     '<a data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}" href="javascript:;">' +
@@ -571,7 +582,8 @@
                     '<a data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}" href="javascript:;">' +
                     '<i class="fas fa-angle-right"></i>' +
                     "</a>"
-            }      
+            }
+              
         });        
     </script>
 
