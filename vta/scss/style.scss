@@ -253,7 +253,7 @@ body::before{
         &-sub{
             display: none;
             position: absolute;
-            top: 103%;
+            top: 100%;
             left: 0;        
             background-color: #c8e2fc;
             min-width: 240px;
@@ -317,11 +317,9 @@ body::before{
 .banner{
     overflow: hidden;
     &-home{
-        background-image: url('../images/banner/banner-01.png');
         height: 430px;
     }
-    &-gioithieu{
-        background-image: url('../images/banner/banner-gioithieu.png');
+    &-child{
         height: 158px;
     }
     background-position: bottom;
@@ -1626,11 +1624,11 @@ $transition-duration: 0.5s;
 			align-items: center;
 			cursor: pointer;
 			-webkit-tap-highlight-color: rgba(black, 0);
-			opacity: 0;
+			opacity: 1;
 			
-			&:hover {
-				opacity: 1;
-			}
+			// &:hover {
+			// 	opacity: 1;
+			// }
 			
 			&--prev {
 				left: 0;
@@ -1648,7 +1646,7 @@ $transition-duration: 0.5s;
 		&-close {
 			position: absolute;
 			top: 3vh;
-			left: 3vw;
+			right: 3vw;
 			z-index: 5;
 			cursor: pointer;
 			-webkit-tap-highlight-color: rgba(black, 0);
@@ -1720,3 +1718,4 @@ body {
 		font-size: 14px;
 	}
 }
+@import "pack01"
