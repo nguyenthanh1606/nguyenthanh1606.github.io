@@ -11,10 +11,8 @@
 
 @font-face {
     font-family: 'UTM-Bold';
-    src: url('../fonts/UTMBold/UTM-Avo-Bold.eot');
     src:
-        url('../fonts/UTMBold/UTM AvoBold.ttf') format('truetpye'),
-        url('../fonts/UTMBold/UTM-Avo-Bold.eot?#iefix') format('embedded-opentype');
+        url('../fonts/UTMBold/UTM AvoBold.ttf') format('truetpye');
     font-weight: normal;
     font-style: normal;
 }
