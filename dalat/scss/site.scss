@@ -2,7 +2,7 @@
 
 .banner{
     &-home{
-        height: 540px;
+        height: 533px;
     }    
 }
 header{
@@ -41,8 +41,21 @@ header{
         padding-left: 15px;
         p{
             margin-bottom: 0;
-            &:not(:first-child){
+            &.name-site{
                 line-height: 1;
+            }
+            &.name-site{
+                font-size: 24px;
+            }
+            &.head,&.bot{
+                font-size: 13px;
+                font-weight: 600;
+            }
+            &.head{
+                color: #000;                
+            }
+            &.bot{
+                color: #787575;
             }
         }
     }
@@ -69,10 +82,77 @@ header{
 
 .hoatdong{
     &-par{
+        .list-item{
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }  
+        position: relative;      
+        margin-bottom: 2.5rem !important;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 90%;
+            height: 1px;
+            background: #e0dddd;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .description{
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-bottom: 2rem;
+            h3{
+                font-size: 34px;
+                color: #4a4b49;
+            }
+            font-family: 'UTM-KT';
+        }
         .item{
+            margin-top: -35px;
+            padding-bottom: 3rem;
+            position: relative;
+            z-index: 999;
+            width: 31.5%;
+            background-color: #fff;
             .ico-item{
-                
+                height: 110px;
+                position: relative;
+                img{
+                    max-height: 110px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    @include transform(translateX(-50%));
+                }
+            }
+            .headline{
+                padding-top: 10px;
+                h4{
+                    color: #6b6b6b;
+                }
+            } 
+            .sumary, .headline{
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            .sumary{
+                padding-bottom: 1rem;
+            }
+            .link{
+                position: absolute;
+                bottom: 1rem;
+                left: 50%;
+                @include transform(translateX(-50%))
             }
         }
     }
+}
+
+.about{
+    width: 31.5%;
+}
+.product-par{
+    width: 66%;
 }
