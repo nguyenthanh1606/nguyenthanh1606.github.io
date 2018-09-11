@@ -1,0 +1,78 @@
+@import 'config';
+
+.banner{
+    &-home{
+        height: 540px;
+    }    
+}
+header{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #fff, $alpha: 0.66);
+    .header-pc{
+        height: 108px;
+    }
+    .header-mb{
+        display: none;
+    }
+}
+
+.header-pc{
+    .img{
+        position: relative;
+        &::after{
+            content: "";
+            width: 100%;
+            height: 4px;
+            background-color: $color-main;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        img{
+            box-shadow: -1px 3px 9px -1px #00220085;
+        }
+    }
+    .text-logo{
+        align-self: center;
+        padding-left: 15px;
+        p{
+            margin-bottom: 0;
+            &:not(:first-child){
+                line-height: 1;
+            }
+        }
+    }
+}
+
+.menu-pc{
+    ul{
+        padding: 0;
+        font-size: 0;
+        list-style-type: none;
+        display: block;
+        li{
+            display: inline-block;
+            padding: 1rem .5rem;
+            font-size: 1rem;
+            a{
+                text-transform: uppercase;
+                font-family: 'UTM-Erie';
+                color: black;
+            }
+        }
+    }
+}
+
+.hoatdong{
+    &-par{
+        .item{
+            .ico-item{
+                
+            }
+        }
+    }
+}

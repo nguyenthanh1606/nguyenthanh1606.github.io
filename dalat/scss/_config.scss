@@ -1,0 +1,28 @@
+$color-main: #487a17;
+
+
+.wrapper{
+    max-width: 1164px;
+    margin: auto;
+}
+.text-b{
+    font-family: 'UTM-Erie';
+}
+.toUpper{
+    text-transform: uppercase;
+}
+.container_skitter, .skitter{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+.color-main{
+    color: $color-main;
+}
+
+a:hover, a:active{
+    text-decoration: none;
+}
+
+main{
+    background-color: #f2f1f1;
+}

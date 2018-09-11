@@ -14,7 +14,15 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- import css page -->
-    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/skitter.css">
+
+    <!-- import javascript -->
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+
+    <!-- javascript slider in HOME-->
+    <script src="scripts/jquery.easing.1.3.js"></script>
+    <script src="scripts/jquery.skitter.min.js"></script>
+
 </head>
 <body>
     <div class="banner banner-home">
@@ -33,19 +41,67 @@
             </ul>
         </div>
     </div>
+
+    <header>
+        <div class="header-pc wrapper row">
+            <div class="img-logo">
+                <div class="img">
+                    <img src="images/theme/logo-pc.png" alt="">
+                </div>
+            </div>            
+            <div class="text-logo">
+                <p class="toupper">Công ty TNHH MTV</p>
+                <p class="text-b color-main h3 toUpper">thông xanh đà lạt</p>
+                <p class="text-color-c">Vì một thế giới nông sản sạch</p>
+            </div>
+            <div class="menu-pc float-right">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="hoatdong.html">Hoạt động</a></li>
+                    <li><a href="product.html">Sản phẩm</a></li>
+                    <li><a href="news.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-mb"></div>
+    </header>
+
+    <main>
+        <section class="hoatdong-par row wrapper">
+            <div class="item">
+                <div class="ico-item">
+                    <img src="images/theme/ico-sanxuat.png" alt="">
+                </div>
+                <div class="headline">
+                    <h4 class="toUpper text-center">Đầu tư nông trại</h4>
+                </div>
+                <div class="sumary">
+                    <p>
+                        LOREM IPSUM DOLOR SIT AMET, LOREM
+                        Consec tetuer adipicing it. Praesebul lorem ipsumS natoque penatibus et gnis dent monteiculu.
+                    </p>
+                </div>
+                <div class="link">
+                    <a href="hoatdong.html" class="btn-readmore toUpper">Xem thêm</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
     <!-- import script -->
-    <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/jquery.easing.1.3.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
 
-    <!-- import script page -->
-    <script src="scripts/jquery.skitter.min.js"></script>
     <script>
         $(function() {
             $('.skitter-minimalist').skitter({
-                navigation: true,
-                dots: false,
+                navigation: false,
+                dots: false ,
+                with_animations: ["paralell", "glassBlock", "swapBars"],
             });
         });
     </script>
