@@ -11,8 +11,12 @@
 
 @font-face {
     font-family: 'UTM-Bold';
-    src:
-        url('../fonts/UTMBold/UTM AvoBold.ttf') format('truetpye');
-    font-weight: normal;
+    src: url('../fonts/UTMBold/UTMAvoBold.eot');
+    src: url('../fonts/UTMBold/UTMAvoBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMBold/UTMAvoBold.woff2') format('woff2'),
+        url('../fonts/UTMBold/UTMAvoBold.woff') format('woff'),
+        url('../fonts/UTMBold/UTMAvoBold.ttf') format('truetype'),
+        url('../fonts/UTMBold/UTMAvoBold.svg#UTMAvoBold') format('svg');
+    font-weight: bold;
     font-style: normal;
 }
