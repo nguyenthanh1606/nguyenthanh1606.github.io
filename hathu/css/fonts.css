@@ -14,8 +14,7 @@
     src: url('../fonts/UTMBold/UTM-Avo-Bold.eot');
     src:
         url('../fonts/UTMBold/UTM-Avo-Bold.ttf') format('truetpye'),
-        url('../fonts/UTMBold/UTM-Avo-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/UTMBold/UTM-Avo-Bold.woff') format('woff');
+        url('../fonts/UTMBold/UTM-Avo-Bold.eot?#iefix') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
