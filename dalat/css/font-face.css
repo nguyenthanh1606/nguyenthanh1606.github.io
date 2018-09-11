@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'UTM-B';
+    src: url('../fonts/UTMAvoBold/UTMAvoBold.eot');
+    src: url('../fonts/UTMAvoBold/UTMAvoBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMAvoBold/UTMAvoBold.woff2') format('woff2'),
+        url('../fonts/UTMAvoBold/UTMAvoBold.woff') format('woff'),
+        url('../fonts/UTMAvoBold/UTMAvoBold.ttf') format('truetype'),
+        url('../fonts/UTMAvoBold/UTMAvoBold.svg#UTMAvoBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTM';
+    src: url('../fonts/UTMAvo/UTMAvo.eot');
+    src: url('../fonts/UTMAvo/UTMAvo.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMAvo/UTMAvo.woff2') format('woff2'),
+        url('../fonts/UTMAvo/UTMAvo.woff') format('woff'),
+        url('../fonts/UTMAvo/UTMAvo.ttf') format('truetype'),
+        url('../fonts/UTMAvo/UTMAvo.svg#UTMAvo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTM-Androgyne';
+    src: url('../fonts/UTMAndrogyne/UTMAndrogyne.eot');
+    src: url('../fonts/UTMAndrogyne/UTMAndrogyne.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMAndrogyne/UTMAndrogyne.woff2') format('woff2'),
+        url('../fonts/UTMAndrogyne/UTMAndrogyne.woff') format('woff'),
+        url('../fonts/UTMAndrogyne/UTMAndrogyne.ttf') format('truetype'),
+        url('../fonts/UTMAndrogyne/UTMAndrogyne.svg#UTMAndrogyne') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTM-Erie';
+    src: url('../fonts/UTMErieBlack/UTMErieBlack.eot');
+    src: url('../fonts/UTMErieBlack/UTMErieBlack.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMErieBlack/UTMErieBlack.woff2') format('woff2'),
+        url('../fonts/UTMErieBlack/UTMErieBlack.woff') format('woff'),
+        url('../fonts/UTMErieBlack/UTMErieBlack.ttf') format('truetype'),
+        url('../fonts/UTMErieBlack/UTMErieBlack.svg#UTMErieBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTM-KT';
+    src: url('../fonts/UTMLibelKT/UTMLibelKT.eot');
+    src: url('../fonts/UTMLibelKT/UTMLibelKT.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMLibelKT/UTMLibelKT.woff2') format('woff2'),
+        url('../fonts/UTMLibelKT/UTMLibelKT.woff') format('woff'),
+        url('../fonts/UTMLibelKT/UTMLibelKT.ttf') format('truetype'),
+        url('../fonts/UTMLibelKT/UTMLibelKT.svg#UTMLibelKT') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
