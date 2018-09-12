@@ -19,6 +19,10 @@
   .menu-product ul li:not(:last-child) { padding-right: 10px; }
   .owl-nav { display: none; } }
 @media screen and (max-width: 900px) { #banner { height: 400px; }
+  .carousel-caption{  left: 10% !important;  right: 10% !important;}
+  .carousel-image{max-width: 350px !important;}
+  #carousel{height: 400px !important;}
+  .carousel-feature .carousel-caption a.h3{font-size: 1.2rem !important}
   .fContact .row { margin-bottom: 0; margin-left: 0; margin-right: 0; }
   .fContact .row input:first-child { margin-right: 0; }
   .fContact .row input:last-child { margin-left: 0; }
@@ -32,6 +36,8 @@
   .page .back { text-align: right !important; }
   #menu-pro { display: none; } }
 @media screen and (max-width: 768px) { 
+  .carousel-feature .carousel-caption{border-radius: 5px !important}
+  .carousel-caption{padding-top: 8px !important; padding-bottom: 8px !important}
   .carousel-image{max-width: 250px !important;}
   #carousel{height: 300px !important;}
   .sub-menu { margin-top: 5px; margin-bottom: 25px; }
@@ -83,7 +89,8 @@
   .chose-2 i { width: 60px; height: 60px; }
   .download .row table { flex: 0 0 100%; max-width: 100%; }
   .download .row a.btn-ds2 { position: initial; } }
-@media screen and (max-width: 600px) { .sub-menu ul li a { padding: 0 12px; }
+@media screen and (max-width: 600px) { .carousel-feature .carousel-caption a.h3{font-size: 1rem !important}
+.sub-menu ul li a { padding: 0 12px; }
   .sub-menu .lang { padding: 0 0 0 12px; }
   .carousel-image{max-width: 220px !important;}
   #carousel{height: 280px !important;}
@@ -103,7 +110,8 @@
   .about #item-2 .h-1, .about #item-2 .h-2 { flex: 0 0 100%; max-width: 100%; }
   .about #item-2 .h-2 { padding-left: 0; }
   .product-2 .first, .product-2 .child { flex: 0 0 100%; max-width: 100%; margin-bottom: 1rem; } }
-@media screen and (max-width: 475px) { html { font-size: 14px; }
+@media screen and (max-width: 475px) { .carousel-caption{padding-top: 5px !important; padding-bottom: 5px !important}
+html { font-size: 14px; }
 .carousel-image{max-width: 160px !important;}
   #carousel{height: 220px !important;}
   .logo-pc { display: none; }

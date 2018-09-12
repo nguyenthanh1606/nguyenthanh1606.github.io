@@ -26,18 +26,33 @@
   cursor:pointer;
   transition: opacity .4s ease;
 }
+.carousel-caption{
+  left: 20%;
+  right: 20%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  bottom: 0;
+
+}
 .carousel-feature .carousel-caption {
   position:absolute;
-  bottom:0;
-  width:100%;
-  background-color:#000;
+  background-color:#d2232a;
+  transition: background-color .4s ease;
+  border-radius: 10px;
+  transform: skewX(-20deg);
 }
-.carousel-feature .carousel-caption p {
-  margin:0;
-  padding:5px;
-  font-weight:bold;
-  font-size:12px;
+.carousel-feature .carousel-caption a {
+  margin-bottom: 0;
+  display: block;
   color:white;
+  transform: skewX(20deg);
+  transition: color .4s ease;
+}
+.carousel-feature .carousel-caption:hover{
+  background-color: #fff;
+}
+.carousel-feature .carousel-caption:hover a{
+  color: #d2232a;
 }
 .tracker-summation-container {
   position:absolute;

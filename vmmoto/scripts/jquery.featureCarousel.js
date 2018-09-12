@@ -376,19 +376,22 @@
       // Caculate new new css values depending on where the feature will be located
       if (newPosition == 1) {
         new_width = pluginData.largeFeatureWidth;
-        new_height = pluginData.largeFeatureHeight;
+        new_height = pluginData.largeFeatureHeight+20;
         new_top = options.topPadding;
         new_zindex = $feature.css("z-index");
         new_left = (pluginData.containerWidth / 2) - (pluginData.largeFeatureWidth / 2) - (pluginData.borderWidth / 2);
         new_fade = 1.0;
       } else {
-        new_width = pluginData.smallFeatureWidth;
+        new_width = pluginData.smallFeatureWidth+20;
         new_height = pluginData.smallFeatureHeight;
         new_top = options.smallFeatureOffset + options.topPadding;
         new_zindex = 1;
         new_fade = 0.5;
         // some info is different for the left, right, and hidden positions
         // left
+        let x = $(window).width();
+        if(x<=600)
+        options.sidePadding = 20;
         if (newPosition == pluginData.totalFeatureCount) {
           new_left = options.sidePadding;
         // right
@@ -711,7 +714,7 @@
     carouselSpeed:        1000,
     // time in milliseconds to set interval to autorotate the carousel
     // set to zero to disable it, negative to go left
-    autoPlay:             4000,
+    autoPlay:             5000,
     // with autoplay enabled, set this option to true to have the carousel pause rotating
     // when a user hovers over any feature
     pauseOnHover:         true,
