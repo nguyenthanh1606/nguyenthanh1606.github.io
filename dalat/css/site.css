@@ -38,7 +38,7 @@ main { background-color: #f2f1f1; }
 
 .c-gray { color: #a7a7a6; }
 
-.banner-home { height: 533px; }
+.banner-home { max-height: 533px; }
 .banner-home .image_main { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 
 header { position: absolute; z-index: 1000; width: 100%; top: 0; left: 0; background-color: rgba(255, 255, 255, 0.66); }
