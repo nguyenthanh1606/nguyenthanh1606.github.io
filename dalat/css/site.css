@@ -1,8 +1,8 @@
 * { margin: 0; padding: 0; }
 
-html { font-size: 15px; }
+html { font-size: 14px; }
 
-p { font-family: 'UTM'; color: #4a4a49; }
+p { font-family: 'Roboto Slab'; color: #4a4b49; }
 
 .wrapper { max-width: 1164px; margin: auto; }
 
@@ -14,7 +14,9 @@ p { font-family: 'UTM'; color: #4a4a49; }
 
 .color-main { color: #487a17; }
 
-a:hover, a:active { text-decoration: none; }
+.text-color-main { color: #4a4b49; }
+
+a:hover, a:active { text-decoration: none; color: #739305 !important; }
 
 main { background-color: #f2f1f1; }
 
@@ -23,11 +25,21 @@ main { background-color: #f2f1f1; }
 .btn-readmore { font-family: 'UTM-B'; background-color: #487a17; display: inline-block; text-align: center; padding: 10px 20px; border-radius: 4px; color: #fff; border: 1px solid transparent; transition: all .4s ease; }
 .btn-readmore:hover { background-color: #fff; color: #487a17; border-color: #487a17; box-shadow: 0px 0px 5px 1px #ccc; }
 
-.thumb { overflow: hidden; }
+.link a.read-more { color: #739305; }
+.link a.read-more:hover { text-decoration: underline; }
+
+.thumb { overflow: hidden; margin-bottom: 1rem; }
 .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .4s ease; }
 .thumb img:hover { transform: scale(1.1); }
 
+.text-i { font-style: italic; }
+
+.c-black { color: #000; }
+
+.c-gray { color: #a7a7a6; }
+
 .banner-home { height: 533px; }
+.banner-home .image_main { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 
 header { position: absolute; z-index: 1000; width: 100%; top: 0; left: 0; background-color: rgba(255, 255, 255, 0.66); }
 header .header-pc { height: 108px; }
@@ -62,9 +74,24 @@ header .header-mb { display: none; }
 .hoatdong-par .item .sumary { padding-bottom: 1rem; }
 .hoatdong-par .item .link { position: absolute; bottom: 1rem; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 
-.about { width: 31.5%; padding-left: 1rem; padding-right: 1rem; }
-.about .thumb { width: 100%; height: 168px; }
+main { padding-bottom: 2rem; }
 
-.product-par { width: 65%; }
+.about-home { width: 31%; padding-right: 1rem; }
+.about-home .thumb { width: 100%; height: 168px; }
+
+.about-home, .product-par { padding-bottom: 2rem; position: relative; }
+.about-home .h3, .product-par .h3 { font-size: 24px; }
+.about-home .head, .product-par .head { margin-bottom: 1rem; }
+.about-home .link, .product-par .link { position: absolute; left: 0; bottom: 0; }
+
+.product-par { width: 66%; }
+.product-par .list-item { display: flex; flex-direction: row; justify-content: space-between; }
+.product-par .list-item .item { width: 32%; }
+.product-par .headline { margin-bottom: .5rem; font-family: 'UTM-Androgyne'; }
+.product-par .headline a { font-size: 1.2rem; color: #000; transition: color .4s ease; }
+
+footer .text-site { align-self: center; }
+footer .text-site a { color: #a7a7a6; }
+footer .name-site { font-family: 'UTM'; font-weight: 600; }
 
 /*# sourceMappingURL=site.css.map */

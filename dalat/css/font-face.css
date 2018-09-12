@@ -1,4 +1,16 @@
 @font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab/RobotoSlab-Regular.eot');
+    src: url('../fonts/RobotoSlab/RobotoSlab-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoSlab/RobotoSlab-Regular.woff') format('woff'),
+        url('../fonts/RobotoSlab/RobotoSlab-Regular.ttf') format('truetype'),
+        url('../fonts/RobotoSlab/RobotoSlab-Regular.svg#RobotoSlab-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'UTM-B';
     src: url('../fonts/UTMAvoBold/UTMAvoBold.eot');
     src: url('../fonts/UTMAvoBold/UTMAvoBold.eot?#iefix') format('embedded-opentype'),
