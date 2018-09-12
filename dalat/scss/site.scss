@@ -20,6 +20,15 @@ header{
     background-color: rgba($color: #fff, $alpha: 0.66);
     .header-pc{
         height: 108px;
+        .left{
+            width: 45%;
+            display: flex;
+        }
+        .right{
+            width: 55%;
+            display: flex;
+            justify-content: flex-end;
+        }
     }
     .header-mb{
         display: none;
@@ -206,14 +215,60 @@ main{
 }
 
 footer{
-    .text-site{
+    height: 160px;
+    .left{
+        width: 50%;
+        .text-site{
+            align-self: center;
+        }
+        .text-site a{
+            color: #a7a7a6;
+        }
+        .name-site{
+            font-family: 'UTM';
+            font-weight: 600;
+        }
+    }
+    .right{
+        width: 50%;
         align-self: center;
-    }
-    .text-site a{
-        color: #a7a7a6;
-    }
-    .name-site{
-        font-family: 'UTM';
-        font-weight: 600;
+        text-align: right;
+        .follow{
+            justify-content: flex-end;
+            margin-bottom: 1.5rem;
+            p{
+                font-weight: 600;
+                font-family: 'UTM';
+                display: inline-block;
+                padding-right: 2rem;
+            }
+            ul{
+                list-style-type: none;
+                li{
+                    display: inline-block;
+                    padding-right: 1rem;
+                    i{
+                        width: 15px;
+                        text-align: center;
+                    }
+                    a{
+                        color: #373737;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: #373737;
+                        padding: 5px 8px;
+                        border-radius: 50%;
+                        transition: all .4s ease;
+                    } 
+                    &:hover{
+                        a{
+                            color: $color-main;
+                            border-color: transparent;
+                            box-shadow: 0px 0px 5px 1px $color-main;
+                        }
+                    }  
+                }
+            }
+        }
     }
 }

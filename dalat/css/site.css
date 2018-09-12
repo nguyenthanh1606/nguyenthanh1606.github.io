@@ -43,6 +43,8 @@ main { background-color: #f2f1f1; }
 
 header { position: absolute; z-index: 1000; width: 100%; top: 0; left: 0; background-color: rgba(255, 255, 255, 0.66); }
 header .header-pc { height: 108px; }
+header .header-pc .left { width: 45%; display: flex; }
+header .header-pc .right { width: 55%; display: flex; justify-content: flex-end; }
 header .header-mb { display: none; }
 
 .header-pc .img { position: relative; }
@@ -90,8 +92,18 @@ main { padding-bottom: 2rem; }
 .product-par .headline { margin-bottom: .5rem; font-family: 'UTM-Androgyne'; }
 .product-par .headline a { font-size: 1.2rem; color: #000; transition: color .4s ease; }
 
-footer .text-site { align-self: center; }
-footer .text-site a { color: #a7a7a6; }
-footer .name-site { font-family: 'UTM'; font-weight: 600; }
+footer { height: 160px; }
+footer .left { width: 50%; }
+footer .left .text-site { align-self: center; }
+footer .left .text-site a { color: #a7a7a6; }
+footer .left .name-site { font-family: 'UTM'; font-weight: 600; }
+footer .right { width: 50%; align-self: center; text-align: right; }
+footer .right .follow { justify-content: flex-end; margin-bottom: 1.5rem; }
+footer .right .follow p { font-weight: 600; font-family: 'UTM'; display: inline-block; padding-right: 2rem; }
+footer .right .follow ul { list-style-type: none; }
+footer .right .follow ul li { display: inline-block; padding-right: 1rem; }
+footer .right .follow ul li i { width: 15px; text-align: center; }
+footer .right .follow ul li a { color: #373737; border-width: 1px; border-style: solid; border-color: #373737; padding: 5px 8px; border-radius: 50%; transition: all .4s ease; }
+footer .right .follow ul li:hover a { color: #487a17; border-color: transparent; box-shadow: 0px 0px 5px 1px #487a17; }
 
 /*# sourceMappingURL=site.css.map */
