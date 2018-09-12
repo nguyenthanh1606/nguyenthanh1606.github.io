@@ -31,7 +31,10 @@
   .page .print { text-align: left !important; }
   .page .back { text-align: right !important; }
   #menu-pro { display: none; } }
-@media screen and (max-width: 768px) { .sub-menu { margin-top: 5px; margin-bottom: 25px; }
+@media screen and (max-width: 768px) { 
+  .carousel-image{max-width: 250px !important;}
+  #carousel{height: 300px !important;}
+  .sub-menu { margin-top: 5px; margin-bottom: 25px; }
   .sub-menu .tel { display: none; }
   .menu-2, button.btn-menu-mb { display: block; }
   #header { padding-top: 15px; padding-bottom: 15px; }
@@ -82,6 +85,8 @@
   .download .row a.btn-ds2 { position: initial; } }
 @media screen and (max-width: 600px) { .sub-menu ul li a { padding: 0 12px; }
   .sub-menu .lang { padding: 0 0 0 12px; }
+  .carousel-image{max-width: 220px !important;}
+  #carousel{height: 280px !important;}
   .sub-menu .lang a:last-child { padding-right: 0; }
   .item { flex: 0 0 100% !important; max-width: 100% !important; margin-bottom: 1.5rem; }
   .list-bot-menu .item:not(:last-child) { border-right: none; border-bottom: 1px solid #ccc; }
@@ -99,6 +104,8 @@
   .about #item-2 .h-2 { padding-left: 0; }
   .product-2 .first, .product-2 .child { flex: 0 0 100%; max-width: 100%; margin-bottom: 1rem; } }
 @media screen and (max-width: 475px) { html { font-size: 14px; }
+.carousel-image{max-width: 160px !important;}
+  #carousel{height: 220px !important;}
   .logo-pc { display: none; }
   .logo-mb { display: block; }
   .sub-menu ul li a { padding: 0 9px; }
@@ -123,7 +130,9 @@
   .product-4 .left { flex: 0 0 100%; max-width: 100%; margin-bottom: 1rem; order: 1; }
   .fancybox-caption { padding: 0 !important; } }
 @media screen and (max-width: 375px) { html { font-size: 12px; }
-  #banner { height: 200px; } }
+  #banner { height: 200px; } 
+  .carousel-image{max-width: 120px !important;}
+  #carousel{height: 170px !important;}}
 @media screen and (max-width: 319px) { html { font-size: 11px; } }
 
 /*# sourceMappingURL=responsive.css.map */
