@@ -57,9 +57,9 @@ main { background-color: #f2f1f1; }
 .list-item:nth-child(3n+0) { padding-right: 0 !important; }
 .list-item .headline { margin-bottom: .5rem; font-family: 'UTM-Androgyne'; }
 .list-item .headline a { font-size: 1.5rem; color: #487a17; transition: color .4s ease; }
-.list-item .sub-headline { font-family: 'Helvetica Neue'; color: #acacab; font-size: 12px; margin-bottom: .5rem; padding-bottom: 5px; padding-top: .5rem; border-bottom: 1px solid #ccc; }
-.list-item .sub-headline .by::before { content: "Theo "; padding-right: 2px; color: #acacab; font-weight: normal; }
-.list-item .sub-headline span:not(:last-child):after { content: "|"; padding-left: 10px; padding-right: 10px; }
+.list-item .s ub-headline { font-family: 'Helvetica Neue'; color: #acacab; font-size: 12px; margin-bottom: .5rem; padding-bottom: 5px; padding-top: .5rem; border-bottom: 1px solid #ccc; }
+.list-item .s ub-headline .by::before { content: "Theo "; padding-right: 2px; color: #acacab; font-weight: normal; }
+.list-item .s ub-headline span:not(:last-child):after { content: "|"; padding-left: 10px; padding-right: 10px; }
 .list-item .link { position: absolute; left: 0; bottom: 0; }
 .list-item .link a { text-decoration: underline; }
 
