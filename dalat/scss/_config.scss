@@ -1,5 +1,6 @@
 $color-main: #487a17;
 $color-text-main: #4a4b49;
+$heightImgItem: 205px;
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +12,13 @@ p{
     font-family: 'Roboto Slab';
     color: $color-text-main;
 }
-
+.text-sumary p{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-family: 'UTM-Androgyne';
+    color: #4a4b49;
+    font-size: 1.2rem;
+}
 .wrapper{
     max-width: 1164px;
     margin: auto;
@@ -63,8 +70,9 @@ main{
     }
 }
 .link a.read-more{
-    color: #739305;
+    color: #000;
     &:hover{
+        color: #739305;
         text-decoration: underline;
     }
 }
@@ -78,7 +86,7 @@ main{
         object-position: center;
         transition: transform .4s ease;
         &:hover{
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
     }
 }
@@ -91,6 +99,97 @@ main{
 .c-gray{
     color: #a7a7a6;
 }
+.font-weight{
+    font-weight: 600;
+}
+.pagination{
+    justify-content: center;
+    margin-top: 2rem;
+    ul{
+        display: inline-block;
+        li{
+            display: inline-block;
+            &:not(:last-child){
+                margin-right: 5px;
+            }
+            a{
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                color: #666;
+                text-align: center;
+                line-height: 35px;
+                transition: background-color .4s ease;
+                &:hover,&.active{
+                    background-color: $color-main;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
+.hide{
+    display: none;
+}
+$itemRow: 3;
+.list-item{
+    display: flex;
+    flex-wrap: wrap;
+    .item{
+        position: relative;
+        width: 100%/$itemRow;
+        padding-right: 15px;
+        padding-bottom: 2rem;
+        margin-bottom: 1.5rem;
+        .thumb{
+            height: $heightImgItem;
+        }
+    }
+    &:nth-child(3n+0){
+        padding-right: 0 !important;
+    }
+    .headline{
+        margin-bottom: .5rem;
+        font-family: 'UTM-Androgyne';
+        a{
+            font-size: 1.5rem;
+            color: $color-main;            
+            transition: color .4s ease;
+        }
+    }
+    .sub-headline{
+        font-family: 'Helvetica Neue';
+        color: #acacab;
+        font-size: 12px;
+        margin-bottom: .5rem;
+        padding-bottom: 5px;
+        padding-top: .5rem;
+        border-bottom: 1px solid #ccc;
+        .by::before{
+            content: "Theo ";
+            padding-right: 2px;
+            color: #acacab;
+            font-weight: normal;
+        }
+        span:not(:last-child):after{
+            content: "|";
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .link{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        a{
+            text-decoration: underline;
+        }
+    }
+}
+
 @mixin transform($property) {
     -webkit-transform: $property;
         -ms-transform: $property;

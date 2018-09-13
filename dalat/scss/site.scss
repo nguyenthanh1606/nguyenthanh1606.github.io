@@ -13,8 +13,12 @@
     &-not-home{
         height: 255px;
         width: 100%;
-        object-fit: cover;
-        object-position: center;
+        img{
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
     }  
 }
 header{
@@ -148,6 +152,7 @@ header{
 }
 
 .hoatdong{
+    padding-top: 1.5rem;
     &-par{
         .list-item{
             justify-content: space-between;
@@ -222,6 +227,7 @@ main{
 }
 
 .about{
+    margin-top: 1.5rem !important;
     &-home{
        width: 31%;
         padding-right: 1rem;
@@ -229,8 +235,7 @@ main{
             width: 100%;
             height: 168px;        
         }   
-    }
-      
+    }      
 }
 .about-home, .product-par{
     padding-bottom: 2rem;
@@ -267,7 +272,9 @@ main{
         }
     }
 }
-
+.product, .news{
+    padding-top: 1.5rem;
+}
 footer{
     height: 160px;
     .left{
@@ -372,5 +379,36 @@ footer{
                 color: #5d5e5f;
             }
         }
+    }
+}
+
+.post{
+    .img-post{
+        display: inline-block;
+        float: left;
+        width: 40%;
+        margin-right: 12px;
+        margin-bottom: 12px;
+        position: relative;
+        &::after{
+            content: "";
+            width: 100%;
+            height: 4px;
+            background-color: #888080;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+        img{
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+.news{
+    .headline{
+        height: 62px;
     }
 }
