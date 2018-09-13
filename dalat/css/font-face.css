@@ -9,6 +9,17 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'UTM-Intel';
+    src: url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.eot');
+    src: url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.woff2') format('woff2'),
+        url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.woff') format('woff'),
+        url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.ttf') format('truetype'),
+        url('../fonts/UTMNeoSansIntel/UTMNeoSansIntel.svg#UTMNeoSansIntel') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'UTM-B';
