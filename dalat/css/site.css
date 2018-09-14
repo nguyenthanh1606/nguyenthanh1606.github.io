@@ -20,15 +20,17 @@ p { font-family: 'Roboto Slab'; color: #4a4b49; }
 
 a:hover, a:active { text-decoration: none; color: #739305 !important; }
 
+.border-radius-0 { border-radius: 0 !important; }
+
 main { background-color: #f2f1f1; }
 
 .justify { text-align: justify; }
 
-.btn-readmore { font-family: 'UTM-B'; background-color: #487a17; display: inline-block; text-align: center; padding: 10px 20px; border-radius: 4px; color: #fff; border: 1px solid transparent; transition: all .4s ease; }
-.btn-readmore:hover { background-color: #fff; color: #487a17; border-color: #487a17; box-shadow: 0px 0px 5px 1px #ccc; }
+.btn-readmore, .summit { font-family: 'UTM-B'; background-color: #487a17; display: inline-block; text-align: center; padding: 10px 20px; border-radius: 4px; color: #fff; border: 1px solid transparent; transition: all .4s ease; text-decoration: none !important; }
+.btn-readmore:hover, .summit:hover { background-color: #fff; color: #487a17; border-color: #487a17; box-shadow: 0px 0px 5px 1px #ccc; }
 
-.link a.read-more { color: #000; }
-.link a.read-more:hover { color: #739305; text-decoration: underline; }
+.link a.read-more, .link input.summit { color: #000; }
+.link a.read-more:hover, .link input.summit:hover { color: #739305; text-decoration: underline; }
 
 .thumb { overflow: hidden; margin-bottom: 1rem; }
 .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center; transition: transform .4s ease; }
@@ -107,7 +109,7 @@ header .header-mb { display: none; }
 .hoatdong-par .item .ico-item { height: 110px; position: relative; }
 .hoatdong-par .item .ico-item img { max-height: 110px; position: absolute; bottom: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
 .hoatdong-par .item .headline { padding-top: 10px; }
-.hoatdong-par .item .headline h4 { color: #6b6b6b; }
+.hoatdong-par .item .headline h4, .hoatdong-par .item .headline .h4 { color: #6b6b6b; }
 .hoatdong-par .item .sumary, .hoatdong-par .item .headline { padding-left: 25px; padding-right: 25px; }
 .hoatdong-par .item .sumary { padding-bottom: 1rem; }
 .hoatdong-par .item .link { position: absolute; bottom: 1rem; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
@@ -129,7 +131,33 @@ main { padding-bottom: 2rem; }
 .product-par .headline { margin-bottom: .5rem; font-family: 'UTM-Androgyne'; }
 .product-par .headline a { font-size: 1.2rem; color: #000; transition: color .4s ease; }
 
-.product, .news { padding-top: 1.5rem; }
+.product, .news, .contact { padding-top: 1.5rem; }
+
+.contact { padding-bottom: 1px; }
+.contact .text-sumary { padding-bottom: 1rem; position: relative; }
+.contact .text-sumary p { margin-bottom: 0; }
+.contact .text-sumary::after { content: ""; width: 33.333%; height: 4px; background-color: #888080; position: absolute; left: 0; bottom: 0; }
+.contact .main-form { position: relative; padding-bottom: 3rem; padding-right: 30px; }
+.contact .main-form form { margin-bottom: 1rem; }
+.contact .main-form form .row { padding-top: .5rem; }
+.contact .main-form form .row .col-md-6:first-child { padding-right: 0; }
+.contact .main-form form label { color: #000; font-weight: 600; }
+.contact .main-form form .form-control { border-radius: 0; }
+.contact .main-form form .form-control:focus { border-color: #487a17; box-shadow: 0 0 5px 0.02rem rgba(72, 122, 23, 0.66); }
+.contact .main-form .link { position: absolute; right: 30px; bottom: 0; }
+.contact .right-info .h5 { color: #706c6c; padding-bottom: .5rem; }
+.contact .right-info .info { margin-bottom: 2rem; }
+.contact .right-info .info .site-name { margin-bottom: .5rem; font-family: 'Helvetica Neue'; }
+.contact .right-info .info a { color: #a7a7a6; }
+.contact .right-info .follow > div { display: flex; flex-direction: row; margin-bottom: 1rem; }
+.contact .right-info .follow > div > a:hover .ico { box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.44); }
+.contact .right-info .follow .ico { margin-right: 15px; width: 44px; height: 44px; border-radius: 30%; position: relative; transition: box-shadow .4s ease; }
+.contact .right-info .follow .ico i { color: #fff; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.contact .right-info .follow .text { align-self: center; }
+.contact .right-info .follow .text p { margin-bottom: 0; }
+.contact .right-info .follow .text a { color: #a7a7a6; }
+.contact .right-info .follow .bg-fb { background-color: #3b5997; }
+.contact .right-info .follow .bg-youtube { background-color: #d12f2f; }
 
 footer { height: 160px; }
 footer .left { width: 50%; }

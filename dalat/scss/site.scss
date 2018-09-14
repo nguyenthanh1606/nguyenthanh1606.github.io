@@ -201,7 +201,7 @@ header{
             }
             .headline{
                 padding-top: 10px;
-                h4{
+                h4, .h4{
                     color: #6b6b6b;
                 }
             } 
@@ -272,8 +272,108 @@ main{
         }
     }
 }
-.product, .news{
+.product, .news, .contact{
     padding-top: 1.5rem;
+}
+
+.contact{
+    padding-bottom: 1px;
+    .text-sumary{
+        padding-bottom: 1rem;
+        position: relative;
+        p{
+            margin-bottom: 0;
+        }
+        &::after{
+            content: "";
+            width: 33.333%;
+            height: 4px;
+            background-color: #888080;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }   
+    .main-form{
+        position: relative;
+        padding-bottom: 3rem;
+        padding-right: 30px;
+        form{
+            .row{
+                padding-top: .5rem;
+                .col-md-6:first-child{
+                    padding-right: 0;
+                }
+            }
+            margin-bottom: 1rem;
+            label{
+                color: #000;
+                font-weight: 600;
+            }
+            .form-control{
+                border-radius: 0;
+                &:focus{
+                    border-color: $color-main;
+                    box-shadow: 0 0 5px .02rem rgba($color: $color-main, $alpha: 0.66)
+                }
+            }
+        }
+        .link{
+            position: absolute;
+            right: 30px;
+            bottom: 0;
+        }
+    } 
+    .right-info{
+        .h5{
+            color: #706c6c;
+            padding-bottom: .5rem;
+        }
+        .info{
+            margin-bottom: 2rem;
+            .site-name{
+                margin-bottom: .5rem;
+                font-family: 'Helvetica Neue';
+            }
+            a{
+                color: #a7a7a6;
+            }
+        }
+        .follow{
+            $size:44px;
+            >div{display: flex; flex-direction: row; margin-bottom: 1rem;>a:hover .ico{box-shadow: 0px 0px 2px 1px rgba($color: #000, $alpha: 0.44)}}
+            .ico{
+                margin-right: 15px;
+                width: $size;
+                height: $size;
+                border-radius: 30%;
+                position: relative;
+                transition: box-shadow .4s ease;
+                i{
+                    color: #fff;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    @include transform(translate(-50%,-50%));
+                }
+            }
+            .text{
+                align-self: center;
+                p{
+                    margin-bottom: 0;
+                }
+                a{
+                    color: #a7a7a6;
+                }
+            }
+            .bg-fb{
+                background-color: #3b5997;
+            }
+            .bg-youtube{
+                background-color: #d12f2f;
+            }
+        }
+    }
 }
 footer{
     height: 160px;

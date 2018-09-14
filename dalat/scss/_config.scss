@@ -43,7 +43,9 @@ a:hover, a:active{
     text-decoration: none;    
     color: #739305 !important;
 }
-
+.border-radius-0{
+    border-radius: 0 !important;
+}
 main{
     background-color: #f2f1f1;
 }
@@ -52,7 +54,7 @@ main{
     text-align: justify;
 }
 
-.btn-readmore{
+.btn-readmore, .summit{
     font-family: 'UTM-B';
     background-color: $color-main;
     display: inline-block;
@@ -62,6 +64,7 @@ main{
     color: #fff;
     border: 1px solid transparent;
     transition: all .4s ease;
+    text-decoration: none !important;
     &:hover{
         background-color: #fff;
         color: $color-main;
@@ -69,7 +72,7 @@ main{
         box-shadow: 0px 0px 5px 1px #ccc;
     }
 }
-.link a.read-more{
+.link a.read-more, .link input.summit{
     color: #000;
     &:hover{
         color: #739305;
