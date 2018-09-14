@@ -151,6 +151,23 @@ header{
     }
 }
 
+
+main{
+    padding-bottom: 2rem;
+    
+}
+
+.about{
+    margin-top: 1.5rem !important;
+    &-home{
+       width: 31%;
+        padding-right: 1rem;
+        .thumb{
+            width: 100%;
+            height: 168px;        
+        }   
+    }      
+}
 .hoatdong{
     padding-top: 1.5rem;
     &-par{
@@ -221,22 +238,6 @@ header{
         }
     }
 }
-main{
-    padding-bottom: 2rem;
-    
-}
-
-.about{
-    margin-top: 1.5rem !important;
-    &-home{
-       width: 31%;
-        padding-right: 1rem;
-        .thumb{
-            width: 100%;
-            height: 168px;        
-        }   
-    }      
-}
 .about-home, .product-par{
     padding-bottom: 2rem;
     position: relative;
@@ -260,6 +261,10 @@ main{
         justify-content: space-between;
         .item{
             width: 32%;
+            padding-right: 0 !important;
+            .thumb{
+                height: 134px;
+            }
         }
     }
     .headline{
@@ -275,7 +280,11 @@ main{
 .product, .news, .contact{
     padding-top: 1.5rem;
 }
-
+.news{
+    .headline{
+        height: 62px;
+    }
+}
 .contact{
     padding-bottom: 1px;
     .text-sumary{
@@ -375,6 +384,7 @@ main{
         }
     }
 }
+
 footer{
     height: 160px;
     .left{
@@ -507,8 +517,133 @@ footer{
         }
     }
 }
-.news{
+.post-2{
+    padding-top: 1.5rem;
+    display: flex;
     .headline{
-        height: 62px;
+        padding-right: 1.5rem;
+        margin-bottom: .5rem;
+        font-family: 'UTM-Androgyne';
+        h4{
+            font-size: 2rem;
+            line-height: 1.3;
+            color: $color-main;            
+            transition: color .4s ease;
+        }
+        a{
+            font-size: 1.5rem;
+            color: $color-main;            
+            transition: color .4s ease;
+        }
+    }
+    .sub-headline{
+        font-family: 'Helvetica Neue';
+        color: #acacab;
+        font-size: 12px;
+        margin-bottom: .5rem;
+        padding-bottom: 5px;
+        padding-top: .5rem;
+        position: relative;
+        .by::before{
+            content: "Theo ";
+            padding-right: 2px;
+            color: #acacab;
+            font-weight: normal;
+        }
+        span:not(:last-child):after{
+            content: "|";
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+    .main-post{
+        padding-left: 0; 
+        .sub-headline{
+            &::after{
+                content: "";
+                width: 50%;
+                height: 4px;
+                background-color: #d1cfcf;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        }       
+        .sumary{
+            text-align: justify;
+            p{
+                font-family: 'Helvetica-B';
+                font-size: 16px;
+                color: #000;
+            }
+        }
+        .img-post{
+            margin: auto;
+            width: 660px;
+            height: 400px;
+            border: 9px solid #e6e4e4;
+            margin-bottom: 1rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .detail{
+            text-align: justify;
+            img{
+                max-width: 100%;
+                margin-bottom: .5rem !important;
+            }
+        }
+    }
+    .sidebar-right{
+        position: relative;
+        margin-top: 12px;
+        &::before{
+            content: "";
+            width: 1px;
+            height: 75%;
+            background-color: #ccc;
+            position: absolute;
+            left: 15px;
+            top: 0;
+        }
+        .sub-headline{
+            &::after{
+                content: "";
+                width: 90%;
+                height: 1px;
+                background-color: #d1cfcf;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
+        } 
+        .name-sidebar{
+            position: relative;
+            padding-left: 15px;
+            margin-bottom: 1.5rem !important;
+            &::before{
+                content: "";
+                height: 22px;
+                width: 5px;
+                background-color: $color-main;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        .list-post-new{
+            padding-left: 15px;
+            padding-right: 15px;
+            .item{
+                margin-bottom: 1.5rem;
+                .thumb{
+                    height: 175px;
+                }
+            }
+        }
     }
 }

@@ -44,7 +44,17 @@
     font-weight: bold;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Helvetica-B';
+    src: url('../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot');
+    src: url('../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.woff2') format('woff2'),
+        url('../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.woff') format('woff'),
+        url('../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf') format('truetype'),
+        url('../fonts/HelveticaNeue-Bold/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
 @font-face {
     font-family: 'UTM';
     src: url('../fonts/UTMAvo/UTMAvo.eot');
