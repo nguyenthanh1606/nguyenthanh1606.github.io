@@ -1,5 +1,7 @@
 * { margin: 0; padding: 0; }
 
+.row { margin-left: 0; margin-right: 0; }
+
 html { font-size: 14px; }
 
 p { font-family: 'Roboto Slab'; color: #4a4b49; }
@@ -65,7 +67,7 @@ main { background-color: #f2f1f1; }
 .list-item .link { position: absolute; left: 0; bottom: 0; }
 .list-item .link a { text-decoration: underline; }
 
-.banner-home { max-height: 533px; }
+.banner-home { max-height: 1360px; }
 .banner-home .image_main { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .banner-not-home { height: 255px; width: 100%; }
 .banner-not-home img { object-fit: cover; object-position: center; width: 100%; height: 100%; }
@@ -161,7 +163,7 @@ main { padding-bottom: 2rem; }
 .contact .right-info .follow .bg-fb { background-color: #3b5997; }
 .contact .right-info .follow .bg-youtube { background-color: #d12f2f; }
 
-footer { height: 160px; }
+footer { margin-bottom: 1rem; }
 footer .left { width: 50%; }
 footer .left .text-site { align-self: center; }
 footer .left .text-site a { color: #a7a7a6; }

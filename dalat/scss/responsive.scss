@@ -2,20 +2,20 @@
 
 }
 @media screen and(max-width:475px){
+    html{font-size: 12px;}
+    .logo-pc{
+        display: none !important;
+    }
+    .logo-mb{
+        display: block !important;
+    }
     .header{
         height: 68px !important;
         .left{
             padding-left: 20px;
             padding-right: 20px;
             width: 100% !important;
-            .img-logo{
-                .logo-pc{
-                    display: none;
-                }
-                .logo-mb{
-                    display: block;
-                }
-            }
+            
             .text-logo{
                 p{
                     &.name-site{font-size: 18px}
@@ -35,8 +35,8 @@
     .hoatdong{
         &-par{
             .list-item{
-                padding-left: 10%;
-                padding-right: 10%;
+                padding-left: 7%;
+                padding-right: 7%;
             }
             .item{
                 width: 100%;
@@ -47,19 +47,45 @@
             }
         }
     }    
-    
+    .hoatdong-par .description h3{font-size: 26px;}
+    .about-home, .product-par{
+        margin-top: 1rem !important;
+        width: 100% !important;
+        padding: 0 15px !important;
+    }
+    .list-item .item{
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+    .about-home .link, .product-par .link{
+        position: relative;
+    }
+
+    footer{
+        padding-top: 1.5rem;
+        flex-direction: column;
+        >div{width: 100% !important;}
+        .left{        
+            text-align: center;
+            .logo-img{
+                width: 100%;
+                img{
+                    display: block;
+                    margin: auto;
+                }
+            }
+            .text-site{
+                width: 100%;
+            }
+            margin-bottom: 1rem;
+        }
+        .right{
+            .follow{
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        .copyright{text-align: center; margin-bottom: 1rem}
+    }
 }
 
-.hoatdong-par .description h3{font-size: 26px;}
-.about-home, .product-par{
-    margin-top: 1rem !important;
-    width: 100% !important;
-    padding: 0 15px !important;
-}
-.list-item .item{
-    width: 100% !important;
-    margin-bottom: 1rem;
-}
-.about-home .link, .product-par .link{
-    position: relative;
-}
