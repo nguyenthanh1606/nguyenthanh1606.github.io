@@ -1,0 +1,65 @@
+@media screen and(max-width:1164px){
+
+}
+@media screen and(max-width:475px){
+    .header{
+        height: 68px !important;
+        .left{
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 100% !important;
+            .img-logo{
+                .logo-pc{
+                    display: none;
+                }
+                .logo-mb{
+                    display: block;
+                }
+            }
+            .text-logo{
+                p{
+                    &.name-site{font-size: 18px}
+                    &.head, &.bot{font-size: 10px}
+                }
+            }
+        }
+        .right{
+            display: none !important;
+        }
+    }
+    .banner{
+        &-home{
+            height: 170px;
+        }
+    }
+    .hoatdong{
+        &-par{
+            .list-item{
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+            .item{
+                width: 100%;
+                margin-top: 0;
+            }
+            .item:first-child{
+                margin-top: -17px;
+            }
+        }
+    }    
+    
+}
+
+.hoatdong-par .description h3{font-size: 26px;}
+.about-home, .product-par{
+    margin-top: 1rem !important;
+    width: 100% !important;
+    padding: 0 15px !important;
+}
+.list-item .item{
+    width: 100% !important;
+    margin-bottom: 1rem;
+}
+.about-home .link, .product-par .link{
+    position: relative;
+}

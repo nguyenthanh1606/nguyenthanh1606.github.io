@@ -29,10 +29,7 @@ p{
 .toUpper{
     text-transform: uppercase;
 }
-.container_skitter, .skitter{
-    width: 100% !important;
-    max-width: 100% !important;
-}
+
 .color-main{
     color: $color-main;
 }
@@ -53,7 +50,7 @@ main{
 .justify{
     text-align: justify;
 }
-
+.logo-mb{display: none;}
 .btn-readmore, .summit{
     font-family: 'UTM-B';
     background-color: $color-main;

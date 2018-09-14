@@ -28,7 +28,7 @@ header{
     top: 0;
     left: 0;
     background-color: rgba($color: #fff, $alpha: 0.66);
-    .header-pc{
+    .header{
         height: 105px;
         .left{
             width: 45%;
@@ -40,12 +40,9 @@ header{
             justify-content: flex-end;
         }
     }
-    .header-mb{
-        display: none;
-    }
 }
 
-.header-pc{
+.header {
     .img{
         position: relative;
         &::after{
@@ -204,6 +201,7 @@ main{
             position: relative;
             z-index: 999;
             width: 31.5%;
+            padding-right: 0;
             background-color: #fff;
             .ico-item{
                 height: 110px;
