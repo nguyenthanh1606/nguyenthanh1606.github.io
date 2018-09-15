@@ -25,21 +25,35 @@
 
 </head>
 <body>
-    <div class="banner banner-home">
-        <div class="skitter skitter-minimalist">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="images/content/banner-home.jpg"/>
-                    </a>                
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/content/banner-home.jpg"/>
-                    </a>                
-                </li>               
-            </ul>
-        </div>
+    <div class="banner banner-home skitter box_skitter skitter-minimalist">
+        <ul>
+            <li>
+                <a href="product.html">
+                    <img src="images/content/banner-home.jpg" class="blind" />
+                </a>     
+                <!-- <div class="label_text">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    <a href="#see-more" class="btn btn-xs btn-warning">See more</a>
+                    </p>
+                </div> -->       
+            </li>
+            <li>
+                <a href="ds-trongtaivien.html">
+                    <img src="images/content/banner-home.jpg" class="horizontal" />
+                </a>
+            </li>
+            <li>
+                <a href="gioithieu.html">
+                    <img src="images/content/banner-home.jpg" class="cubeSize" />
+                </a>
+            </li>
+            <li>
+                <a href="gioithieu.html">
+                    <img src="images/content/banner-home.jpg" class="directionTop" />
+                </a>
+            </li>            
+        </ul>
     </div>
 
     <header>
@@ -255,7 +269,6 @@
             $('.skitter-minimalist').skitter({
                 navigation: false,
                 dots: false ,
-                with_animations: ["paralell", "glassBlock", "swapBars"],
             });
         });
     </script>
