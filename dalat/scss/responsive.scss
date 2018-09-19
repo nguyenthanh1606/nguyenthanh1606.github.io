@@ -48,10 +48,10 @@
         }
     }    
     .hoatdong-par .description h3{font-size: 26px;}
-    .product-par .list-item .item .thumb{height: 205px;}
     .about-home, .product-par{
         margin-top: 1rem !important;
         width: 100% !important;
+        padding: 0 15px !important;
     }
     .list-item .item{
         width: 100% !important;
@@ -86,34 +86,6 @@
             }
         }
         .copyright{text-align: center; margin-bottom: 1rem}
-    }
-    .skitter .image{
-        width: 100%;
-        height: 100%;
-        .box_clone{
-            img{
-                width: 100%;
-            }
-        }
-    }
-    .banner-home {
-        min-height: 150px;
-        height: auto !important; }
-    main{
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .post .img-post{width: 100%;}
-    .post-2{
-        .main-post .img-post{height: 200px}
-        flex-direction: column;
-        .sidebar-right{
-            padding-left: 0;
-            padding-right: 0;
-            &::before{
-                left: 0;
-            }
-        }
     }
 }
 
