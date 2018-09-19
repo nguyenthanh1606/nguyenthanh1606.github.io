@@ -20,6 +20,8 @@
 
 </head>
 <body>
+    <div id="hide-w" style="display: none"></div>
+
     <div class="banner banner-not-home">
         <img src="images/content/banner-about.jpg" alt="">
     </div>
@@ -49,11 +51,22 @@
                         <li class="active"><a href="contact.html">Liên hệ</a></li>
                     </ul>
                 </div>
-            </div>
-            
+                <button onclick="pushMenuOpen()"><i class="fas fa-bars"></i></button>            
+            </div>  
         </div>
-        <div class="header-mb"></div>
     </header>
+    <nav id="menu-mobile" class="menu-2" style="right: -100%;">
+        <button class="fix-top" onclick="pushMenuClose()"><i class="fas fa-times"></i></button>
+        <p class="head toUpper">menu</p>
+        <ul class="menu-mb-lv1">
+            <li class="active"><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="hoatdong.html">Hoạt động</a></li>
+            <li><a href="product.html">Sản phẩm</a></li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+    </nav>
 
     <main>
         <div class="row wrapper">
