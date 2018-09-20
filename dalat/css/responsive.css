@@ -102,6 +102,8 @@ main { background-color: #f2f1f1; }
   .post .img-post { width: 100%; }
   .post-2 { flex-direction: column; }
   .post-2 .main-post .img-post { width: 100%; }
+  .post-2 .sidebar-right { padding-left: 0; }
+  .post-2 .sidebar-right::before { left: 0; }
   .list-item .item { width: 100% !important; margin-bottom: 1rem; }
   .about-home .link, .product-par .link { position: relative; }
   .product-par .headline a { font-size: 1.5rem; }
