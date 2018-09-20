@@ -149,7 +149,7 @@ $itemRow: 3;
         padding-bottom: 2rem;
         margin-bottom: 1.5rem;
         .thumb{
-            height: $heightImgItem;
+            min-height: $heightImgItem;
         }
     }
     &:nth-child(3n+0){

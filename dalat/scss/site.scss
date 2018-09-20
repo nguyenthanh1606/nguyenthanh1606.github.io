@@ -374,7 +374,7 @@ main{
             width: 32%;
             padding-right: 0 !important;
             .thumb{
-                height: 134px;
+                min-height: 134px;
             }
         }
     }
@@ -419,6 +419,8 @@ main{
         position: relative;
         padding-bottom: 3rem;
         padding-right: 30px;
+        padding-left: 0;
+        margin-bottom: 2rem;
         form{
             .row{
                 padding-top: .5rem;
