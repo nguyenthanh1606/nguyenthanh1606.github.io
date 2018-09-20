@@ -84,7 +84,7 @@ main { background-color: #f2f1f1; }
   .header .left { padding-left: 20px; padding-right: 20px; }
   .header .left .text-logo p.name-site { font-size: 18px; }
   .header .left .text-logo p.head, .header .left .text-logo p.bot { font-size: 10px; } }
-@media screen and (max-width: 475px) { html { font-size: 12px; }
+@media screen and (max-width: 475px) { html { font-size: 13px; }
   .header { height: 68px !important; }
   .header .left { padding-left: 20px; padding-right: 20px; }
   .header .left .text-logo p.name-site { font-size: 18px; }
@@ -118,6 +118,6 @@ main { background-color: #f2f1f1; }
 @media screen and (max-width: 425px) { .header .left { padding-left: 0; padding-right: 0; }
   .header .left .text-logo p.name-site { font-size: 13px; }
   .header .right { right: 10px; }
-  .hoatdong-par .description h3 { font-size: 18px; } }
+  .hoatdong-par .description h3 { font-size: 22px; } }
 
 /*# sourceMappingURL=responsive.css.map */
