@@ -70,23 +70,35 @@ main { background-color: #f2f1f1; }
 #hide-w { position: fixed; z-index: 1100; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); }
 
 @media screen and (max-width: 1200px) { .wrapper { padding-left: 10px; padding-right: 10px; } }
-@media screen and (max-width: 1164px) { .header .right { width: auto !important; position: absolute; top: 50%; right: 15px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
+@media screen and (max-width: 1164px) { .header .left { width: 100% !important; }
+  .header .right { width: auto !important; position: absolute; top: 50%; right: 15px; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
   .header .right button { display: block; }
   .header .right .menu-pc { display: none !important; } }
-@media screen and (max-width: 475px) { html { font-size: 12px; }
-  .logo-pc { display: none !important; }
+@media screen and (max-width: 900px) { .banner #owl-banner .item { height: 400px; } }
+@media screen and (max-width: 768px) { .hoatdong-par .description h3 { font-size: 20px; } }
+@media screen and (max-width: 600px) { .logo-pc { display: none !important; }
   .logo-mb { display: block !important; }
+  .banner #owl-banner .item { height: 300px; }
+  .banner-not-home { height: 180px; }
   .header { height: 68px !important; }
-  .header .left { padding-left: 20px; padding-right: 20px; width: 100% !important; }
+  .header .left { padding-left: 20px; padding-right: 20px; }
+  .header .left .text-logo p.name-site { font-size: 18px; }
+  .header .left .text-logo p.head, .header .left .text-logo p.bot { font-size: 10px; } }
+@media screen and (max-width: 475px) { html { font-size: 12px; }
+  .header { height: 68px !important; }
+  .header .left { padding-left: 20px; padding-right: 20px; }
   .header .left .text-logo p.name-site { font-size: 18px; }
   .header .left .text-logo p.head, .header .left .text-logo p.bot { font-size: 10px; }
-  .banner-home { height: 170px; }
+  .header .right button i { font-size: 1rem; }
   main { padding-left: 20px; padding-right: 20px; }
+  main .wrapper { padding-left: 0; padding-right: 0; }
   .hoatdong-par .list-item { padding-left: 5%; padding-right: 5%; }
   .hoatdong-par .item { width: 100%; margin-top: 0; }
   .hoatdong-par .item:first-child { margin-top: -17px; }
-  .hoatdong-par .description h3 { font-size: 26px; }
+  .hoatdong-par .description { padding-left: 0; padding-right: 0; }
+  .hoatdong-par .description h3 { font-size: 24px; }
   .about-home, .product-par { margin-top: 1.5rem !important; width: 100% !important; }
+  .about-home { padding-right: 0; }
   .post .img-post { width: 100%; }
   .post-2 { flex-direction: column; }
   .post-2 .main-post .img-post { width: 100%; }
@@ -101,5 +113,9 @@ main { background-color: #f2f1f1; }
   footer .left .text-site { width: 100%; }
   footer .right .follow { flex-direction: column; text-align: center; }
   footer .copyright { text-align: center; margin-bottom: 1rem; } }
+@media screen and (max-width: 425px) { .header .left { padding-left: 0; padding-right: 0; }
+  .header .left .text-logo p.name-site { font-size: 13px; }
+  .header .right { right: 10px; }
+  .hoatdong-par .description h3 { font-size: 18px; } }
 
 /*# sourceMappingURL=responsive.css.map */

@@ -14,32 +14,34 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- import css page -->
-    <link rel="stylesheet" href="css/skitter.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/owl.transitions.css">
 
     <!-- import javascript -->
     <script src="scripts/jquery-3.2.1.min.js"></script>
-
-    <!-- javascript slider in HOME-->
-    <script src="scripts/jquery.easing.1.3.js"></script>
-    <script src="scripts/jquery.skitter.min.js"></script>
 
 </head>
 <body>
     <div id="hide-w" style="display: none"></div>
     <div class="banner banner-home">
-        <div class="skitter skitter-minimalist">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="images/content/banner-home.jpg"/>
-                    </a>                
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="images/content/banner-home.jpg"/>
-                    </a>                
-                </li>               
-            </ul>
+        <div id="owl-banner" class="owl-carousel owl-theme">
+            <a href="#">
+                <div class="item">
+                    <img src="images/content/banner-home.jpg"/>
+                </div>
+                
+            </a>
+            <a href="#">
+                <div class="item">
+                    <img src="images/content/banner-home.jpg"/>
+                </div>
+            </a>    
+            <a href="#">
+                <div class="item">
+                    <img src="images/content/banner-home.jpg"/>
+                </div>
+            </a>               
         </div>
     </div>
 
@@ -264,14 +266,20 @@
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
 
+    <!-- script HOME -->
+    <!-- <script src="scripts/jquery-1.9.1.min.js"></script> -->
+    <script src="scripts/owl.carousel.min.js"></script>
     <script>
-        $(function() {
-            $('.skitter-minimalist').skitter({
-                navigation: false,
-                dots: false ,
-                with_animations: ["paralell", "glassBlock", "swapBars"],
-            });
-        });
+        $(document).ready(function () {
+        $("#owl-banner").owlCarousel({
+            slideSpeed: 400,
+            pagination : false,
+            singleItem: true,
+            autoPlay: 5000,
+            stopOnHover: true,
+        });        
+    });
+
     </script>
 </body>
 </html>

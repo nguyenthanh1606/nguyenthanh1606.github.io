@@ -1,15 +1,18 @@
 @import 'config';
 
 .banner{
+    background-color: #f2f1f1;  
     &-home{
-        max-height: 1360px;
-        .image_main{
-            width: 100%;   
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
+        #owl-banner .item{
+            height: 540px;
+            img{
+                object-fit: cover;
+                object-position: center;
+                height: 100%;
+            }
         }
-    }  
+                
+    }
     &-not-home{
         height: 255px;
         width: 100%;
@@ -312,6 +315,7 @@ main{
             width: 31.5% !important;
             padding-right: 0 !important;
             background-color: #fff;
+            
             .ico-item{
                 height: 110px;
                 position: relative;

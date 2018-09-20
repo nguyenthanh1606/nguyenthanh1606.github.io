@@ -8,6 +8,9 @@
 }
 @media screen and(max-width:1164px){    
     .header{
+        .left{
+            width: 100% !important;
+        }
         .right{
             width: auto !important;
             position: absolute;
@@ -24,29 +27,27 @@
     }
 }
 @media screen and(max-width:900px){
-
+    .banner #owl-banner .item{height: 400px;}
 }
 @media screen and(max-width:768px){
-
+    .hoatdong-par .description{
+        h3{font-size: 20px;}
+    }
 }
 @media screen and(max-width:600px){
-
-}
-@media screen and(max-width:475px){
-    html{font-size: 12px;}
     .logo-pc{
         display: none !important;
     }
     .logo-mb{
         display: block !important;
     }
+    .banner #owl-banner .item{height: 300px;}
+    .banner-not-home{height: 180px;}
     .header{
         height: 68px !important;
         .left{
             padding-left: 20px;
-            padding-right: 20px;
-            width: 100% !important;
-            
+            padding-right: 20px;           
             .text-logo{
                 p{
                     &.name-site{font-size: 18px}
@@ -56,14 +57,35 @@
         }
         
     }
-    .banner{
-        &-home{
-            height: 170px;
+}
+@media screen and(max-width:475px){
+    html{font-size: 12px;}    
+    .header{
+        height: 68px !important;
+        .left{
+            padding-left: 20px;
+            padding-right: 20px;           
+            .text-logo{
+                p{
+                    &.name-site{font-size: 18px}
+                    &.head, &.bot{font-size: 10px}
+                }
+            }
         }
+        .right button i{font-size: 1rem;}
     }
+    // .banner{
+    //     &-home{
+    //         height: 170px;
+    //     }
+    // }
     main {
         padding-left: 20px;
         padding-right: 20px;
+        .wrapper{
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
     .hoatdong{
         &-par{
@@ -80,10 +102,17 @@
             }
         }
     }    
-    .hoatdong-par .description h3{font-size: 26px;}
+    .hoatdong-par .description{
+        h3{font-size: 24px;}
+        padding-left: 0;
+        padding-right: 0;
+    } 
     .about-home, .product-par{
         margin-top: 1.5rem !important;
         width: 100% !important;
+    }
+    .about-home{
+        padding-right: 0;
     }
     .post .img-post{
         width: 100%;
@@ -133,6 +162,22 @@
         .copyright{text-align: center; margin-bottom: 1rem}
     }
 }
-@media screen and(max-width:320px){
-
+@media screen and(max-width:425px){
+    .header{
+        .left{
+            padding-left: 0;
+            padding-right: 0;
+            .text-logo{
+                p{
+                    &.name-site{font-size: 13px}
+                }
+            }
+        }        
+        .right{
+            right: 10px;
+        }
+    }
+    .hoatdong-par .description{
+        h3{font-size: 18px;}
+    }
 }
