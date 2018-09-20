@@ -67,6 +67,23 @@
         }
         
     }
+    .post .img-post{
+        width: 100%;
+    }
+    .post-2 {
+        flex-direction: column;
+        .main-post{
+            .img-post{
+                width: 100%;
+            }
+        }
+        .sidebar-right{
+            padding-left: 0;
+            &::before{
+                left: 0;
+            }
+        }
+    }
     .list-item .item{
         width: 100% !important;
         margin-bottom: 1rem;
@@ -162,27 +179,7 @@
     .about-home{
         padding-right: 0;
     }
-    .post .img-post{
-        width: 100%;
-    }
-    .post-2 {
-        flex-direction: column;
-        .main-post{
-            .img-post{
-                width: 100%;
-            }
-        }
-        .sidebar-right{
-            padding-left: 0;
-            &::before{
-                left: 0;
-            }
-        }
-    }
-    .list-item .item{
-        width: 100% !important;
-        margin-bottom: 1rem;
-    }
+    
     .about-home .link, .product-par .link{
         position: relative;
     }
