@@ -89,7 +89,7 @@ main { background-color: #f2f1f1; }
   .header .left { padding-left: 20px; padding-right: 20px; }
   .header .left .text-logo p.name-site { font-size: 18px; }
   .header .left .text-logo p.head, .header .left .text-logo p.bot { font-size: 10px; }
-  .header .right button i { font-size: 1rem; }
+  .header .right button i { font-size: 1.2rem; }
   main { padding-left: 20px; padding-right: 20px; }
   main .wrapper { padding-left: 0; padding-right: 0; }
   .hoatdong-par .list-item { padding-left: 5%; padding-right: 5%; }
