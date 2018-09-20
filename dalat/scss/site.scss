@@ -130,10 +130,10 @@ header{
                 }
             }
             &:not(:first-child) {
-                margin-left: 5px;
+                margin-left: 4px;
             }
             &:not(:last-child) {
-                margin-right: 4px;
+                margin-right: 3px;
             }
             &:not(:last-child):after {
                 content: "";
@@ -141,7 +141,7 @@ header{
                 height: 1rem;
                 background-color: #000;
                 position: absolute;
-                right: -5px;
+                right: -4px;
                 bottom: 17px;
             }
         }
@@ -309,7 +309,7 @@ main{
             padding-bottom: 3rem !important;
             position: relative;
             z-index: 999;
-            width: 31.5%;
+            width: 31.5% !important;
             padding-right: 0 !important;
             background-color: #fff;
             .ico-item{
@@ -378,9 +378,10 @@ main{
         margin-bottom: .5rem;
         font-family: 'UTM-Androgyne';
         a{
-            font-size: 1.2rem;
-            color: #000;            
-            transition: color .4s ease;
+            color: #000 !important;
+            &:hover{
+                color: $color-main !important;
+            }            
         }
     }
 }
@@ -493,7 +494,7 @@ main{
 }
 
 footer{
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
     .left{
         width: 50%;
         .text-site{
@@ -644,6 +645,7 @@ footer{
         }
     }
     .sub-headline{
+        display: inline-block;
         font-family: 'Helvetica Neue';
         color: #acacab;
         font-size: 12px;
@@ -668,7 +670,7 @@ footer{
         .sub-headline{
             &::after{
                 content: "";
-                width: 50%;
+                width: 110%;
                 height: 4px;
                 background-color: #d1cfcf;
                 position: absolute;
@@ -687,7 +689,7 @@ footer{
         .img-post{
             margin: auto;
             width: 660px;
-            height: 400px;
+            max-height: 400px;
             border: 9px solid #e6e4e4;
             margin-bottom: 1rem;
             img{

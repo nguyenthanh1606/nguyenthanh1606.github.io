@@ -1,6 +1,35 @@
 @import 'config';
 
-@media screen and(max-width:1164px){
+@media screen and(max-width:1200px){
+    .wrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media screen and(max-width:1164px){    
+    .header{
+        .right{
+            width: auto !important;
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            @include transform(translateY(-50%));
+            button{
+                display: block;
+            }
+            .menu-pc{
+                display: none !important;
+            }            
+        }
+    }
+}
+@media screen and(max-width:900px){
+
+}
+@media screen and(max-width:768px){
+
+}
+@media screen and(max-width:600px){
 
 }
 @media screen and(max-width:475px){
@@ -25,19 +54,7 @@
                 }
             }
         }
-        .right{
-            width: auto !important;
-            position: absolute;
-            top: 50%;
-            right: 15px;
-            @include transform(translateY(-50%));
-            button{
-                display: block;
-            }
-            .menu-pc{
-                display: none !important;
-            }            
-        }
+        
     }
     .banner{
         &-home{
@@ -70,6 +87,14 @@
     }
     .post .img-post{
         width: 100%;
+    }
+    .post-2 {
+        flex-direction: column;
+        .main-post{
+            .img-post{
+                width: 100%;
+            }
+        }
     }
     .list-item .item{
         width: 100% !important;
@@ -108,4 +133,6 @@
         .copyright{text-align: center; margin-bottom: 1rem}
     }
 }
+@media screen and(max-width:320px){
 
+}
