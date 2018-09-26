@@ -1,14 +1,11 @@
-$color-main: #487a17;
-$color-text-main: #4a4b49;
+$color-main: #ff488a;
+$color-text-main: #000;
 $heightImgItem: 205px;
 *{
     margin: 0;
     padding: 0;
 }
-.row{
-    margin-left: 0;
-    margin-right: 0;
-}
+
 html{
     font-size: 14px;
 }
@@ -24,7 +21,7 @@ p{
     font-size: 1.2rem;
 }
 .wrapper{
-    max-width: 1164px;
+    max-width: 1170px;
     margin: auto;
 }
 .text-b{
@@ -204,8 +201,9 @@ $itemRow: 3;
 }
 
 
-@mixin transform($property) {
+@mixin transform($property) {    
     -webkit-transform: $property;
+        -o-transform : $property;
         -ms-transform: $property;
             transform: $property;
 }
