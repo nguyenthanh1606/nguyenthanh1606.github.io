@@ -1,6 +1,15 @@
 $color-main: #ff488a;
 $color-text-main: #000;
 $heightImgItem: 205px;
+
+@mixin transform($property) {    
+    -webkit-transform: $property;
+        -o-transform : $property;
+        -ms-transform: $property;
+            transform: $property;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -9,23 +18,28 @@ $heightImgItem: 205px;
 html{
     font-size: 14px;
 }
+.rs-row{
+    margin-left: 0;
+    margin-right: 0;
+}
 p{
     font-family: 'Proxima-R';
     color: $color-text-main;
 }
-.text-sumary p{
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    font-family: 'UTM-Androgyne';
-    color: #4a4b49;
-    font-size: 1.2rem;
+h3, .h3{
+    font-size: 1.5rem;
+    font-family: 'Proxima-SB';
+}
+section{
+    padding-bottom: 1rem;
+    margin-bottom: 1rem !important;
 }
 .wrapper{
     max-width: 1170px;
     margin: auto;
 }
 .text-b{
-    font-family: 'UTM-Erie';
+    font-family: 'Proxima-B';
 }
 .toUpper{
     text-transform: uppercase;
@@ -37,9 +51,13 @@ p{
 .text-color-main{
     color: $color-text-main;
 }
+a{
+    color: #000;
+    transition: color .4s ease;
+}
 a:hover, a:active{
-    text-decoration: none;    
-    color: #739305 !important;
+    text-decoration: none; 
+    color: #000;   
 }
 .border-radius-0{
     border-radius: 0 !important;
@@ -95,6 +113,9 @@ main{
 .text-i{
     font-style: italic;
 }
+.c-white{
+    color: #fff;
+}
 .c-black{
     color: #000;
 }
@@ -136,23 +157,11 @@ main{
 .hide{
     display: none;
 }
-$itemRow: 3;
-.list-item{
+.list{
     display: flex;
-    flex-wrap: wrap;
-    .item{
-        position: relative;
-        width: 100%/$itemRow;
-        padding-right: 15px;
-        padding-bottom: 2rem;
-        margin-bottom: 1.5rem;
-        .thumb{
-            height: $heightImgItem;
-        }
-    }
-    &:nth-child(3n+0){
-        padding-right: 0 !important;
-    }
+    flex-wrap: wrap;    
+       
+    
     .headline{
         margin-bottom: .5rem;
         font-family: 'UTM-Androgyne';
@@ -201,9 +210,3 @@ $itemRow: 3;
 }
 
 
-@mixin transform($property) {    
-    -webkit-transform: $property;
-        -o-transform : $property;
-        -ms-transform: $property;
-            transform: $property;
-}
