@@ -34,18 +34,16 @@
             </div>
             <div class="col-md-5 head-right">
                 <div class="account">
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Action
-                        </button>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Action</a>
-                          <a class="dropdown-item" href="#">Another action</a>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                      </div>
+                    <ul class="account-list">
+                        <li>
+                            <input id="check01" type="checkbox" name="menu"/>
+                            <label for="check01">Tasto menu 01</label>
+                            <ul class="submenu">
+                                <li><a href="#">Sotto menu 1</a></li>
+                                <li><a href="#">Sotto menu 2</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
                 <div class="tel">
                     <i class="fas fa-phone"></i>
@@ -82,7 +80,7 @@
             </ul>
         </div>
     </header>
-    <div class="main">
+    <main>
         <div class="banner-home">
             <div class="banner row rs-row skitter with-dots box_skitter skitter-minimalist">
                 <ul>
@@ -104,7 +102,7 @@
                 </ul>
             </div>  
         </div>
-        <section class="row wrapper seaFlowers-par">
+        <section class="row wrapper slideUp moveUp in-view seaFlowers-par">
             <div class="list list-seaFlowers-par">
                 <div class="item">
                     <a class="img-item" href="#">
@@ -161,42 +159,402 @@
                 </div>
             </div>
         </div>
-        <section class="slider-cat wrapper">
-            <div>
-                <a href="#">
-                    <img src="images/content/img-cat-01.png">
-                </a>                
+        <section class="cat wrapper">
+            <div class="headline text-center">
+                <a href="#" class="toUpper c-black h3" >Mẫu hoa mới năm 2018</a>
             </div>
-            <div>
-                <a href="#">
-                    <img src="images/content/img-cat-02.png">
-                </a> 
+            <div class="slider-cat row">
+                <div style="background-color: #fff1f1">
+                    <div class="img-slider">
+                        <a href="#">
+                            <img src="images/content/img-cat-01.png">
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="content">
+                        <a href="#" class="toUpper text-center d-block">Hoa tình yêu</a>
+                    </div>             
+                </div>
+                <div style="background-color: #f2fcfc">
+                    <div class="img-slider">
+                        <a href="#">
+                            <img src="images/content/img-cat-02.png">
+                        </a> 
+                    </div>
+                    <hr>
+                    <div class="content">
+                        <a href="#" class="toUpper text-center d-block">Hoa tình yêu</a>
+                    </div>
+                </div>
+                <div style="background-color: #f9f6d8">
+                    <div class="img-slider">
+                        <a href="#">
+                            <img src="images/content/img-cat-03.png">
+                        </a> 
+                    </div>
+                    <hr>
+                    <div class="content">
+                        <a href="#" class="toUpper text-center d-block">Hoa tình yêu</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-slider">
+                        <a href="#">
+                            <img src="images/content/img-cat-02.png">
+                        </a> 
+                    </div>
+                    <hr>
+                    <div class="content">
+                        <a href="#" class="toUpper text-center d-block">Hoa tình yêu</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-slider">
+                        <a href="#">
+                            <img src="images/content/img-cat-01.png">
+                        </a> 
+                    </div>
+                    <hr>
+                    <div class="content">
+                        <a href="#" class="toUpper text-center d-block">Hoa tình yêu</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="img-slider">
+                        <a href="#">
+                            <img src="images/content/img-cat-03.png">
+                        </a> 
+                    </div>
+                    <hr>
+                    <div class="content">
+                        <a href="#" class="toUpper text-center d-block">Hoa tình yêu</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a href="#">
-                    <img src="images/content/img-cat-03.png">
-                </a> 
-            </div>
-            <div>
-                <a href="#">
-                    <img src="images/content/img-cat-02.png">
-                </a> 
-            </div>
-            <div>
-                <a href="#">
-                    <img src="images/content/img-cat-01.png">
-                </a> 
-            </div>
-            <div>
-                <a href="#">
-                    <img src="images/content/img-cat-03.png">
-                </a> 
-            </div>
+            
         </section>
-    </div>
-    <footer style="height:500px"></footer>
+        <div class="promotion row wrapper">
+            <div class="col-md-6">
+                <div class="thumb img-shine">
+                    <img src="images/content/khuyenmai-01.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#" class="btn toUpper">Shop now</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="thumb img-shine">
+                    <img src="images/content/khuyenmai-02.jpg" alt="">
+                </div>
+                <div class="link">
+                    <a href="#" class="btn toUpper">Shop now</a>
+                </div>
+            </div>
+        </div>
+        <div class="containerr row wrapper">
+            <div class="col-md-3 left">
+                <div class="sidebar-left-cat">
+                    <ul>
+                        <li><a href="#">Khuyến mãi</a></li>
+                        <li><a href="#">Bó hoa tươi</a></li>
+                        <li><a href="#">Giỏ hoa tươi</a></li>
+                        <li><a href="#">Hoa chúc mừng</a></li>
+                        <li><a href="#">Hộp hoa tươi</a></li>
+                    </ul>
+                </div>
+                <div class="booking">
+                    <div class="booking-img">
+                        <img src="images/content/ads.jpg" alt="">
+                    </div>
+                    <div class="link img-shine">
+                        <a href="#" class="toUpper readmore">Đặt ngay</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 right">
+                <div class="list-product">
+                    <div class="col-md-4 item">
+                        <div class="box">
+                            <div class="thumb">                            
+                                <img src="images/content/product-05.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="name text-center">
+                                    <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
+                                </div>
+                                <div class="price text-center">
+                                    <p class="color-main h4 text-b">150.000 Đ</p>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-4 item">
+                        <div class="box">
+                            <div class="thumb">                            
+                                <img src="images/content/product-06.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="name text-center">
+                                    <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
+                                </div>
+                                <div class="price text-center">
+                                    <p class="color-main h4 text-b">150.000 Đ</p>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-4 item">
+                        <div class="box">
+                            <div class="thumb">                            
+                                <img src="images/content/product-07.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="name text-center">
+                                    <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
+                                </div>
+                                <div class="price text-center">
+                                    <p class="color-main h4 text-b">150.000 Đ</p>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-4 item">
+                        <div class="box">
+                            <div class="thumb">                            
+                                <img src="images/content/product-02.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="name text-center">
+                                    <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
+                                </div>
+                                <div class="price text-center">
+                                    <p class="color-main h4 text-b">150.000 Đ</p>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-4 item">
+                        <div class="box">
+                            <div class="thumb">                            
+                                <img src="images/content/product-01.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="name text-center">
+                                    <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
+                                </div>
+                                <div class="price text-center">
+                                    <p class="color-main h4 text-b">150.000 Đ</p>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="col-md-4 item">
+                        <div class="box">
+                            <div class="thumb">                            
+                                <img src="images/content/product-03.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <div class="name text-center">
+                                    <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
+                                </div>
+                                <div class="price text-center">
+                                    <p class="color-main h4 text-b">150.000 Đ</p>
+                                </div>
+                                <div class="link">
+                                    <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="capacity" style="background-image: url('images/content/banner-capacity.jpg')">
+            <div class="row wrapper">
+                <div class="col-md-3">
+                    <div class="capacity-img">
+                        <img src="images/content/capacity-01.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <p class="toUpper c-white">15.000 điện hoa được chúng tôi chuyển trong năm qua</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="capacity-img">
+                        <img src="images/content/capacity-02.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <p class="toUpper c-white">Cam kết: Nhanh nhất, giá tốt nhất, chất lượng nhất.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="capacity-img">
+                        <img src="images/content/capacity-03.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <p class="toUpper c-white">Trở thành công ty điện hoa số 1 tại Việt Nam</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="capacity-img">
+                        <img src="images/content/capacity-04.png" alt="">
+                    </div>
+                    <div class="content text-center">
+                        <p class="toUpper c-white">Cam kết 100% hài lòng</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-01">
+            <div class="row wrapper">
+                <div class="col-md-6 menu-footer">
+                    <div class="head">
+                        <p class="toUpper c-white">1000 hoa</p>
+                    </div>
+                    <ul class="column-2">
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Tin tức</a></li>
+                        <li><a href="#">Trách nhiệm xã hội</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Câu hỏi thường gặp (FAQs)</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Khách hàng và 1000hoa.com</a></li>
+                        <li><a href="#">Chính sách và điều khoản</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 row">
+                    <div class="col-md-6">
+                        <div class="head">
+                            <p class="toUpper c-white">Chăm sóc khách hàng</p>
+                        </div>
+                        <ul class="">
+                            <li><a href="#">Thắc mắc và khiếu nại</a></li>
+                            <li><a href="#">Cam kết hài lòng 100%</a></li>
+                            <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="head">
+                            <p class="toUpper c-white">Giới thiệu về hoa</p>
+                        </div>
+                        <ul class="">
+                            <li><a href="#">Ý nghĩa về các loại hoa</a></li>
+                            <li><a href="#">Cách chăm sóc hoa</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-02">
+            <div class="row wrapper">
+                <div class="col-md-6">
+                    <div class="head">
+                        <p class="toUpper text-b c-black">Shop hoa TP.HCM</p>
+                    </div>
+                    <div class="content column-2">
+                        <div class="info">
+                            <span class="text-b">Địa chỉ:</span>
+                            <span>Shop hoa Q3, 270L Võ Thị Sáu, P.7 (Góc ngã tư Bà Huyện Thanh Quan)</span>
+                            <br>
+                            <span><strong>Điện thoại:</strong></span>
+                            <a href="tel:02873002010">028 7300 2010</a>
+                        </div>
+                        <div class="bieuphi">
+                            <span class="text-b">Miễn phí giao hoa tươi trên địa bàn Tp. Hồ Chí Minh</span>
+                            <br>
+                            <span>Q.1, Q.3, Q.4, Q.5, Q.6, Q.7, Q.8, Q.10, Q.11, Q. Tân Bình, Q. Bình Thạnh, Q. Phú Nhuận, Q. Tân Phú, Q. Gò Vấp. Các quận khác vui lòng liên hệ để biết thêm chi tiết (Giá giao sẽ từ 30.000đ- 70.000đ).</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 row">
+                    <div class="col-md-6">
+                        <div class="head">
+                            <p class="toUpper text-b c-black">Văn phòng điều hành</p>
+                        </div>
+                        <div class="content">
+                            <div class="info">
+                                <span class="text-b">Địa chỉ:</span>
+                                <span>Shop hoa Q3, 270L Võ Thị Sáu, P.7 (Góc ngã tư Bà Huyện Thanh Quan)</span>
+                                <br>
+                                <span><strong>Email:</strong></span>
+                                <a href="mailto:contact@nganhoa.com">contact@nganhoa.com</a>
+                                <br>
+                                <span><strong>Điện thoại (24/7):</strong></span><br>
+                                <a href="tel:02873002010">028 7300 2010</a><br>
+                                <a href="tel:02473002010">028 7300 2010</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="head">
+                            <p class="toUpper text-b c-black">Newsletter</p>
+                        </div>
+                        <div class="content">
+                            <div class="text">
+                                Đăng ký ngay để nhận được các thông tin khuyến mãi và ưu đãi đặc biệt từ nganhoa.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wrapper footer-02-payment">
+                <div class="col-md-10  payment row">
+                    <div class="head">
+                        <p class="text-b toUpper c-black">Cách thức thanh toán</p>
+                    </div>
+                    <div class="list-payment">
+                        <img src="images/theme/payment-visa.jpg" alt="">
+                        <img src="images/theme/payment-mastercard.jpg" alt="">
+                        <img src="images/theme/payment-card.jpg" alt="">
+                        <img src="images/theme/payment-paypal.jpg" alt="">
+                        <img src="images/theme/payment-bank.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cn right">
+                        <img src="images/theme/bocongthuong.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-03">
+            <div class="row wrapper follow">
+                <div class="col-md-3 row">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <div class="col-md-9">
+                    <div class="copyright">
+                        <p>Copyright ©2017, 1000 Hoa All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="scripts/jquery-3.2.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
     <script src="scripts/script.js"></script>
 
     <!-- script in home -->

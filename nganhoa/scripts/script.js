@@ -11,6 +11,9 @@ function pushMenuClose(){
     c.style.display = 'none';
 }
 
+//color ramdom
+var randomColor = Math.floor(Math.random()*16777215).toString(16);
+
 $(document).ready(function(){
 
     //Check to see if the window is top if not then display button
