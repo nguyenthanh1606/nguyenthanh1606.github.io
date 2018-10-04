@@ -14,6 +14,7 @@
     <!-- css style by phamthuynhan -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/slick.css">
 </head>
 <body id="pushMenu" class="img img-home close-s">
     <div class="nav-menu">
@@ -89,8 +90,8 @@
                 <a href="category.html" class="toUpper h3">sản phẩm</a>
             </div>           
         </div>
-        <div class="list row">
-            <div class="list-item">
+        <div class="list list-product row">
+            <div class="list-item item">
                 <div class="img-product text-center">
                     <a href="product-detail.html"><img src="../images/product-1.png" alt="" class="img-fluid"></a>
                 </div>
@@ -109,7 +110,7 @@
                 </p>
                 <a href="product-detail.html" class="btn-design">Read more</a>
             </div>
-            <div class="list-item">
+            <div class="list-item item">
                 <div class="img-product text-center">
                     <a href="product-detail.html"><img src="../images/product-1.png" alt="" class="img-fluid"></a>
                 </div>
@@ -281,5 +282,34 @@
     <script src="../script/bootstrap.min.js"></script>
     <script src="../script/popper.min.js"></script>
     <script src="../script/script.js"></script>
+
+    <script src="../script/slick.min.js"></script>
+    <script>
+        $(document).on('ready', function () {            
+            $('.list-product').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },                    
+                ]
+            });
+        });
+    </script>
 </body>
 </html>

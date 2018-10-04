@@ -1,102 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
-    <link rel="stylesheet" href="css/animate.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-face.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/responsive.css">
-
-    <!-- css on home -->
-    <link rel="stylesheet" href="css/skitter.css">
-    <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://resources/demos/style.css">
+  
 </head>
 <body>
-        <form>
-	
-                <ul class="select">
-                    <li>
-                        <input class="select_close" type="radio" name="awesomeness" id="awesomeness-close" value=""/>
-                        <span class="select_label select_label-placeholder">Awesomeness Level</span>
-                    </li>
-                    
-                    <li class="select_items">
-                        <input class="select_expand" type="radio" name="awesomeness" id="awesomeness-opener"/>
-                        <label class="select_closeLabel" for="awesomeness-close"></label>
-                        
-                        <ul class="select_options">
-                            <li class="select_option">
-                                <input class="select_input" type="radio" name="awesomeness" id="awesomeness-ridiculous"/>
-                                <label class="select_label" for="awesomeness-ridiculous"> ridiculous</label>
-                            </li>
-            
-                            <li class="select_option">
-                                <input class="select_input" type="radio" name="awesomeness" id="awesomeness-reasonable"/>
-                                <label class="select_label" for="awesomeness-reasonable">reasonable</label>
-                            </li>
-            
-                        </ul>
-                        
-                        <label class="select_expandLabel" for="awesomeness-opener"></label>
-                    </li>
-                </ul>
-                
-            </form>
-    <script src="scripts/jquery-3.2.1.min.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/popper.min.js"></script>
-    <script src="scripts/script.js"></script>
+ 
+<p>Date: <input type="text" id="datepicker" class="startdate"></p>
+ 
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $( ".startdate" ).datepicker({
+  dateFormat: 'dd/mm/yy',//check change
 
-    <!-- script in home -->
-    <script src="scripts/jquery-2.2.0.min.js"></script>
-    <script src="scripts/jquery.easing.1.3.js"></script>
-    <script src="scripts/jquery.skitter.min.js"></script>
-    <script src="scripts/slick.min.js"></script>
-    <script>
-        $(document).on('ready', function() {
-            $(function() {
-                $('.skitter-minimalist').skitter({
-                    navigation: false,
-                    dots: true,
-                    numbers: true
-                });
-            });
-            $('.slider-cat').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-        });        
-    </script>
+});
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+        
+      </script>
+      
 </body>
 </html>
