@@ -1,11 +1,12 @@
 @media screen and (max-width: 1200px) {
   .wrapper {
     padding-left: 10px;
-    padding-right: 10px; } }
-@media screen and (max-width: 475px) {
-  html {
-    font-size: 13px; } }
-@media screen and (max-width: 425px) {
+    padding-right: 10px; }
+
+  header .head-right {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+@media screen and (max-width: 768px) {
   header .logo {
     margin-bottom: 1rem; }
   header .search {
@@ -26,6 +27,9 @@
   .slick-arrow {
     display: none !important; }
 
+  .containerr .left {
+    margin-bottom: 1.5rem; }
+
   .column-2 {
     -webkit-column-count: 1;
     /* Chrome, Safari, Opera */
@@ -38,5 +42,13 @@
 
   .footer-03 .col-md-3 {
     justify-content: center; } }
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 13px; }
+
+  .list-seaFlowers-par {
+    margin: 0; }
+    .list-seaFlowers-par .item {
+      width: 100%; } }
 
 /*# sourceMappingURL=responsive.css.map */

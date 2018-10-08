@@ -518,7 +518,7 @@ ul{
         margin: 0 -20px;
         padding-left: 20px;
         padding-bottom: 11px;
-        background-color: #014282;
+        background-color: $color-child;
     }
     ul.menu-mb-lv1{
         display: block;
@@ -535,14 +535,14 @@ ul{
                 position: absolute;
                 top: 16px;
                 right: 0;
-                font-size: .9rem;
+                font-size: 1rem;
             }
             &:not(:last-child){
                 border-bottom: 1px solid #a3a2a2;
             }
             a{
                 font-family: 'Proxima-SB';
-                font-size: .9rem;
+                font-size: 1rem;
                 color: black;
                 line-height: 1;
             }
@@ -557,7 +557,7 @@ ul{
                     &:before{
                         content: "";
                         position: absolute;
-                        top: 23px;
+                        top: 19px;
                         left: 0;
                         width: 9px;
                         height: 3px;
