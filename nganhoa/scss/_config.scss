@@ -1,4 +1,5 @@
 $color-main: #ff488a;
+$color-child: #00997c;
 $color-text-main: #000;
 $heightImgItem: 205px;
 
@@ -57,7 +58,9 @@ section{
 .toUpper{
     text-transform: uppercase;
 }
-
+.pd-0{
+    padding: 0 !important;
+}
 .color-main{
     color: $color-main;
 }
@@ -410,5 +413,71 @@ ul{
         background-color: #fff;
         color: $color-main;
         border-color: $color-main;
+    }
+}
+.btn-ds-child{
+    display: inline-block;
+    font-family: 'Proxima-SB';
+    background-color: $color-child;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    transition: all .4s ease;
+    border: 2px solid transparent;
+    &:hover{
+        background-color: #fff;
+        color: $color-child;
+        border-color: $color-child;
+    }
+}
+.breadcrumb-ds{
+    ul{
+        display: inline-block;
+        font-size: 0;
+        margin-bottom: 0;
+        li{
+            font-size: 1.15rem;
+            display: inline-block;
+            color: #fff;
+            a{
+                color: #fff;
+                text-transform: uppercase;
+            }
+            &:not(:last-child)::after{
+                content: "/";
+                padding-left: 15px;
+                a{
+                    pointer-events: none;
+                }
+            }
+            &:not(:first-child){
+                padding-left: 15px;
+            }
+        }
+    }
+}
+.b-radius-5{
+    border-radius: 5px !important;
+}
+.bootstrap-touchspin-down, .bootstrap-touchspin-up{
+    background-color: #fff;
+    border-color: #ccc;
+    color: #000;
+    font-size: 1.5rem;
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 1;
+    &:hover, &:focus, &:active, &:not(:disabled){
+        background-color: #fff;
+        border-color: #ccc;
+        color: #000;
+    }
+}
+.amount{
+    .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+        background-color: #fff;
+        border-color: #ccc;
+        color: #000;
     }
 }

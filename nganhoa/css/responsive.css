@@ -1,66 +1,15 @@
-@media screen and (max-width: 1200px) { .wrapper { padding-left: 10px; padding-right: 10px; }
-  .thumb { height: 205px; } }
-@media screen and (max-width: 1164px) { .header .left { width: 100% !important; }
-  .header .right { width: auto !important; position: absolute; top: 50%; right: 15px; -webkit-transform: translateY(-50%); -o-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
-  .header .right button { display: block; }
-  .header .right .menu-pc { display: none !important; } }
-@media screen and (max-width: 900px) { .banner #owl-banner .item { height: 400px; }
-  .thumb { height: auto !important; min-height: 0 !important; } }
-@media screen and (max-width: 768px) { .hoatdong-par .description h3 { font-size: 20px; }
-  .contact .main-form form .row .col-md-6:first-child { padding-right: 15px; } }
-@media screen and (max-width: 600px) { .logo-pc { display: none !important; }
-  .logo-mb { display: block !important; }
-  .banner #owl-banner .item { height: 300px; }
-  .banner-not-home { height: 180px; }
-  .header { height: 68px !important; }
-  .header .left { padding-left: 20px; padding-right: 20px; }
-  .header .left .text-logo p.name-site { font-size: 18px; }
-  .header .left .text-logo p.head, .header .left .text-logo p.bot { font-size: 10px; }
-  .post .img-post { width: 100%; }
-  .post-2 { flex-direction: column; }
-  .post-2 .main-post .img-post { width: 100%; }
-  .post-2 .sidebar-right { padding-left: 0; }
-  .post-2 .sidebar-right::before { left: 0; }
-  .list-item .item { width: 100% !important; margin-bottom: 1rem; }
-  .hoatdong-par .list-item .item:not(:first-child) { margin-top: 0; }
-  .about-home, .product-par { margin-top: 1.5rem !important; width: 100% !important; }
-  .about-home { padding-right: 0; }
-  footer { padding-top: 1.5rem; flex-direction: column; }
-  footer > div { width: 100% !important; }
-  footer .left { text-align: center; margin-bottom: 1rem; }
-  footer .left .logo-img { width: 100%; }
-  footer .left .logo-img img { display: block; margin: auto; }
-  footer .left .text-site { width: 100%; }
-  footer .right .follow { flex-direction: column; text-align: center; }
-  footer .copyright { text-align: center; margin-bottom: 1rem; } }
-@media screen and (max-width: 475px) { html { font-size: 13px; }
-  .header { height: 68px !important; }
-  .header .left { padding-left: 20px; padding-right: 20px; }
-  .header .left .text-logo p.name-site { font-size: 18px; }
-  .header .left .text-logo p.head, .header .left .text-logo p.bot { font-size: 10px; }
-  .header .right button i { font-size: 1.2rem; }
-  main { padding-left: 20px; padding-right: 20px; }
-  main .wrapper { padding-left: 0; padding-right: 0; }
-  .hoatdong-par .list-item { padding-left: 5%; padding-right: 5%; }
-  .hoatdong-par .item { width: 100%; margin-top: 0; }
-  .hoatdong-par .item:first-child { margin-top: -17px; }
-  .hoatdong-par .description { padding-left: 0; padding-right: 0; }
-  .hoatdong-par .description h3 { font-size: 24px; }
-  .about-home, .product-par { margin-top: 1.5rem !important; width: 100% !important; }
-  .about-home { padding-right: 0; }
-  .about-home .link, .product-par .link { position: relative; }
-  .product-par .headline a { font-size: 1.5rem; }
-  footer { padding-top: 1.5rem; flex-direction: column; }
-  footer > div { width: 100% !important; }
-  footer .left { text-align: center; margin-bottom: 1rem; }
-  footer .left .logo-img { width: 100%; }
-  footer .left .logo-img img { display: block; margin: auto; }
-  footer .left .text-site { width: 100%; }
-  footer .right .follow { flex-direction: column; text-align: center; }
-  footer .copyright { text-align: center; margin-bottom: 1rem; } }
-@media screen and (max-width: 425px) { .header .left { padding-left: 0; padding-right: 0; }
-  .header .left .text-logo p.name-site { font-size: 13px; }
-  .header .right { right: 10px; }
-  .hoatdong-par .description h3 { font-size: 22px; } }
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media screen and (max-width: 600px) {
+  .logo-pc {
+    display: none !important; }
+
+  .logo-mb {
+    display: block !important; } }
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 13px; } }
 
 /*# sourceMappingURL=responsive.css.map */

@@ -15,6 +15,8 @@
     <!-- css on home -->
     <link rel="stylesheet" href="css/skitter.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.bootstrap-touchspin.min.css">
+
 </head>
 <body>
     <header class="wrapper">
@@ -82,26 +84,9 @@
             </ul>
         </div>
     </div>    
-    <main>
-        <div class="row wrapper">
-            <div class="col-md-3 left">
-                <div class="sidebar-left-cat">
-                    <ul>
-                        <li><a href="#">Khuyến mãi</a></li>
-                        <li><a href="#">Bó hoa tươi</a></li>
-                        <li><a href="#">Giỏ hoa tươi</a></li>
-                        <li><a href="#">Hoa chúc mừng</a></li>
-                        <li><a href="#">Hộp hoa tươi</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-9 pd-0">
-                <div class="banner-home">
-                     <img src="images/content/slider-home.jpg" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="list-link-2">
+
+    <main>        
+        <div class="list-link">
             <div class="row wrapper space-between">
                 <div class="left breadcrumb-ds">
                     <ul>
@@ -110,22 +95,131 @@
                         <li><a href="#">Hoa tặng mẹ</a></li>
                     </ul>
                 </div>
-                <div class="">
-                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                        <option selected>Lọc sản phẩm theo giá</option>
-                        <option value="1">Từ 50K - Đến 100k</option>
-                        <option value="2">Từ 100K - Đến 300k</option>
-                        <option value="3">Từ 300K - Đến 500k</option>
-                    </select>
-                </div>
                 <div class="right">
                     <a href="#" class="toUpper c-white">Trở lại</a>
                 </div>
             </div>            
         </div>
-        <div class="containerr row wrapper">            
-            <div class="list-product">
-                <div class="col-md-3 item">
+        <div class="product-item row wrapper">
+            <div class="col-md-6 img-product">
+                <img src="images/content/product-05.jpg" class="img-fluid d-block m-auto" alt="">
+            </div>
+            <div class="col-md-6 product-detail">
+                <div class="head">
+                    <div class="masp">
+                        <p class="toUpper text-b h4">Mã sp: 5320</p>
+                    </div>
+                    <div class="name">
+                        <p class="toUpper text-b c-black">Hoa tặng mẹ - Hoa tình bạn hữu</p>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="sumary">
+                        <p>Chắc hẳn ai cũng bị hút hồn bởi những cánh đồng hoa cẩm tú cầu bạt ngàn, trải dài cuối chân trời. Hoa cẩm tú cầu luôn mang trong mình vẻ đẹp đặc biệt đơn giản mà vẫn toát lên vẻ sang trọng. 1 bó hoa chỉ toàn hoa cẩm tú cầu thì sao nhỉ...??? Sẽ là món quà tuyệt vời dành cho ai có sự yêu thích với loài hoa này</p>
+                    </div>
+                    <div class="price row rs-row h4 text-b c-black">
+                        GIÁ:&nbsp;
+                        <div class="price-show">                            
+                            <span class="h2 text-b color-main">700.000đ</span>
+                        </div>
+                        <div class="price-hide">
+                            <span class="h4 text-b c-gray">1.200.000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="buy">
+                    <div class="row">
+                        <div class="col-md-6 amount text-b">
+                            <span class="text-b toUpper">Số lượng: </span>
+                            <div style="width: 120px;" class="d-inline-block">
+                                <input id="amount" type="text" value="1" name="amount" class="form-control text-center">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row buy-btn">
+                        <div class="col-md-6 buy-now">
+                            <a href="" class="btn-ds b-radius-5 toUpper w-100 c-white text-center">Mua ngay</a>
+                        </div>
+                        <div class="col-md-6 add-card">
+                            <a href="" class="btn-ds-child b-radius-5 w-100 toUpper c-white text-center">Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <a class="toUpper d-block c-black text-b" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Thông tin thêm
+                                    </a>
+                                </h5>
+                            </div>                              
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <p>Bó hoa tươi Phút Yêu Đầu 2 gồm các loại hoa:</p>
+                                    <p>- 15 hoa hồng da</p>
+                                    <p>- Hoa mimi</p>
+                                    <p>- Giấy gói - nơ xuất xứ HQ</p>
+                                    <p>* Shop 1000Hoa cam kết giao gấp trong vòng 2 giờ kể từ khi quý khách đặt xong sản phẩm hoa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <a class="toUpper d-block c-black text-b" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Hướng dẫn thanh toán
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                        Bạn có thể chọn một số cách thanh toán sau:
+
+                                        1. Tiền mặt:
+                                        
+                                        1.1 Thanh toán trực tiếp tại văn phòng công ty
+                                        
+                                        Công ty Cổ phần Color Life
+                                        
+                                        Địa chỉ 1: 270F Võ Thị Sáu, P.7, Q.3, Tp.Hồ Chí Minh (24/7)
+                                        
+                                        ĐT: 028. 7300 2010 (24/7)  - 024.7300 2010  (24/7)
+                                        
+                                        1.2 Thanh toán tiền mặt khi nhận hoa
+                                        
+                                        Chúng tôi hỗ trợ phương thức thanh toán COD (Cash on Delivery) - thanh toán tiền mặt khi giao hoa trong trường hợp bạn là người đặt và người nhận hoa, nhằm hỗ trợ tối đa việc đặt và nhận hàng.
+                                        
+                                        1.3 Thu tiền mặt ở địa điểm khác
+                                        
+                                        Trong trường hợp bạn không phải người nhận hoa để thanh toán tiền mặt khi nhận hoa, bạn cũng không thể chuyển khoản hoặc đến văn phòng công ty Hoayeuthuong.com để thanh toán, chúng tôi hỗ trợ giao hoa và thu tiền ở 2 địa điểm khác nhau. Tuy nhiên, phương thức thanh toán này sẽ có thêm phí dịch vụ (tùy khu vực). Vui lòng liên hệ nhân viên để biết thêm chi tiết (email contact@hoayeuthuong.com hoặc hotline 028. 7300 2010 (24/7)  - 024.7300 2010  (24/7)
+                                        
+                                        2. Thanh toán chuyển khoản qua ngân hàng:
+                                        
+                                        Bạn đến bất kỳ ngân hàng nào ở Việt Nam để chuyển tiền theo thông tin bên dưới (bạn không nhất thiết phải có tài khoản ngân hàng)
+                                        
+                                        mua hoa online	Ngân hàng TMCP Ngoại Thương Việt Nam 
+                                        Chi nhánh Sài Thành
+                                        Chủ tài khoản: Cty Cổ Phần Color Life
+                                        Số Tài Khoản: 0511 000 458 855
+                                        mua hoa trực tuyến	Ngân hàng TMCP Kỹ Thương Việt Nam 
+                                        Chi nhánh Kỳ Đồng
+                                        Chủ tài khoản: Cty Cổ Phần Color Life
+                                        Số Tài Khoản: 191 291 8515 2018
+                                </div>
+                            </div>
+                        </div>                                
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <section class="cat wrapper">
+            <div class="headline text-center">
+                <p class="toUpper c-black h3">Mẫu hoa cùng loại</p>
+            </div>
+            <div class="slider-cat list-product row">
+                <div class="col-md-4 item">
                     <div class="box">
                         <div class="thumb">                            
                             <img src="images/content/product-05.jpg" alt="">
@@ -136,14 +230,26 @@
                             </div>
                             <div class="price text-center">
                                 <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
+                            </div>                            
                         </div>
                     </div>                        
                 </div>
-                <div class="col-md-3 item">
+                <div class="col-md-4 item">
+                    <div class="box">
+                        <div class="thumb">                            
+                            <img src="images/content/product-03.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="name text-center">
+                                <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
+                            </div>
+                            <div class="price text-center">
+                                <p class="color-main h4 text-b">150.000 Đ</p>
+                            </div>                            
+                        </div>
+                    </div>                        
+                </div>
+                <div class="col-md-4 item">
                     <div class="box">
                         <div class="thumb">                            
                             <img src="images/content/product-06.jpg" alt="">
@@ -154,50 +260,11 @@
                             </div>
                             <div class="price text-center">
                                 <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
+                            </div>                            
                         </div>
                     </div>                        
                 </div>
-                <div class="col-md-3 item">
-                    <div class="box">
-                        <div class="thumb">                            
-                            <img src="images/content/product-07.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="name text-center">
-                                <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
-                            </div>
-                            <div class="price text-center">
-                                <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-                <div class="col-md-3 item">
-                    <div class="box">
-                        <div class="thumb">                            
-                            <img src="images/content/product-02.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="name text-center">
-                                <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
-                            </div>
-                            <div class="price text-center">
-                                <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-                <div class="col-md-3 item">
+                <div class="col-md-4 item">
                     <div class="box">
                         <div class="thumb">                            
                             <img src="images/content/product-01.jpg" alt="">
@@ -208,14 +275,11 @@
                             </div>
                             <div class="price text-center">
                                 <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
+                            </div>                            
                         </div>
                     </div>                        
                 </div>
-                <div class="col-md-3 item">
+                <div class="col-md-4 item">
                     <div class="box">
                         <div class="thumb">                            
                             <img src="images/content/product-03.jpg" alt="">
@@ -226,133 +290,14 @@
                             </div>
                             <div class="price text-center">
                                 <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
+                            </div>                            
                         </div>
                     </div>                        
                 </div>
-                <div class="col-md-3 item">
-                    <div class="box">
-                        <div class="thumb">                            
-                            <img src="images/content/product-02.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="name text-center">
-                                <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
-                            </div>
-                            <div class="price text-center">
-                                <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-                <div class="col-md-3 item">
-                    <div class="box">
-                        <div class="thumb">                            
-                            <img src="images/content/product-01.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="name text-center">
-                                <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
-                            </div>
-                            <div class="price text-center">
-                                <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-                <div class="col-md-3 item">
-                    <div class="box">
-                        <div class="thumb">                            
-                            <img src="images/content/product-03.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="name text-center">
-                                <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
-                            </div>
-                            <div class="price text-center">
-                                <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-                <div class="col-md-3 item">
-                    <div class="box">
-                        <div class="thumb">                            
-                            <img src="images/content/product-02.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="name text-center">
-                                <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
-                            </div>
-                            <div class="price text-center">
-                                <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-                <div class="col-md-3 item">
-                    <div class="box">
-                        <div class="thumb">                            
-                            <img src="images/content/product-01.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="name text-center">
-                                <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
-                            </div>
-                            <div class="price text-center">
-                                <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-                <div class="col-md-3 item">
-                    <div class="box">
-                        <div class="thumb">                            
-                            <img src="images/content/product-03.jpg" alt="">
-                        </div>
-                        <div class="content">
-                            <div class="name text-center">
-                                <a href="#" class="h4 text-b toUpper c-black">Only you 1</a>                                
-                            </div>
-                            <div class="price text-center">
-                                <p class="color-main h4 text-b">150.000 Đ</p>
-                            </div>
-                            <div class="link">
-                                <a href="#" class="buynow text-b c-white toUpper">Buy now</a>
-                            </div>
-                        </div>
-                    </div>                        
-                </div>
-            </div>
-            <div class="pagination row wrapper">
-                <ul>
-                    <li><a href=""><i class="fas fa-angle-left"></i></a></li>
-                    <li><a class="active" href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href=""><i class="fas fa-angle-right"></i></a></li>
-                </ul>
-            </div>
-        </div>
+            </div>            
+        </section>
     </main>
+    
     <footer>
         <div class="footer-01">
             <div class="row wrapper">
@@ -494,6 +439,13 @@
     <script src="scripts/jquery.easing.1.3.js"></script>
     <script src="scripts/jquery.skitter.min.js"></script>
     <script src="scripts/slick.min.js"></script>
+
+    <script src="scripts/jquery.bootstrap-touchspin.min.js"></script>
+    <script>
+        $("input[name='amount']").TouchSpin({
+        });
+    </script>
+
     <script>
         $(document).on('ready', function() {
             $(function() {
@@ -505,7 +457,7 @@
             });
             $('.slider-cat').slick({
                 infinite: true,
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 responsive: [
                     {
