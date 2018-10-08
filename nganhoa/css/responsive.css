@@ -42,6 +42,40 @@
 
   .footer-03 .col-md-3 {
     justify-content: center; } }
+@media screen and (max-width: 767px) {
+  section.card.right {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  .card-main-2 .btn-fb {
+    margin-right: 15px;
+    margin-left: 15px; }
+
+  .step .back {
+    margin-bottom: 1rem; }
+
+  .dangky .main {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .dangky-bot .left, .dangky-bot .right {
+    display: inline-block;
+    width: auto !important; }
+
+  .dathoa-form > div, .dangky-form > div {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .card-head .right {
+    display: none; }
+
+  .card-main .item {
+    justify-content: center; }
+    .card-main .item .name-product {
+      text-align: center;
+      margin-bottom: .5rem; }
+      .card-main .item .name-product p {
+        margin-bottom: 0; } }
 @media screen and (max-width: 475px) {
   html {
     font-size: 13px; }
