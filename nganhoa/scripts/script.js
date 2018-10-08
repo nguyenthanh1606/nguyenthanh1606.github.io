@@ -1,18 +1,26 @@
-function pushMenuOpen(){
-    let b = document.getElementById('menu-mobile');
-    b.style.right = '0';
-    let c = document.getElementById('hide-w');
-    c.style.display = 'block';
-}
-function pushMenuClose(){
-    let b = document.getElementById('menu-mobile');
-    b.style.right = '-100%';
-    let c = document.getElementById('hide-w');
-    c.style.display = 'none';
+function pushMenu(){
+    var a = document.getElementById('menuPush');
+    var b = document.getElementById('menu-mobile');
+    if(a.style.left == '0px'){
+        a.style.left = '218px';
+        b.style.left = '0';
+    }
+    else{
+        a.style.left = '0px';
+        b.style.left = '-100%';
+    }
+
+    var x = document.getElementById('ico-bar');
+    if(x.classList[1] == 'fa-bars'){
+        x.classList.remove('fa-bars');
+        x.classList.add('fa-times');
+    }
+    else{
+        x.classList.remove('fa-times');
+        x.classList.add('fa-bars');
+    }
 }
 
-//color ramdom
-var randomColor = Math.floor(Math.random()*16777215).toString(16);
 
 $(document).ready(function(){
 
@@ -32,7 +40,7 @@ $(document).ready(function(){
     // });
 
     $('#hide-w').click(function(){
-        $('#menu-mobile').css('right','-100%');
+        $('#menu-mobile').css('left','-100%');
         $('#hide-w').css('display',('none'));
     });
 

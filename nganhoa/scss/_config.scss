@@ -48,6 +48,10 @@ section{
     padding-bottom: 1rem;
     margin-bottom: 1rem !important;
 }
+body{
+    transition: left .4s ease;
+    position: relative;
+}
 .wrapper{
     max-width: 1170px;
     margin: auto;
@@ -479,5 +483,92 @@ ul{
         background-color: #fff;
         border-color: #ccc;
         color: #000;
+    }
+}
+.no-event{
+    pointer-events: none;
+}
+.menu-mb{
+    overflow-y: scroll;
+    z-index: 100;
+    transition: left 0.3s ease-in-out;
+    width: 218px;
+    top: 0;
+    display: none;
+    position: fixed;
+    background-color: #b7b7b7;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    &::before{
+        content: "";
+        width: 40%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 4px;
+        z-index: 1;
+        background-color: $color-main;
+    }
+    p.head{
+        color: #fff;
+        font-family: 'Proxima-SB';
+        font-size: .9rem;
+        padding-top: 11px;
+        margin: 0 -20px;
+        padding-left: 20px;
+        padding-bottom: 11px;
+        background-color: #014282;
+    }
+    ul.menu-mb-lv1{
+        display: block;
+        *{
+            text-transform: uppercase !important;
+        }
+        >li{
+            position: relative;
+            display: block;
+            padding-left: 3px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            i{
+                position: absolute;
+                top: 16px;
+                right: 0;
+                font-size: .9rem;
+            }
+            &:not(:last-child){
+                border-bottom: 1px solid #a3a2a2;
+            }
+            a{
+                font-family: 'Proxima-SB';
+                font-size: .9rem;
+                color: black;
+                line-height: 1;
+            }
+            .menu-mb-lv2{
+                li{
+                    padding-left: 15px;
+                    padding-top: 11px;
+                    position: relative;
+                    &:not(:first-child){
+                        padding-bottom: 11px;
+                    }
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top: 23px;
+                        left: 0;
+                        width: 9px;
+                        height: 3px;
+                        background-color: $color-main;
+                    }                    
+                }
+            }
+        }
+        .active a{
+            font-family: 'Proxima-SB' !important;
+            color: $color-main !important;
+        }
     }
 }

@@ -30,11 +30,28 @@
         .nav-menu-mb{
             display: block;
         }
+        .head-right{
+            justify-content: flex-end;
+        }
     }
     .menu-pc{
         display: none;
     }
+    .menu-mb{
+        display: block;
+    }
     .slick-arrow{
         display: none !important;
+    }
+    .column-2{
+        -webkit-column-count: 1; /* Chrome, Safari, Opera */
+        -moz-column-count: 1; /* Firefox */
+        column-count: 1;
+    }
+    .footer-02 .col-md-6{
+        margin-bottom: 1rem;
+    }
+    .footer-03 .col-md-3{
+        justify-content: center;
     }
 }
