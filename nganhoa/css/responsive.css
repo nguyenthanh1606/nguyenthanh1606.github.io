@@ -2,14 +2,23 @@
   .wrapper {
     padding-left: 10px;
     padding-right: 10px; } }
-@media screen and (max-width: 600px) {
-  .logo-pc {
-    display: none !important; }
-
-  .logo-mb {
-    display: block !important; } }
 @media screen and (max-width: 475px) {
   html {
     font-size: 13px; } }
+@media screen and (max-width: 425px) {
+  header .logo {
+    margin-bottom: 1rem; }
+  header .search {
+    margin-bottom: 1rem; }
+    header .search .form-search input {
+      width: 100%; }
+  header .nav-menu-mb {
+    display: block; }
+
+  .menu-pc {
+    display: none; }
+
+  .slick-arrow {
+    display: none !important; } }
 
 /*# sourceMappingURL=responsive.css.map */

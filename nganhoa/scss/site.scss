@@ -1,8 +1,24 @@
 @import 'config';
 
 header{
+    position: relative;
     .head{
         padding-top: 21px;
+    }
+    .nav-menu-mb{
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        right: 10px;
+        display: none;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline-color: transparent;
+        i{
+            color: $color-main;
+            font-size: 1.4rem;
+        }
     }
 }
 .search, .head-right{
@@ -188,9 +204,6 @@ ul.lv2{
     }
 }
 
-.main-top{
-    
-}
 
 main.not-home{
     background-color: #f7f7f8;
@@ -1047,9 +1060,6 @@ section.card.right{
                 opacity: 1;
             }
         }
-    }
-    .left{
-
     }
     .right{
         position: relative;
