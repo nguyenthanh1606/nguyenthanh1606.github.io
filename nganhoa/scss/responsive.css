@@ -1,0 +1,88 @@
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  header .head-right {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+@media screen and (max-width: 768px) {
+  header .logo {
+    margin-bottom: 1rem; }
+  header .search {
+    margin-bottom: 1rem; }
+    header .search .form-search input {
+      width: 100%; }
+  header .nav-menu-mb {
+    display: block; }
+  header .head-right {
+    justify-content: flex-end; }
+
+  .menu-pc {
+    display: none; }
+
+  .menu-mb {
+    display: block; }
+
+  .slick-arrow {
+    display: none !important; }
+
+  .containerr .left {
+    margin-bottom: 1.5rem; }
+
+  .column-2 {
+    -webkit-column-count: 1;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 1;
+    /* Firefox */
+    column-count: 1; }
+
+  .footer-02 .col-md-6 {
+    margin-bottom: 1rem; }
+
+  .footer-03 .col-md-3 {
+    justify-content: center; } }
+@media screen and (max-width: 767px) {
+  section.card.right {
+    flex: 0 0 100%;
+    max-width: 100%; }
+
+  .card-main-2 .btn-fb {
+    margin-right: 15px;
+    margin-left: 15px; }
+
+  .step .back {
+    margin-bottom: 1rem; }
+
+  .dangky .main {
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .dangky-bot .left, .dangky-bot .right {
+    display: inline-block;
+    width: auto !important; }
+
+  .dathoa-form > div, .dangky-form > div {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .card-head .right {
+    display: none; }
+
+  .card-main .item {
+    justify-content: center; }
+    .card-main .item .name-product {
+      text-align: center;
+      margin-bottom: .5rem; }
+      .card-main .item .name-product p {
+        margin-bottom: 0; } }
+@media screen and (max-width: 475px) {
+  html {
+    font-size: 13px; }
+
+  .list-seaFlowers-par {
+    margin: 0; }
+    .list-seaFlowers-par .item {
+      width: 100%; } }
+
+/*# sourceMappingURL=responsive.css.map */
