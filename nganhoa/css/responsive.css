@@ -57,6 +57,10 @@
   .footer-03 .col-md-3 {
     justify-content: center;
   }
+
+  .sidebar-left {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
   section.card.right {
@@ -101,6 +105,11 @@
   }
   .card-main .item .name-product p {
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .news .list-news .sumary {
+    text-align: justify;
   }
 }
 @media screen and (max-width: 475px) {

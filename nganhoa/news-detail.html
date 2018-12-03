@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-face.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body id="menuPush" style="left: 0;">
+    <header class="wrapper">
+        <div class="row head">
+            <div class="col-md-3 logo">
+                <div class="img-logo">
+                    <a href="index.html">
+                        <img src="images/theme/logo-pc.png" alt="" class="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 d-none d-lg-block search">
+                <div class="form-search">
+                    <input type="text" name="" id="" class="form-control">
+                    <button type="submit" class="btn-search"></button>
+                </div>
+            </div>
+            <div class="col-md-5 head-right">
+                <div class="">
+                    <button class="nav-menu-mb" onclick="pushMenu()"><i id="ico-bar" class="fas fa-bars"></i></button>
+                </div>
+                <div class="account">
+                    <ul class="account-list">
+                        <li>
+                            <input id="check01" type="checkbox" name="menu" />
+                            <label for="check01">Tài khoản <i class="fas fa-angle-down"></i></label>
+                            <ul class="submenu">
+                                <li><a href="dangnhap.html">Đăng nhập</a></li>
+                                <li><a href="dangky.html">Đăng ký</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tel d-none d-lg-block">
+                    <i class="fas fa-phone fa-rotate-90"></i>
+                    <a href="tel:0934860101">0934 86 0101</a>
+                </div>
+                <a href="payment.html" class="ammount">
+                    <div class="shopping-cart">
+                        <span class="ammout">10</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="menu-mobile" class="menu-mb" style="left: -100%;">
+        <p class="head toUpper">menu</p>
+        <ul class="menu-mb-lv1">
+            <li class="active"><a href="index.html">Trang chủ</a></li>
+            <li><a href="#item-2" data-toggle="collapse" aria-controls="item-3" class="">Birthday flowers</a>
+                <a href="#item-2" data-toggle="collapse" role="button" aria-controls="item-3" aria-expanded="false">
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul id="item-2" class="collapse menu-mb-lv2">
+                    <li><a href="product.html">Bó hoa hoa duong dong tươi</a></li>
+                    <li><a href="product.html">Hộp hoa tươi</a></li>
+                    <li><a href="product.html">Giỏ hoa tươi</a></li>
+                    <li><a href="product.html">Bình hoa tươi</a></li>
+                    <li><a href="product.html">Hoa tình yêu</a></li>
+                    <li><a href="product.html">Hoa chúc mừng</a></li>
+                    <li><a href="product.html">Hoa chia buồn</a></li>
+                </ul>
+            </li>
+            <li><a href="product.html">Occasions</a> </li>
+            <li><a href="product.html">Flowers</a></li>
+            <li><a href="product.html">Colors</a></li>
+            <li><a href="product.html">Spencial flowers</a></li>
+            <li><a href="product.html">Gifts</a></li>
+            <li><a href="product.html">Wedding decoration</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+    <div class="main-menu">
+        <div class="row wrapper menu rs-row menu-pc">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="product.html">Birthday flowers</a>
+                    <ul class="lv2">
+                        <li><a href="product.html">Bó hoa hoa duong dong tươi</a></li>
+                        <li><a href="product.html">Hộp hoa tươi</a></li>
+                        <li><a href="product.html">Giỏ hoa tươi</a></li>
+                        <li><a href="product.html">Bình hoa tươi</a></li>
+                        <li><a href="product.html">Hoa tình yêu</a></li>
+                        <li><a href="product.html">Hoa chúc mừng</a></li>
+                        <li><a href="product.html">Hoa chia buồn</a></li>
+                    </ul>
+                </li>
+                <li><a href="product.html">Occasions</a></li>
+                <li><a href="product.html">Flowers</a></li>
+                <li><a href="product.html">Colors</a></li>
+                <li><a href="product.html">Spencial flowers</a></li>
+                <li><a href="product.html">Gifts</a></li>
+                <li><a href="product.html">Wedding decoration</a></li>
+                <li><a href="product.html">Flower meaning</a></li>
+            </ul>
+        </div>
+    </div>
+    <main class="news">
+        <div class="main-top">
+            <div class="banner-news">
+                <img src="images/content/camnhanvehoa.jpg" class="w-100" alt="">
+            </div>
+        </div>
+        <div class="containerr wrapper row pb-3">
+            <div class="col-md-8">
+                <div class="title-news text-center">
+                    <p class="h3 color-main toUpper">Hoa nhài</p>
+                </div>
+                <div class="content-sumary pd-6">
+                    <p class="text-b c-black">Cây hoa nhài có hình dáng đẹp, sai hoa, hương thơm dễ chịu, lại là một loại
+                        cây phong thủy trừ xú uế, đem lại tài lộc cho gia chủ, tội gì mà không trồng</p>
+                </div>
+                <div class="content-detail justyfy">
+                    <p>Hoa nhài là loài hoa khá phổ biến ở Việt Nam, có&nbsp;nguồn gốc từ dãy núi Himalayas, Trung
+                        Quốc,
+                        với hương thơm ngọt ngào, dễ chịu, dễ dàng xoa dịu căng thẳng, giảm stress cho người chơi hoa.
+                        Loài
+                        hoa mỏng manh, nhỏ bé này còn là quốc hoa của nhiều quốc gia trên thế giới như: Philippines,
+                        Pakistan, Indonesia, Tunisia.</p>
+    
+                    <p style="text-align: center;"><img align="center" alt="trong chau hoa nhai bay nha, vua dep vua toa ngat huong thom - 1"
+                            height="375" onclick="return openNewImage(this, '')" src="https://eva-img.24hstatic.com/upload/3-2017/images/2017-09-25/trong-hoa-nhai-toa-ngat-huong-thom-quanh-nha-hoa-nhai-1506333365-width660height495.jpg"
+                            width="500" /></p>
+    
+                    <p>Cây hoa nhài là loại cây bụi nhỏ, phân cành nhánh nhiều với chiều cao khoảng 30-100cm. Lá cây
+                        màu
+                        xanh đậm, bóng. Hoa có màu trắng tinh khôi, nhỏ xinh, đường kính hoa khoảng 2,5- 5cm. Mỗi chùm
+                        hoa
+                        thường từ 3 đến 15 bông hoa.</p>
+    
+                    <p style="text-align: center;"><img align="center" alt="trong chau hoa nhai bay nha, vua dep vua toa ngat huong thom - 2"
+                            height="375" onclick="return openNewImage(this, '')" src="https://eva-img.24hstatic.com/upload/3-2017/images/2017-09-25/trong-hoa-nhai-toa-ngat-huong-thom-quanh-nha-13anhchottrangbaithuoc_0b760-1506333424-width660height495.jpg"
+                            width="500" /></p>
+    
+                    <p>Cây hoa nhài hầu như quanh năm đều ra hoa, nhiều nhất vào mùa hè và chủ yếu tỏa hương thơm ngát
+                        vào
+                        ban đêm.</p>
+    
+                    <p>Cây nên được đặt gần cửa sổ hướng về phía nam của nhà. Còn trong vườn, cây nên được trồng&nbsp;ở
+                        phía bắc, phía đông hoặc phía đông bắc.</p>
+    
+                    <p style="text-align: center;"><img align="center" alt="trong chau hoa nhai bay nha, vua dep vua toa ngat huong thom - 3"
+                            height="375" onclick="return openNewImage(this, '')" src="https://eva-img.24hstatic.com/upload/3-2017/images/2017-09-25/trong-hoa-nhai-toa-ngat-huong-thom-quanh-nha-hoa-nhai-tri-mun-1506333497-width660height495.jpg"
+                            width="500" /></p>
+    
+                    <p><strong>Ý nghĩa hoa nhài</strong></p>
+    
+                    <p>Hoa nhài thu hút năng lượng tích cực, hương thơm ngọt ngào và dễ chịu của nó có thể giúp làm dịu
+                        sự
+                        căng thẳng và cung cấp năng lượng cho cơ thể.</p>
+    
+                    <p style="text-align: center;"><img align="center" alt="trong chau hoa nhai bay nha, vua dep vua toa ngat huong thom - 4"
+                            height="334" onclick="return openNewImage(this, '')" src="https://eva-img.24hstatic.com/upload/3-2017/images/2017-09-25/trong-hoa-nhai-toa-ngat-huong-thom-quanh-nha-2_50818-1506333539-width660height441.jpg"
+                            width="500" /></p>
+    
+                    <p><strong>Công dụng&nbsp;</strong></p>
+    
+                    <p><em>Cây cảnh phong thủy:</em>&nbsp;Cây hoa nhài có hình dáng đẹp, sai hoa, hương thơm dễ chịu,
+                        thanh
+                        thoát nên thường được trồng làm cây trang trí ở ban công văn phòng, nhà hàng, nhà ở… Cây hoa
+                        nhài
+                        cũng được lựa chọn làm&nbsp;<a href="https://eva.vn/nha-dep/cay-luoi-ho-loai-cay-loc-doc-to-cuc-tot-duoi-van-xui-hut-tai-loc-ma-ai-cung-muon-trong-c169a317272.html">cây
+                            phong thủy trừ xú uế, đem lại tài lộc cho gia chủ</a>.</p>
+    
+                    <p style="text-align: center;"><img align="center" alt="trong chau hoa nhai bay nha, vua dep vua toa ngat huong thom - 5"
+                            height="500" onclick="return openNewImage(this, '')" src="https://eva-img.24hstatic.com/upload/3-2017/images/2017-09-25/trong-hoa-nhai-toa-ngat-huong-thom-quanh-nha-hoa-nhai-5a-1506334241-width660height660.jpg"
+                            width="500" /></p>
+    
+                    <p><em>Làm thuốc chữa bệnh:&nbsp;</em>Hoa, lá và rễ của hoa nhài còn có thể dùng làm thuốc trị
+                        ngoại
+                        cảm phát sốt, đau bụng, mụn nhọt độc. Hoa sắc nước dùng rửa mặt, chữa viêm màng khóe mắt và
+                        màng
+                        mộng, chữa trẻ em lên sởi có sốt, sởi mọc không đều.</p>
+    
+                    <p><em>Làm mỹ phẩm, nước hoa:</em>&nbsp;Tinh dầu hoa nhài giúp cho tinh thần con người thư thái,
+                        mang
+                        đến cảm giác thư giãn, kích thích tâm trạng lạc quan nên thường được chưng cất làm nước hoa.</p>
+    
+                    <p><strong>Cách trồng hoa nhài</strong></p>
+    
+                    <p>Cây hoa nhài thuộc loại cây dễ trồng tại Việt Nam bởi thân cây khỏe mạnh, chịu khắc nghiệt cực
+                        tốt
+                        bất kể thời tiết nắng mưa. Hoa nhài có thể trồng quanh năm, thời điểm trồng tốt nhất đối với
+                        các
+                        tỉnh phía Bắc là từ tháng 2 đến tháng 4; với các tỉnh phía Nam là trước và sau mùa mưa.</p>
+    
+                    <p style="text-align: center;"><img align="center" alt="trong chau hoa nhai bay nha, vua dep vua toa ngat huong thom - 6"
+                            height="282" onclick="return openNewImage(this, '')" src="https://eva-img.24hstatic.com/upload/3-2017/images/2017-09-25/trong-hoa-nhai-toa-ngat-huong-thom-quanh-nha-t4546h1.jpg-1506334407-width660height372.jpg"
+                            width="500" /></p>
+    
+                    <p>&nbsp;</p>
+    
+                    <p><em>Ánh sáng:</em>&nbsp;Khi ra hoa, cây không ưa ánh nắng và phát triển tốt nhất trong môi
+                        trường
+                        nửa râm.</p>
+    
+                    <p><em>Nhiệt độ:</em>&nbsp;Hoa nhài ưa ấm, không chịu được giá lạnh. Nhiệt độ sinh trưởng lý tưởng
+                        nhất
+                        là 20 - 25 độ C, mở rộng ra là 22-35 độ C.</p>
+    
+                    <p><em>Nước:</em>&nbsp;Không ưa ẩm, khi tưới nên chú ý không được để quá khô hoặc quá ẩm. Khi cây
+                        đang
+                        ở thời kỳ tăng trưởng, nên giữ cho đất ẩm. Vào mùa khô cần thường xuyên tưới nước cho cây, mùa
+                        đông
+                        nên hạn chế lượng nước.</p>
+    
+                    <p><em>Đất:&nbsp;</em>Thích hợp nhất là loại đất cát ít chua, có nhiều chất mùn, tơi xốp, dễ thoát
+                        nước. Trồng trong bồn có thể dùng đất mùn, đất thịt hoặc đất hỗn hợp có chứa ít chất hữu cơ.</p>
+    
+                    <p>Chị em nên trồng một vài chậu hoa nhài đặt cửa sổ, cách trồng hoa nhài&nbsp;đơn giản hơn so
+                        với&nbsp;các loài hoa khác, mà dáng cây lại đẹp, hương lại thơm và quyến rũ.</p>
+                </div>
+                <div class="author text-right">
+                    <i style="font-size: small;" class="text-b">Theo: Nguyễn Thành</i>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="title-news-2 pl-3">
+                    <p class="h3 color-main m-0 toUpper">Các loài hoa khác</p>
+                </div>
+                <div class="list-other p-2">
+                    <div class="item mb-3 w-100">
+                        <div class="thumb p-0">
+                            <a href="news-detail.html"><img src="images/content/hoa nhai.jpg" class="w-100 border-gray border-5" alt=""></a>
+                        </div>
+                        <div class="content-right">
+                            <div class="headline">
+                                <a href="news-detail.html" class="h4 color-main text-b">Hoa nhài</a>
+                            </div>
+                            <div class="sumary">
+                                <p>Cây hoa nhài có hình dáng đẹp, sai hoa, hương thơm dễ chịu, lại là một loại cây phong thủy trừ xú uế, đem lại tài lộc cho gia chủ, tội gì mà không trồng...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-3 w-100">
+                        <div class="thumb p-0">
+                            <a href="news-detail.html"><img src="images/content/hoa nhai.jpg" class="w-100 border-gray border-5" alt=""></a>
+                        </div>
+                        <div class="content-right">
+                            <div class="headline">
+                                <a href="news-detail.html" class="h4 color-main text-b">Hoa nhài</a>
+                            </div>
+                            <div class="sumary">
+                                <p>Cây hoa nhài có hình dáng đẹp, sai hoa, hương thơm dễ chịu, lại là một loại cây phong thủy trừ xú uế, đem lại tài lộc cho gia chủ, tội gì mà không trồng...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-3 w-100">
+                        <div class="thumb p-0">
+                            <a href="news-detail.html"><img src="images/content/hoa nhai.jpg" class="w-100 border-gray border-5" alt=""></a>
+                        </div>
+                        <div class="content-right">
+                            <div class="headline">
+                                <a href="news-detail.html" class="h4 color-main text-b">Hoa nhài</a>
+                            </div>
+                            <div class="sumary">
+                                <p>Cây hoa nhài có hình dáng đẹp, sai hoa, hương thơm dễ chịu, lại là một loại cây phong thủy trừ xú uế, đem lại tài lộc cho gia chủ, tội gì mà không trồng...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-01">
+            <div class="row wrapper">
+                <div class="col-md-6 menu-footer">
+                    <div class="head">
+                        <p class="toUpper c-white">1000 hoa</p>
+                    </div>
+                    <ul class="column-2">
+                        <li><a href="page.html">Giới thiệu</a></li>
+                        <li><a href="page.html">Tin tức</a></li>
+                        <li><a href="page.html">Trách nhiệm xã hội</a></li>
+                        <li><a href="page.html">Tuyển dụng</a></li>
+                        <li><a href="page.html">Câu hỏi thường gặp (FAQs)</a></li>
+                        <li><a href="page.html">Blog</a></li>
+                        <li><a href="page.html">Khách hàng và 1000hoa.com</a></li>
+                        <li><a href="page.html">Chính sách và điều khoản</a></li>
+                        <li><a href="page.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 row">
+                    <div class="col-md-6">
+                        <div class="head">
+                            <p class="toUpper c-white">Chăm sóc khách hàng</p>
+                        </div>
+                        <ul class="">
+                            <li><a href="page.html">Thắc mắc và khiếu nại</a></li>
+                            <li><a href="page.html">Cam kết hài lòng 100%</a></li>
+                            <li><a href="page.html">Chính sách bảo mật thông tin</a></li>
+                            <li><a href="page.html">Hướng dẫn thanh toán</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="head">
+                            <p class="toUpper c-white">Giới thiệu về hoa</p>
+                        </div>
+                        <ul class="">
+                            <li><a href="page.html">Ý nghĩa về các loại hoa</a></li>
+                            <li><a href="page.html">Cách chăm sóc hoa</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-02">
+            <div class="row wrapper">
+                <div class="col-md-6">
+                    <div class="head">
+                        <p class="toUpper text-b c-black">Shop hoa TP.HCM</p>
+                    </div>
+                    <div class="content column-2">
+                        <div class="info">
+                            <span class="text-b">Địa chỉ:</span>
+                            <span>Shop hoa Q3, 270L Võ Thị Sáu, P.7 (Góc ngã tư Bà Huyện Thanh Quan)</span>
+                            <br>
+                            <span><strong>Điện thoại:</strong></span>
+                            <a href="tel:02873002010">028 7300 2010</a>
+                        </div>
+                        <div class="bieuphi">
+                            <span class="text-b">Miễn phí giao hoa tươi trên địa bàn Tp. Hồ Chí Minh</span>
+                            <br>
+                            <span>Q.1, Q.3, Q.4, Q.5, Q.6, Q.7, Q.8, Q.10, Q.11, Q. Tân Bình, Q. Bình Thạnh, Q. Phú
+                                Nhuận, Q. Tân Phú, Q. Gò Vấp. Các quận khác vui lòng liên hệ để biết thêm chi tiết (Giá
+                                giao sẽ từ 30.000đ- 70.000đ).</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 row">
+                    <div class="col-md-6">
+                        <div class="head">
+                            <p class="toUpper text-b c-black">Văn phòng điều hành</p>
+                        </div>
+                        <div class="content">
+                            <div class="info">
+                                <span class="text-b">Địa chỉ:</span>
+                                <span>Shop hoa Q3, 270L Võ Thị Sáu, P.7 (Góc ngã tư Bà Huyện Thanh Quan)</span>
+                                <br>
+                                <span><strong>Email:</strong></span>
+                                <a href="mailto:contact@nganhoa.com">contact@nganhoa.com</a>
+                                <br>
+                                <span><strong>Điện thoại (24/7):</strong></span><br>
+                                <a href="tel:02873002010">028 7300 2010</a><br>
+                                <a href="tel:02473002010">028 7300 2010</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="head">
+                            <p class="toUpper text-b c-black">Newsletter</p>
+                        </div>
+                        <div class="content">
+                            <div class="text">
+                                Đăng ký ngay để nhận được các thông tin khuyến mãi và ưu đãi đặc biệt từ nganhoa.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row wrapper footer-02-payment">
+                <div class="col-md-10  payment row">
+                    <div class="head">
+                        <p class="text-b toUpper c-black">Cách thức thanh toán</p>
+                    </div>
+                    <div class="list-payment">
+                        <img src="images/theme/payment-visa.jpg" alt="">
+                        <img src="images/theme/payment-mastercard.jpg" alt="">
+                        <img src="images/theme/payment-card.jpg" alt="">
+                        <img src="images/theme/payment-paypal.jpg" alt="">
+                        <img src="images/theme/payment-bank.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cn right">
+                        <img src="images/theme/bocongthuong.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-03">
+            <div class="row wrapper follow">
+                <div class="col-md-3 row">
+                    <a href="http://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://facebook.com"><i class="fab fa-twitter"></i></a>
+                    <a href="http://facebook.com"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="http://facebook.com"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <div class="col-md-9">
+                    <div class="copyright">
+                        <p>Copyright ©2017, 1000 Hoa All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/popper.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>

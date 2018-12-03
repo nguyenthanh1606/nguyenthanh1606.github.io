@@ -133,13 +133,15 @@ header{
                 transition: all .4s ease;
             }
             >a{
+                color: #000;
                 font-family: 'Proxima-SB';
                 text-transform: uppercase;
-                &:hover{
-                    color: #000;
-                }
+                
             }
             &:hover{
+                >a{
+                    color: $color-main;
+                }
                 &:after{
                     background-color: $color-main;
                     @include transform(translate(-50%,0))
@@ -166,6 +168,7 @@ ul.lv2{
     position: absolute;
     left: -2rem;
     right: -2rem;
+    min-width: 300px;
     li{       
         &:first-child{
             padding-top: 20px;
@@ -359,7 +362,6 @@ main.not-home{
             }
         }
         .content{
-            align-self: flex-end;
             padding-top: .5rem;
             a{
                 font-size: 1.2rem;
@@ -439,10 +441,36 @@ main.not-home{
         }
     }
 }
+.sidebar-left{
+    padding-top: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: $color-main;
+    .sidebar-left-cat{
+        ul{
+            li{
+                padding-left: 3rem;
+                &:not(:last-child){
+                    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.8);
+                }
+                &:before{
+                    background-color: #fff;
+                    left: 1rem;
+                }
+                a{ 
+                    color: #fff;
+                }
+                &:hover{
+                    padding-left: 4rem;
+                }
+            }            
+        } 
+    }
+}
 .sidebar-left-cat{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     ul{
-        li{
+        li{            
             padding-left: 2rem;
             padding-top: 10px;
             padding-bottom: 10px;
@@ -509,7 +537,6 @@ main.not-home{
     flex-wrap: wrap;
     .item{
         .thumb{
-            height: 243px;
             display: flex;
             img{
                 margin: auto;
@@ -534,8 +561,13 @@ main.not-home{
                 opacity: 0;
                 transition: opacity .4s ease, transform .4s ease;
                 box-shadow: 0px 0px 15px 1px #dcdcdc;
-                a:hover{
-                    color: #fff;
+                button.buynow{ 
+                    background: transparent; 
+                    border: none; 
+                    cursor: pointer; 
+                    &:focus{
+                        outline-color: transparent;
+                    }
                 }
             }
             .name{
@@ -837,7 +869,7 @@ footer{
                 height: auto !important;
             }
             
-            &.link input{
+            &.link input, &.link button{
                 padding-top: 8px;
                 padding-bottom: 8px;
                 cursor: pointer;
@@ -1036,6 +1068,10 @@ section.card.right{
     padding-bottom: 2rem;
     margin-bottom: 3rem;
     a{
+        span{
+            font-family: 'Proxima-SB';
+            color: #fff;
+        }
         line-height: 30px;
         font-family: 'Proxima-SB';
         font-size: 1.15rem;
@@ -1087,9 +1123,11 @@ section.card.right{
     background-color: #fff;
     padding-top: 2rem;
     a{
-        color: #666;
+        span{
+            color: #666;
+            font-family: 'Proxima-SB';
+        }
         line-height: 30px;
-        font-family: 'Proxima-SB';
         font-size: 1.15rem;
         position: relative;
         display: inline-block;
@@ -1122,12 +1160,23 @@ section.card.right{
             }
         }
     }
+    .breadcrumb-ds{
+        display: flex;
+        align-items: center;
+        a:hover{
+            color: $color-main;
+        }
+        li:last-child{
+            pointer-events: none;
+        }
+    }
     .breadcrumb-ds ul li:not(:last-child)::after{
         color: #666;
     }
     .right{
         position: relative;
-            
+        display: flex;
+        align-items: center;
         a{
             padding-left: 40px;
             &::before{
@@ -1269,6 +1318,74 @@ section.card.right{
                 line-height: 0;
                 font-size: 2.5rem;
             }
+        }
+    }
+}
+
+.news{
+    .title-news p{
+        display: inline-block;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        position: relative;
+        &::after{
+            content: "";
+            width: 80%;
+            max-width: 250px;
+            height: 4px;
+            background-color: $color-child;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            @include transform(translateX(-50%))            
+        }
+    }
+    .title-news-2{
+        display: inline-block;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+        position: relative;
+        &::after{
+            content: "";
+            width: 80%;
+            height: 4px;
+            background-color: $color-child;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    .list-other{
+        border-left: 1px solid $color-child;
+    }
+    .thumb{
+        img{
+            overflow: hidden;
+            transition: all .4s ease;
+        }
+        a:hover{
+            img{
+                filter: brightness(80%);
+            }
+        }
+    }
+    .list-news{
+        .thumb{
+            width: 50%;
+        }
+        .item{
+            display: flex;
+            margin-bottom: .5rem;
+        }
+        .headline{
+            margin-bottom: .5rem;
+        }
+        .content-right{
+            width: 50%;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }

@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/responsive.css">
 
-    <!-- css on home -->
-    <link rel="stylesheet" href="css/skitter.css">
-    <link rel="stylesheet" href="css/slick.css">
 </head>
 <body id="menuPush" style="left: 0;">
     <header class="wrapper">
@@ -115,7 +112,7 @@
     </div>       
     <main>
         <div class="row wrapper">
-            <div class="col-md-3 left">
+            <div class="col-md-3 sidebar-left">
                 <div class="sidebar-left-cat">
                     <ul>
                         <li><a href="#">Khuyến mãi</a></li>
@@ -520,51 +517,5 @@
     <script src="scripts/popper.min.js"></script>
     <script src="scripts/script.js"></script>
 
-    <!-- script in home -->
-    <script src="scripts/jquery-2.2.0.min.js"></script>
-    <script src="scripts/jquery.easing.1.3.js"></script>
-    <script src="scripts/jquery.skitter.min.js"></script>
-    <script src="scripts/slick.min.js"></script>
-    <script>
-        $(document).on('ready', function() {
-            $(function() {
-                $('.skitter-minimalist').skitter({
-                    navigation: false,
-                    dots: true,
-                    numbers: true
-                });
-            });
-            $('.slider-cat').slick({
-                infinite: true,
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true
-                        }
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
-            });
-        });        
-    </script>
 </body>
 </html>
