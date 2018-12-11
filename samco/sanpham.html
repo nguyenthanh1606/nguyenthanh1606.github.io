@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Samco Bus</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="libs/slick/css/slick.css">
+    <link rel="stylesheet" href="libs/slick/css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sanpham.css">
+    <!-- <link rel="stylesheet" href="css/dichvu.css"> -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="logo float-left pt-4">
+                        <a href="#">
+                            <img src="images/images/logo/logo.png" alt="logo.png">
+                        </a>
+                        <span class="pl-4">
+                            <img src="images/images/logo/txt_logo.png" alt="txt_logo.png">
+                        </span>
+                    </div>
+                    <div class="search float-right">
+                        <div class="language d-block float-left pr-3">
+                            <span>
+                                <a href="#">en</a>
+                            </span>
+                            <span>
+                                <a href="#" class="active">vn</a>
+                            </span>
+                        </div>
+                        <div class="form-group search-input float-right">
+                            <input type="text" class="form-control-sm" placeholder="Tìm kiếm">
+                            <button class="btn btn-search"></button>
+                        </div>
+                    </div>
+                    <div class="icon-menu">
+                        <span class="line-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </div>
+                    <!-- menu-mobile -->
+                    <!-- <div class="menu-mobile">
+                        <div class="menu-mobile-content">
+                            <div class="dwrapper">
+                                <div class="d-content">
+                                    <div class="ch-menu">
+                                        <div class="top-menu">
+                                            <div class="language-m">
+                                                <span>
+                                                    <a href="#">EN</a>
+                                                    <a href="#">VN</a>
+                                                </span>
+                                            </div>
+                                            <div class="search-m">
+                                                <i class="fa fa-search"></i>
+                                                <div class="form-group">
+                                                    <input type="search" class="form-control" placeholder="Tìm kiếm ...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-m">
+                                            <ul class="mavbar-nav">
+                                                <li class="nav-item">
+                                                    <a href="#">trang chủ</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">giới thiệu</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">sản phẩm</a>
+                                                    <div class="nav-btn">
+                                                        <button class="btn btn-menu">
+                                                            <i class="fas fa-caret-right"></i>
+                                                        </button>
+                                                    </div>
+                                                    <ul class="navbar-nav child">
+                                                        <li class="nav-item">
+                                                            <a href="#">Tất cả xe</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#">Xe khách</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#">Xe buýt</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">bán hàng/a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">dịch vụ</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">tin tức</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">tuyển dụng</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">liên hệ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- end menu-mobile -->
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="menu">
+                <div class="container">
+                    <nav class="navbar-nav navbar-expand-md navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="../src/index.html" class="nav-link">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../src/gioithieu.html" class="nav-link">giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">sản phẩm
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                    <!-- sub-menu -->
+                                    <div class="sub-menu">
+                                        <div class="container">
+                                            <div class="sub-menu-content">
+                                                <ul class="nav nav-tabs" id="subMenu" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all"
+                                                            role="tab" aria-controls="all" aria-selected="true">tất cả</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="xekhach-tab" data-toggle="tab" href="#xekhach"
+                                                            role="tab" aria-controls="xekhach" aria-selected="false">xe
+                                                            khách</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="xebus-tab" data-toggle="tab" href="#xebus"
+                                                            role="tab" aria-controls="xebus" aria-selected="false">xe
+                                                            buýt</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="subMenuContent">
+                                                    <!-- all -->
+                                                    <div class="tab-pane fade show active" id="all" role="tabpanel"
+                                                        aria-labelledby="all-tab">
+                                                        <div class="all-content all">
+                                                            <ul class="navbar-nav">
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_01.png" alt="">
+                                                                        SAMCO AGLLEGRO SI 29
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_02.png" alt="">
+                                                                        SAMCO PRIMAS LI 35B
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_03.png" alt="">
+                                                                        SAMCO FELIX GI 30/34
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_04.png" alt="">
+                                                                        SAMCO AGLLEGRO SI 29
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_05.png" alt="">
+                                                                        SAMCO FELIX CI 34
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_06.png" alt="">
+                                                                        SAMCO PRIMAS SI 35B
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_07.png" alt="">
+                                                                        SAMCO WANDA SI 47
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_08.png" alt="">
+                                                                        SAMCO WENDA SH 47
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_09.png" alt="">
+                                                                        SAMCO FELIX LIMOUSINE
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end all -->
+                                                    <!-- xekhach -->
+                                                    <div class="tab-pane fade" id="xekhach" role="tabpanel"
+                                                        aria-labelledby="xekhach-tab">
+                                                        <div class="tab-pane fade show active" id="xekhach" role="tabpanel"
+                                                            aria-labelledby="xekhach-tab">
+                                                            <div class="all-content xekhach">
+                                                                <ul class="navbar-nav">
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_01.png"
+                                                                                alt=""> SAMCO AGLLEGRO SI 29
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_02.png"
+                                                                                alt=""> SAMCO PRIMAS LI 35B
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_03.png"
+                                                                                alt=""> SAMCO FELIX GI 30/34
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_04.png"
+                                                                                alt=""> SAMCO AGLLEGRO SI 29
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_05.png"
+                                                                                alt=""> SAMCO FELIX CI 34
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_06.png"
+                                                                                alt=""> SAMCO PRIMAS SI 35B
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end xekhach -->
+                                                    <!-- xebus -->
+                                                    <div class="tab-pane fade" id="xebus" role="tabpanel"
+                                                        aria-labelledby="xebus-tab">
+                                                        <div class="tab-pane fade show active" id="xebus" role="tabpanel"
+                                                            aria-labelledby="xebus-tab">
+                                                            <div class="all-content xekhach">
+                                                                <ul class="navbar-nav">
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_01.png"
+                                                                                alt=""> SAMCO AGLLEGRO SI 29
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_02.png"
+                                                                                alt=""> SAMCO PRIMAS LI 35B
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_03.png"
+                                                                                alt=""> SAMCO FELIX GI 30/34
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_04.png"
+                                                                                alt=""> SAMCO AGLLEGRO SI 29
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_05.png"
+                                                                                alt=""> SAMCO FELIX CI 34
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_06.png"
+                                                                                alt=""> SAMCO PRIMAS SI 35B
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end xebus -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end sub-menu -->
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../src/hethongbanhang1.html" class="nav-link">bán hàng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../src/dichvu.html" class="nav-link">dịch vụ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../src/tintuc.html" class="nav-link">tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">tuyển dụng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../src/lienhe.html" class="nav-link">liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="banner">
+                <div class="single-item">
+                    <div>
+                        <a href="#">
+                            <img src="images/sanpham/banner.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/sanpham/banner.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="images/sanpham/banner.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- san pham -->
+        <section class="new-products">
+            <div class="menu-products">
+                <div class="container-fluid">
+                    <div class="container">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <span class="nav-link active" href="#">SAMCO PRIMAS SI 35B</span>
+                            </li>
+                            <li class="nav-item item-switch">
+                                <a class="nav-link item-header header-item-content" href=".menu-products">NGOAI THAT</a>
+                            </li>
+                            <li class="nav-item item-switch">
+                                <a class="nav-link item-header header-item-content" href="#">NOI THAT</a>
+                            </li>
+                            <li class="nav-item item-switch">
+                                <a class="nav-link item-header header-item-content" href="#">MAU SAC</a>
+                            </li>
+                            <li class="nav-item item-switch">
+                                <a class="nav-link item-header header-item-content" href="#">THONG SO KY THUAT</a>
+                            </li>
+                            <li class="nav-item item-switch">
+                                <a class="nav-link item-header header-item-content" href="#">THU VIEN</a>
+                            </li>
+                            <li class="nav-item item-switch item-vip-header">
+                                <a class="nav-link item-header header-item-content" href="#">DOWNLOAD</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- menu mobile 2 -->
+            <!-- end menu -->
+            <div class="discription-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
+                    <div class="content-header">
+                        <div class="title-header">
+                            <h1 class="ngoai-that">NGOAI THAT</h1>
+                            <div class="title-line"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="">
+                                    <img src="images/sanpham/item1.png" alt="#" class="m-auto d-block img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="">
+                                    <span>Ngoai that dang cap sang trong</span>
+                                </div>
+                                <div class="p-content-item">
+                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                        unknown printer took a galley of type and scrambled it to make a type specimen
+                                        book. It has survived not only five centuries, but also the leap into
+                                        electronic typesetting, remaining essentially unchanged. It was popularised in
+                                        the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                                        and more recently with desktop publishing software like Aldus PageMaker
+                                        including versions of Lorem Ipsum.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel web -->
+                <div class="carousel">
+                    <div class="container">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="images/sanpham/item11.png" alt="">
+                                <div class="carousel-p">
+                                    <p>mat truoc xe hien tai</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/sanpham/item12.png" alt="">
+                                <div class="carousel-p">
+                                    <p>khung xe cung vung, thiet ke dong hoc</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/sanpham/item13.png" alt="">
+                                <div class="carousel-p">
+                                    <p>duoi xe luot gio va den sau phong cach</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end carousel -->
+                <!-- slide mobile -->
+                <div class="silde-mobile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="images/sanpham/item1.png" alt="" class="img-fluid">
+                                <div class="sub-img">
+                                    <p>mat truoc hien dai</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <img src="images/sanpham/item12.png" alt="" class="img-fluid">
+                                <div class="sub-img">
+                                    <p>mat truoc hien dai</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <img src="images/sanpham/item13.png" alt="" class="img-fluid">
+                                <div class="sub-img">
+                                    <p>mat truoc hien dai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slide mobile -->
+                <div class="furniture">
+                    <div class="container">
+                        <div class="content-header">
+                            <div class="title-header">
+                                <h1>NOI THAT</h1>
+                                <div class="title-line"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <img src="images/sanpham/item2.png" alt="#" class="m-auto d-block img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <span>Dong co khung gam ISUZU 380PS</span>
+                                    </div>
+                                    <div class="p-content-item">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic typesetting, remaining essentially unchanged. It was popularised
+                                            in
+                                            the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                            passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel -->
+                <div class="carousel">
+                    <div class="container">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="images/sanpham/item21.png" alt="">
+                                <div class="carousel-p">
+                                    <p>mat truoc xe hien tai</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/sanpham/item22.png" alt="">
+                                <div class="carousel-p">
+                                    <p>khung xe cung vung, thiet ke dong hoc</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/sanpham/item23.png" alt="">
+                                <div class="carousel-p">
+                                    <p>duoi xe luot gio va den sau phong cach</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end carousel -->
+                <!-- slide mobile -->
+                <div class="silde-mobile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="images/sanpham/item2.png" alt="" class="img-fluid">
+                                <div class="sub-img">
+                                    <p>mat truoc hien dai</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <img src="images/sanpham/item21.png" alt="" class="img-fluid">
+                                <div class="sub-img">
+                                    <p>mat truoc hien dai</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <img src="images/sanpham/item22.png" alt="" class="img-fluid">
+                                <div class="sub-img">
+                                    <p>mat truoc hien dai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slide mobile -->
+                <div class="engine">
+                    <div class="container">
+                        <div class="content-header">
+                            <div class="title-header">
+                                <h1>DONG CO & KHUNG GAM</h1>
+                                <div class="title-line"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <img src="images/sanpham/item3.png" alt="#" class="m-auto d-block img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <span>Ngoai that dang cap sang trong</span>
+                                    </div>
+                                    <div class="p-content-item">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                            industry.
+                                            Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                            when an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen
+                                            book. It has survived not only five centuries, but also the leap into
+                                            electronic typesetting, remaining essentially unchanged. It was
+                                            popularised
+                                            in
+                                            the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                                            passages,
+                                            and more recently with desktop publishing software like Aldus PageMaker
+                                            including versions of Lorem Ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carousel -->
+                <div class="carousel">
+                    <div class="container">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="images/sanpham/item31.png" alt="">
+                                <div class="carousel-p">
+                                    <p>mat truoc xe hien tai</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/sanpham/item32.png" alt="">
+                                <div class="carousel-p">
+                                    <p>khung xe cung vung, thiet ke dong hoc</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="images/sanpham/item33.png" alt="">
+                                <div class="carousel-p">
+                                    <p>duoi xe luot gio va den sau phong cach</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end carousel -->
+                <!-- slide mobile -->
+                <div class="silde-mobile">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="images/sanpham/item3.png" alt="" class="img-fluid">
+                                <div class="sub-img">
+                                    <p>mat truoc hien dai</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <img src="images/sanpham/item31.png" alt="" class="img-fluid">
+                                <div class="sub-img">
+                                    <p>mat truoc hien dai</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <img src="images/sanpham/item32.png" alt="" class="img-fluid">
+                                <div class="sub-img">
+                                    <p>mat truoc hien dai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slide mobile -->
+                <div class="container">
+                    <div class="car-color">
+                        <div class="title-header">
+                            <h1>MAU SAC</h1>
+                            <div class="title-line"></div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                unknown printer took a galley of type and scrambled it to make a type specimen
+                                book. It has survived not only five centuries,</p>
+                        </div>
+                        <div class="color-page">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>
+                                        <img src="images/sanpham/fixmausac.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="">
+                                        <span>Cac mau sac hien co</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-1">
+                                            <div class="icon-color">
+                                                <a href=""><i class="fas fa-circle"></i></a>
+                                                <a href=""><i class="fas fa-circle"></i></a>
+                                                <a href=""><i class="fas fa-circle"></i></a>
+                                                <a href=""><i class="fas fa-circle"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-11">
+                                            <div class="p-color-content">
+                                                <p class="active"> It has survived not only five centurie</p>
+                                                <p>It has survived not only five centurie</p>
+                                                <p>It has survived not only five centurie</p>
+                                                <p>It has survived not only five centurie</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="Specifications">
+                        <div class="title-header"></div>
+                        <h1>THONG SO KY THUAT</h1>
+                        <div class="title-line"></div>
+                    </div>
+                    <div class="table-web">
+                        <div>
+                            <table border="1px" cellpadding="0px" cellspacing="0px" width="100%">
+                                <tr class="table-item">
+                                    <td background-color:#d9d9d9 width="40%" align="left">kich thước</td>
+                                    <td width="60%" align="left">demension</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">kích thước tổng thể</td>
+                                    <td width="60%" align="left">122000</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">chieu dai co so</td>
+                                    <td width="60%" align="left">6000</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">ban kinh vong quay</td>
+                                    <td width="60%" align="left">10200</td>
+                                </tr>
+                                <tr class="table-item">
+                                    <td background-color:#d9d9d9 width="40%" align="left">trọng lượng</td>
+                                    <td width="60%" align="left">weight</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">trọng lương không tải</td>
+                                    <td width="60%" align="left">12640</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">trọng lượng toàn bộ</td>
+                                    <td width="60%" align="left">156000</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">số chổ</td>
+                                    <td width="60%" align="left">35 giường nằm, 1 ghế tài xế, 1 ghế phụ, 37
+                                        seats(include driver and part)</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">cửa lên xuống</td>
+                                    <td width="60%" align="left">01 cửa, đóng mở tự động bằng khí nén</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">kiểu</td>
+                                    <td width="60%" align="left">kiểu cửa đơn, loại 1 cánh</td>
+                                </tr>
+                                <tr class="table-item">
+                                    <td background-color:#d9d9d9 width="40%" align="left">xe nền</td>
+                                    <td width="60%" align="left"></td>
+                                </tr>
+                                <tr class="table-item">
+                                    <td background-color:#d9d9d9 width="40%" align="left">động cơ</td>
+                                    <td width="60%" align="left">ISUZU ero IV</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">kiểu</td>
+                                    <td width="60%" align="left">6WG1E4</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">loại</td>
+                                    <td width="60%" align="left">diesel 4 kỳ, 6 xi lanh thằng hàng, làm mát
+                                        bằng nước,
+                                        tăng áp</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">dung tích xi lanh</td>
+                                    <td width="60%" align="left">15681</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">đường kính x hành trình piston</td>
+                                    <td width="60%" align="left">147 x 154</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">công xuất tối đa</td>
+                                    <td width="60%" align="left">380/1900</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">moment xoắn cực đại</td>
+                                    <td width="60%" align="left">1422/(800-1800)</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">dung tích thùng nhiên liệu</td>
+                                    <td width="60%" align="left">400</td>
+                                </tr>
+                                <tr class="table-item">
+                                    <td background-color:#d9d9d9 width="40%" align="left">truyền động</td>
+                                    <td width="60%" align="left">transmision</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">ly hợp</td>
+                                    <td width="60%" align="left">1 đĩa ma sát khô: dẫn động thủy lực, trợ lực
+                                        khí nén</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">lọai hợp số</td>
+                                    <td width="60%" align="left">MJT7S số tiền, 1 số lùi</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">tỷ số truyền</td>
+                                    <td width="60%" align="left">6,833-4,734-2,784-1,307-1000-0,728-R:6,372</td>
+                                </tr>
+                                <tr class="table-item">
+                                    <td background-color:#d9d9d9 width="40%" align="left">hệ thống lái</td>
+                                    <td width="60%" align="left">strering</td>
+                                </tr>
+                                <tr>
+                                    <td width="40%" align="left">kiểu</td>
+                                    <td width="60%" align="left">trục vít,ecu-bi, trợ lực thủy lực, điều chỉnh
+                                        được đồ
+                                        nghiên và độ cao
+                                        thấp</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="table-mobile">
+                        <table>
+                            <tr class="table-item">
+                                <td background-color:#d9d9d9 width="50%" align="left">kich thước</td>
+                                <td width="50%" align="left">demension</td>
+                            </tr>
+                            <tr>
+                                <td width="50%" align="left">kích thước tổng thể</td>
+                                <td width="50%" align="left">122000</td>
+                            </tr>
+                            <tr>
+                                <td width="50%" align="left">chieu dai co so</td>
+                                <td width="50%" align="left">6000</td>
+                            </tr>
+                            <tr>
+                                <td width="50%" align="left">ban kinh vong quay</td>
+                                <td width="50%" align="left">10200</td>
+                            </tr>
+                            <tr class="table-item">
+                                <td background-color:#d9d9d9 width="50%" align="left">kich thước</td>
+                                <td width="50%" align="left">demension</td>
+                            </tr>
+                            <tr>
+                                <td width="40%" align="left">kích thước tổng thể</td>
+                                <td width="60%" align="left">122000</td>
+                            </tr>
+                            <tr>
+                                <td width="40%" align="left">chieu dai co so</td>
+                                <td width="60%" align="left">6000</td>
+                            </tr>
+                            <tr>
+                                <td width="40%" align="left">ban kinh vong quay</td>
+                                <td width="60%" align="left">10200</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="download">
+                        <div class="">
+                            <h1>DOWNLOAD</h1>
+                            <div class="title-line"></div>
+                        </div>
+                        <div class="row text-center text-content-center">
+                            <div class="col-md-4">
+                                <p class="text-color">Cataloque Primas 35B-Version Digital</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="p-text">PDF</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="p-text">14.5 MB</p>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-detail btn-download">DOWNLOAD</button>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="text-color">Cataloque Primas 35B-Version Digital</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="p-text">PDF</p>
+                            </div>
+                            <div class="col-md-2">
+                                <p class="p-text">14.5 MB</p>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-detail btn-download">DOWNLOAD</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="download-mobile">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p class="text-active-moblie">Cataloque Primas <br>
+                                        35B-Version Digital</p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <p class="text-mobile">PDF</p>
+                                </div>
+                                <div class="col-xs-12">
+                                    <p class="text-mobile">14.5 MB</p>
+                                </div>
+                                <div class="col-xs-12">
+                                    <button class="btn btn-detail btn-download">DOWNLOAD</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <p class="text-active-moblie">Cataloque Primas <br>
+                                        35B-Version Digital</p>
+                                </div>
+                                <div class="col-xs-6">
+                                    <p class="text-mobile">PDF</p>
+                                </div>
+                                <div class="col-xs-12">
+                                    <p class="text-mobile">14.5 MB</p>
+                                </div>
+                                <div class="col-xs-12">
+                                    <button class="btn btn-detail btn-download">DOWNLOAD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="product-samco">
+                        <div class="">
+                            <h1>Cac san pham khac</h1>
+                            <div class="title-line"></div>
+                        </div>
+                        <div class="item-product">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="item-product-left">
+                                        <div>
+                                            <img src="images/sanpham/sp1.png" alt="">
+                                        </div>
+                                        <div class="title-product">
+                                            <p>Samco Felix gi 30/34</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="item-product-center">
+                                        <div>
+                                            <img src="images/sanpham/sp2.png" alt="">
+                                        </div>
+                                        <div class="title-product">
+                                            <p>Samco Felix gi 30/34</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="item-product-right">
+                                        <div>
+                                            <img src="images/sanpham/sp3.png" alt="">
+                                        </div>
+                                        <div class="title-product">
+                                            <p>Samco Felix gi 30/34</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- end san pham -->
+    <section class="content">
+        <div class="menu-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="menu-footer-child">
+                            <div class="menu-title">
+                                <h1>giới thiệu</h1>
+                            </div>
+                            <div class="list-menu">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Tổng công ty Samco</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Samco An Lạc</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Nhà máy ô tô Củ Chi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="menu-footer-child">
+                            <div class="menu-title">
+                                <h1>sản phẩm</h1>
+                            </div>
+                            <div class="list-menu">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Xe khách</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Xe buýt</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="menu-footer-child">
+                            <div class="menu-title">
+                                <h1>bán hàng & dịch vụ</h1>
+                            </div>
+                            <div class="list-menu">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Hệ thống bán hàng</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Hệ thống trạm DVUQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Chính sách bảo hành</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="menu-footer-child">
+                            <div class="menu-title">
+                                <h1>tin tức</h1>
+                            </div>
+                            <div class="list-menu">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Tin Samco Bus</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Tin thị trường</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Tin khuyến mãi</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="footer-h footer-about">
+                                    <h1>CN TỔNG CTY CK GTVT SÀI GÒN - TNHH MTV XN CƠ KHÍ Ô TÔ AN LẠC</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-h footer-scial">
+                                    <h1 class="float-left">Theo dõi chúng tôi tại</h1>
+                                    <div class="icon-scial float-right">
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-h footer-link">
+                                    <h1 class="whi">Liên kết website:</h1>
+                                    <div class="form-group">
+                                        <select class="form-control flink-control" id="fLink">
+                                            <option>Tổng công ty Samco</option>
+                                            <option>Tổng công ty Samco</option>
+                                            <option>Tổng công ty Samco</option>
+                                            <option>Tổng công ty Samco</option>
+                                            <option>Tổng công ty Samco</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="address">
+                                    <h3 class="f-title">Địa chỉ:</h3>
+                                    <p>36 Kinh Dương Vương, Phường An Lạc A, Quận Bình Tân,Tp.Hồ Chí Minh</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="phone">
+                                    <h3 class="f-title">Điện thoại:</h3>
+                                    <ul class="navbar-nav phone-sb1 w-50 float-left">
+                                        <li class="nav-item">Phòng XD:</li>
+                                        <li class="nav-item">Phòng DVPT:</li>
+                                        <li class="nav-item">Phòng CSKH:</li>
+                                        <li class="nav-item f-title">Fax:</li>
+                                    </ul>
+                                    <ul class="navbar-nav phone-sb2 w-50 float-left">
+                                        <li class="nav-item">(84-28)38752033</li>
+                                        <li class="nav-item">(84-28)37626493</li>
+                                        <li class="nav-item">(84-28)37526493</li>
+                                        <li class="nav-item">(84-28)3751.2726</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="showroom">
+                                    <h3 class="f-title">Đơn vị bán hàng</h3>
+                                    <p>Showroom Miền Bắc: 0912.119.116</p>
+                                    <p>showroom miền nam: 028.3754.3895/96 /97</p>
+                                    <h3 class="f-title float-left">Email:</h3>
+                                    <p class="float-left pl-1">samcoanlac@samco.com.vn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-6">
+                    <h1>
+                        <i class="fa fa-copyright"></i> 2018 SAMCOBUS.All rights reserved</h1>
+                </div>
+                <div class="col-6 col-md-6">
+                    <h1 class="float-right">Developed by HONRANG</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- import file js -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="libs/slick/js/slick.min.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/product.js"></script>
+    <!-- end import file js -->
+</body>
+
+</html>

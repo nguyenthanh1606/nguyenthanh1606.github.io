@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Samco Bus</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="libs/slick/css/slick.css">
+    <link rel="stylesheet" href="libs/slick/css/slick-theme.css">
+    <link rel="stylesheet" href="css/tintuc_details.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="logo float-left pt-4">
+                        <a href="#">
+                            <img src="images/images/logo/logo.png" alt="logo.png">
+                        </a>
+                        <span class="pl-4">
+                            <img src="images/images/logo/txt_logo.png" alt="txt_logo.png">
+                        </span>
+                    </div>
+                    <div class="search float-right">
+                        <div class="language d-block float-left pr-3">
+                            <span>
+                                <a href="#">en</a>
+                            </span>
+                            <span>
+                                <a href="#" class="active">vn</a>
+                            </span>
+                        </div>
+                        <div class="form-group search-input float-right">
+                            <input type="text" class="form-control-sm" placeholder="Tìm kiếm">
+                            <button class="btn btn-search"></button>
+                        </div>
+                    </div>
+                    <div class="icon-menu">
+                        <span class="line-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </div>
+                    <!-- menu-mobile -->
+                    <!-- <div class="menu-mobile">
+                        <div class="menu-mobile-content">
+                            <div class="dwrapper">
+                                <div class="d-content">
+                                    <div class="ch-menu">
+                                        <div class="top-menu">
+                                            <div class="language-m">
+                                                <span>
+                                                    <a href="#">EN</a>
+                                                    <a href="#">VN</a>
+                                                </span>
+                                            </div>
+                                            <div class="search-m">
+                                                <i class="fa fa-search"></i>
+                                                <div class="form-group">
+                                                    <input type="search" class="form-control" placeholder="Tìm kiếm ...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-m">
+                                            <ul class="mavbar-nav">
+                                                <li class="nav-item">
+                                                    <a href="#">trang chủ</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">giới thiệu</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">sản phẩm</a>
+                                                    <div class="nav-btn">
+                                                        <button class="btn btn-menu">
+                                                            <i class="fas fa-caret-right"></i>
+                                                        </button>
+                                                    </div>
+                                                    <ul class="navbar-nav child">
+                                                        <li class="nav-item">
+                                                            <a href="#">Tất cả xe</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#">Xe khách</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a href="#">Xe buýt</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">bán hàng/a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">dịch vụ</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">tin tức</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">tuyển dụng</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#">liên hệ</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- end menu-mobile -->
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="menu">
+                <div class="container">
+                    <nav class="navbar-nav navbar-expand-md navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="../src/index.html" class="nav-link">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../src/gioithieu.html" class="nav-link">giới thiệu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">sản phẩm
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                    <!-- sub-menu -->
+                                    <div class="sub-menu">
+                                        <div class="container">
+                                            <div class="sub-menu-content">
+                                                <ul class="nav nav-tabs" id="subMenu" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all"
+                                                            role="tab" aria-controls="all" aria-selected="true">tất cả</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="xekhach-tab" data-toggle="tab" href="#xekhach"
+                                                            role="tab" aria-controls="xekhach" aria-selected="false">xe
+                                                            khách</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="xebus-tab" data-toggle="tab" href="#xebus"
+                                                            role="tab" aria-controls="xebus" aria-selected="false">xe
+                                                            buýt</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="subMenuContent">
+                                                    <!-- all -->
+                                                    <div class="tab-pane fade show active" id="all" role="tabpanel"
+                                                        aria-labelledby="all-tab">
+                                                        <div class="all-content all">
+                                                            <ul class="navbar-nav">
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_01.png" alt="">
+                                                                        SAMCO AGLLEGRO SI 29
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_02.png" alt="">
+                                                                        SAMCO PRIMAS LI 35B
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_03.png" alt="">
+                                                                        SAMCO FELIX GI 30/34
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_04.png" alt="">
+                                                                        SAMCO AGLLEGRO SI 29
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_05.png" alt="">
+                                                                        SAMCO FELIX CI 34
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_06.png" alt="">
+                                                                        SAMCO PRIMAS SI 35B
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_07.png" alt="">
+                                                                        SAMCO WANDA SI 47
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_08.png" alt="">
+                                                                        SAMCO WENDA SH 47
+                                                                    </a>
+                                                                </li>
+                                                                <li class="nav-item">
+                                                                    <a href="#" class="nav-link">
+                                                                        <img src="images/images/logo/item_09.png" alt="">
+                                                                        SAMCO FELIX LIMOUSINE
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end all -->
+                                                    <!-- xekhach -->
+                                                    <div class="tab-pane fade" id="xekhach" role="tabpanel"
+                                                        aria-labelledby="xekhach-tab">
+                                                        <div class="tab-pane fade show active" id="xekhach" role="tabpanel"
+                                                            aria-labelledby="xekhach-tab">
+                                                            <div class="all-content xekhach">
+                                                                <ul class="navbar-nav">
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_01.png"
+                                                                                alt=""> SAMCO AGLLEGRO SI 29
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_02.png"
+                                                                                alt=""> SAMCO PRIMAS LI 35B
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_03.png"
+                                                                                alt=""> SAMCO FELIX GI 30/34
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_04.png"
+                                                                                alt=""> SAMCO AGLLEGRO SI 29
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_05.png"
+                                                                                alt=""> SAMCO FELIX CI 34
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_06.png"
+                                                                                alt=""> SAMCO PRIMAS SI 35B
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end xekhach -->
+                                                    <!-- xebus -->
+                                                    <div class="tab-pane fade" id="xebus" role="tabpanel"
+                                                        aria-labelledby="xebus-tab">
+                                                        <div class="tab-pane fade show active" id="xebus" role="tabpanel"
+                                                            aria-labelledby="xebus-tab">
+                                                            <div class="all-content xekhach">
+                                                                <ul class="navbar-nav">
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_01.png"
+                                                                                alt=""> SAMCO AGLLEGRO SI 29
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_02.png"
+                                                                                alt=""> SAMCO PRIMAS LI 35B
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_03.png"
+                                                                                alt=""> SAMCO FELIX GI 30/34
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_04.png"
+                                                                                alt=""> SAMCO AGLLEGRO SI 29
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_05.png"
+                                                                                alt=""> SAMCO FELIX CI 34
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="nav-item">
+                                                                        <a href="#" class="nav-link">
+                                                                            <img src="images/images/logo/item_06.png"
+                                                                                alt=""> SAMCO PRIMAS SI 35B
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end xebus -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end sub-menu -->
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../src/hethongbanhang1.html" class="nav-link">bán hàng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../src/dichvu.html" class="nav-link">dịch vụ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../src/tintuc.html" class="nav-link">tin tức</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">tuyển dụng</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../src/lienhe.html" class="nav-link">liên hệ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="banner">
+                <img src="images/images/bg_htintuc.jpg" class="img-fluid" alt="">
+            </div>
+        </section>
+        <section class="content">
+            <!-- content-newspage -->
+            <div class="news">
+                <div class="container">
+                    <div class="title text-center">
+                        <h1 class="txt-title">tin tức</h1>
+                        <div class="title-line"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 pr-4">
+                            <div class="news-content">
+                                <div class="container">
+                                    <div class="title">
+                                        <h1 class="m-0">SAMCO Roadshow giới thiệu 2 dòng xe mới Wenda 47 ghế ngồi - Primas 35 giường nằm</h1>
+                                    </div>
+                                    <div class="time-social">
+                                        <span class="float-left">
+                                            <i class="far fa-clock pr-2"></i> 21/08/2018</span>
+                                        <div class="menu-s float-right">
+                                            <span>Chia sẻ</span>
+                                            <ul class="nav float-right">
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link py-0">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link py-0">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link py-0">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link py-0">
+                                                        <i class="fab fa-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="#" class="nav-link py-0">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="line"></div>
+                                    <div class="news-text">
+                                        <h3>SAMCO hân hạnh giới thiệu đến Quý khách hàng 2 dòng sản phẩm mới - ưu đãi ký hợp
+                                            đồng trong tháng 8 - 9 tặng 100% lệ phí trước bạ. Xe khách SAMCO WENDA SD.47
+                                            chỗ - động cơ Doosan Euro 4. Xe khách giường nằm cao cấp SAMCO PRIMAS LI.35B
+                                            - động cơ Isuzu Euro 4</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tenetur ea recusandae
+                                            provident sequi error! Nam commodi dolorem quos saepe tempora laboriosam, ea
+                                            quibusdam eaque ipsa. In quas magni nobis dolore recusandae asperiores omnis
+                                            harum a sequi? Expedita, repudiandae odit. Laborum culpa, velit provident repellendus
+                                            at aliquam? Labore soluta facere fugiat adipisci eaque, aliquid dolore? Blanditiis,
+                                            distinctio. Excepturi, libero aperiam accusamus est qui quidem nemo blanditiis
+                                            impedit eos, suscipit similique fuga rem nam. Necessitatibus, cupiditate. Cupiditate
+                                            voluptatum doloremque quasi velit sequi tempore asperiores nemo debitis repellat
+                                            dolorem quos, voluptates, voluptatem sunt consequatur temporibus inventore corrupti
+                                            commodi. Maxime saepe exercitationem praesentium.</p>
+                                            <img src="images/images/img_15.jpg" class="img-fluid m-auto d-flex justify-content-center" alt="">
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit nisi accusantium cupiditate
+                                            corrupti aut nesciunt earum facilis voluptates libero soluta, ratione saepe est
+                                            quam assumenda in temporibus quidem magni exercitationem qui velit dolor beatae.
+                                            Veniam, nesciunt corporis. Tempore quasi soluta illo dolorem libero ipsum, debitis
+                                            modi eos, aut vitae similique, temporibus est molestias necessitatibus quibusdam
+                                            quidem maxime! Rerum, nesciunt fugit. Quia enim esse corporis eaque. Voluptatum,
+                                            tenetur nam repellendus asperiores hic, distinctio ab ut placeat eum eius architecto
+                                            velit. Vero quis pariatur, culpa molestiae corrupti explicabo necessitatibus
+                                            asperiores, magni voluptatum architecto modi ea! Vitae consectetur officiis eos,
+                                            deserunt error libero!</p>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit nisi accusantium cupiditate
+                                            corrupti aut nesciunt earum facilis voluptates libero soluta, ratione saepe est
+                                            quam assumenda in temporibus quidem magni exercitationem qui velit dolor beatae.
+                                            Veniam, nesciunt corporis. Tempore quasi soluta illo dolorem libero ipsum, debitis
+                                            modi eos, aut vitae similique, temporibus est molestias necessitatibus quibusdam
+                                            quidem maxime! Rerum, nesciunt fugit. Quia enim esse corporis eaque. Voluptatum,
+                                            tenetur nam repellendus asperiores hic, distinctio ab ut placeat eum eius architecto
+                                            velit. Vero quis pariatur, culpa molestiae corrupti explicabo necessitatibus
+                                            asperiores, magni voluptatum architecto modi ea! Vitae consectetur officiis eos,
+                                            deserunt error libero!</p>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit nisi accusantium cupiditate
+                                            corrupti aut nesciunt earum facilis voluptates libero soluta, ratione saepe est
+                                            quam assumenda in temporibus quidem magni exercitationem qui velit dolor beatae.
+                                            Veniam, nesciunt corporis. Tempore quasi soluta illo dolorem libero ipsum, debitis
+                                            modi eos, aut vitae similique, temporibus est molestias necessitatibus quibusdam
+                                            quidem maxime! Rerum, nesciunt fugit. Quia enim esse corporis eaque. Voluptatum,
+                                            tenetur nam repellendus asperiores hic, distinctio ab ut placeat eum eius architecto
+                                            velit. Vero quis pariatur, culpa molestiae corrupti explicabo necessitatibus
+                                            asperiores, magni voluptatum architecto modi ea! Vitae consectetur officiis eos,
+                                            deserunt error libero!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 pl-4">
+                            <div class="sidebar">
+                                <div class="title">
+                                    <h1>Các tin khác</h1>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="card news-box">
+                                            <a href="#">
+                                                <img class="card-img-top" src="images/images/img_07.png" alt="Card image cap">
+                                            </a>
+                                            <div class="card-body px-1">
+                                                <div class="container">
+                                                    <h3 class="card-title text-left">
+                                                        <a href="#">Khai trương Đại lý D-Square An Lạc tại Thành phố Hồ Chí Minh</a>
+                                                    </h3>
+                                                    <div class="line"></div>
+                                                    <div class="card-text">
+                                                        <p>Ngày 11/09/2018, Xí Nghiệp Dịch Vụ Ô Tô Isuzu An Lạc (Xí nghiệp trực
+                                                            thuộc Tổng Công ty SAMCO) chính thức khai trương đại lý D-Square
+                                                            An Lạc</p>
+                                                    </div>
+                                                    <span>
+                                                        <i class="far fa-clock"></i> 21/08/2018</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="card news-box">
+                                            <a href="#">
+                                                <img class="card-img-top" src="images/images/img_07.png" alt="Card image cap">
+                                            </a>
+                                            <div class="card-body px-1">
+                                                <div class="container">
+                                                    <h3 class="card-title text-left">
+                                                        <a href="#">Khai trương Đại lý D-Square An Lạc tại Thành phố Hồ Chí Minh</a>
+                                                    </h3>
+                                                    <div class="line"></div>
+                                                    <div class="card-text">
+                                                        <p>Ngày 11/09/2018, Xí Nghiệp Dịch Vụ Ô Tô Isuzu An Lạc (Xí nghiệp trực
+                                                            thuộc Tổng Công ty SAMCO) chính thức khai trương đại lý D-Square
+                                                            An Lạc</p>
+                                                    </div>
+                                                    <span>
+                                                        <i class="far fa-clock"></i> 21/08/2018</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="card news-box">
+                                            <a href="#">
+                                                <img class="card-img-top" src="images/images/img_07.png" alt="Card image cap">
+                                            </a>
+                                            <div class="card-body px-1">
+                                                <div class="container">
+                                                    <h3 class="card-title text-left">
+                                                        <a href="#">Khai trương Đại lý D-Square An Lạc tại Thành phố Hồ Chí Minh</a>
+                                                    </h3>
+                                                    <div class="line"></div>
+                                                    <div class="card-text">
+                                                        <p>Ngày 11/09/2018, Xí Nghiệp Dịch Vụ Ô Tô Isuzu An Lạc (Xí nghiệp trực
+                                                            thuộc Tổng Công ty SAMCO) chính thức khai trương đại lý D-Square
+                                                            An Lạc</p>
+                                                    </div>
+                                                    <span>
+                                                        <i class="far fa-clock"></i> 21/08/2018</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end content-newspage -->
+            <!-- menu-footer -->
+            <div class="menu-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="menu-footer-child">
+                                <div class="menu-title">
+                                    <h1>giới thiệu</h1>
+                                </div>
+                                <div class="list-menu">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Tổng công ty Samco</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Samco An Lạc</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Nhà máy ô tô Củ Chi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="menu-footer-child">
+                                <div class="menu-title">
+                                    <h1>sản phẩm</h1>
+                                </div>
+                                <div class="list-menu">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Xe khách</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Xe buýt</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="menu-footer-child">
+                                <div class="menu-title">
+                                    <h1>bán hàng & dịch vụ</h1>
+                                </div>
+                                <div class="list-menu">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Hệ thống bán hàng</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Hệ thống trạm DVUQ</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Chính sách bảo hành</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="menu-footer-child">
+                                <div class="menu-title">
+                                    <h1>tin tức</h1>
+                                </div>
+                                <div class="list-menu">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Tin Samco Bus</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Tin thị trường</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link">Tin khuyến mãi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end menu-footer -->
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="footer-h footer-about">
+                                        <h1>CN TỔNG CTY CK GTVT SÀI GÒN - TNHH MTV XN CƠ KHÍ Ô TÔ AN LẠC</h1>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="footer-h footer-scial">
+                                        <h1 class="float-left">Theo dõi chúng tôi tại</h1>
+                                        <div class="icon-scial float-right">
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="footer-h footer-link">
+                                        <h1 class="whi">Liên kết website:</h1>
+                                        <div class="form-group">
+                                            <select class="form-control flink-control" id="fLink">
+                                                <option>Tổng công ty Samco</option>
+                                                <option>Tổng công ty Samco</option>
+                                                <option>Tổng công ty Samco</option>
+                                                <option>Tổng công ty Samco</option>
+                                                <option>Tổng công ty Samco</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="address">
+                                        <h3 class="f-title">Địa chỉ:</h3>
+                                        <p>36 Kinh Dương Vương, Phường An Lạc A, Quận Bình Tân,Tp.Hồ Chí Minh</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="phone">
+                                        <h3 class="f-title">Điện thoại:</h3>
+                                        <ul class="navbar-nav phone-sb1 w-50 float-left">
+                                            <li class="nav-item">Phòng XD:</li>
+                                            <li class="nav-item">Phòng DVPT:</li>
+                                            <li class="nav-item">Phòng CSKH:</li>
+                                            <li class="nav-item f-title">Fax:</li>
+                                        </ul>
+                                        <ul class="navbar-nav phone-sb2 w-50 float-left">
+                                            <li class="nav-item">(84-28)38752033</li>
+                                            <li class="nav-item">(84-28)37626493</li>
+                                            <li class="nav-item">(84-28)37526493</li>
+                                            <li class="nav-item">(84-28)3751.2726</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="showroom">
+                                        <h3 class="f-title">Đơn vị bán hàng</h3>
+                                        <p>Showroom Miền Bắc: 0912.119.116</p>
+                                        <p>showroom miền nam: 028.3754.3895/96 /97</p>
+                                        <h3 class="f-title float-left">Email:</h3>
+                                        <p class="float-left pl-1">samcoanlac@samco.com.vn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- copyright -->
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-6">
+                        <h1>
+                            <i class="fa fa-copyright"></i> 2018 SAMCOBUS.All rights reserved</h1>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <h1 class="float-right">Developed by HONRANG</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end copyright -->
+        <!-- import file js -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="libs/slick/js/slick.min.js"></script>
+        <script src="js/main.js"></script>
+        <!-- end import file js -->
+</body>
+
+</html>

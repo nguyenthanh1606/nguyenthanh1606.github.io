@@ -1,0 +1,18 @@
+    //------------------------banner-----------------//
+    .banner{
+        width: 100%;
+        position: relative;
+        // img{
+        //     min-height: 225px;
+        // }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 8px;
+            width: 100%;
+            background-color: #e0e0e0;
+        }
+    }
+     //------------------------banner-----------------//

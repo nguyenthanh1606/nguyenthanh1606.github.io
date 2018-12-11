@@ -1,0 +1,211 @@
+.n .menu-question ul{
+    display: flex;
+    padding: 0;
+}
+
+.n .menu-question ul li{
+    list-style: none;   
+}
+.n .menu-question ul li a {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    font-size: 14px;
+    font-family: 'UTM Neo Sans Intel';
+}
+/* .n .menu-question ul li a.active{
+    color: red;
+} */
+.form-1-right p {
+    font-family: 'UTM Neo Sans Intel';
+    font-size: 14px;
+    margin-left: 30px;
+}
+.n .menu-question ul li a::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #d71920;
+    width: 0;
+    top :100%;
+}
+.n .menu-question ul li a:hover{
+    color: #d71920;
+}
+.n .menu-question ul li a:hover:before{
+    width: 100%;
+    transition: 0.7s;
+    /* color: r/ed; */
+}
+.n .form-1{
+    background: white;
+    position: relative;
+}
+.n .form-1-right{
+    background-color: white !important;
+    position: relative;
+    margin-bottom: 20px;
+}
+.n .form-1-right::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 60px;
+    background-color: #d71920;
+}
+.n .form-1-right .make-question span a {
+    color: #d71920;
+    font-family: 'UTM Neo Sans Intel';
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+.sub-title-question p{
+    font-family: 'UTM Neo Sans Intel';
+    font-size: 14px;
+    text-align: justify;
+}
+.title-question span {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'UTM Neo Sans Intel';
+}
+.n .form-1::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 60px;
+    background-color: #d71920;
+}
+.n .form-1 p{
+    margin-left: 30px;
+    font-family: 'UTM Neo Sans Intel';
+    font-size: 14px;
+}
+.n .form-1 .menu-question{
+    margin-left: 30px;
+}
+.form-tilte-question {
+    background-color: white;
+    padding: 20px 20px;
+    
+}
+.form-overflow{
+    height: 560px;
+    overflow: scroll;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+.form-tilte-question .title-question {
+    font-weight: bold;
+    color:#d71920;
+}
+.form-control-question {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: none;
+}
+.form-seclect-option{
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: calc(2.25rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: none;
+}
+.form-control-question-content {
+    display: block;
+    width: 90%;
+    margin: 0 25px;
+    height: 185px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: none;
+}
+.btn-detail {
+    margin-left: 185px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.content .menu-footer {
+    margin-top: 50px;
+}
+.input-title{
+    padding: 0;
+}
+.list-group{
+    flex-direction: row;
+    border-top: none;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+.list-group-item {
+    padding: 0; 
+    color: black;
+}
+.list-group-item.active{
+    background-color: transparent;
+    color: #d71920;
+}
+.list-group a{
+    margin-right: 40px;
+    font-family: 'UTM Neo Sans Intel';
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+}
+.list-group a::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0;
+    /* width: 100%; */
+    background-color: #d71920;
+    top: 100%;
+}
+.list-group a:hover:before{
+    width: 80%;
+    transition: all 0.7s;
+}
+.list-group a:hover{
+    color: #d71920;
+}
+.list-group-item-action:hover, .list-group-item-action:focus {
+    background-color: transparent;
+}
+.fade:not(.show){
+    display: none;
+}

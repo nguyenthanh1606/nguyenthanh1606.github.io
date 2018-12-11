@@ -1,0 +1,236 @@
+.time-line {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+ .time-line::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #706c6c;
+    top: 15px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.mo-ta-noi-dung {
+    text-align: justify;
+    margin: 0 15px;
+}
+.year-left {
+    text-align: right;
+    color: red;
+    font-weight: bold;
+    position: relative;
+}
+.year-left::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 45px;    
+    background: red;
+    top: 20%;
+    right: -20px;
+}
+.year-right {
+    color: red;
+    font-weight: bold;
+    position: relative;
+}
+.year-right::before {
+    content: '';
+    width: 15px;
+    top: 3px;
+    height: 15px;
+    border-radius: 45px;
+    background: red;
+    position: absolute;
+    left: -25px;
+}   
+.icon-time-line {
+    position: absolute;
+}
+.content-inside {
+    position: relative;
+}
+.wrapper-all {
+    
+}
+
+.year-left p{
+    margin: 0 15px;
+}
+.year-right p {
+    margin: 0 15px;
+}
+.list-content{
+    background: transparent;
+    margin: 0;
+}
+.content-discription-all {
+    background-color: white;
+    padding: 0 15px;
+}
+.discription {
+    text-align: justify;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 15px 0;
+}
+.list-content span {
+    margin-top: -30px;
+    font-family: 'UTM Copperplate';
+}
+.list-content .height-title {
+    margin-bottom: 30px;
+}
+.list-group {
+    margin-left: 100px;
+}
+.list-group p {
+    font-family: 'UTM Copperplate';
+}
+.carousel-indicators li{
+    text-indent: 0;
+    color: white;
+    background-color: transparent;
+    padding: 0 50px;
+}
+.carousel-indicators .active{
+    background-color: transparent;
+}
+.carousel-control-next-icon{
+    color: black;
+}
+@media only screen and (max-width: 1200px) {
+    .list-group {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .list-content span {
+        font-size: 30px;
+    }
+    .content-discription-all {
+        padding: 0;
+    }
+    .tab-content {
+        margin-top: 35px;
+    }
+    .list-content {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 920px) {
+    .list-group {
+        margin-left: 0;
+    }
+    .qua-trinh-phat-trien span {
+        font-size: 24px;
+    }
+    
+}
+@media only screen and (max-width: 767px){
+    .list-group {
+        padding: 0;
+        max-width: 100%;
+    }
+    .time-line::before {
+        left: 15px;
+    }
+    .year-left::before {
+        left: -10px;
+    }
+    .year-left p {
+        width: 0;
+    }
+    .year-right::before {
+        left: -10px;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .year-left::before {
+        left: -10px;
+    }
+    .time-line::before {
+        left: 15px;
+    }
+    .year-left p{
+        width: 0%;
+    }
+    .content-discription-all {
+        margin-bottom: 20px;
+    }
+    .list-group {
+        max-width: 100%;
+        padding: 0;
+    }
+    .mo-ta-noi-dung img {
+        padding-bottom: 10px;
+    }
+    .qua-trinh-phat-trien span {
+        font-size: 23px;
+        /* padding-top: 50px; */
+    }
+    .mo-ta-noi-dung img {
+        padding-bottom: 20px;
+    }
+    .tab-content {
+        padding: 0;
+    }
+    .year-right::before {
+        left: -10px;
+    }
+}
+@media only screen and (max-width: 475px) {
+    .qua-trinh-phat-trien span {
+        font-size: 23px;
+        padding-top: 20px;
+    }
+    .mo-ta-noi-dung img {
+        padding-bottom: 15px;
+    }
+    .time-line::before {
+        left: 9px;
+    }
+    .year-left::before {
+        left: -15px;
+    }
+    .year-right::before {
+        left: -16px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .time-line::before {
+        left: 9px;
+    }
+    .year-left::before {
+        left: -15px;
+    }
+    .year-left p{
+        width: 0%;
+    }
+    .wrapper-all {
+        background-color: #f3ebeb;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    .content-discription-all {
+        margin-bottom: 20px;
+    }
+    .list-group {
+        width: 100%;
+        padding: 0;
+    }
+    .mo-ta-noi-dung img {
+        padding-bottom: 10px;
+    }
+    .qua-trinh-phat-trien span {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .year-right::before {
+        left: -16px;
+    }
+    
