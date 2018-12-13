@@ -1307,7 +1307,12 @@ section.card.right{
                
             }            
         }
-        a{
+        button{
+            width: 100%;
+            text-align: left;
+            background: transparent;
+            border: none;
+            outline-color: transparent;
             &::after{
                 cursor: pointer;
                 content: "+";

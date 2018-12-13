@@ -369,6 +369,9 @@ body {
 .toUpper {
   text-transform: uppercase; }
 
+body {
+  background-color: #f2f2f2; }
+
 .btn-detail {
   font-size: 12px;
   color: #ffffff;
@@ -433,8 +436,7 @@ header {
   header .header-top {
     width: 100%;
     background: linear-gradient(0deg, rgba(186, 209, 241, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
-    min-height: 60px;
-    position: relative; }
+    min-height: 60px; }
     header .header-top .logo a {
       text-decoration: none; }
     header .header-top::before {
@@ -542,7 +544,10 @@ header {
         padding: 10px;
         transition: all 0.6s; }
         header .menu nav ul li.nav-item .sub-menu {
-          display: none;
+          transition: all .4s ease;
+          pointer-events: none;
+          transform: translateY(-30px);
+          opacity: 0;
           position: absolute;
           top: 100%;
           left: 0;
@@ -550,15 +555,6 @@ header {
           background-color: transparent;
           z-index: 1000;
           padding-top: 10px; }
-          header .menu nav ul li.nav-item .sub-menu::before {
-            position: absolute;
-            top: calc(100% + 5px);
-            left: 0;
-            content: '';
-            width: 100%;
-            height: 8px;
-            background-color: #486790;
-            z-index: 200000; }
           header .menu nav ul li.nav-item .sub-menu .sub-menu-content {
             background-color: #ffffff; }
             header .menu nav ul li.nav-item .sub-menu .sub-menu-content #subMenu {
@@ -618,48 +614,18 @@ header {
             height: 5px;
             background-color: #d71920;
             transition: all 0.5s; }
-          header .menu nav ul li.nav-item a:hover i {
-            visibility: visible; }
-          header .menu nav ul li.nav-item a:hover {
-            color: #d71920 !important; }
-          header .menu nav ul li.nav-item a:hover::before {
-            width: 100%; }
         header .menu nav ul li.nav-item:hover .sub-menu {
-          display: block; }
+          pointer-events: auto;
+          transform: translateY(0);
+          opacity: 1; }
           header .menu nav ul li.nav-item:hover .sub-menu a::before {
             display: none; }
-  header .is-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #d71920;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-    z-index: 100000; }
-    header .is-fixed::before {
-      display: none; }
-    header .is-fixed nav {
-      border-top: none; }
-      header .is-fixed nav .navbar-nav {
-        margin-left: auto; }
-        header .is-fixed nav .navbar-nav .nav-item a {
-          color: #ffffff !important; }
-          header .is-fixed nav .navbar-nav .nav-item a:hover {
-            color: #fff !important; }
-            header .is-fixed nav .navbar-nav .nav-item a:hover::before {
-              background-color: #ffffff; }
-        header .is-fixed nav .navbar-nav .nav-item .sub-menu::before {
-          display: none; }
-        header .is-fixed nav .navbar-nav .nav-item .sub-menu .nav-tabs .all-content .navbar-nav li.nav-item a {
-          color: #535353 !important; }
-        header .is-fixed nav .navbar-nav .nav-item #subMenu li {
-          color: #535353 !important; }
-          header .is-fixed nav .navbar-nav .nav-item #subMenu li a {
-            color: #535353 !important; }
-          header .is-fixed nav .navbar-nav .nav-item #subMenu li .active {
-            color: #d71920 !important; }
-          header .is-fixed nav .navbar-nav .nav-item #subMenu li .all-content ul li a {
-            color: #535353 !important; }
+        header .menu nav ul li.nav-item:hover > a {
+          color: #d71920 !important; }
+          header .menu nav ul li.nav-item:hover > a::before {
+            width: 100%; }
+          header .menu nav ul li.nav-item:hover > a i {
+            visibility: visible; }
 
 header .menu nav ul li.nav-item .sub-menu .sub-menu-content .all-content .navbar-nav .nav-item a {
   font-size: 11px;
@@ -668,6 +634,30 @@ header .menu nav ul li.nav-item .sub-menu .sub-menu-content .all-content .navbar
 
 header .menu nav ul li.nav-item .sub-menu .sub-menu-content .all-content .navbar-nav .nav-item a:hover {
   color: #a30d14 !important; }
+
+.sub-menu .submenu-item {
+  padding-top: 1rem;
+  padding-bottom: .5rem; }
+.sub-menu .nameMenu {
+  position: relative; }
+  .sub-menu .nameMenu::before {
+    content: '';
+    width: 40%;
+    height: 1px;
+    background-color: #dfdede;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; }
+  .sub-menu .nameMenu p {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 0 1.5rem;
+    font-family: 'UTM Avo';
+    font-weight: bold;
+    color: #a30d14; }
 
 .banner {
   width: 100%;

@@ -1,0 +1,20 @@
+.sub-products .sale {
+    background-color: white;
+    margin-bottom: 50px;
+}
+.sub-item span {
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #d31f26;
+}
+@media screen and (max-width: 320px){
+    .text-center h1{
+        margin-top: 15px;
+    }
+    .sub-item span{
+        margin-top: 145px;
+        font-size: 40px;
+    }
+}

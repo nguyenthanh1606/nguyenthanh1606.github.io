@@ -447,7 +447,8 @@ section.card.right { flex: 0 0 30%; max-width: 30%; }
 .product-detail .detail .card { border-radius: 0; border-left: none; border-right: none; border-color: #ccc; }
 .product-detail .detail .card:last-child { border-bottom: none; }
 .product-detail .detail .card-header { border-color: #ccc; background-color: #fff; }
-.product-detail .detail a::after { cursor: pointer; content: "+"; color: #666; position: absolute; right: 0; top: 50%; line-height: 0; font-size: 2.5rem; }
+.product-detail .detail button { width: 100%; text-align: left; background: transparent; border: none; outline-color: transparent; }
+.product-detail .detail button::after { cursor: pointer; content: "+"; color: #666; position: absolute; right: 0; top: 50%; line-height: 0; font-size: 2.5rem; }
 
 .news .title-news p { display: inline-block; padding-top: 2rem; padding-bottom: 1rem; margin-bottom: 1rem; position: relative; }
 .news .title-news p::after { content: ""; width: 80%; max-width: 250px; height: 4px; background-color: #00997c; position: absolute; left: 50%; bottom: 0; -webkit-transform: translateX(-50%); -o-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); }
