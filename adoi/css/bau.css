@@ -514,8 +514,14 @@ padding-right: 6%;
 padding: auto;
 margin:1.3%;
 }
-.language a h6{
-   display: inline;
+.language a:hover{
+    text-decoration: underline;
+}
+.language a:first-child{
+    margin-right: 1.5rem;
+}
+.language a.h6{
+    display: inline;
     color: white;  
 }
 .line-menu{
