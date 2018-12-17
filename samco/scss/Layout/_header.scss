@@ -21,6 +21,8 @@ header{
         }
         .icon-menu{
             display: none;
+            background-color: transparent;
+            border: none;
         }
         .search{
             box-sizing: border-box;
@@ -359,4 +361,93 @@ header .menu nav ul li.nav-item .sub-menu .sub-menu-content .all-content .navbar
             color: $color-text-primary;
         }
     }
+}
+
+.menu-mb{
+    overflow-y: scroll;
+    z-index: 100;
+    transition: right 0.4s ease-in-out;
+    width: 218px;
+    top: 0;
+    position: fixed;
+    background-color: #b7b7b7;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1111;    
+    p.head{
+        color: #fff;
+        font-family: 'UTM Copperplate';
+        font-weight: bold;
+        font-size: .9rem;
+        padding-top: 11px;
+        margin: 0 -20px;
+        padding-left: 20px;
+        padding-bottom: 11px;
+        background-color: $color-primary;
+    }
+    ul.menu-mb-lv1{
+        display: block;
+        padding-left: 0;
+        *{
+            text-transform: uppercase !important;
+        }
+        >li{
+            position: relative;
+            display: block;
+            padding-left: 3px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            i{
+                position: absolute;
+                top: 16px;
+                right: 0;
+                font-size: 1rem;
+            }
+            &:not(:last-child){
+                border-bottom: 1px solid #a3a2a2;
+            }
+            a{
+                font-family: 'UTM Copperplate';
+                text-decoration: none;
+                font-weight: normal;
+                font-size: 1rem;
+                color: black;
+                line-height: 1;
+            }
+            .menu-mb-lv2{
+                list-style-type: none;
+                padding-left: 0;
+                li{
+                    padding-left: 15px;
+                    padding-top: 11px;
+                    position: relative;
+                    &:not(:first-child){
+                        padding-bottom: 11px;
+                    }
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top: 24px;
+                        left: 0;
+                        width: 9px;
+                        height: 3px;
+                        background-color: $color-primary;
+                    }                    
+                }
+            }
+        }
+        .active a{
+            font-family: 'UTM Copperplate' !important;
+            font-weight: bold;
+            color: $color-primary !important;
+        }
+    }
+}
+#hide-w {
+    position: fixed;
+    z-index: 1100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }

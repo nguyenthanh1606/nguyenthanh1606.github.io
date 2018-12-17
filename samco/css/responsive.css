@@ -403,10 +403,25 @@ body {
 
   .copyright h1 {
     font-size: 9px;
-    white-space: nowrap; } }
+    white-space: nowrap; }
+
+  footer .follow .text-follow {
+    width: 100%; }
+  footer .follow .icon-social {
+    width: 100%;
+    padding-left: 0;
+    text-align: center; } }
 @media screen and (max-width: 475px) {
   html {
-    font-size: 14px; } }
+    font-size: 14px; }
+
+  footer .col-md-4 {
+    padding-bottom: 1rem; }
+
+  footer .follow {
+    order: 2; }
+  footer .siteMap {
+    order: 3; } }
 @media screen and (max-width: 320px) {
   html {
     font-size: 13px; } }

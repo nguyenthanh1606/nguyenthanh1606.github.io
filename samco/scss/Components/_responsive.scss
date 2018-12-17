@@ -498,14 +498,46 @@
             white-space: nowrap;
         }
     }
-    
+    footer{
+        .follow{
+            .text-follow{
+                width: 100%;
+            }
+            .icon-social{
+                width: 100%;
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+    }
 }
-@media screen and (max-width: 608px){
+@media screen and (max-width: 600px){
     
 }
 @media screen and (max-width:475px){
     html{
         font-size: 14px;
+    }
+    footer .col-md-4{
+        padding-bottom: 1rem;
+    }
+    footer{
+        .follow{
+            order: 2;
+        }
+        .siteMap{
+            order: 3;
+        }
+        // .footer-social{
+        //     .text-follow{
+        //         width: 100%;
+        //     }
+        //     .icon-social{
+        //         width: 100%;
+        //         padding-left: 0;
+        //         text-align: center;
+        //     }
+        // }
     }
 }
 @media screen and (max-width: 320px){

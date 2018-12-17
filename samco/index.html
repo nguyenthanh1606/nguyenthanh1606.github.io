@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <div id="hide-w" style="display: none;"></div>
     <header>
         <div class="header-top">
             <div class="container">
@@ -43,11 +44,11 @@
                         <button class="btn btn-search"></button>
                     </div>
                 </div>
-                <div class="icon-menu">
+                <button onclick="pushMenuOpen()" class="icon-menu">
                     <span class="line-icon">
                         <i class="fas fa-bars"></i>
                     </span>
-                </div>
+                </button>
                 <!-- menu-mobile -->
                 <!-- <div class="menu-mobile">
                         <div class="menu-mobile-content">
@@ -473,6 +474,34 @@
             </div>
         </div>
     </header>
+    <nav id="menu-mobile" class="menu-mb" style="right: -100%;">
+        <p class="head toUpper">menu</p>
+        <ul class="menu-mb-lv1">
+            <li class="active"><a href="index.html">Trang chủ</a></li>
+            <li><a href="#item-2" data-toggle="collapse" aria-controls="item-3" class="">Birthday flowers</a>
+                <a href="#item-2" data-toggle="collapse" role="button" aria-controls="item-3" aria-expanded="false">
+                    <i class="fa fa-angle-down"></i>
+                </a>
+                <ul id="item-2" class="collapse menu-mb-lv2">
+                    <li><a href="product.html">Bó hoa hoa duong dong tươi</a></li>
+                    <li><a href="product.html">Hộp hoa tươi</a></li>
+                    <li><a href="product.html">Giỏ hoa tươi</a></li>
+                    <li><a href="product.html">Bình hoa tươi</a></li>
+                    <li><a href="product.html">Hoa tình yêu</a></li>
+                    <li><a href="product.html">Hoa chúc mừng</a></li>
+                    <li><a href="product.html">Hoa chia buồn</a></li>
+                </ul>
+            </li>
+            <li><a href="product.html">Occasions</a>            </li>
+            <li><a href="product.html">Flowers</a></li>
+            <li><a href="product.html">Colors</a></li>
+            <li><a href="product.html">Spencial flowers</a></li>
+            <li><a href="product.html">Gifts</a></li>
+            <li><a href="product.html">Wedding decoration</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+    
     <section>
         <div class="banner">
             <div class="single-item">
@@ -1028,78 +1057,72 @@
         <div class="container">
             <div class="row">
                 <div class="container">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="footer-h footer-about">
-                                    <h1>CN TỔNG CTY CK GTVT SÀI GÒN - TNHH MTV XN CƠ KHÍ Ô TÔ AN LẠC</h1>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-h footer-about">
+                                <h1>CN TỔNG CTY CK GTVT SÀI GÒN - TNHH MTV XN CƠ KHÍ Ô TÔ AN LẠC</h1>
                             </div>
-                            <div class="col-md-4">
-                                <div class="footer-h footer-scial">
-                                    <h1 class="float-left">Theo dõi chúng tôi tại</h1>
-                                    <div class="icon-scial float-right">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fab fa-youtube"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="footer-h footer-link">
-                                    <h1 class="whi">Liên kết website:</h1>
-                                    <div class="form-group">
-                                        <select class="form-control flink-control" id="fLink">
-                                            <option>Tổng công ty Samco</option>
-                                            <option>Tổng công ty Samco</option>
-                                            <option>Tổng công ty Samco</option>
-                                            <option>Tổng công ty Samco</option>
-                                            <option>Tổng công ty Samco</option>
-                                        </select>
-                                    </div>
+                        </div>
+                        <div class="col-md-4 follow">
+                            <div class="footer-h footer-social">
+                                <h1 class="text-follow">Theo dõi chúng tôi tại</h1>
+                                <div class="icon-social float-right">
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="address">
-                                    <h3 class="f-title">Địa chỉ:</h3>
-                                    <p>36 Kinh Dương Vương, Phường An Lạc A, Quận Bình Tân,Tp.Hồ Chí Minh</p>
+                        <div class="col-md-4 siteMap">
+                            <div class="footer-h footer-link">
+                                <h1 class="whi">Liên kết website:</h1>
+                                <div class="form-group">
+                                    <select class="form-control flink-control" id="fLink">
+                                        <option>Tổng công ty Samco</option>
+                                        <option>Tổng công ty Samco</option>
+                                        <option>Tổng công ty Samco</option>
+                                        <option>Tổng công ty Samco</option>
+                                        <option>Tổng công ty Samco</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-md-4">
-                                <div class="phone">
-                                    <h3 class="f-title">Điện thoại:</h3>
-                                    <ul class="navbar-nav phone-sb1 w-50 float-left">
-                                        <li class="nav-item">Phòng XD:</li>
-                                        <li class="nav-item">Phòng DVPT:</li>
-                                        <li class="nav-item">Phòng CSKH:</li>
-                                        <li class="nav-item f-title">Fax:</li>
-                                    </ul>
-                                    <ul class="navbar-nav phone-sb2 w-50 float-left">
-                                        <li class="nav-item">(84-28)38752033</li>
-                                        <li class="nav-item">(84-28)37626493</li>
-                                        <li class="nav-item">(84-28)37526493</li>
-                                        <li class="nav-item">(84-28)3751.2726</li>
-                                    </ul>
-                                </div>
+                        </div>
+                        <div class="col-md-4 address">
+                            <div class="address">
+                                <h3 class="f-title">Địa chỉ:</h3>
+                                <p>36 Kinh Dương Vương, Phường An Lạc A, Quận Bình Tân,Tp.Hồ Chí Minh</p>
                             </div>
-                            <div class="col-md-4">
-                                <div class="showroom">
-                                    <h3 class="f-title">Đơn vị bán hàng</h3>
-                                    <p>Showroom Miền Bắc: 0912.119.116</p>
-                                    <p>showroom miền nam: 028.3754.3895/96 /97</p>
-                                    <h3 class="f-title float-left">Email:</h3>
-                                    <p class="float-left pl-1">samcoanlac@samco.com.vn</p>
-                                </div>
+                        </div>
+                        <div class="col-md-4 phone">
+                            <div class="phone">
+                                <h3 class="f-title">Điện thoại:</h3>
+                                <ul class="navbar-nav phone-sb1 w-50 float-left">
+                                    <li class="nav-item">Phòng XD:</li>
+                                    <li class="nav-item">Phòng DVPT:</li>
+                                    <li class="nav-item">Phòng CSKH:</li>
+                                    <li class="nav-item f-title">Fax:</li>
+                                </ul>
+                                <ul class="navbar-nav phone-sb2 w-50 float-left">
+                                    <li class="nav-item">(84-28)38752033</li>
+                                    <li class="nav-item">(84-28)37626493</li>
+                                    <li class="nav-item">(84-28)37526493</li>
+                                    <li class="nav-item">(84-28)3751.2726</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 showroom">
+                            <div class="showroom">
+                                <h3 class="f-title">Đơn vị bán hàng</h3>
+                                <p>Showroom Miền Bắc: 0912.119.116</p>
+                                <p>showroom miền nam: 028.3754.3895/96 /97</p>
+                                <h3 class="f-title float-left">Email:</h3>
+                                <p class="float-left pl-1">samcoanlac@samco.com.vn</p>
                             </div>
                         </div>
                     </div>
