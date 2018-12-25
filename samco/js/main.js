@@ -15,10 +15,10 @@ $(document).ready(function () {
                 items: 4
             }
         }
-    });
-    $(document).ready(function () {
-        $('.single-item').slick();
-    });;
+    });    
+});
+$(document).ready(function () {
+    $('.single-item').slick();
 });
 
 function pushMenuOpen(){

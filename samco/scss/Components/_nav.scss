@@ -1,0 +1,88 @@
+.menu-2{
+    overflow-y: scroll;
+    z-index: 1111;
+    transition: right 0.3s ease-in-out;
+    width: 218px;
+    top: 0;
+    // display: none;
+    position: fixed;
+    background-color: #d3d3d3;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    p.head{
+        color: #fff;
+        font-family: 'UTM Copperplate';
+        font-weight: bold;
+        font-size: 1rem;
+        padding-top: 15px;
+        margin: 0 -20px;
+        padding-left: 20px;
+        padding-bottom: 14px;
+        background-color: $color-primary;
+    }
+    ul.menu-mb-lv1{
+        padding-left: 0;
+        display: block;        
+        >li{
+            position: relative;
+            display: block;
+            padding-left: 3px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            i{
+                position: absolute;
+                top: 16px;
+                right: 0;
+                font-size: 1rem;
+            }
+            &:not(:last-child){
+                border-bottom: 1px solid #a3a2a2;
+            }
+            a{
+                font-family: 'UTM Copperplate';
+                font-size: 1rem;
+                color: black;
+                line-height: 1;
+            }
+            .menu-mb-lv2{
+                list-style-type: none;
+                li{
+                    padding-left: 15px;
+                    padding-top: 11px;
+                    position: relative;
+                    &:not(:first-child){
+                        padding-bottom: 11px;
+                    }
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        top: 23px;
+                        left: 0;
+                        width: 9px;
+                        height: 3px;
+                        background-color: red;
+                    }                    
+                }
+            }
+        }
+        a.active{
+            font-family: 'UTM Copperplate' !important;
+            font-weight: bold;
+            color: $color-primary !important;
+        }
+    }
+}
+.fix-top {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    padding: 2px 5px 5px;
+    cursor: pointer;
+    outline-color: transparent !important;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+}

@@ -144,7 +144,7 @@ body {
     font-family: 'UTM Neo Sans Intel';
     line-height: 24px; }
   .content .products {
-    padding: 45px 0; }
+    padding: 1.5rem 0; }
     .content .products .sub-title p {
       font-size: 14px;
       line-height: 24px;
@@ -156,7 +156,7 @@ body {
         border-bottom: none; }
       .content .products .products-content .tab-content .owl-carousel .item {
         position: relative;
-        padding: 15px 30px;
+        padding: 0;
         width: 100%; }
         .content .products .products-content .tab-content .owl-carousel .item .item-img {
           width: 100%;
@@ -166,8 +166,7 @@ body {
           font-size: 9px;
           line-height: 18px;
           text-align: center;
-          font-weight: bold;
-          white-space: nowrap; }
+          font-weight: bold; }
           .content .products .products-content .tab-content .owl-carousel .item h1.title a {
             text-decoration: none;
             color: #4c4b4b; }
@@ -213,7 +212,9 @@ body {
       background-size: cover;
       margin-bottom: 5px; }
       .content .service .service-item .box img {
-        width: 40%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
         float: left;
         transition: 0.5s;
         position: relative; }
@@ -242,10 +243,10 @@ body {
       .content .service .service-item .box .text-item {
         position: absolute;
         top: 50%;
-        left: 70%;
+        left: 50%;
         float: left;
-        width: 60%;
-        transform: translate(-50%, -80%);
+        width: 100%;
+        transform: translate(-50%, -50%);
         text-align: center;
         z-index: 5;
         padding: 0 5px; }
@@ -411,6 +412,10 @@ body {
     width: 100%;
     padding-left: 0;
     text-align: center; } }
+@media screen and (max-width: 600px) {
+  .menu-footer {
+    height: 0;
+    padding-bottom: 0; } }
 @media screen and (max-width: 475px) {
   html {
     font-size: 14px; }

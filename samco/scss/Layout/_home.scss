@@ -288,43 +288,43 @@
         .txt-pner{
             color: $color-white;
         }
-    }
-    .menu-footer{
-        width: 100%;
-        background-color: $color-primary;
-        color: $color-white;
-        padding-top: 45px;
-        padding-bottom: 30px;
-        .menu-footer-child{
-            min-height: 160px;
-            padding-left: 45px;
-            position: relative;
-            &::before{
-                content: '';
-                position: absolute;
-                top: 0;
-                right: -30px;
-                width: 1px;
-                height: 100%;
-                background-color: $color-border;
-                opacity: 0.5;
+    }    
+}
+.menu-footer{
+    width: 100%;
+    background-color: $color-primary;
+    color: $color-white;
+    padding-top: 45px;
+    padding-bottom: 30px;
+    .menu-footer-child{
+        min-height: 160px;
+        padding-left: 45px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -30px;
+            width: 1px;
+            height: 100%;
+            background-color: $color-border;
+            opacity: 0.5;
+        }
+        .menu-title{
+            h1{
+                font-size: 14px;
+                line-height: 20px;
+                text-transform: uppercase;
+                font-weight: bold;
             }
-            .menu-title{
-                h1{
-                    font-size: 14px;
-                    line-height: 20px;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                }
-            }
-            .navbar-nav{
-                list-style: initial;
-                padding-left: 20px;
-                a{
-                    color: $color-white;
-                    font-size: 13px;
-                    line-height: 20px;
-                }
+        }
+        .navbar-nav{
+            list-style: initial;
+            padding-left: 20px;
+            a{
+                color: $color-white;
+                font-size: 13px;
+                line-height: 20px;
             }
         }
     }

@@ -167,7 +167,7 @@
             }
         }
         .products{
-            padding: 45px 0;
+            padding: 1.5rem 0;
             .sub-title{
                 p{
                     font-size: 14px;
@@ -185,7 +185,7 @@
                     .owl-carousel{
                         .item{
                             position: relative;
-                            padding: 15px 30px;
+                            padding: 0;
                             width: 100%;
                             .item-img{
                                 width: 100%;
@@ -197,7 +197,6 @@
                                 line-height: 18px;
                                 text-align: center;
                                 font-weight: bold;
-                                white-space: nowrap;
                                 a{
                                     text-decoration: none;
                                     color: #4c4b4b;
@@ -257,7 +256,9 @@
                     background-size: cover;
                     margin-bottom: 5px;
                     img{
-                        width: 40%;
+                        width: 100%;
+                        object-fit: cover;
+                        object-position: center;
                         float: left;
                         transition: 0.5s;
                         position: relative;
@@ -293,10 +294,10 @@
                     .text-item{
                         position: absolute;
                         top: 50%;
-                        left: 70%;
+                        left: 50%;
                         float: left;
-                        width: 60%;
-                        transform: translate(-50%,-80%);
+                        width: 100%;
+                        transform: translate(-50%,-50%);
                         text-align: center;
                         z-index: 5;
                         padding: 0 5px;
@@ -512,7 +513,7 @@
     }
 }
 @media screen and (max-width: 600px){
-    
+    .menu-footer{height: 0; padding-bottom: 0}
 }
 @media screen and (max-width:475px){
     html{

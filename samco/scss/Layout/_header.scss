@@ -337,7 +337,7 @@ header .menu nav ul li.nav-item .sub-menu .sub-menu-content .all-content .navbar
         text-decoration: none;
         .name-menu p{ color: $color-primary !important; }
     }
-    .name-menu p{ font-family: 'UTM Avo'; font-weight: normal; transition: all .4s ease;}
+    .name-menu p{ font-family: 'UTM Avo'; font-weight: normal;text-transform: initial;white-space: nowrap; transition: all .4s ease;}
     .nameMenu{
         position: relative;
         &::before{
