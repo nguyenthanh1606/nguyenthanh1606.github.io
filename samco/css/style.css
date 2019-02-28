@@ -381,6 +381,8 @@ body {
   height: 100%;
   padding-left: 20px;
   padding-right: 20px; }
+  .menu-2 a {
+    text-decoration: none; }
   .menu-2 p.head {
     color: #fff;
     font-family: 'UTM Copperplate';
@@ -428,7 +430,9 @@ body {
             width: 9px;
             height: 3px;
             background-color: red; }
-    .menu-2 ul.menu-mb-lv1 a.active {
+          .menu-2 ul.menu-mb-lv1 > li .menu-mb-lv2 li a {
+            font-family: 'UTM Avo'; }
+    .menu-2 ul.menu-mb-lv1 .active > a {
       font-family: 'UTM Copperplate' !important;
       font-weight: bold;
       color: #d71920 !important; }

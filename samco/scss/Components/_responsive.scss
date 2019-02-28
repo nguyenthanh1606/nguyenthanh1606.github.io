@@ -513,7 +513,7 @@
     }
 }
 @media screen and (max-width: 600px){
-    .menu-footer{height: 0; padding-bottom: 0}
+    .menu-footer{height: 0; padding-bottom: 0; overflow: hidden;}
 }
 @media screen and (max-width:475px){
     html{

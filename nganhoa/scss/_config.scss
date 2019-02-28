@@ -166,7 +166,7 @@ ul{
 .border-gray{
     border-color: #e4e4e4;
 }
-.pagination{
+.pagination-ds{
     justify-content: center;
     margin-top: 2rem;
     ul{
@@ -182,14 +182,25 @@ ul{
                 height: 40px;
                 background-color: #fff;
                 border: 1px solid #ccc;
-                border-radius: 50%;
+                border-radius: 50% !important;
                 color: #666;
                 text-align: center;
-                line-height: 35px;
+                line-height: 40px;
                 transition: background-color .4s ease;
+                padding: 0;
                 &:hover,&.active{
                     background-color: $color-main;
                     color: #fff !important;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            &.active{
+                a.page-link{
+                    background-color: #ff488a;
+                    color: #fff !important;
+                    border-color: #ccc;
                 }
             }
         }
