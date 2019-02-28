@@ -1,0 +1,169 @@
+.home-banner{
+    position: relative;
+    overflow: hidden;
+    margin-top: -100px;
+    z-index: 1;
+    max-height: 625px;
+}
+main{
+    padding-bottom: 3rem;
+}
+.about{    
+    @extend %home-1;
+    border-bottom: 3px solid #e4e4e4; 
+    &-content{
+        position: relative;
+        .box{
+            position: relative;
+            z-index: 2;
+            padding-left: 60px;
+            width: 33%;
+            float: left;
+        }
+        .title{
+            font-family: 'UTM Libel KT';
+            font-size: 28px;
+            margin-bottom: .5rem;
+            color: #000;
+        }    
+        .sumary{
+            font-style: italic;
+            font-size: .9rem;
+        }    
+    }
+    .item-child{
+        width: 66%;
+        float: right;
+        background: url('../images/Themes/bg-vertical.png') no-repeat 201px;
+        &-left{
+            .pic{
+                width: 40%;
+                float: left;
+                img{
+                    padding: 10px 0;
+                    float: right;
+                }
+            }
+            .text-child{
+                width: 35%;
+                float: right;
+            }
+        }
+        &-right{
+            .pic{
+                width: 53%;
+                float: right;
+                img{
+                    padding: 10px 0;
+                }
+            }
+            .text-child{
+                width:44%;
+                float: left;
+                margin-left: -20%;
+                text-align: right;              
+            }
+        }
+    }
+}
+.services{
+    position: relative;
+    @extend %home-1;
+    &-content{
+        position: relative;
+        .box{
+            position: relative;
+            z-index: 2;
+            padding-left: 60px;
+            float: left;
+        }
+        .title, .title-left{
+            font-family: 'UTM Libel KT';
+            font-size: 28px;
+            margin-bottom: .5rem;
+            color: #000;
+        }        
+    }
+    .item-first{
+        width: 33%;
+        float: left;
+    }
+    .item-child{
+        float: right;
+        margin-left: -15%;
+        width: 82%;
+        .pic{
+            padding-left: 0.25rem;
+            padding-right: 0.25rem;
+            margin-bottom: .5rem;
+            font-size: 0;
+        }
+        .services-child{
+            align-self: flex-end;
+        }
+        @extend %project-item;        
+    }    
+}
+
+.parallax{
+    position: relative;        
+    min-height: 410px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .caption{
+        position: absolute;
+        top: 50%;
+        lefT: 50%;
+        color: #fff;
+        width: 70%;
+        transform: translate(-50%,-50%);
+        .text{
+            font-family: 'MS Italic';
+            font-size: 1.25rem;
+        }
+        .author{
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.content{
+    position: relative;
+    @extend %home-1;
+    .content-main{
+        position: relative;
+        .box{
+            position: relative;
+            z-index: 2;
+            padding-left: 60px;
+            width: 33%;
+            float: left;
+        }
+        .title{
+            font-family: 'UTM Libel KT';
+            font-size: 28px;
+            margin-bottom: .5rem;
+            color: #000;
+        }        
+    }
+    .content-first{
+        width: 66%;
+        float: right;
+        @extend %news-item;
+        .thumnails{
+            width: 55%;
+        }
+        .news{
+            width: 49%;
+            margin-left: -4%;
+        }
+    }
+    .content-list{
+        .item{
+            @extend %news-item;
+        }
+    }
+}

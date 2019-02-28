@@ -1,0 +1,219 @@
+.main-menu{
+    font-family: 'UTM Avo';
+    a{
+        color: #fff;
+        transition: .4s ease; 
+        &:hover, &.active{
+            text-decoration: none;
+
+        }
+    }
+    li{
+        &:hover>a, a.active{
+            text-decoration: none;
+            color: $color-border-2;
+        } 
+    }
+    ul.lv-1{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 22px;
+        >li{
+            padding: 0.5rem 2rem 1rem;
+            display: inline-block;
+            position: relative;
+            >a{   
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: 0;
+                    width: 0;
+                    transform: translateX(-50%);
+                    height: 4px;
+                    transition: width .4s ease;
+                    background-color: $color-border-2;
+                }                           
+            }                        
+            &:hover{
+                a::before{
+                    width: 100%;
+                }
+                ul.lv-2{
+                    top: 100%;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+    ul.lv-2{
+        position: absolute;
+        top: calc(100% - 1rem);
+        opacity: 0;
+        visibility: hidden;
+        left: 0;
+        padding: .5rem 1rem .5rem 1.5rem;
+        min-width: 220px;
+        background-color: #000;
+        transition: .4s ease;
+        >li{     
+            position: relative;       
+            padding: .75rem 5px;
+            &:not(:last-child){
+                border-bottom: 1px solid $color-border;
+            }
+            &:hover ul.lv-3{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        >li.is-child{
+            &::after{
+                content: url('../images/Themes/icon/angle-left.png');
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:hover::after{
+                content: url('../images/Themes/icon/angle-left-hover.png');
+            }
+        }
+    }
+    ul.lv-3{
+        position: absolute;
+        left: 100%;
+        top: -0.5rem;
+        opacity: 0;
+        visibility: hidden;
+        min-width: 200px;
+        padding: .5rem 1rem .5rem 1.5rem;
+        background-color: #000;
+        transition: .8s ease;
+        >li{     
+            position: relative;       
+            padding: .75rem 5px;
+            &:not(:last-child){
+                border-bottom: 1px solid $color-border;
+            }
+        }
+    }
+}
+.sub-tab{
+    font-family: 'UTM Avo';
+    position: relative;
+    z-index: 3;
+    margin-top: -45px;
+    ul{
+        counter-reset: sub-tab-counter;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        li{
+            height: 70px;            
+            padding-left: 60px;
+            position: relative;
+            transition: .4s ease;
+            &::before{
+                box-shadow: 0px 4px 10px 1px rgba(0,0,0,.25);
+                content: counter(sub-tab-counter);
+                counter-increment: sub-tab-counter;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 60px;
+                height: 100%;
+                font-family: 'UTM Neo Sans Intel';
+                font-size: 48px;
+                display: block;
+                text-align: center;
+                color: #fff;
+                padding: 0 1rem;
+                background-color: $color-main;
+                line-height: 1.2;
+            }
+            &:hover{
+                transform: translateY(-10px);
+            }
+        }
+        .text{
+            transition: .4s ease;
+            display: block;
+            height: 100%;
+            box-shadow: 3px 3px 10px 1px rgba(0,0,0,.25);
+            background-color: #fff;
+            padding: 0.5rem;
+            color: #000;
+            h3{
+                font-family: 'UTM Libel KT';
+            }
+            p{
+                color: #9ea09d;
+            }
+        }
+        a.text:hover{
+            text-decoration: none;
+            color: $color-main;
+        }
+    }
+}
+
+.menu-tab{
+    ul.lv-1{
+        li{
+            padding-left: 3rem;
+            display: block;
+            a{
+                font-family: 'UTM Libel KT';
+                font-size: 1.75rem;
+                margin-bottom: .5rem;
+                color: #000;
+                transition: .4s ease;
+                position: relative;
+                &:hover, &.active{
+                    text-decoration: none;
+                    color: #1d6904;
+                }
+                &[aria-expanded="true"]{
+                    &::before{
+                        content: url('../images/Themes/icon/hide.png');
+                        position: absolute;
+                        left: -20px;
+                        bottom: 0;
+                        line-height: 1.2;
+                    }
+                }
+                &[aria-expanded="false"]{
+                    &::before{
+                        content: url('../images/Themes/icon/show.png');
+                        position: absolute;
+                        left: -20px;
+                        bottom: 0;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+    }
+    ul.lv2{
+        li{
+            padding-left: 2rem;
+            position: relative;
+            &:before{
+                content: '';
+                background-color: #1d6904;
+                width: 15px;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: 8px;
+            }
+            a{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
