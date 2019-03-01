@@ -168,3 +168,90 @@ $color-main: #153f06;
         }
     }
 }
+
+%contact-info{
+    .line-left{
+        padding-left: 1rem;
+        position: relative;
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 4px;
+            height: 100%;
+            background-color: #666;
+            display: inline-block;
+        }
+    }
+    .info{
+        .address{
+            a{
+                color: #3a3939;
+                transition: .4s ease;
+                &:hover, &:focus{
+                    text-decoration: none;
+                    color: $color-main;
+                }
+            }
+            &::before{
+                content: url('../images/Themes/icon/address.png');
+                background-repeat: no-repeat;
+                margin-right: 1rem;
+            }
+        }
+        .tel{
+            a{
+                color: #3a3939;
+                transition: .4s ease;
+                &:hover, &:focus{
+                    text-decoration: none;
+                    color: $color-main;
+                }
+            }
+            &::before{
+                content: url('../images/Themes/icon/tel.png');
+                background-repeat: no-repeat;
+                margin-right: 1rem;
+            }
+        }
+        .email{
+            a{
+                color: #3a3939;
+                transition: .4s ease;
+                &:hover, &:focus{
+                    text-decoration: none;
+                    color: $color-main;
+                }
+            }
+            &::before{
+                content: url('../images/Themes/icon/email2.png');
+                background-repeat: no-repeat;
+                margin-right: 1rem;
+            }
+        }
+    }
+    .follow{
+        ul li{
+            display: inline-block;
+            padding-right: 1rem;
+        }
+        a{
+            color: #fff;
+            display: inline-block;
+            width: 33px;
+            height: 33px;
+            text-align: center;
+            background-color: #000;
+            border-radius: 50%;
+            i{
+                font-size: 1rem;
+                vertical-align: -webkit-baseline-middle;
+            }
+            transition: .4s ease;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }            
+    }  
+}

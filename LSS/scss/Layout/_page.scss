@@ -143,6 +143,61 @@
     }
 
     .page-detail{
+        position: relative;
+        &::before{
+            content: '';
+             background-color: $color-main;
+             width: 20%;
+             height: 5px;
+             position: absolute;
+             left: 0;
+             top: 0;
+        }
         background-color: #fff;
+        padding: 1.5rem 3rem;
+        .title{
+            p{
+                line-height: 1.3;
+            }
+        }
+        .sub-title{
+            .author{
+                color: $color-main;
+                &::before{
+                    content: 'Theo ';
+                }
+            }
+            .link{
+                a{
+                    color: #3a3939;
+                    &:hover{
+                        text-decoration: none;
+                        color: $color-main;
+                    }
+                }
+            }
+        }
+        .sumary{
+            font-family: 'Helvetica Neue';
+            font-style: italic;
+            color: #1d6904;
+            border-bottom: 1px solid #d2d5d2;
+        }
+        .detail{
+            p{
+                margin-bottom: .5rem;
+            }
+        }
     }
+}
+
+.page-contact{
+    .detail{
+        padding-top: 4rem;
+    }
+    .form-control:focus{
+        border-color: $color-main;
+        box-shadow: 0 0 10px 1px rgba($color: $color-main, $alpha: .5);
+    }
+    @extend %contact-info;
 }

@@ -167,3 +167,38 @@ main{
         }
     }
 }
+
+.contact-footer{
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contact{
+        &-head{
+            background-color: #fff;
+        }
+        transform: translateY(-58px);
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 20%;
+            height: 5px;
+            background-color: $color-main;
+            top: 0;
+            left: 0;
+        }
+        .title{
+            font-family: 'UTM Libel KT';
+                font-size: 36px;
+                color: $color-main;
+                line-height: 1;
+        }
+        &-main, &-subhead{
+            background-color: #f1f2f1;
+        }
+        @extend %contact-info;     
+        .form-control:focus{
+            border-color: $color-main;
+            box-shadow: 0 0 10px 1px rgba($color: $color-main, $alpha: .5);
+        }    
+    }    
+}
