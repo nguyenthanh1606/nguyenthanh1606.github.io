@@ -1,12 +1,13 @@
 html{
-    font-size: 14px;
+    font-size: 15px;
 }
 body{
     font-family: 'Helvetica Neue';
+    word-spacing: 1px;
     color: #3a3939;
     background: #f1f2f1;
     p{
-        line-height: 1.25;
+        line-height: 1.4;
     }
 }
 .wrapper{
@@ -36,6 +37,9 @@ body{
     .page-item:first-child .page-link, .page-item:last-child .page-link{
         border-radius: 0;
     }
+    .page-item.active{
+        pointer-events: none;
+    }
     .page-item.active .page-link{
         background-color: $color-main;
         outline-color: transparent;     
@@ -55,7 +59,7 @@ body{
 }
 .date{
     &::before{
-        content: url('../../images/Themes/icon/clock.png');
+        content: url('../images/Themes/icon/clock.png');
         background-repeat: no-repeat;
         vertical-align: sub;
         padding-right: .5rem;

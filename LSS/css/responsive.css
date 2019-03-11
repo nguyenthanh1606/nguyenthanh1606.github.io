@@ -1,0 +1,30 @@
+@media screen and (max-width: 1024px){
+    .main-menu{
+        display: none;
+    }
+    .btn-menu{
+        display: block;
+    }
+}
+@media screen and (max-width: 900px){
+    
+}
+@media screen and (max-width: 728px){
+    .sub-tab ul li:hover{
+        transform: inherit;
+    }
+    .sub-tab{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 600px){
+    
+}
+@media screen and (max-width: 475px){
+    header .info, header .follow-header{
+        display: none;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        width: 0;
+    }
+}

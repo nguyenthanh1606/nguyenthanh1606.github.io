@@ -1,0 +1,31 @@
+
+nav:not(.mm-menu)
+{
+	display: none;
+}
+
+.btn-menu a:before,
+.btn-menu a:after
+{
+	content: '';
+	display: block;
+	background: #fff;
+	height: 2px;
+}
+.btn-menu a span
+{
+	background: #fff;
+	display: block;
+	height: 2px;
+	margin: 6px 0;
+}
+.btn-menu{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 1.5rem;
+	top: 50%;
+	transform: translateY(-50%);
+	display: none;
+	z-index: 111;
+}

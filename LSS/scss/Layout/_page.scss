@@ -63,7 +63,18 @@
         padding-left: 0.25rem;
         padding-right: 0.25rem;
         margin-bottom: .5rem;
-        font-size: 0;        
+        font-size: 0;    
+        .thumnail{
+            overflow: hidden;
+            .bg-img{
+                transition: .4s ease;
+            }
+            &:hover{
+                .bg-img{
+                    transform: rotate(10deg) scale(1.2);
+                }
+            }
+        }    
     }
 }
 .page-services{
@@ -86,7 +97,7 @@
         .item{
             margin-bottom: 3rem;
             @extend %news-item;
-            .detail{
+            .detail-news{
                 height: 120px;
             }
         }
@@ -183,7 +194,7 @@
             color: #1d6904;
             border-bottom: 1px solid #d2d5d2;
         }
-        .detail{
+        .detail-news{
             p{
                 margin-bottom: .5rem;
             }
