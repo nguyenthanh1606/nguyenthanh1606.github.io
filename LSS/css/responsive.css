@@ -27,4 +27,107 @@
     .swiper-button-next, .swiper-button-prev{
         width: 0;
     }
+    .about .head .row > .sumary, .services .head .row > .sumary, .content .head .row > .sumary{
+        display: none;
+    }
+    .about .item-child{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .about .box, .about .item-child{
+        width: 100%;
+    }
+    .about .item-child-left, .about .item-child-right{
+        width: 100%;
+    }
+    .about .item-child-left .pic, .about .item-child-left .text-child{
+        width: 100%;
+    }
+    .about .item-child-right .pic, .about .item-child-right .text-child{
+        width: 100%;
+    }
+    .about .item-child-right .text-child{
+        margin-left: 0;
+    }
+
+    .services .head .title h3{
+        position: relative;
+        transform: none;
+        top: 0;
+        left: 0;
+    }
+    .services .head .title:after{
+        display: none;
+    }
+    
+    .services .item-first, .services .item-child{
+        width: 100%;
+        margin-left: 0;
+    }
+    .services .item-child .services-child{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .services .item-child a.title, .services .item-child a.title-left{
+        float: left;
+        padding-left: 0 !important;
+    }.services .item-child a.buton-link{
+        float: right;
+    }
+    .services .item-child .pic{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .parallax .caption{
+        width: 90%;
+    }
+    .parallax .caption .text{
+        font-size: 1rem;
+    }
+
+    .content .content-main .box, .content .content-main .content-first{
+        width: 100%;
+    }
+
+    .content .content-first .thumnails, .content .content-first .news{
+        width: 100%;
+    }
+    .content .content-first .news{
+        transform: translateY(0);
+    }
+    .content .content-first .news::before{
+        top: -4px;
+    }
+    .content .content-list{
+        margin: 0;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    .content .content-list .item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content .content-list .item .thumnails, .content .content-list .item .news{
+        width: 100%;
+    }
+    .content .content-list .item .news{
+        transform: translateY(0);
+    }
+    .content .content-list .item .news::before{
+        top: -4px;
+    }
+
+    .title-left::before{
+        display: none;
+    }
+    .nav-link{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

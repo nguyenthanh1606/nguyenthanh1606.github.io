@@ -57,6 +57,9 @@ body{
         margin-right: .5rem;
     }
 }
+.thumnails{
+    font-size: 0;
+}
 .date{
     &::before{
         content: url('../images/Themes/icon/clock.png');

@@ -90,6 +90,8 @@ body p { line-height: 1.4; }
 .pagination .page-link:focus { box-shadow: none; }
 .pagination .page-item { margin-right: .5rem; }
 
+.thumnails { font-size: 0; }
+
 .date::before { content: url("../images/Themes/icon/clock.png"); background-repeat: no-repeat; vertical-align: sub; padding-right: .5rem; }
 
 .b-before::before { content: ''; display: inline-block; width: 96px; height: 67px; background-color: #e0e3e0; position: absolute; z-index: 1; }
@@ -198,7 +200,7 @@ main { padding-bottom: 3rem; }
 
 .content { position: relative; }
 .content .content-main { position: relative; }
-.content .content-main .box { position: relative; z-index: 2; padding-left: 60px; width: 33%; float: left; }
+.content .content-main .box { position: relative; z-index: 2; padding-left: 60px; width: 33%; float: left; margin-bottom: 1rem; }
 .content .content-main .title { font-family: 'UTM Libel KT'; font-size: 28px; margin-bottom: .5rem; color: #000; }
 .content .content-first { width: 66%; float: right; }
 .content .content-first .thumnails { width: 55%; }
