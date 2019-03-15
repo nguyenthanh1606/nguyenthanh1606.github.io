@@ -74,7 +74,14 @@
                     transform: rotate(10deg) scale(1.2);
                 }
             }
-        }    
+        }  
+        a{
+            color: #fff;
+            &:hover{
+                color: $color-main;
+                text-decoration: none;
+            }
+        }  
     }
 }
 .page-services{
@@ -211,4 +218,79 @@
         box-shadow: 0 0 10px 1px rgba($color: $color-main, $alpha: .5);
     }
     @extend %contact-info;
+}
+
+.page-projectdetail{
+    .profile{
+        z-index: 1000;
+        margin-top: -3.5rem;
+        background-color: $color-main;
+        padding: .5rem 2rem 1rem;
+        color: #fff;
+        .title{
+            font-family: 'UTM Libel KT';
+            padding-bottom: .5rem;
+            border-bottom: 1px solid #446f35;
+        }
+        .detail{
+            padding-top: 1rem;
+            p:nth-child(even){margin-bottom: .5rem}
+            strong{
+                font-family: 'UTM Avo';
+                font-weight: bold;
+            }
+        }
+    }
+    .sumary{
+        padding-left: 2rem;
+        padding-top: 1rem;
+        .title{
+            &::before{
+                content: '';
+                background-color: #d2d3d2;
+                width: 5px;
+                height: 1.5rem;
+                display: inline-block;
+                margin-right: 1rem;
+            }     
+            font-family: 'UTM Libel KT';       
+            color: $color-main;
+            margin-bottom: 1rem;
+        }
+        .text p{
+            margin-bottom: .5rem;
+        }
+    }
+    .list-project{
+        .title{
+            &::before{
+                content: '';
+                background-color: #d2d3d2;
+                width: 5px;
+                height: 1.5rem;
+                display: inline-block;
+                margin-right: 1rem;
+            }     
+            font-family: 'UTM Libel KT';       
+            color: $color-main;
+            margin-bottom: 1rem;
+        }
+    }
+}
+.orther-project{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    .title{
+        &::before{
+            content: '';
+            background-color: #d2d3d2;
+            width: 5px;
+            height: 1.5rem;
+            display: inline-block;
+            margin-right: 1rem;
+        }     
+        font-family: 'UTM Libel KT';       
+        color: $color-main;
+        margin-bottom: 1rem;
+    }
 }

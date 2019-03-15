@@ -101,6 +101,12 @@
         }
     }
 }
+
+.sub-tab-slider{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .sub-tab{
     font-family: 'UTM Avo';
     position: relative;
@@ -110,7 +116,7 @@
         counter-reset: sub-tab-counter;
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
         li{
             height: 70px;            

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/site-pack.css">
     <link rel="stylesheet" href="css/responsive.css">
 
     <!-- css on page -->
@@ -104,8 +105,85 @@
     <div class="home-banner">
         <img src="images/File/Banner/banner-gioithieu.png" alt="" class="w-100 img-fluid">
     </div>
-    <main style="height: 1000px">
+    <main>
+        <div class="page-projectdetail">
+            <div class="wrapper">
+                <div class="row">
+                    <div class="profile col-md-4 text-right">
+                        <div class="title">
+                            <h1>Saigon Mia</h1>
+                        </div>
+                        <div class="detail">
+                            <p><strong>Vị trí</strong></p>
+                            <p>Đường 9A, khu dân cư Trung Sơn, TP.HCM</p>
+                            <p><strong>Diện tích</strong></p>
+                            <p>15.126m2</p>
+                            <p><strong>Khách hàng</strong></p>
+                            <p>Cty CP đầu tư kinh doanh Địa Ốc Hưng Thịnh</p>
+                            <p><strong>Loại hình</strong></p>
+                            <p>Thiết kế cảnh quan</p>
+                        </div>
+                    </div>
+                    <div class="sumary col-md-8">
+                        <h2 class="title">Mô tả dự án</h2>
+                        <div class="text b-description_readmore js-description_readmore">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ab architecto.
+                                Consectetur
+                                excepturi debitis nemo quae nisi ut quo quaerat dolorem quis eum aut quibusdam totam
+                                corrupti,
+                                amet reiciendis voluptatum!</p>
+                            <p>
+                                Proin pulvinar velit hendrerit, volutpat dui quis, fringilla elit. Cras augue risus,
+                                ultrices finibus luctus id, iaculis nec lorem. Duis et molestie neque, ut ullamcorper
+                                elit.
+                                Quisque mollis massa eu dignissim laoreet. Duis pellentesque, urna nec sollicitudin
+                                finibus,
+                                est nibh sagittis ligula, eget tempus felis mauris vitae lacus. Sed id tincidunt est, id
+                                mollis leo. Vivamus purus tortor, elementum sed pellentesque faucibus, varius nec nisi.
+                                Cras
+                                eu mauris urna. Donec quis ex elementum, vulputate libero sit amet, imperdiet velit. .
+                            </p>
+                            <p>
+                                Proin pulvinar velit hendrerit, volutpat dui quis, fringilla elit. Cras augue risus,
+                                ultrices finibus luctus id, iaculis nec lorem. Duis et molestie neque, ut ullamcorper
+                                elit.
+                                Quisque mollis massa eu dignissim laoreet. Duis pellentesque, urna nec sollicitudin
+                                finibus,
+                                est nibh n pulvinar velit hendrerit, volutpat dui quis, fringilla elit. Cras augue
+                                risus,
+                                ultrices finibus luctus id, iaculis nec lorem. Duis et molestie neque, ut ullamcorper
+                                elit.
+                                Quisque mollis massa eu dignissim laoreet. Duis pellentesque, urna nec sollicitudin
+                                finibus,
+                                est nibh sagittis ligula, eget tempus felis mauris vitae lacus. Sed id tincidunt est, id
+                                mollis leo. Vivamus purus tortor, elementum sed pellentesque faucibus, varius nec nisi.
+                                Cras
+                                eu mauris urna. Donec quis ex elementum, vulputate libero sit amet, imperdiet velit. .
+                            </p>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="row list-project mt-4">
+                    <div class="col-md-8 offset-md-4">
+                        <h2 class="title">Hình ảnh dự án</h2>
+                    </div>
+                    <div class="col-md-12">
+                        <p>a</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orther-project">
+            <div class="wrapper">
+                <h2 class="title text-center">Dự án liên quan</h2>
+                <div class="row mr-2 ml-2">
+                    <div class="col-md-3 item">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <div style="margin-top: 3rem">
         <div class="contact-footer" style="background-image: url('images/File/Contents/home-2.png')">
@@ -235,6 +313,8 @@
     <script src="scripts/script.js"></script>
     <!-- scripts on page -->
     <script src="scripts/Plugin/swiper.min.js"></script>
+    <script src="scripts/Plugin/jquery.morelines.js"></script>
+
     <script>
         var swiper = new Swiper('.slider-partner', {
             slidesPerView: 5,
@@ -248,6 +328,23 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
+        });
+
+        $(function () {
+            $('.js-description_readmore').moreLines({
+                linecount: 6,
+                // default CSS classes
+                baseclass: 'b-description',
+                basejsclass: 'js-description',
+                classspecific: '_readmore',
+
+                // custom text
+                // buttontxtmore: "read more",
+                // buttontxtless: "read less",
+
+                // animation speed in milliseconds
+                animationspeed: 250
+            });
         });
     </script>
 </body>

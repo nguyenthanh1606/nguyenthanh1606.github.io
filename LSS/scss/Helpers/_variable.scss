@@ -14,11 +14,11 @@ $color-main: #153f06;
                 font-family: 'UTM Libel KT';
                 font-size: 36px;
                 position: absolute;
-                top: 50%;
+                bottom: 0;
                 left: 50%;
                 width: 100%;
                 text-align: center;
-                transform: translate(-50%,-50%);
+                transform: translateX(-50%);
             }
             &::after{
                 content: '';
