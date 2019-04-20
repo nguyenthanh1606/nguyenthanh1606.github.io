@@ -1,0 +1,70 @@
+html{
+    font-size: 15px;
+}
+body{
+    font-family: 'Helvetica Neue';
+    word-spacing: 1px;
+    color: #3a3939;
+    background: #f1f2f1;
+    p{
+        line-height: 1.4;
+    }
+}
+.wrapper{
+    max-width: 1162px;
+    margin: auto;
+}
+.text-b{
+    font-family: 'UTM Avo';
+    font-weight: bold;
+}  
+.nav-link{
+    position: absolute;
+    left: 3%;
+    top: 255px;
+    z-index: 100;
+}
+.text-upper{
+    text-transform: uppercase;
+}
+.color-main{
+    color: $color-main !important;
+}
+.color-black{
+    color: #000;
+}
+.pagination{
+    .page-item:first-child .page-link, .page-item:last-child .page-link{
+        border-radius: 0;
+    }
+    .page-item.active{
+        pointer-events: none;
+    }
+    .page-item.active .page-link{
+        background-color: $color-main;
+        outline-color: transparent;     
+        border: 1px solid #c9c9c9;   
+    }
+    .page-link{
+        color: #a2a4a2;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+    .page-item{
+        margin-right: .5rem;
+    }
+}
+.thumnails{
+    font-size: 0;
+}
+.date{
+    &::before{
+        content: url('../images/Themes/icon/clock.png');
+        background-repeat: no-repeat;
+        vertical-align: sub;
+        padding-right: .5rem;
+    }
+}
