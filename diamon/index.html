@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="css/Lib/swiper.min.css">
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/responsive.css">
-
+    <link rel="stylesheet" href="css/Lib/aos.css">
     <!-- css on page -->
 
 </head>
 
 <body>
     <header>
-        <div class="header-top">
+        <!-- <div class="header-top">
             <div class="wrapper">
                 <div class="row m-0">
                     <div class="info pl-4 d-inline-block">
@@ -51,51 +51,32 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="main-header">
             <div class="wrapper">
                 <div class="row m-0">
-                    <div class="logo pl-4 w-25 pt-2 d-inline-block">
+                    <div class="logo text-center pl-4 col-md-12 w-25 pt-2">
                         <a href="/"><img src="images/File/Logo/logo.png" alt="LSS" class="img-fluid"></a>
                     </div>
-                    <div class="main-menu col-md-9 ml-auto">
+                    <div class="main-menu col-md-12" data-aos="fade-up">
                         <ul class="lv-1">
-                            <li><a href="/">Trang chủ</a></li>
-                            <li><a href="gioithieu.html">Giới thiệu</a>
+                            <li class="home"><a href="/"><i class="fas fa-home"></i></a></li>
+                            <li><a href="our-hotel.html">Our Hotel</a>
                                 <ul class="lv-2">
-                                    <li><a href="gioithieu.html">Giới thiệu chung</a></li>
-                                    <li><a href="gioithieu.html">LSS Studio</a></li>
-                                    <li><a href="gioithieu.html">LSS Trading</a></li>
-                                    <li><a href="doingu.html">Đội ngũ LSS</a></li>
+                                    <li><a href="our-hotel-detail.html">Blue Diamond Thu Khoa Huan</a></li>
+                                    <li><a href="our-hotel-detail.html">Blue Diamond New Hotel Le Thanh Ton</a></li>
+                                    <li><a href="our-hotel-detail.html">Blue Diamond Central Hotel Dong Du</a></li>
+                                    <li><a href="our-hotel-detail.html">Blue Diamond Signature Thai Van Lung</a></li>
+                                    <li><a href="our-hotel-detail.html">Blue Diamond Garden Hotel Truong Dinh</a></li>
                                 </ul>
                             </li>
-                            <li><a href="duan.html">Dự án</a>
-                                <ul class="lv-2">
-                                    <li class="is-child"><a href="duan.html">Dự án thiết kế</a>
-                                        <ul class="lv-3">
-                                            <li><a href="duan.html">Biệt thự cao cấp</a></li>
-                                            <li><a href="duan.html">Khu dân cư</a></li>
-                                            <li><a href="duan.html">Khu du lịch</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="duan.html">Dự án thi công</a></li>
-                                </ul>
+                            <li><a href="restaurant.html">Restaurant & Spa</a>
                             </li>
-                            <li><a href="dichvu.html">Dịch vụ</a>
-                                <ul class="lv-2">
-                                    <li><a href="dichvu.html">Thiết kế cảnh quan</a></li>
-                                    <li class="is-child"><a href="dichvu.html">Thi công cảnh quan</a>
-                                        <ul class="lv-3">
-                                            <li><a href="dichvu.html">Thi công cảnh quan</a></li>
-                                            <li><a href="dichvu.html">Bảo dưỡng/chăm sóc cảnh quan</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="dichvu.html">Quản lý dự án cảnh quan</a></li>
-                                    <li><a href="dichvu.html">Thương mại</a></li>
-                                </ul>
+                            <li><a href="promotion.html">Promotion</a>
                             </li>
-                            <li><a href="tintuc.html">Tin tức</a></li>
-                            <li><a href="lienhe.html">Liên hệ</a></li>
+                            <li><a href="tours.html">Tours</a></li>
+                            <li><a href="destinations.html">Destinations</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -106,11 +87,11 @@
         <!-- Swiper -->
         <div class="swiper-container slider-home">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/File/Banner/banner-1.png" alt="" class="w-100 img-fluid">
+                <div class="swiper-slide"><img src="images/File/Banner/banner-1.jpg" alt="" class="w-100 img-fluid">
                 </div>
-                <div class="swiper-slide"><img src="images/File/Banner/banner-2.png" alt="" class="w-100 img-fluid">
+                <div class="swiper-slide"><img src="images/File/Banner/banner-2.jpg" alt="" class="w-100 img-fluid">
                 </div>
-                <div class="swiper-slide"><img src="images/File/Banner/banner-3.png" alt="" class="w-100 img-fluid">
+                <div class="swiper-slide"><img src="images/File/Banner/banner-3.jpg" alt="" class="w-100 img-fluid">
                 </div>
             </div>
             <!-- Add Arrows -->
@@ -120,559 +101,291 @@
             <div class="swiper-pagination"></div>
         </div>
     </div>
-    <main>
-        <div class="wrapper pb-4">
-            <div class="sub-tab row mr-0 mr-0">
-                <ul>
-                    <li class="col-md-3 col-sm-6 pr-2">
-                        <a href="dichvu.html" class="text text-center">
-                            <h3>Thiết kế cảnh quan</h3>
-                            <p>Landscape Design</p>
-                        </a>
-                    </li>
-                    <li class="col-md-3 col-sm-6 pr-2">
-                        <a href="dichvu.html" class="text text-center">
-                            <h3>Thi công cảnh quan</h3>
-                            <p>Landscape Construction</p>
-                        </a>
-                    </li>
-                    <li class="col-md-3 col-sm-6 pr-2">
-                        <a href="dichvu.html" class="text text-center">
-                            <h3>Quản lý dự án cảnh quan</h3>
-                            <p>Landscape Management</p>
-                        </a>
-                    </li>
-                    <li class="col-md-3 col-sm-6 pr-2">
-                        <a href="dichvu.html" class="text text-center">
-                            <h3>Thương mại</h3>
-                            <p>Trading</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="wrapper about">
-            <div class="row m-0 pb-4 justify-content-center head">
-                <div class="col-md-10 row m-0">
-                    <div class="title col-md-3">
-                        <h3>Welcome to LSS</h3>
-                    </div>
-                    <div class="sumary col-md-9 pl-4">
-                        <p>Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit. Quisque commodo,
-                            nisl nec tincidunt elementum, tellus metus consequat justo, eget aliquet erat eros eget
-                            arcu. Nunc tincidunt est mi, at vulputate lorem fringilla id. In id felis ullamcorper nulla
-                            cursus sollicitudin. Donec egestas est eget luctus malesuada</p>
-                    </div>
+    <main class="wrapper">
+        <section class="why-chose" data-aos="fade-up">
+            <h3 class="caption text-center">Exclusive rates when you book direct</h3>
+            <div class="row list-why">
+                <div class="item col-20">
+                    <img src="images/Themes/icon/why-01.png" class="img-fluid" alt="">
+                    <p class="title text-upper mb-2 text-b">The heart of saigon</p>
+                    <p class="sumary">All hotels are centrally located near Saigon’s top attractions, shopping and
+                        dining.</p>
+                </div>
+                <div class="item col-20">
+                    <img src="images/Themes/icon/why-02.png" class="img-fluid" alt="">
+                    <p class="title text-upper mb-2 text-b">The heart of saigon</p>
+                    <p class="sumary">All hotels are centrally located near Saigon’s top attractions, shopping and
+                        dining.</p>
+                </div>
+                <div class="item col-20">
+                    <img src="images/Themes/icon/why-03.png" class="img-fluid" alt="">
+                    <p class="title text-upper mb-2 text-b">The heart of saigon</p>
+                    <p class="sumary">All hotels are centrally located near Saigon’s top attractions, shopping and
+                        dining.</p>
+                </div>
+                <div class="item col-20">
+                    <img src="images/Themes/icon/why-04.png" class="img-fluid" alt="">
+                    <p class="title text-upper mb-2 text-b">The heart of saigon</p>
+                    <p class="sumary">All hotels are centrally located near Saigon’s top attractions, shopping and
+                        dining.</p>
+                </div>
+                <div class="item col-20">
+                    <img src="images/Themes/icon/why-05.png" class="img-fluid" alt="">
+                    <p class="title text-upper mb-2 text-b">The heart of saigon</p>
+                    <p class="sumary">All hotels are centrally located near Saigon’s top attractions, shopping and
+                        dining.</p>
                 </div>
             </div>
-            <div class="row m-0 pt-4 pb-4 about-content">
-                <div class="item-first b-before">
-                    <div class="box">
-                        <h3 class="title">Giới thiệu chung</h3>
-                        <p class="sumary">Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit.
-                            Quisque
-                            commodo, nisl nec tincidunt elementum, tellus metus consequat justo, eget aliquet erat eros
-                            eget
-                            arcu. Nunc tincidunt est mi, at vulputate lorem fringilla id. </p>
-                        <div class="caps">i</div>
-                        <a href="gioithieu.html" class="buton-link mt-3">Xem chi tiết <i
-                                class="fas fa-caret-right pl-2"></i></a>
-                    </div>
-                    <div class="item-child">
-                        <div class="item-child-left">
-                            <div class="pic">
-                                <img src="images/File/Group/about-1.jpg" alt="">
+        </section>
+        <section class="ourst" data-aos="fade-up">
+            <h3 class="caption text-center">Our story</h3>
+            <div class="list-Ourst">
+                <!-- Slider main container -->
+                <div class="swiper-container slide-Ourst">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide" data-aos="flip-left">
+                            <div class="thumnails">
+                                <a href="our-hotel-detail.html">
+                                    <img src="images/File/Hotels/timthumb1.jpg" class="w-100 img-fluid" alt="">
+                                </a>
                             </div>
-                            <div class="text-child">
-                                <h3 class="title">LSS Trading</h3>
-                                <div class="text_lss">
-                                    Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit. Quisque
-                                    commodo, nisl nec tincidunt elementum,
-                                </div>
-                                <a href="gioithieu.html" class="buton-link mt-3">Xem chi tiết <i
-                                        class="fas fa-caret-right pl-2"></i></a>
-                            </div>
+                            <a href="our-hotel-detail.html" class="title text-upper text-center d-block color-main">Blue
+                                diamond <br> <strong>Thu
+                                    khoa huan</strong></a>
+                            <p class="address text-center color-main">Bến thành market ares</p>
+                            <p class="sumary text-justify">
+                                Located in the heart of Ho Chi Minh City opposite Central Park, Silverland Central Hotel
+                                houses 106 rooms and suites with beautiful city view towards Ben Thanh market, parks.
+                                Either you are making a holiday or on a business trip, The hotel the perfect choice for
+                                your venture.
+                            </p>
+                            <a class="svg-wrapper" href="our-hotel-detail.html">
+                                <svg height="35" width="150" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape shape-center" height="35" width="150"></rect>
+                                </svg>
+                                <div class="text">BOOK NOW</div>
+                            </a>
                         </div>
-                        <div class="item-child-right">
-                            <div class="pic">
-                                <img src="images/File/Group/about-2.jpg" alt="">
+                        <div class="swiper-slide" data-aos="flip-left" data-aos-delay="250">
+                            <div class="thumnails">
+                                <a href="our-hotel-detail.html">
+                                    <img src="images/File/Hotels/timthumb2.jpg" class="w-100 img-fluid" alt="">
+                                </a>
                             </div>
-                            <div class="text-child">
-                                <h3 class="title">LSS Studio</h3>
-                                <div class="text_lss1">
-                                    Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit. Quisque
-                                    commodo, nisl nec tincidunt elementum, tellus metus consequat justo,
-                                </div>
-                                <a href="gioithieu.html" class="buton-link mt-3">Xem chi tiết <i
-                                        class="fas fa-caret-right pl-2"></i></a>
-                            </div>
+                            <a href="our-hotel-detail.html" class="title text-upper text-center d-block color-main">Blue
+                                diamond signature <br> <strong>Thai van lung</strong></a>
+                            <p class="address text-center color-main">Japanese - Korean area <br> near Nguyen Hue
+                                Walking Street</p>
+                            <p class="sumary text-justify">
+                                Located in the heart of Ho Chi Minh City opposite Central Park, Silverland Central Hotel
+                                houses 106 rooms and suites with beautiful city view towards Ben Thanh market, parks.
+                                Either you are making a holiday or on a business trip, The hotel the perfect choice for
+                                your venture.
+                            </p>
+                            <a class="svg-wrapper" href="our-hotel-detail.html">
+                                <svg height="35" width="150" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape shape-center" height="35" width="150"></rect>
+                                </svg>
+                                <div class="text">BOOK NOW</div>
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wrapper services">
-            <div class="row m-0 justify-content-center head">
-                <div class="col-md-10 row m-0">
-                    <div class="title col-md-3">
-                        <h3>Dự án của chúng tôi</h3>
-                    </div>
-                    <div class="sumary col-md-9 pl-4">
-                        <p>Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit. Quisque commodo,
-                            nisl nec tincidunt elementum, tellus metus consequat justo, eget aliquet erat eros eget
-                            arcu. Nunc tincidunt est mi, at vulputate lorem fringilla id. In id felis ullamcorper nulla
-                            cursus sollicitudin. Donec egestas est eget luctus malesuada</p>
-                    </div>
-                </div>
-                <div class="nav-link">
-                    <a href="duan.html" class="active buton-link pl-4 pr-4 d-block mb-2">Dự án thiết kế <i
-                            class="fas fa-caret-right pl-2"></i></a>
-                    <a href="duan.html" class="buton-link pl-4 pr-4 d-block">Dự án thi công <i
-                            class="fas fa-caret-right pl-2"></i></a>
-                </div>
-                <div class="row m-0 pt-4 pb-4 services-content">
-                    <div class="item-first b-before">
-                        <div class="box pt-4">
-                            <p class="sumary align-justify">Vestibulum massa ante, dignissim ornare leo vel, lobortis
-                                suscipit velit.
-                                Quisque
-                                commodo, nisl nec tincidunt elementum, tellus metus consequat justo, eget aliquet erat
-                                eros
-                                eget
-                                arcu. Nunc tincidunt est mi, at vulputate lorem fringilla id. </p>
-                            <div class="caps" style="margin-left: -1rem">s</div>
+                        <div class="swiper-slide" data-aos="flip-left" data-aos-delay="500">
+                            <div class="thumnails">
+                                <a href="our-hotel-detail.html">
+                                    <img src="images/File/Hotels/timthumb2.jpg" class="w-100 img-fluid" alt="">
+                                </a>
+                            </div>
+                            <a href="our-hotel-detail.html" class="title text-upper text-center d-block color-main">Blue
+                                diamond signature <br> <strong>Thai van lung</strong></a>
+                            <p class="address text-center color-main">Japanese - Korean area <br> near Nguyen Hue
+                                Walking Street</p>
+                            <p class="sumary text-justify">
+                                Located in the heart of Ho Chi Minh City opposite Central Park, Silverland Central Hotel
+                                houses 106 rooms and suites with beautiful city view towards Ben Thanh market, parks.
+                                Either you are making a holiday or on a business trip, The hotel the perfect choice for
+                                your venture.
+                            </p>
+                            <a class="svg-wrapper" href="our-hotel-detail.html">
+                                <svg height="35" width="150" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape shape-center" height="35" width="150"></rect>
+                                </svg>
+                                <div class="text">BOOK NOW</div>
+                            </a>
                         </div>
-                    </div>
-                    <div class="item-child pt-4">
-                        <div class="row m-0 justify-content-end">
-                            <div class="col-md-3 pb-2 pb-1 services-child text-right">
-                                <a href="duan.html" class="title pr-4">Biệt thự cao cấp</a>
-                                <a href="duan.html" class="buton-link">Xem chi tiết <i
-                                        class="fas fa-caret-right pl-2"></i></a>
+                        <div class="swiper-slide" data-aos="flip-left" data-aos-delay="750">
+                            <div class="thumnails">
+                                <a href="our-hotel-detail.html">
+                                    <img src="images/File/Hotels/timthumb2.jpg" class="w-100 img-fluid" alt="">
+                                </a>
                             </div>
-                            <div class="pic col-md-3">
-                                <div class="thumnail">
-                                    <div class="bg-img">
-                                        <img src="images/File/Contents/du_an/du-an-2.png" alt=""
-                                            class="img-fluid w-100">
-                                        <div class="bot">
-                                            <div class="views float-left">20</div>
-                                            <div class="links float-right">
-                                                <a href="duan-detail.html"><img src="images/Themes/icon/go.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pic col-md-3">
-                                <div class="thumnail">
-                                    <div class="bg-img">
-                                        <img src="images/File/Contents/du_an/du-an-2.png" alt=""
-                                            class="img-fluid w-100">
-                                        <div class="bot">
-                                            <div class="views float-left">20</div>
-                                            <div class="links float-right">
-                                                <a href="duan-detail.html"><img src="images/Themes/icon/go.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pic col-md-3">
-                                <div class="thumnail">
-                                    <div class="bg-img">
-                                        <img src="images/File/Contents/du_an/du-an-3.png" alt=""
-                                            class="img-fluid w-100">
-                                        <div class="bot">
-                                            <div class="views float-left">20</div>
-                                            <div class="links float-right">
-                                                <a href="duan-detail.html"><img src="images/Themes/icon/go.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="our-hotel-detail.html" class="title text-upper text-center d-block color-main">Blue
+                                diamond signature <br> <strong>Thai van lung</strong></a>
+                            <p class="address text-center color-main">Japanese - Korean area <br> near Nguyen Hue
+                                Walking Street</p>
+                            <p class="sumary text-justify">
+                                Located in the heart of Ho Chi Minh City opposite Central Park, Silverland Central Hotel
+                                houses 106 rooms and suites with beautiful city view towards Ben Thanh market, parks.
+                                Either you are making a holiday or on a business trip, The hotel the perfect choice for
+                                your venture.
+                            </p>
+                            <a class="svg-wrapper" href="our-hotel-detail.html">
+                                <svg height="35" width="150" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape shape-center" height="35" width="150"></rect>
+                                </svg>
+                                <div class="text">BOOK NOW</div>
+                            </a>
                         </div>
-                        <div class="row m-0 justify-content-end">
-                            <div class="pic col-md-3">
-                                <div class="thumnail">
-                                    <div class="bg-img">
-                                        <img src="images/File/Contents/du_an/du-an-2.png" alt=""
-                                            class="img-fluid w-100">
-                                        <div class="bot">
-                                            <div class="views float-left">20</div>
-                                            <div class="links float-right">
-                                                <a href="duan-detail.html"><img src="images/Themes/icon/go.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </div>
+                        <div class="swiper-slide" data-aos="flip-left" data-aos-delay="1000">
+                            <div class="thumnails">
+                                <a href="our-hotel-detail.html">
+                                    <img src="images/File/Hotels/timthumb2.jpg" class="w-100 img-fluid" alt="">
+                                </a>
                             </div>
-                            <div class="pic col-md-3">
-                                <div class="thumnail">
-                                    <div class="bg-img">
-                                        <img src="images/File/Contents/du_an/du-an-3.png" alt=""
-                                            class="img-fluid w-100">
-                                        <div class="bot">
-                                            <div class="views float-left">20</div>
-                                            <div class="links float-right">
-                                                <a href="duan-detail.html"><img src="images/Themes/icon/go.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pic col-md-3">
-                                <div class="thumnail">
-                                    <div class="bg-img">
-                                        <img src="images/File/Contents/du_an/du-an-1.png" alt=""
-                                            class="img-fluid w-100">
-                                        <div class="bot">
-                                            <div class="views float-left">20</div>
-                                            <div class="links float-right">
-                                                <a href="duan-detail.html"><img src="images/Themes/icon/go.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 pb-2 pb-1 services-child">
-                                <a href="duan.html" class="title-left pl-4">Khu dân cư</a>
-                                <a href="duan.html" class="buton-link">Xem chi tiết <i
-                                        class="fas fa-caret-right pl-2"></i></a>
-                            </div>
-                        </div>
-                        <div class="row m-0 justify-content-end">
-                            <div class="col-md-3 pb-2 pb-1 services-child text-right">
-                                <a href="duan.html" class="title pr-4">Khu du lịch</a>
-                                <a href="duan.html" class="buton-link">Xem chi tiết <i
-                                        class="fas fa-caret-right pl-2"></i></a>
-                            </div>
-                            <div class="pic col-md-3">
-                                <div class="thumnail">
-                                    <div class="bg-img">
-                                        <img src="images/File/Contents/du_an/du-an-1.png" alt=""
-                                            class="img-fluid w-100">
-                                        <div class="bot">
-                                            <div class="views float-left">20</div>
-                                            <div class="links float-right">
-                                                <a href="duan-detail.html"><img src="images/Themes/icon/go.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pic col-md-3">
-                                <div class="thumnail">
-                                    <div class="bg-img">
-                                        <img src="images/File/Contents/du_an/du-an-1.png" alt=""
-                                            class="img-fluid w-100">
-                                        <div class="bot">
-                                            <div class="views float-left">20</div>
-                                            <div class="links float-right">
-                                                <a href="duan-detail.html"><img src="images/Themes/icon/go.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pic col-md-3">
-                                <div class="thumnail">
-                                    <div class="bg-img">
-                                        <img src="images/File/Contents/du_an/du-an-1.png" alt=""
-                                            class="img-fluid w-100">
-                                        <div class="bot">
-                                            <div class="views float-left">20</div>
-                                            <div class="links float-right">
-                                                <a href="duan-detail.html"><img src="images/Themes/icon/go.png"
-                                                        alt=""></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text text-center">
-                                        <p>Lorem ipsum dolor sit amet</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="our-hotel-detail.html" class="title text-upper text-center d-block color-main">Blue
+                                diamond signature <br> <strong>Thai van lung</strong></a>
+                            <p class="address text-center color-main">Japanese - Korean area <br> near Nguyen Hue
+                                Walking Street</p>
+                            <p class="sumary text-justify">
+                                Located in the heart of Ho Chi Minh City opposite Central Park, Silverland Central Hotel
+                                houses 106 rooms and suites with beautiful city view towards Ben Thanh market, parks.
+                                Either you are making a holiday or on a business trip, The hotel the perfect choice for
+                                your venture.
+                            </p>
+                            <a class="svg-wrapper" href="our-hotel-detail.html">
+                                <svg height="35" width="150" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="shape shape-center" height="35" width="150"></rect>
+                                </svg>
+                                <div class="text">BOOK NOW</div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="parallax" style="background-image: url('images/File/Contents/home-1.png');">
-            <div class="caption text-center">
-                <p class="text">Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit. Quisque
-                    commodo, nisl nec tincidunt elementum, tellus metus consequat justo, eget aliquet erat eros eget
-                    arcu. Nunc tincidunt est mi, at vulputate lorem fringilla id. In id felis ullamcorper nulla cursus
-                    sollicitudin. Donec egestas est eget luctus malesuada</p>
-                <p class="author pt-3">LSS Chairman</p>
-            </div>
-        </div>
-        <div class="wrapper content">
-            <div class="row m-0 pb-4 justify-content-center head">
-                <div class="col-md-10 row m-0">
-                    <div class="title col-md-3">
-                        <h3>Tin tức cập nhật</h3>
-                    </div>
-                    <div class="sumary col-md-9 pl-4">
-                        <p>Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit. Quisque
-                            commodo,
-                            nisl nec tincidunt elementum, tellus metus consequat justo, eget aliquet erat eros
-                            eget
-                            arcu. Nunc tincidunt est mi, at vulputate lorem fringilla id. In id felis
-                            ullamcorper nulla
-                            cursus sollicitudin. Donec egestas est eget luctus malesuada</p>
-                    </div>
+                <div class="button-slide-Ourst hide">
+                    <div class="Ourst-button-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                    <div class="Ourst-button-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
                 </div>
             </div>
-            <div class="nav-link">
-                <a href="tintuc.html" class="active buton-link pl-4 pr-4 d-block mb-2">Tin hoạt động LSS <i
-                        class="fas fa-caret-right pl-2"></i></a>
-                <a href="tintuc.html" class="buton-link pl-4 pr-4 d-block">Tin ngành/thị trường <i
-                        class="fas fa-caret-right pl-2"></i></a>
-            </div>
-            <div class="nav-panel">
-                <div class="nav-panel-1">
-                    <div class="row m-0 pt-4 pb-4 content-main">
-                        <div class="item-first pt-3 b-before">
-                            <div class="box">
-                                <p class="sumary">Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit
-                                    velit.
-                                    Quisque
-                                    commodo arcu. Nunc tincidunt est mi, at vulputate lorem fringilla id. </p>
-                                <div class="caps" style="margin-left: -2rem">a</div>
-                            </div>
-                            <div class="content-first">
-                                <div class="thumnails float-left">
-                                    <img src="images/File/Contents/bai_viet/content-1.png" alt=""
-                                        class="img-fluid w-100">
-                                </div>
-                                <div class="news float-right">
-                                    <div class="head">
-                                        <a href="tintuc-detail.html" class="h5 text-b">Thiết kế cảnh quan hay chỉ đơn
-                                            giản là ..."làm
-                                            vườn"?</a>
-                                    </div>
-                                    <div class="detail">
-                                        <p>Năm 2016, Công ty Tài Nguyên đã mời kiến trúc sư Pierre Huyard - Giám đốc
-                                            phát
-                                            triển châu Á - Thái Bình Dương của công ty Huni Architectes (Pháp) tham
-                                            gia
-                                            thiết kế dự án EverGreen.</p>
-                                    </div>
-                                    <div class="bot">
-                                        <div class="date float-left">14/03/2019</div>
-                                        <div class="link float-right">
-                                            <a href="tintuc-detail.html"><i class="fas fa-caret-right pl-2"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row pt-3 content-list">
-                        <div class="item col-md-6 pt-3">
-                            <div class="thumnails float-left">
-                                <img src="images/File/Contents/bai_viet/content-3.png" alt="" class="img-fluid w-100">
-                            </div>
-                            <div class="news float-right">
-                                <div class="head">
-                                    <a href="tintuc-detail.html" class="h5 text-b">Thiết kế cảnh quan hay chỉ đơn giản
-                                        là ..."làm
-                                        vườn"?</a>
-                                </div>
-                                <div class="detail">
-                                    <p>Năm 2016, Công ty Tài Nguyên đã mời kiến trúc sư Pierre Huyard - Giám đốc phát
-                                        triển châu Á - Thái Bình Dương...</p>
-                                </div>
-                                <div class="bot">
-                                    <div class="date float-left">14/03/2019</div>
-                                    <div class="link float-right">
-                                        <a href="tintuc-detail.html"><i class="fas fa-caret-right pl-2"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item col-md-6 pt-3">
-                            <div class="thumnails float-left">
-                                <img src="images/File/Contents/bai_viet/content-2.png" alt="" class="img-fluid w-100">
-                            </div>
-                            <div class="news float-right">
-                                <div class="head">
-                                    <a href="tintuc-detail.html" class="h5 text-b">Thiết kế cảnh quan hay chỉ đơn giản
-                                        là ..."làm
-                                        vườn"?</a>
-                                </div>
-                                <div class="detail">
-                                    <p>Năm 2016, Công ty Tài Nguyên đã mời kiến trúc sư Pierre Huyard - Giám đốc phát
-                                        triển châu Á - Thái Bình Dương ...</p>
-                                </div>
-                                <div class="bot">
-                                    <div class="date float-left">14/03/2019</div>
-                                    <div class="link float-right">
-                                        <a href="tintuc-detail.html"><i class="fas fa-caret-right pl-2"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row pt-4 justify-content-center">
-                        <a href="tintuc.html" class="buton-link mt-3">Xem chi tiết <i
-                                class="fas fa-caret-right pl-2"></i></a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        </section>
     </main>
-    <div style="margin-top: 3rem">
-        <div class="contact-footer" style="background-image: url('images/File/Contents/home-2.png')">
-            <div class="wrapper mt-4">
-                <div class="row ml-0 mr-0">
-                    <div class="contact col-md-8">
-                        <div class="row contact-head pt-3">
-                            <div class="col-md-7 pl-4">
-                                <h3 class="title">Liên hệ với chúng tôi</h3>
-                            </div>
-                            <div class="col-md-5 pr-4">
-                                <div class="logo">
-                                    <img src="images/File/Logo/logo-footer.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row contact-subhead pt-3">
-                            <div class="col-md-7 pl-4">
-                                <p class="sumary pr-5">
-                                    Vestibulum massa ante, dignissim ornare leo vel, lobortis suscipit velit. Quisque
-                                    commodo, nisl nec tincidunt elementum, tellus metus consequat justo, eget aliquet
-                                    erat eros eget arcu.
-                                </p>
-                            </div>
-                            <div class="col-md-5 pr-4">
-                                <p class="text-b text-upper line-left">Cty cổ phần dịch vụ giải pháp cảnh quan LSS
-                                </p>
-                            </div>
-                        </div>
-                        <div class="row contact-main pt-3 pb-4">
-                            <div class="col-md-7 pl-4">
-                                <div class="main-form mt-4">
-                                    <div class="form-group row">
-                                        <label for="inputName" class="col-sm-3 col-form-label">Họ & tên:</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="inputName" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputEmail" class="col-sm-3 col-form-label">Email:</label>
-                                        <div class="col-sm-9">
-                                            <input type="email" class="form-control" id="inputEmail" placeholder="">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <label for="inputDetail" class="col-sm-3 col-form-label">Nội dung:</label>
-                                        <div class="col-sm-9">
-                                            <textarea class="form-control" id="inputDetail" rows="5"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6 offset-sm-3">
-                                            <button type="submit" class="button-link-2">Gửi cho chúng tôi</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 pr-4">
-                                <div class="info mt-4">
-                                    <div class="address pb-3 pl-2"><span>180/45 Nguyen Huu Canh, 22 Ward, Binh Thanh
-                                            Dist , HCMC</span></div>
-                                    <div class="tel pb-3 pl-2"><a href="tel:123123123">+84.8.351 80758</a></div>
-                                    <div class="email pb-3 pl-2"><a href="mailto:info@lss.vn">info@lss.vn</a></div>
-                                </div>
-                                <div class="follow">
-                                    <p class="text-b">Theo dõi chúng tôi tại</p>
-                                    <ul class="pt-3">
-                                        <li><a href="#" title="Facebook" style="background-color: #3b5998"><i
-                                                    class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" title="Youtube" style="background-color: #ff3333"><i
-                                                    class="fab fa-youtube"></i></a></li>
-                                        <li><a href="#" title="Pinterest" style="background-color: #cb2128"><i
-                                                    class="fab fa-pinterest-p"></i></a></li>
-                                        <li><a href="#" title="Instagram" style="background-color: rgb(215, 125, 68)"><i
-                                                    class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <footer>
-        <div class="main-footer wrapper">
-            <div class="swiper-container slider-partner">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="images/File/Partents/chase.png" alt="" class="w-100 img-fluid">
-                    </div>
-                    <div class="swiper-slide"><img src="images/File/Partents/compass.png" alt=""
-                            class="w-100 img-fluid"></div>
-                    <div class="swiper-slide"><img src="images/File/Partents/seaside.png" alt=""
-                            class="w-100 img-fluid"></div>
-                    <div class="swiper-slide"><img src="images/File/Partents/chase.png" alt="" class="w-100 img-fluid">
-                    </div>
-                    <div class="swiper-slide"><img src="images/File/Partents/kelleher.png" alt=""
-                            class="w-100 img-fluid"></div>
-                    <div class="swiper-slide"><img src="images/File/Partents/rose&womble.png" alt=""
-                            class="w-100 img-fluid"></div>
-                    <div class="swiper-slide"><img src="images/File/Partents/seaside.png" alt=""
-                            class="w-100 img-fluid"></div>
+        <div class="wrapper">
+            <div class="row">
+                <div class="col-md-4" data-aos="fade-up">
+                    <h4 class="caption">Contact with us</h4>
+                    <ul class="list-block">
+                        <li><a href="/" title="contact" target="_blank"><img src="images/Themes/icon/ico-instagram.png"
+                                    alt="" class="icon-ft"></a></li>
+                        <li><a href="/" title="contact" target="_blank"><img src="images/Themes/icon/ico-chat.png"
+                                    alt="" class="icon-ft"></a></li>
+                        <li><a href="/" title="contact" target="_blank"><img src="images/Themes/icon/ico-fb.png" alt=""
+                                    class="icon-ft"></a></li>
+                        <li><a href="/" title="contact" target="_blank"><img src="images/Themes/icon/ico-twicer.png"
+                                    alt="" class="icon-ft"></a></li>
+                        <li><a href="/" title="contact" target="_blank"><img src="images/Themes/icon/ico-youtube.png"
+                                    alt="" class="icon-ft"></a></li>
+                    </ul>
+                    <h4 class="caption">Accectes card</h4>
+                    <ul class="list-block">
+                        <li><a href="javascript:void(0);"><img src="images/Themes/icon/visa.png" alt=""></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/Themes/icon/mastercard.png" alt=""></a></li>
+                        <li><a href="javascript:void(0);"><img src="images/Themes/icon/jcb.png" alt=""></a></li>
+                    </ul>
                 </div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-        <div class="bot-footer">
-            <div class="wrapper">
-                <div class="float-left">
-                    <p>Copyright @ 2019 - LSS</p>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="250">
+                    <h4 class="caption">More infonation</h4>
+                    <ul class="mn-footer">
+                        <li class="mf-child"><a href="">Our hotels</a>
+                            <ul>
+                                <li><a href="our-hotel-detail.html">Blue Diamond Thu Khoa Huan</a></li>
+                                <li><a href="our-hotel-detail.html">Blue Diamond Thu Khoa Huan</a></li>
+                                <li><a href="our-hotel-detail.html">Blue Diamond Thu Khoa Huan</a></li>
+                                <li><a href="our-hotel-detail.html">Blue Diamond Thu Khoa Huan</a></li>
+                                <li><a href="our-hotel-detail.html">Blue Diamond Thu Khoa Huan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Restaurant & Spa</a></li>
+                        <li><a href="">Promotion</a></li>
+                        <li><a href="">Tour</a></li>
+                        <li><a href="">Destination</a>
+                            <ul>
+                                <li><a href="/">Notre Dame Catheral Saigon</a></li>
+                                <li><a href="/">Ben Thanh Market Ho Chi Minh City</a></li>
+                                <li><a href="/">The Saigon Opera House</a></li>
+                                <li><a href="/">Reunification Palace Saigon</a></li>
+                                <li><a href="/">Central Post Office Saigon</a></li>
+                                <li><a href="/">Central Post Office Saigon</a></li>
+                                <li><a href="/">Central Post Office Saigon</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
                 </div>
-                <div class="float-right">
-                    Designed & developed by <a href="#" target="_blank">Zenners</a>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="500">
+                    <h4 class="caption">Hotel contact</h4>
+                    <ul class="list-htContact" id="id_htContact">
+                        <li><a href="/" class="active text-upper" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true">Blue Diamond Thu Khoa Huan</a>
+                            <div class="collapse show" id="collapseOne" data-parent="#id_htContact">
+                                <ul class="htContact">
+                                    <li><i class="fas fa-map-marker-alt"></i> 40 - 45 Thu Khoa Huan Street, District 1
+                                    </li>
+                                    <li><i class="fas fa-phone fa-flip-horizontal"></i> +84 28 3823 6167</li>
+                                    <li><i class="fas fa-fax"></i>+84 28 3823 6167</li>
+                                    <li><i class="fas fa-envelope"></i> booking@bluediamond.com.vn</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/" class="text-upper" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false">Blue Diamond Thu Khoa Huan</a>
+                            <div class="collapse" id="collapseTwo" data-parent="#id_htContact">
+                                <ul class="htContact">
+                                    <li><i class="fas fa-map-marker-alt"></i> 40 - 45 Thu Khoa Huan Street, District 1
+                                    </li>
+                                    <li><i class="fas fa-phone fa-flip-horizontal"></i> +84 28 3823 6167</li>
+                                    <li><i class="fas fa-fax"></i>+84 28 3823 6167</li>
+                                    <li><i class="fas fa-envelope"></i> booking@bluediamond.com.vn</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/" class="text-upper" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false">Blue Diamond Thu Khoa Huan</a>
+                            <div class="collapse" id="collapseThree" data-parent="#id_htContact">
+                                <ul class="htContact">
+                                    <li><i class="fas fa-map-marker-alt"></i> 40 - 45 Thu Khoa Huan Street, District 1
+                                    </li>
+                                    <li><i class="fas fa-phone fa-flip-horizontal"></i> +84 28 3823 6167</li>
+                                    <li><i class="fas fa-fax"></i>+84 28 3823 6167</li>
+                                    <li><i class="fas fa-envelope"></i> booking@bluediamond.com.vn</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/" class="text-upper" data-toggle="collapse" data-target="#collapseFour"
+                                aria-expanded="false">Blue Diamond Thu Khoa Huan</a>
+                            <div class="collapse" id="collapseFour" data-parent="#id_htContact">
+                                <ul class="htContact">
+                                    <li><i class="fas fa-map-marker-alt"></i> 40 - 45 Thu Khoa Huan Street, District 1
+                                    </li>
+                                    <li><i class="fas fa-phone fa-flip-horizontal"></i> +84 28 3823 6167</li>
+                                    <li><i class="fas fa-fax"></i>+84 28 3823 6167</li>
+                                    <li><i class="fas fa-envelope"></i> booking@bluediamond.com.vn</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="/" class="text-upper" data-toggle="collapse" data-target="#collapseFive"
+                                aria-expanded="false">Blue Diamond Thu Khoa Huan</a>
+                            <div class="collapse" id="collapseFive" data-parent="#id_htContact">
+                                <ul class="htContact">
+                                    <li><i class="fas fa-map-marker-alt"></i> 40 - 45 Thu Khoa Huan Street, District 1
+                                    </li>
+                                    <li><i class="fas fa-phone fa-flip-horizontal"></i> +84 28 3823 6167</li>
+                                    <li><i class="fas fa-fax"></i>+84 28 3823 6167</li>
+                                    <li><i class="fas fa-envelope"></i> booking@bluediamond.com.vn</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -682,22 +395,45 @@
     <script src="scripts/popper.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/bootstrap.bundle.min.js"></script>
-    <script src="scripts/Plugin/wow.min.js">
-    </script>
+    <script src="scripts/Plugin/aos.js"></script>
+
     <script src="scripts/Plugin/swiper.min.js"></script>
     <script src="scripts/script.js"></script>
     <!-- scripts on page -->
     <script>
-        var swiper = new Swiper('.slider-home', {
-            loop: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+        AOS.init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            var swiper = new Swiper('.slider-home', {
+                loop: true,
+                speed: 1000,
+                slidesPerView: 1,
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                },
+
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+            var swiper2 = new Swiper('.slide-Ourst', {
+                speed: 400,
+                loop: true,
+                slidesPerView: 3,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: '.Ourst-button-next',
+                    prevEl: '.Ourst-button-prev',
+                },
+            });
         });
     </script>
 </body>

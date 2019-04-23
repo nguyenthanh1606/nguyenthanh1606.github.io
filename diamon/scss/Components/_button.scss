@@ -1,65 +1,256 @@
-.b-before{
-    &::before{
-        content: '';
-        display: inline-block;
-        width: 96px;
-        height: 67px;
-        background-color: #e0e3e0;
-        position: absolute;
-        z-index: 1;
-    }
-}
-.box-2{    
-    position: relative;
-    z-index: 2;
-    padding-left: 3rem;    
-}
-.caps{
+.b-before {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 96px;
+    height: 67px;
+    background-color: #e0e3e0;
     position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    font-family: 'MS Italic';
-    font-size: 150px;
-    color: #ced0ce;
+    z-index: 1;
+  }
 }
-.buton-link{
-    font-family: 'UTM Avo';
-    display: inline-block;
-    border: 1px solid $color-border-2;
-    border-radius: 5px;
+.box-2 {
+  position: relative;
+  z-index: 2;
+  padding-left: 3rem;
+}
+.caps {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-family: "MS Italic";
+  font-size: 150px;
+  color: #ced0ce;
+}
+.buton-link {
+  font-family: "UTM Avo";
+  display: inline-block;
+  border: 1px solid $color-border-2;
+  border-radius: 5px;
+  color: $color-main;
+  padding: 0.5rem 1.5rem;
+  transition: 0.4s ease;
+  background-color: transparent;
+  &:hover,
+  &:active,
+  &.active {
     color: $color-main;
-    padding: .5rem 1.5rem;
-    transition: .4s ease;
-    background-color: transparent;
-    &:hover, &:active, &.active{
-        color: $color-main;
-        background-color: #c6dfc6;
-        text-decoration: none;
-    }
-    &:after{
-        content: ''
-    }
+    background-color: #c6dfc6;
+    text-decoration: none;
+  }
+  &:after {
+    content: "";
+  }
 }
-.button-link-2{
-    cursor: pointer;
-    font-family: 'UTM Libel KT';
-    display: inline-block;
-    border: 1px solid $color-border-2;
-    border-radius: 5px;
+.button-link-2 {
+  cursor: pointer;
+  font-family: "UTM Libel KT";
+  display: inline-block;
+  border: 1px solid $color-border-2;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+  transition: 0.6s ease;
+  background-color: $color-main;
+  &:hover,
+  &:active,
+  &.active {
     color: #fff;
-    padding: .5rem 1.5rem;
-    font-size: 1.5rem;
-    transition: .6s ease;
-    background-color: $color-main;
-    &:hover, &:active, &.active{
-        color: #fff;
-        box-shadow: 0px 0px 10px 1px $color-main;
-        text-decoration: none;
-        border-color: $color-main;
-        outline-color: transparent;
+    box-shadow: 0px 0px 10px 1px $color-main;
+    text-decoration: none;
+    border-color: $color-main;
+    outline-color: transparent;
+  }
+  &:after {
+    content: "";
+  }
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+.svg-wrapper.left-center {
+  position: absolute;
+  top: calc(50% - 1.5rem - 7px);
+  left: 15px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.svg-wrapper {
+  height: 35px;
+  position: relative;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 18px;
+  display: inline-block;
+  margin-top: 10px;
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 20 625;
+
+    stroke-width: 1px;
+    stroke: $color-main;
+    &-center {
+      stroke-dashoffset: -65;
     }
-    &:after{
-        content: ''
+    &-left {
+      stroke-dashoffset: -15;
     }
+    &-right {
+      stroke-dashoffset: -115;
+    }
+  }
+  .text {
+    color: #000;
+    position: relative;
+    top: -33px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.4s ease;
+  }
+  &:hover {
+    // .shape {
+    //     -moz-animation: 1.5s draw linear forwards;
+    //     -webkit-animation: 1.5s draw linear forwards;
+    //     animation: 1.5s draw linear forwards;
+    // }
+    .shape {
+      &-center {
+        -moz-animation: 1.5s draw linear forwards;
+        -webkit-animation: 1.5s draw linear forwards;
+        animation: 1.5s draw linear forwards;
+        animation-name: draw;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+      }
+      &-left {
+        -moz-animation: 1.5s drawLeft linear forwards;
+        -webkit-animation: 1.5s drawLeft linear forwards;
+        animation: 1.5s drawLeft linear forwards;
+        animation-name: drawLeft;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+      }
+      &-right {
+        -moz-animation: 1.5s drawRight linear forwards;
+        -webkit-animation: 1.5s drawRight linear forwards;
+        animation: 1.5s drawRight linear forwards;
+        animation-name: drawRight;
+        animation-duration: 1.5s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
+      }
+    }
+    .text {
+      text-decoration: none;
+      color: $color-main;
+    }
+    color: transparent;
+  }
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 20 625;
+    stroke-dashoffset: -65;
+    stroke-width: 1px;
+  }
+  100% {
+    stroke-dasharray: 900;
+    stroke-dashoffset: 65;
+    stroke-width: 1px;
+  }
+}
+@keyframes drawLeft {
+  0% {
+    stroke-dasharray: 20 625;
+    stroke-dashoffset: -15;
+    stroke-width: 1px;
+  }
+  100% {
+    stroke-dasharray: 900;
+    stroke-dashoffset: 65;
+    stroke-width: 1px;
+  }
+}
+@keyframes drawRight {
+  0% {
+    stroke-dasharray: 20 625;
+    stroke-dashoffset: -115;
+    stroke-width: 1px;
+  }
+  100% {
+    stroke-dasharray: 900;
+    stroke-dashoffset: 165;
+    stroke-width: 1px;
+  }
+}
+
+//rating
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating > input {
+  display: none;
+}
+.rating > label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  content: "\f005";
+  // font-weight: 900;
+}
+
+.rating > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label {
+  color: $color-text;
+  float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+  .rating:not(:checked) > label:hover, /* hover current star */
+  .rating:not(:checked) > label:hover ~ label {
+  color: #ffd700;
+} /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+  .rating > input:checked ~ label:hover,
+  .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+  .rating > input:checked ~ label:hover ~ label {
+  color: #ffed85;
+}
+
+.rating.no-selected label.vistibale {
+  color: #ffd700;
+}
+.rating.no-selected {
+  pointer-events: none;
 }

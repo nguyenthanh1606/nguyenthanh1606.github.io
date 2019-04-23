@@ -9,7 +9,7 @@
         z-index: -1;
     }
     .title{
-        font-family: 'UTM Libel KT';
+        font-family: $font-main;
         font-size: 32px;
         margin-bottom: 1rem;
         color: #1d6904;
@@ -196,7 +196,7 @@
             }
         }
         .sumary{
-            font-family: 'Helvetica Neue';
+            font-family: $font-main;
             font-style: italic;
             color: #1d6904;
             border-bottom: 1px solid #d2d5d2;
@@ -228,7 +228,7 @@
         padding: .5rem 2rem 1rem;
         color: #fff;
         .title{
-            font-family: 'UTM Libel KT';
+            font-family: $font-main;
             padding-bottom: .5rem;
             border-bottom: 1px solid #446f35;
         }
@@ -236,7 +236,7 @@
             padding-top: 1rem;
             p:nth-child(even){margin-bottom: .5rem}
             strong{
-                font-family: 'UTM Avo';
+                font-family: $font-main;
                 font-weight: bold;
             }
         }
@@ -253,7 +253,7 @@
                 display: inline-block;
                 margin-right: 1rem;
             }     
-            font-family: 'UTM Libel KT';       
+            font-family: $font-main;       
             color: $color-main;
             margin-bottom: 1rem;
         }
@@ -271,7 +271,7 @@
                 display: inline-block;
                 margin-right: 1rem;
             }     
-            font-family: 'UTM Libel KT';       
+            font-family: $font-main;       
             color: $color-main;
             margin-bottom: 1rem;
         }
@@ -289,8 +289,97 @@
             display: inline-block;
             margin-right: 1rem;
         }     
-        font-family: 'UTM Libel KT';       
+        font-family: $font-main;       
         color: $color-main;
         margin-bottom: 1rem;
+    }
+}
+//all css
+.ct-body{
+    p{
+        margin-bottom: .5rem;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+.list-content{
+    padding-top: 1rem;
+    .item{
+        .thumnails{
+            margin-bottom: 1rem;
+        }
+        a.title, .title{
+            color: $color-main;
+            display: block;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            margin-bottom: .5rem;
+            font-weight: 500;
+        }   
+        .sumary{
+            text-align: justify;
+            height: 80px;
+            margin-bottom: .5rem;
+            overflow: hidden;
+        }  
+        margin-bottom: 1rem;   
+    }
+    .item-first{
+        margin-bottom: 2rem;
+        .sumary{
+            height: 120px;
+        }
+    }
+}
+
+// Blue diamond
+.our-hotel{
+    .item{   
+        .left{
+            padding-left: 0;
+        }     
+        .right{
+            padding-right: 0;
+        }
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #ccc;
+    }
+    .item:last-child{
+        border-bottom: none;
+    }
+    .hotel-content{
+        .title{
+            color: $color-main;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: .75rem;
+            display: inline-block;
+        }
+        .address{
+            font-weight: 300;
+            color: $color-main;
+        }
+        .rating{
+            margin-bottom: .5rem;
+        }
+    }
+    .booking{
+        position: absolute;
+        top: calc(100% - 1.5rem - 7px);
+        left: 15px;
+        transform: translate(0 , -50%);
+    }
+}
+
+.pg-restaurant{
+    .img-thumb{
+        max-width: 80%;
+        margin-bottom: 1.5rem;
     }
 }

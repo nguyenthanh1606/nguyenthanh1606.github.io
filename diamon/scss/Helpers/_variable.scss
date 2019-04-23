@@ -1,6 +1,11 @@
 $color-border: #383938;
 $color-border-2: #98cd85;
-$color-main: #153f06;
+
+$color-text: #606161;
+$color-main: #d79d29;
+$color-child: #00a652;
+
+$font-main:"Mallory";
 
 %home-1 {
     padding-top: 3rem;
@@ -11,7 +16,7 @@ $color-main: #153f06;
             position: relative;
             display: inline-block;
             h3{
-                font-family: 'UTM Libel KT';
+                font-family: $font-main;
                 font-size: 36px;
                 position: absolute;
                 bottom: 0;
@@ -35,7 +40,7 @@ $color-main: #153f06;
             position: relative;
             display: inline-block;
             h3{
-                font-family: 'UTM Libel KT';
+                font-family: $font-main;
                 font-size: 36px;
                 position: absolute;
                 top: 50%;
@@ -130,7 +135,7 @@ $color-main: #153f06;
             width: 100%;
             height: 100%;
             color: #fff;
-            font-family: 'UTM Avo';
+            font-family: $font-main;
             padding-top: 2rem;
             padding-left: 1rem;
             padding-right: 1rem;                           
