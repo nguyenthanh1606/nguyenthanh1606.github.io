@@ -9,9 +9,9 @@
     }
   }
   li {
-    &.home a:hover{
+    &.home a:hover {
       color: $color-main;
-    } 
+    }
     &:hover > a,
     a.active {
       text-decoration: none;
@@ -232,55 +232,55 @@
 }
 
 //nav
-.nav-childParent{
-    background-color: rgba($color: #fff, $alpha: 0.75);
-    margin-top: -50px;
-    z-index: 1000;
-    position: relative;
-    height: 50px;
-    text-align: center;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    .childParent{        
-        li{
-            height: 100%;
-            display: inline-block;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            padding-top: 7px;
-            padding-bottom: 7px;
+.nav-childParent {
+  background-color: rgba($color: #fff, $alpha: 0.75);
+  margin-top: -50px;
+  z-index: 1000;
+  position: relative;
+  height: 50px;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  .childParent {
+    li {
+      height: 100%;
+      display: inline-block;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 7px;
+      padding-bottom: 7px;
 
-            position: relative;
-            
-            &:after{
-                content: "";
-                width: 1px;
-                height: 1px;
-                background-color: $color-main;
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-                transform: translateX(-50%);
-                transition: width .4s ease-in-out;
-            }
-            &:hover:after{
-                width: 50%;
-            }
-            a{
-                font-size: 1.1rem;
-                color: #000;
-                &:hover,&.active{
-                    color: $color-main;
-                    text-decoration: none;
-                }
-            }
+      position: relative;
+
+      &:after {
+        content: "";
+        width: 1px;
+        height: 1px;
+        background-color: $color-main;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        transition: width 0.4s ease-in-out;
+      }
+      &:hover:after {
+        width: 50%;
+      }
+      a {
+        font-size: 1.1rem;
+        color: #000;
+        &:hover,
+        &.active {
+          color: $color-main;
+          text-decoration: none;
         }
-        a.active{
-            font-weight: 500;
-        }
+      }
     }
+    a.active {
+      font-weight: 500;
+    }
+  }
 }
-
 
 //list footer
 ul.list-block {
@@ -334,17 +334,41 @@ ul.list-htContact {
     }
     margin-bottom: 4px;
   }
-  ul.htContact{
+  ul.htContact {
     background-color: #faf1df;
+    padding: 1rem 0.5rem;
+    li {
+      margin-bottom: 0.5rem;
+    }
+    i {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
   }
 }
-ul.htContact {
-  padding: 1rem 0.5rem;
-  li {
-    margin-bottom: 0.5rem;
+ul.list-htContact-2 {
+  > li {
+    display: block;
+    > a {
+      position: relative;
+      display: block;
+      padding: 10px 1rem 10px;
+      color: $color-main;
+      font-weight: 500;
+      font-size: 1.2rem;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    margin-bottom: 4px;
   }
-  i {
-    padding-right: 5px;
-    padding-left: 5px;
+  ul.htContact {
+    li {
+      margin-bottom: 0.5rem;
+    }
+    i {
+      padding-right: 5px;
+      padding-left: 5px;
+    }
   }
 }

@@ -26,10 +26,10 @@ main {
       margin: auto;
     }
     p.title {
-      color: $color-main;
+      color: $color-child;
       text-align: center;
     }
-    p.sumary {
+    .sumary {
       font-size: 13px;
       text-align: justify;
     }
@@ -49,44 +49,6 @@ main {
       opacity: 1;
     }
   }
-  .button-slide-Ourst {
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.4s ease;
-    .Ourst-button-prev,
-    .Ourst-button-next {
-      position: absolute;
-      top: 50%;
-
-      width: 40px;
-      height: 40px;
-      border: 1px solid $color-text;
-      outline-color: transparent;
-      transition: 0.4s ease;
-      cursor: pointer;
-      i {
-        font-size: 1.5rem;
-        display: inherit;
-        text-align: center;
-        line-height: 38px;
-        vertical-align: middle;
-      }
-      &:hover {
-        background-color: $color-text;
-        color: #fff;
-      }
-    }
-    .Ourst-button-prev {
-      left: -2rem;
-      transform: translate(-50%, -50%);
-    }
-    .Ourst-button-next {
-      right: -2rem;
-      transform: translate(50%, -50%);
-    }
-  }
-  .slide-Ourst:hover ~ .button-slide-Ourst {
-  }
   .swiper-slide {
     .thumnails,
     .title,
@@ -101,6 +63,40 @@ main {
       height: 2.5rem;
       font-weight: 300;
     }
+  }
+}
+.button-slide-Ourst {
+  transition: 0.4s ease;
+  .Ourst-button-prev,
+  .Ourst-button-next {
+    position: absolute;
+    top: 50%;
+
+    width: 40px;
+    height: 40px;
+    border: 1px solid $color-text;
+    outline-color: transparent;
+    transition: 0.4s ease;
+    cursor: pointer;
+    i {
+      font-size: 1.5rem;
+      display: inherit;
+      text-align: center;
+      line-height: 38px;
+      vertical-align: middle;
+    }
+    &:hover {
+      background-color: $color-text;
+      color: #fff;
+    }
+  }
+  .Ourst-button-prev {
+    left: -2rem;
+    transform: translate(-50%, -50%);
+  }
+  .Ourst-button-next {
+    right: -2rem;
+    transform: translate(50%, -50%);
   }
 }
 
