@@ -1,0 +1,47 @@
+@import 'Helpers/variable';
+
+$color-product: #00529c;
+
+.banner-product{
+    border-top: 4px solid $color-product;
+}
+
+.nav-left{
+    ul li{
+        &.active, &:hover{
+            background-color: $color-product;
+          }
+          a{
+            color: $color-product;
+          }
+    }
+}
+
+main{
+    padding-bottom: 3rem;
+}
+
+.product-main, .product-info{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav-right{
+    .item{
+        margin-bottom: 1.5rem;
+        .thumb{
+            margin-bottom: .5rem;
+            margin-top: 1rem;
+        }        
+    }
+}
+.product-logo{
+    align-self: center;
+}
+
+.news .item .headline{
+    padding-bottom: .5rem;
+}

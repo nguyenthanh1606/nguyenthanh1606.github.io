@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 6,
+            center: {lat: 16.449800, lng: 107.562350}
+          });
+  
+          // Create an array of alphabetical characters used to label the markers.
+          var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+          // Add some markers to the map.
+          // Note: The code uses the JavaScript Array.prototype.map() method to
+          // create an array of markers based on a given "locations" array.
+          // The map() method here has nothing to do with the Google Maps API.
+          var markers = locations.map(function(location, i) {
+            return new google.maps.Marker({
+              position: location,
+              label: labels[i % labels.length],
+              icon: imgLogo
+            });
+          });
+  
+          // Add a marker clusterer to manage the markers.
+          var markerCluster = new MarkerClusterer(map, markers,
+              {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+        }
+        var locations = [
+          {lat: 21.027764, lng: 105.834160}, //Ha Noi
+          {lat: 20.844911, lng: 106.688084}, //Hai Phong
+          {lat: 21.567156, lng: 105.825204}, //Thai Nguyen
+          {lat: 21.342540, lng: 105.371668}, //Viet Tri
+          {lat: 21.297326, lng: 105.606066}, //Vinh Yen
+          {lat: 21.290903, lng: 106.186703}, //Bac Giang
+          {lat: 21.121444, lng: 106.111050}, //Bac Ninh
+          {lat: 20.938596, lng: 106.320686}, //Hai Duong
+          {lat: 20.658292, lng: 106.054816}, //Hung Yen
+          {lat: 20.212997, lng: 105.922990}, //Ninh Binh
+          {lat: 16.054407, lng: 108.202167}, //Da Nang
+          {lat: 18.679585, lng: 105.681333}, //Vinh
+          {lat: 18.294378, lng: 105.674525}, //Ha Tinh
+          {lat: 16.794347, lng: 106.963409}, //Quang Tri
+          {lat: 16.449800, lng: 107.562350}, //Hue
+          {lat: 14.166532, lng: 108.902683}, //Binh Dinh
+          {lat: 12.666194, lng: 108.038248}, //Buon Ma Thuat
+          {lat: 12.238791, lng: 109.196749}, //Nha Trang
+          {lat: 11.940419, lng: 108.458313}, //Da Lat
+          {lat: 10.823099, lng: 106.629664}, //HCM
+          {lat: 10.992984, lng: 106.655707}, //Thu Dau Mot
+          {lat: 10.957413, lng: 106.842687}, //Bien Hoa
+          {lat: 10.411380, lng: 107.136224}, //BR-VT
+          {lat: 10.045162, lng: 105.746854}  //Can Tho
+        ];
+      /*  var namecity = [
+          {"Hà Nội"},
+          {"Hải Phòng"},
+          {"Thái Nguyên"},
+          {"Việt Trì"},
+          {"Vĩnh Yên"},
+          {"Bắc Giang"},
+          {"Bắc Ninh"},
+          {"Hải Dương"},
+          {"Hưng Yên"},
+          {"Ninh Bình"},
+          {"Đà Nẵng"},
+          {"Vinh"},
+          {"Hà Tĩnh"},
+          {"Quảng Trị"},
+          {"Huế"},
+          {"Bình Định"},
+          {"Buôn Ma Thuột"},
+          {"Nha Trang"},
+          {"Đà Lạt"},
+          {"Thủ Dầu Một"},
+          {"Biên Hòa"},
+          {"Bà Rịa - Vũng Tàu"},
+          {"Cần Thơ"},
+        ] */
+      </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLF0YEJG0u2e7S0KUD4lXPc7DSHMGoNR4&callback=initMap"
+    async defer></script>
+  </body>
+</html>

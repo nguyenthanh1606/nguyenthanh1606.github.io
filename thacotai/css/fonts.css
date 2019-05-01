@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'UTM Hanzel';
+    src: url('../fonts/UTMHanzel/UTMHanzel.eot');
+    src: url('../fonts/UTMHanzel/UTMHanzel.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/UTMHanzel/UTMHanzel.woff') format('woff'),
+        url('../fonts/UTMHanzel/UTMHanzel.ttf') format('truetype'),
+        url('../fonts/UTMHanzel/UTMHanzel.svg#UTMHanzel') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,46 @@
+.site-icon{
+    &-phone::before{
+        background-image: url('../images/Themes/icon/phone.png');
+        width: 15px;
+        height: 15px;
+        content: '';
+        display: inline-block;
+        margin-right: 8px;
+    }
+    &-email{
+        margin-right: 8px;
+        background-size: cover;
+        width: 16px;
+        height: 12px;
+        content: '';
+        display: inline-block;
+        background-image: url('../images/Themes/icon/email.png');
+    }  
+    &-fb{
+        margin-right: 8px;
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+        content: '';
+        display: inline-block;
+        background-image: url('../images/Themes/icon/facebook.png');
+    } 
+    &-youtube{
+        margin-right: 8px;
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+        content: '';
+        display: inline-block;
+        background-image: url('../images/Themes/icon/youtube.png');
+    } 
+    &-instagram{
+        margin-right: 8px;
+        background-size: cover;
+        width: 15px;
+        height: 15px;
+        content: '';
+        display: inline-block;
+        background-image: url('../images/Themes/icon/instagram.png');
+    }   
+}

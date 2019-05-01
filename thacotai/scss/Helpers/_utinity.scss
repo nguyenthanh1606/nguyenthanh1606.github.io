@@ -1,0 +1,122 @@
+html {
+  font-size: 14px;
+}
+body {
+  font-family: $font-main;
+  word-spacing: 1px;
+  color: $color-main;
+  background: #ffffff;
+  p {
+    line-height: 1.4;
+  }
+}
+.wrapper {
+  max-width: 1170px;
+  margin: auto;
+}
+.bgPage {
+  background: #727674;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.bgPage.show {
+  z-index: 99;
+}
+.text-b {
+  font-family: $font-main;
+  font-weight: bold;
+}
+.text-upper {
+  text-transform: uppercase;
+}
+.color-main {
+  color: $color-main !important;
+}
+.color-black {
+  color: #000;
+}
+.color-gray{
+  color: #a8a8a8;
+}
+.pagination {
+  .page-item:first-child .page-link,
+  .page-item:last-child .page-link {
+    border-radius: 0;
+  }
+  .page-item.active {
+    pointer-events: none;
+  }
+  .page-item.active .page-link {
+    background-color: $color-main;
+    outline-color: transparent;
+    border: 1px solid #c9c9c9;
+  }
+  .page-link {
+    color: #a2a4a2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .page-item {
+    margin-right: 0.5rem;
+  }
+}
+.thumnails {
+  font-size: 0;  
+}
+
+
+a.no-decoration {
+  text-decoration: none;
+}
+h3.title {
+  color: $color-child;
+  font-weight: bold;
+}
+.active {
+  color: $color-child !important;
+}
+.no-position {
+  position: initial;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  font-family: "";
+  content: "\f105";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 300;
+}
+.breadcrumb {
+  background-color: transparent;
+  .breadcrumb-item {
+    text-transform: uppercase;
+    color: $color-main;
+    &:hover{
+        color: $color-child;
+    }
+  }
+}
+.text-detail{
+  p{
+    margin-bottom: .5rem;
+  }
+}
+
+::-webkit-scrollbar {
+  height: 4px; /* height of horizontal scrollbar ← You're missing this */
+  width: 4px;
+  border: 1px solid $color-main;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0;
+  background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0;
+  background: $color-child;
+}

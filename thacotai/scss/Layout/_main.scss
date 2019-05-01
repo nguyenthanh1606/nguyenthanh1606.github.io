@@ -1,0 +1,203 @@
+.nav-product {
+  border-bottom: 1px solid #ccc;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.slider-product {
+  .swiper-slide:after {
+    content: "";
+    width: 1px;
+    height: 74px;
+    background-color: #ccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.news {
+  padding-top: 1.5rem;
+  h3.title {
+    margin-bottom: 1.5rem;
+  }
+  .item {
+    cursor: pointer;
+    margin-bottom: 2rem;
+    &:hover {
+      .headline {
+        opacity: 1;
+        visibility: visible;
+        z-index: 100;
+      }
+    }
+    position: relative;
+    .headline {
+      display: grid;
+      place-items: center;
+      justify-content: left;
+      position: absolute;
+      left: 1rem;
+      bottom: 0;
+      width: calc(100% - 2rem);
+      padding: 1rem 1.5rem;
+      min-height: 63px;
+      background: rgba($color: #000000, $alpha: 0.66);
+      // background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(61, 61, 61, 1) 40%, rgba(255, 255, 255, 0) 100%);
+      opacity: 0;
+      transition: 0.4s ease;
+      visibility: hidden;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.infoFooter {
+  margin-bottom: 1.5rem;
+  h3.title {
+    margin-bottom: 1.5rem;
+  }
+  .link {
+    a {
+      color: $color-main;
+      text-decoration: none;
+      &:hover {
+        color: $color-child;
+      }
+    }
+  }
+}
+
+.nav-left {
+  >ul {
+    display: block;
+    li {
+      display: block;
+      text-align: right;
+      transition: 0.4s ease;
+      &:not(:last-child) {
+        border-bottom: 3px solid #fff;
+      }
+      &.active,
+      &:hover {
+        background-color: $color-child;
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+  a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    transition: 0.4s ease;
+    color: $color-child;
+    font-family: "UTM Hanzel";
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+.scrollToTop.show {
+  bottom: 35px;
+  opacity: 1;
+  visibility: visible;
+  background: transparent;
+}
+
+.scrollToTop {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #ccc;
+  text-decoration: none;
+  border: 2px solid #ccc;
+  border-radius: 100%;
+  bottom: -38px;
+  cursor: pointer;
+  opacity: 0;
+  position: fixed;
+  right: 15px;
+  visibility: hidden;
+  z-index: 9999;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -o-transition: all .6s ease;
+  transition: all .6s ease;
+  &:hover{
+    color: #ccc;
+  }
+}
+
+.stick-right{
+  position: fixed;
+  bottom: 5vw;
+  right: 0;
+  z-index: 199;
+  transform: translateY(-50%);
+  pointer-events: none;
+  .item{
+    &:hover{
+      right: 0;
+      .left-show{
+        background-color: $color-child;
+      }
+    }
+    border-radius: 5px 0 0 5px;
+    pointer-events: all;
+    background-color: $color-child;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: right .4s ease;
+    position: relative;
+    right: calc(-100% + 50px);
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;    
+    .left-show{
+      border-radius: 5px 0 0 5px;
+      display: flex;
+      width: 50px;
+      background-color: $color-main;
+      transition: .4s ease;
+    }
+    .right-hide{
+      text-align: center;
+      display: flex;
+      padding: 25px 1rem;
+      color: #fff;
+      line-height: 0;
+      background-color: $color-child;
+      a{
+        color: #fff;
+        text-decoration: none;        
+        padding-left: 5px;
+      }
+      a[href^="tel:"]{
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.news .item{
+  .thumnails{
+    display: block;
+    overflow: hidden;
+    img{
+      transition: .4s ease;
+    }
+  }  
+  &:hover{
+    img{
+      transform: scale(1.05);
+    }
+  }
+}
