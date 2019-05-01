@@ -1,0 +1,43 @@
+.banner-product {
+  border-top: 4px solid #00529c;
+}
+
+.nav-left ul li.active, .nav-left ul li:hover {
+  background-color: #00529c;
+}
+
+.nav-left ul li a {
+  color: #00529c;
+}
+
+main {
+  padding-bottom: 3rem;
+}
+
+.product-main, .product-info {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-right .item {
+  margin-bottom: 1.5rem;
+}
+
+.nav-right .item .thumb {
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+}
+
+.product-logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.news .item .headline {
+  padding-bottom: .5rem;
+}
+/*# sourceMappingURL=page-1.css.map */
