@@ -2,6 +2,11 @@
 @import "Helpers/variable";
 @import "Helpers/mixin";
 
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mallory';
+}
 .header {
   position: fixed;
   top: 15px;
@@ -94,15 +99,41 @@
         padding: 1rem 1rem;
         ul{
             li{
-                padding: 5px 0;
+                padding: 1rem 0;
                 i{
                     width: 1.5rem;
                     color: $color-main;
                     padding-right: 5px;
                 }
                 a{
+                    display: block;
+                    position: relative;
+                    font-weight: 500;
+                    text-transform: uppercase;
                     color: $color-border;
+                    &:hover, &:focus{
+                        text-decoration: none;
+                    }
+                    &[aria-expanded="true"] .gnavi-arrow{
+                        @include prefix(transform, rotateX(-180deg), webkit ms);
+                    }
+                    &[aria-expanded="false"] .gnavi-arrow{
+                        @include prefix(transform, rotateX(0), webkit ms);
+                    }
                 }
+                .gnavi-arrow{
+                    position: absolute;
+                    right: 0;
+                    transition: transform .8s ease;
+                }
+            }
+        }
+        .submenu>ul>li{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 1.5rem;
+            a{
+                text-transform: inherit;
             }
         }
     }
