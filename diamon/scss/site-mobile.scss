@@ -2,10 +2,10 @@
 @import "Helpers/variable";
 @import "Helpers/mixin";
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Mallory';
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Mallory";
 }
 .header {
   position: fixed;
@@ -74,8 +74,8 @@
       padding: 1rem 0;
       position: relative;
       border-bottom: 5px solid #cfd0d2;
-      .container{
-          position: relative;
+      .container {
+        position: relative;
       }
       h2 {
         font-size: 2rem;
@@ -95,47 +95,48 @@
         z-index: 1000;
       }
     }
-    &__gnavi{
-        padding: 1rem 1rem;
-        ul{
-            li{
-                padding: 1rem 0;
-                i{
-                    width: 1.5rem;
-                    color: $color-main;
-                    padding-right: 5px;
-                }
-                a{
-                    display: block;
-                    position: relative;
-                    font-weight: 500;
-                    text-transform: uppercase;
-                    color: $color-border;
-                    &:hover, &:focus{
-                        text-decoration: none;
-                    }
-                    &[aria-expanded="true"] .gnavi-arrow{
-                        @include prefix(transform, rotateX(-180deg), webkit ms);
-                    }
-                    &[aria-expanded="false"] .gnavi-arrow{
-                        @include prefix(transform, rotateX(0), webkit ms);
-                    }
-                }
-                .gnavi-arrow{
-                    position: absolute;
-                    right: 0;
-                    transition: transform .8s ease;
-                }
+    &__gnavi {
+      padding: 1rem 1rem;
+      ul {
+        li {
+          padding: 1rem 0;
+          i {
+            width: 1.5rem;
+            color: $color-main;
+            padding-right: 5px;
+          }
+          a {
+            display: block;
+            position: relative;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $color-border;
+            &:hover,
+            &:focus {
+              text-decoration: none;
             }
-        }
-        .submenu>ul>li{
-            padding-top: 5px;
-            padding-bottom: 5px;
-            padding-left: 1.5rem;
-            a{
-                text-transform: inherit;
+            &[aria-expanded="true"] .gnavi-arrow {
+              @include prefix(transform, rotateX(-180deg), webkit ms);
             }
+            &[aria-expanded="false"] .gnavi-arrow {
+              @include prefix(transform, rotateX(0), webkit ms);
+            }
+          }
+          .gnavi-arrow {
+            position: absolute;
+            right: 0;
+            transition: transform 0.8s ease;
+          }
         }
+      }
+      .submenu > ul > li {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 1.5rem;
+        a {
+          text-transform: inherit;
+        }
+      }
     }
   }
 }
@@ -155,14 +156,47 @@ main {
 .swiper-container-rtl .swiper-button-prev {
   background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'><path%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F><%2Fsvg>");
 }
-.swiper-button-next, .swiper-button-prev{
-    height: 33px;
+.swiper-button-next,
+.swiper-button-prev {
+  height: 33px;
 }
-.fa-close-ds{
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path style='fill:#ffffff;' d='M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z'/></svg>");
+.fa-close-ds {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path style='fill:#ffffff;' d='M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z'/></svg>");
+}
+.footer {
+  &__fixedBottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 8999;
+    ul li {
+      width: 50%;
+      float: left;
+      text-align: center;
+      background: #fff;
+      height: 50px;
+      line-height: 50px;
+      a{
+          color: $color-main;
+          &:focus{
+              text-decoration: none;
+          }
+          i{
+              padding-left: .5rem;
+          }
+      }
+      &.actived{
+        background: $color-main;
+        a{
+            color: #fff;
+        }
+      }
+    }
+  }
 }
