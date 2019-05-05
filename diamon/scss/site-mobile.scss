@@ -1,0 +1,112 @@
+@import "Base/reset";
+@import "Helpers/variable";
+@import "Helpers/mixin";
+
+.header {
+  position: fixed;
+  top: 15px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  &__logo {
+    .logo {
+      width: 50%;
+      margin: 0 auto;
+      padding: 10px 0 0;
+      text-align: center;
+    }
+    .menu-button {
+      display: inline-block;
+      padding: 0.5em;
+      background: transparent;
+      margin: 0 0 0 15px;
+    }
+    .burger-icon {
+      display: block;
+      width: 30px;
+      height: 3px;
+      background-color: #fff;
+      outline: 1px solid transparent;
+
+      position: relative;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        outline: 1px solid transparent;
+      }
+      &::before {
+        top: -8px;
+      }
+      &::after {
+        top: 8px;
+      }
+    }
+  }
+  &__info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
+    width: 80%;
+    height: 85vh;
+    overflow: auto;
+    @include prefix(box-shadow, 4px 4px 12px rgba(0, 0, 0, 0.5), webkit ms);
+    @include prefix(transform, translate(-105%, 0), webkit ms);
+    transition: all 0.4s ease-in-out;
+    &.open {
+      @include prefix(transform, translate(0, 0), webkit ms);
+    }
+    &__title {
+      background: $color-main;
+      padding: 10px 0;
+      position: relative;
+      .container{
+          position: relative;
+      }
+      h2 {
+        font-size: 2rem;
+        font-weight: 400;
+        display: inline-block;
+        vertical-align: middle;
+        letter-spacing: 0.1em;
+        color: #fff;
+      }
+      .close-btn {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        color: #fff;
+        font-size: 30px;
+        line-height: 38px;
+        z-index: 1000;
+      }
+    }
+  }
+}
+main {
+  height: 100vh;
+  overflow: hidden;
+  .swiper-slide {
+    height: 100vh;
+    background-size: cover;
+  }
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'><path%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F><%2Fsvg>");
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'><path%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F><%2Fsvg>");
+}
+.swiper-button-next, .swiper-button-prev{
+    height: 33px;
+}
