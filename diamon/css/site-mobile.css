@@ -51,6 +51,8 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .header__info__gnavi ul li i { width: 1.5rem; color: #9e884b; padding-right: 5px; }
 
+.header__info__gnavi ul li img { height: 16px; width: 1.5rem; -o-object-position: left; object-position: left; -o-object-fit: contain; object-fit: contain; }
+
 .header__info__gnavi ul li a { display: block; position: relative; font-weight: 500; text-transform: uppercase; color: #383938; }
 
 .header__info__gnavi ul li a:hover, .header__info__gnavi ul li a:focus { text-decoration: none; }

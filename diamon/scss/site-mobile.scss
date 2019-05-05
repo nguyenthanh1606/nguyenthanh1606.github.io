@@ -105,6 +105,12 @@
             color: $color-main;
             padding-right: 5px;
           }
+          img{
+              height: 16px;
+              width: 1.5rem;
+              object-position: left;
+              object-fit: contain;
+          }
           a {
             display: block;
             position: relative;
