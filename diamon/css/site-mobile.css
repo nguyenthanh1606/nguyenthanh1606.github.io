@@ -21,7 +21,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .header__logo .logo { width: 50%; margin: 0 auto; padding: 10px 0 0; text-align: center; }
 
-.header__logo .menu-button { display: inline-block; padding: 0.5em; background: transparent; margin: 0 0 0 15px; float: left; }
+.header__logo .menu-button { padding: 0.5em; background: transparent; margin: 0 0 0 15px; float: left; }
 
 .header__logo .burger-icon { display: block; width: 30px; height: 3px; background-color: #fff; outline: 1px solid transparent; position: relative; margin-top: 8px; margin-bottom: 8px; }
 
