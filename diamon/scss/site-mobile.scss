@@ -20,6 +20,7 @@
       padding: 0.5em;
       background: transparent;
       margin: 0 0 0 15px;
+      float: left;
     }
     .burger-icon {
       display: block;
@@ -66,8 +67,9 @@
     }
     &__title {
       background: $color-main;
-      padding: 10px 0;
+      padding: 1rem 0;
       position: relative;
+      border-bottom: 5px solid #cfd0d2;
       .container{
           position: relative;
       }
@@ -82,12 +84,28 @@
       .close-btn {
         position: absolute;
         top: 0;
-        right: 20px;
+        right: 10px;
         color: #fff;
         font-size: 30px;
         line-height: 38px;
         z-index: 1000;
       }
+    }
+    &__gnavi{
+        padding: 1rem 1rem;
+        ul{
+            li{
+                padding: 5px 0;
+                i{
+                    width: 1.5rem;
+                    color: $color-main;
+                    padding-right: 5px;
+                }
+                a{
+                    color: $color-border;
+                }
+            }
+        }
     }
   }
 }
@@ -109,4 +127,12 @@ main {
 }
 .swiper-button-next, .swiper-button-prev{
     height: 33px;
+}
+.fa-close-ds{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path style='fill:#ffffff;' d='M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z'/></svg>");
 }
