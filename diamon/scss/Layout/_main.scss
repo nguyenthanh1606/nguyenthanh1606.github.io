@@ -70,24 +70,18 @@ main {
   .Ourst-button-prev,
   .Ourst-button-next {
     position: absolute;
-    top: 50%;
-
-    width: 40px;
-    height: 40px;
-    border: 1px solid $color-text;
+    top: 110px;
     outline-color: transparent;
     transition: 0.4s ease;
+    color: #eadfcd;
     cursor: pointer;
     i {
-      font-size: 1.5rem;
       display: inherit;
       text-align: center;
-      line-height: 38px;
       vertical-align: middle;
     }
     &:hover {
-      background-color: $color-text;
-      color: #fff;
+      color: #e0c292;
     }
   }
   .Ourst-button-prev {

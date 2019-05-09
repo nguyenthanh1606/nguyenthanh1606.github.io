@@ -75,7 +75,7 @@ main .swiper-slide { height: 100vh; background-size: cover; }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev { background-image: url("data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'><path%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F><%2Fsvg>"); }
 
-.swiper-button-next, .swiper-button-prev { height: 33px; }
+.swiper-button-next, .swiper-button-prev { height: 33px; outline-color: transparent; }
 
 .fa-close-ds { width: 40px; height: 40px; display: inline-block; background-repeat: no-repeat; background-position: center; background-image: url("data:image/svg+xml;charset=utf-8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 512'><path style='fill:#ffffff;' d='M207.6 256l107.72-107.72c6.23-6.23 6.23-16.34 0-22.58l-25.03-25.03c-6.23-6.23-16.34-6.23-22.58 0L160 208.4 52.28 100.68c-6.23-6.23-16.34-6.23-22.58 0L4.68 125.7c-6.23 6.23-6.23 16.34 0 22.58L112.4 256 4.68 363.72c-6.23 6.23-6.23 16.34 0 22.58l25.03 25.03c6.23 6.23 16.34 6.23 22.58 0L160 303.6l107.72 107.72c6.23 6.23 16.34 6.23 22.58 0l25.03-25.03c6.23-6.23 6.23-16.34 0-22.58L207.6 256z'/></svg>"); }
 

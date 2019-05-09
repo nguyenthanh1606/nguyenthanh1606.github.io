@@ -90,33 +90,19 @@
 .menu-orther li{
     width: 25%;
     position: relative;
+    a{
+        display: block;
+        transition: .2s ease;
+    }
     a:hover img{
         transform: none;
+        filter: none;
     }
     img{
-        transition: none !important;
+        @include prefix(filter, grayscale(100%), webkit ms);
+        transition: .2 ease !important;
     }
     .img-ico{
         z-index: 1;
-    }
-    .img-ico-hover{
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
-        visibility: hidden;
-    }
-    &:hover{
-        .img-ico{
-            position: absolute;
-            opacity: 0;
-            visibility: hidden;
-            z-index: -1;
-        }
-        .img-ico-hover{
-            position: inherit;
-            opacity: 1;
-            visibility: visible;
-            z-index: 1;
-        }
     }
 }

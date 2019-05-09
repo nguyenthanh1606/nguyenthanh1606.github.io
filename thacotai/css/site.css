@@ -148,17 +148,13 @@ h3.title { color: #00529c; font-weight: bold; }
 
 .menu-orther li { width: 25%; position: relative; }
 
-.menu-orther li a:hover img { -webkit-transform: none; transform: none; }
+.menu-orther li a { display: block; -webkit-transition: .2s ease; transition: .2s ease; }
 
-.menu-orther li img { -webkit-transition: none !important; transition: none !important; }
+.menu-orther li a:hover img { -webkit-transform: none; transform: none; -webkit-filter: none; filter: none; }
+
+.menu-orther li img { -webkit-filter: grayscale(100%); -ms-filter: grayscale(100%); filter: grayscale(100%); -webkit-transition: .2 ease !important; transition: .2 ease !important; }
 
 .menu-orther li .img-ico { z-index: 1; }
-
-.menu-orther li .img-ico-hover { position: absolute; z-index: -1; opacity: 0; visibility: hidden; }
-
-.menu-orther li:hover .img-ico { position: absolute; opacity: 0; visibility: hidden; z-index: -1; }
-
-.menu-orther li:hover .img-ico-hover { position: inherit; opacity: 1; visibility: visible; z-index: 1; }
 
 header { position: relative; }
 
