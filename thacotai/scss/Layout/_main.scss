@@ -70,7 +70,7 @@
 }
 
 .nav-left {
-  >ul {
+  > ul {
     display: block;
     li {
       display: block;
@@ -126,26 +126,26 @@
   right: 15px;
   visibility: hidden;
   z-index: 9999;
-  -webkit-transition: all .6s ease;
-  -moz-transition: all .6s ease;
-  -o-transition: all .6s ease;
-  transition: all .6s ease;
-  &:hover{
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  &:hover {
     color: #ccc;
   }
 }
 
-.stick-right{
+.stick-right {
   position: fixed;
   bottom: 5vw;
   right: 0;
   z-index: 199;
   transform: translateY(-50%);
   pointer-events: none;
-  .item{
-    &:hover{
+  .item {
+    &:hover {
       right: 0;
-      .left-show{
+      .left-show {
         background-color: $color-child;
       }
     }
@@ -154,32 +154,32 @@
     background-color: $color-child;
     cursor: pointer;
     margin-bottom: 2px;
-    transition: right .4s ease;
+    transition: right 0.4s ease;
     position: relative;
     right: calc(-100% + 50px);
     display: flex;
     flex-wrap: nowrap;
-    height: 50px;    
-    .left-show{
+    height: 50px;
+    .left-show {
       border-radius: 5px 0 0 5px;
       display: flex;
       width: 50px;
       background-color: $color-main;
-      transition: .4s ease;
+      transition: 0.4s ease;
     }
-    .right-hide{
+    .right-hide {
       text-align: center;
       display: flex;
       padding: 25px 1rem;
       color: #fff;
       line-height: 0;
       background-color: $color-child;
-      a{
+      a {
         color: #fff;
-        text-decoration: none;        
+        text-decoration: none;
         padding-left: 5px;
       }
-      a[href^="tel:"]{
+      a[href^="tel:"] {
         font-weight: bold;
         font-size: 1.3rem;
       }
@@ -187,17 +187,79 @@
   }
 }
 
-.news .item{
-  .thumnails{
+.news .item {
+  .thumnails {
     display: block;
     overflow: hidden;
-    img{
-      transition: .4s ease;
+    img {
+      transition: 0.4s ease;
     }
-  }  
-  &:hover{
-    img{
+  }
+  &:hover {
+    img {
       transform: scale(1.05);
+    }
+  }
+}
+
+.thumnfix {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    padding-top: 56%;
+  }
+  &__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.navigation {
+  box-shadow: 0 0 10px 1px #ccc;
+  ul {
+    display: block;
+    li {
+      display: inline-block;
+      border-bottom: 3px solid transparent;
+      transition: 0.4s ease;
+      position: relative;
+      &:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        height: 2rem;
+        width: 1px;
+        background-color: #cccccc;
+        transform: translateY(-50%);
+        right: 0;
+        top: 50%;
+      }
+      a {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        display: inline-block;
+        color: #000000;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        transition: 0.4s ease;
+      }
+      &.active,
+      &:hover {
+        a {
+          color: $color-child;
+          text-decoration: none;
+        }
+        border-bottom: 3px solid red;
+      }
     }
   }
 }

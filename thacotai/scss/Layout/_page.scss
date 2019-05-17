@@ -1,6 +1,7 @@
 .list-showroom {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-top: 1px solid #ccc;
   .title {
     margin-bottom: 1rem;
     &::before {
@@ -203,16 +204,7 @@
 }
 .product-main .nav-left li {
   .logo-child {
-    height: 20px;
-    width: 100%;
     object-fit: none;
-    object-position: right 0px;
-  }
-  &.active,
-  &:hover {
-    .logo-child {
-      object-position: right -60px;
-    }
   }
 }
 .page-product .news .item .thumnails {
@@ -343,7 +335,6 @@
       }
     }
     .sumary{
-      color: $gray;
       overflow: hidden;
       height: 60px;
     }
@@ -384,7 +375,7 @@
   font-size: 12px;
 }
 .sumary{
-  color: $gray;
+  color: $color-main;
 }
 .readmore{
   position: relative;
@@ -439,7 +430,7 @@
     }
   }
 }
-.seeAll2{
+.seeAll-2{
   position: relative;
   text-align: right;
  
@@ -462,7 +453,7 @@
     }
   }
 }
-.seeAll3{
+.seeAll-3{
   position: relative;
   text-align: right;
  
@@ -488,27 +479,32 @@
 
 //page new detail
 .page-newsDetail {
-  margin-top: 3rem;
+  margin-top: 4rem;
   padding-bottom: 2rem;
-  min-height: 1000px;
   .sumary {
     position: relative;
     margin-bottom: 1.5rem;
     p {
       font-size: 20px;
     }
-    &::before {
-      content: "";
-      height: 100%;
-      width: 3px;
-      background-color: red;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
+    // &::before {
+    //   content: "";
+    //   height: 100%;
+    //   width: 3px;
+    //   background-color: red;
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    // }
   }
   .row {
     margin: 0;
+  }
+  h4.title-headline{
+    color: $color-child;
+    padding-left: 15px;
+    font-weight: normal;
+    margin-bottom: 2rem;
   }
   h4.title,
   h3.title {

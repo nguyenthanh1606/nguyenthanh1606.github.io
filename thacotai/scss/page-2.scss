@@ -1,45 +1,65 @@
-@import 'Helpers/variable';
+@import "Helpers/mixin";
+@import "Helpers/variable";
 
 $color-product: #bc162c;
 
-.banner-product{
-    border-top: 4px solid $color-product;
+.banner-product {
+  border-top: 4px solid $color-product;
 }
 
-main{
-    padding-bottom: 3rem;
+main {
+  padding-bottom: 3rem;
 }
-.nav-left{
-    ul li{
-        &.active, &:hover{
-            background-color: $color-product;
-          }
-          a{
-            color: $color-product;
-          }
+
+.nav-left {
+  ul li {
+    &.active,
+    &:hover {
+      background-color: $color-product;
+      .logo-child {
+        @include prefix(
+          filter,
+          brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5860%) hue-rotate(278deg) brightness(107%)
+            contrast(102%),
+          webkit ms
+        );
+      }
     }
-}
-.product-main, .product-info{
-    margin-top: 2rem;
-    padding-bottom: 2rem;
-    margin-left: 0;
-    margin-right: 0;
-    border-bottom: 1px solid #ccc;
-}
-
-.nav-right{
-    .item{
-        margin-bottom: 1.5rem;
-        .thumb{
-            margin-bottom: .5rem;
-            margin-top: 1rem;
-        }        
+    a {
+      color: $color-product;
     }
-}
-.product-logo{
-    align-self: center;
+    .logo-child {
+      @include prefix(
+        filter,
+        brightness(0) saturate(100%) invert(16%) sepia(95%) saturate(3457%) hue-rotate(342deg) brightness(79%) contrast(96%),
+        webkit ms
+      );
+    }
+  }
 }
 
-.news .item .headline{
-    padding-bottom: .5rem;
+.product-main,
+.product-info {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-right {
+  .item {
+    margin-bottom: 1.5rem;
+    .thumb {
+      margin-bottom: 0.5rem;
+      margin-top: 1rem;
+    }
+  }
+}
+.product-logo {
+  align-self: center;
+}
+
+.news .item .headline {
+  padding-bottom: 0.5rem;
 }

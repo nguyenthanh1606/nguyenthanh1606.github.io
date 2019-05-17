@@ -19,6 +19,16 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 * { padding: 0; margin: 0; font-family: "Mallory"; }
 
+.text-b { font-weight: 500; }
+
+.color-main { color: #585b5c; }
+
+ul.d-block { display: block; }
+
+ul.d-block li { display: inline-block; margin-bottom: 0.5rem; }
+
+ul.d-block li:not(:last-child) { margin-right: 0.5rem; }
+
 .header { position: fixed; top: 15px; left: 0; width: 100%; z-index: 9999; }
 
 .header__logo .logo { width: 50%; margin: 0 auto; padding: 10px 0 0; text-align: center; }
@@ -37,11 +47,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .header__info.open { -webkit-transform: translate(0, 0); transform: translate(0, 0); }
 
-.header__info__title { background: #9e884b; padding: 1rem 0; position: relative; border-bottom: 5px solid #cfd0d2; }
+.header__info__title { background: #e0e1e2; padding: 1rem 0; position: relative; border-bottom: 5px solid #cfd1d2; }
 
 .header__info__title .container { position: relative; }
 
-.header__info__title h2 { font-size: 2rem; font-weight: 400; display: inline-block; vertical-align: middle; letter-spacing: 0.1em; color: #fff; }
+.header__info__title h2 { font-size: 2rem; font-weight: 400; display: inline-block; vertical-align: middle; letter-spacing: 0.1em; color: #585b5c; }
 
 .header__info__title .close-btn { position: absolute; top: 0; right: 10px; color: #fff; font-size: 30px; line-height: 38px; z-index: 1000; }
 
@@ -49,7 +59,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 .header__info__gnavi ul li { padding: 1rem 0; }
 
-.header__info__gnavi ul li i { width: 1.5rem; color: #9e884b; padding-right: 5px; }
+.header__info__gnavi ul li i { width: 1.5rem; color: #585b5c; padding-right: 5px; }
 
 .header__info__gnavi ul li img { height: 16px; width: 1.5rem; -o-object-position: left; object-position: left; -o-object-fit: contain; object-fit: contain; }
 
@@ -83,13 +93,175 @@ main .swiper-slide { height: 100vh; background-size: cover; }
 
 .footer__fixedBottom ul li { width: 50%; float: left; text-align: center; background: #fff; height: 50px; line-height: 50px; }
 
-.footer__fixedBottom ul li a { color: #9e884b; }
+.footer__fixedBottom ul li a { color: #585b5c; }
 
 .footer__fixedBottom ul li a:focus { text-decoration: none; }
 
 .footer__fixedBottom ul li a i { padding-left: .5rem; }
 
-.footer__fixedBottom ul li.actived { background: #9e884b; }
+.footer__fixedBottom ul li.actived { background: #585b5c; }
 
 .footer__fixedBottom ul li.actived a { color: #fff; }
+
+.header-2 { background-color: #f1f0ef; top: 0; background-color: #e0e1e2; }
+
+.header-2 .header__logo .menu-button { margin: 30px 0 0 15px; }
+
+.header-2 .header__logo .burger-icon, .header-2 .header__logo .burger-icon:before, .header-2 .header__logo .burger-icon:after { background-color: #585b5c; }
+
+.header-2 .header__info__title { padding: 28px 0; }
+
+.footer-2 { background-color: #f1f0ef; padding: 1.5rem 1rem; }
+
+.footer-2 .headline { color: black; margin-bottom: 0.5rem; }
+
+.footer-2 .footer-top { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 0.5rem; }
+
+.footer-2 .left, .footer-2 .right { width: 50%; display: inline-block; }
+
+.footer-2 .footer-bot { color: #585b5c; }
+
+.nav-childParent { background-color: rgba(255, 255, 255, 0.75); margin-top: -50px; z-index: 1000; position: relative; height: 50px; text-align: center; padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+.nav-childParent .childParent li { height: 100%; display: inline-block; padding-left: 1rem; padding-right: 1rem; padding-top: 7px; padding-bottom: 7px; position: relative; }
+
+.nav-childParent .childParent li:after { content: ""; width: 1px; height: 1px; background-color: #e0e1e2; position: absolute; left: 50%; bottom: 0; -webkit-transform: translateX(-50%); transform: translateX(-50%); -webkit-transition: width 0.4s ease-in-out; transition: width 0.4s ease-in-out; }
+
+.nav-childParent .childParent li:hover:after { width: 50%; }
+
+.nav-childParent .childParent li a { font-size: 1.1rem; color: #000; }
+
+.nav-childParent .childParent li a:hover, .nav-childParent .childParent li a.active { color: #e0e1e2; text-decoration: none; }
+
+.nav-childParent .childParent a.active { font-weight: 500; }
+
+svg:not(:root) { overflow: hidden; }
+
+.svg-wrapper.left-center { position: absolute; top: calc(50% - 1.5rem - 7px); left: 15px; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
+
+.svg-wrapper { height: 35px; position: relative; top: 15px; left: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); top: 18px; display: inline-block; margin-top: 10px; }
+
+.svg-wrapper .shape { fill: transparent; stroke-dasharray: 20 625; stroke-width: 1px; stroke: #e0e1e2; }
+
+.svg-wrapper .shape-center { stroke-dashoffset: -65; }
+
+.svg-wrapper .shape-left { stroke-dashoffset: -15; }
+
+.svg-wrapper .shape-right { stroke-dashoffset: -115; }
+
+.svg-wrapper .text { color: #000; position: relative; top: -33px; text-align: center; cursor: pointer; text-transform: uppercase; font-size: 14px; -webkit-transition: color 0.4s ease; transition: color 0.4s ease; }
+
+.svg-wrapper:hover { color: transparent; }
+
+.svg-wrapper:hover .shape-center { -webkit-animation: 1.5s draw linear forwards; animation: 1.5s draw linear forwards; -webkit-animation-name: draw; animation-name: draw; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-timing-function: linear; animation-timing-function: linear; -webkit-animation-delay: 0s; animation-delay: 0s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-direction: normal; animation-direction: normal; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: running; animation-play-state: running; }
+
+.svg-wrapper:hover .shape-left { -webkit-animation: 1.5s drawLeft linear forwards; animation: 1.5s drawLeft linear forwards; -webkit-animation-name: drawLeft; animation-name: drawLeft; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-timing-function: linear; animation-timing-function: linear; -webkit-animation-delay: 0s; animation-delay: 0s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-direction: normal; animation-direction: normal; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: running; animation-play-state: running; }
+
+.svg-wrapper:hover .shape-right { -webkit-animation: 1.5s drawRight linear forwards; animation: 1.5s drawRight linear forwards; -webkit-animation-name: drawRight; animation-name: drawRight; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-timing-function: linear; animation-timing-function: linear; -webkit-animation-delay: 0s; animation-delay: 0s; -webkit-animation-iteration-count: 1; animation-iteration-count: 1; -webkit-animation-direction: normal; animation-direction: normal; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; -webkit-animation-play-state: running; animation-play-state: running; }
+
+.svg-wrapper:hover .text { text-decoration: none; color: #e0e1e2; }
+
+.img-thumb .swiper-pagination-bullet { width: 10px; height: 10px; background-color: #fff; position: relative; margin-left: 5px !important; margin-right: 5px !important; opacity: 1; -webkit-transition: .4s ease; transition: .4s ease; outline-color: transparent; }
+
+.img-thumb .swiper-pagination-bullet::before { content: ''; width: 16px; height: 16px; border: 1px solid #e0e1e2; position: absolute; border-radius: 50%; -webkit-transition: .4s ease; transition: .4s ease; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); top: 50%; left: 50%; opacity: 0; }
+
+.img-thumb .swiper-pagination-bullet:hover::before, .img-thumb .swiper-pagination-bullet.swiper-pagination-bullet-active::before { opacity: 1; }
+
+.swiper-pagination-bullet-active, .swiper-pagination-bullet:hover { background-color: #e0e1e2 !important; border-color: #e0e1e2 !important; }
+
+.swiper-pagination-bullet:hover::before { border-color: #e0e1e2; }
+
+ul.list-htContact > li { display: block; background-color: #e0e1e2; border: 1px solid #e0e1e2; margin-bottom: 4px; }
+
+ul.list-htContact > li > a { position: relative; display: block; padding: 10px 1rem 10px; color: #fff; }
+
+ul.list-htContact > li > a:hover { text-decoration: none; }
+
+ul.list-htContact > li > a[aria-expanded="false"]:after { content: "-"; position: absolute; right: 1rem; top: auto; }
+
+ul.list-htContact > li > a[aria-expanded="true"]:after { content: "+"; position: absolute; right: 1rem; top: auto; }
+
+ul.list-htContact ul.htContact { background-color: #faf1df; padding: 1rem 0.5rem; }
+
+ul.list-htContact ul.htContact li { margin-bottom: 0.5rem; }
+
+ul.list-htContact ul.htContact i { padding-right: 5px; padding-left: 5px; }
+
+ul.list-htContact > li { background-color: #26539c; border-color: #606161; }
+
+ul.list-htContact ul.htContact { background-color: #f3f3f3; }
+
+.list-content { padding-top: 1rem; }
+
+.list-content .item { margin-bottom: 1rem; }
+
+.list-content .item .thumnails { margin-bottom: 1rem; }
+
+.list-content .item a.title, .list-content .item .title { color: #e0e1e2; display: block; text-transform: uppercase; font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 500; }
+
+.list-content .item a.title-2, .list-content .item .title-2 { color: #585b5c; display: block; text-transform: uppercase; font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 500; }
+
+.list-content .item a.title-2:hover { color: #e0e1e2; }
+
+.list-content .item .sumary { text-align: justify; height: 80px; margin-bottom: 0.5rem; overflow: hidden; }
+
+.list-content .item .sumary.h-160 { height: 160px; }
+
+.list-content .item .features { height: 120px; overflow: hidden; margin-bottom: 1rem; color: #00a652; }
+
+.list-content .item .features p { margin-bottom: 0; }
+
+.list-content .item .features .text-head { color: #00a652; font-weight: 500; }
+
+.list-content .item .policy { height: 150px; overflow: hidden; margin-bottom: 1rem; }
+
+.list-content .item .policy p { margin-bottom: 0; }
+
+.list-content .item .policy .text-policy { color: #585b5c; font-weight: 500; }
+
+.list-content .item-first { margin-bottom: 2rem; }
+
+.list-content .item-first .sumary { height: 120px; }
+
+.breadcrumb { background-color: transparent; }
+
+.breadcrumb-item + .breadcrumb-item::before { font-family: 'Font Awesome 5 Free'; font-weight: 900; content: "\f105"; }
+
+.our-hotel { padding-left: 1rem; padding-right: 1rem; }
+
+.our-hotel .item { position: relative; margin-left: 0; margin-right: 0; padding-top: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #ccc; }
+
+.our-hotel .item .left { padding-left: 0; }
+
+.our-hotel .item .right { padding-right: 0; }
+
+.our-hotel .item:last-child { border-bottom: none; }
+
+.our-hotel .hotel-content .title { color: #e0e1e2; text-transform: uppercase; font-size: 1.2rem; font-weight: 500; margin-bottom: 0.75rem; display: inline-block; }
+
+.our-hotel .hotel-content .address { color: #e0e1e2; }
+
+.our-hotel .hotel-content .rating { margin-bottom: 0.5rem; }
+
+.our-hotel .booking { position: absolute; top: calc(100% - 1.5rem - 7px); left: 15px; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
+
+.rating { border: none; float: left; }
+
+.rating > input { display: none; }
+
+.rating > label:before { margin: 5px; font-size: 1.25em; font-family: "Font Awesome 5 Free"; display: inline-block; content: "\f005"; }
+
+.rating > .half:before { content: "\f089"; position: absolute; }
+
+.rating > label { color: #585b5c; float: right; }
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label, .rating:not(:checked) > label:hover, .rating:not(:checked) > label:hover ~ label { color: #ffd700; }
+
+/* hover previous stars in list */
+.rating > input:checked + label:hover, .rating > input:checked ~ label:hover, .rating > label:hover ~ input:checked ~ label, .rating > input:checked ~ label:hover ~ label { color: #ffed85; }
+
+.rating.no-selected label.vistibale { color: #ffd700; }
+
+.rating.no-selected { pointer-events: none; }
 /*# sourceMappingURL=site-mobile.css.map */

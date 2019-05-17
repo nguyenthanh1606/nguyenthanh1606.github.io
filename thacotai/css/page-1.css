@@ -2,7 +2,11 @@
 
 .nav-left ul li.active, .nav-left ul li:hover { background-color: #00529c; }
 
+.nav-left ul li.active .logo-child, .nav-left ul li:hover .logo-child { -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5860%) hue-rotate(278deg) brightness(107%) contrast(102%); -ms-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5860%) hue-rotate(278deg) brightness(107%) contrast(102%); filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5860%) hue-rotate(278deg) brightness(107%) contrast(102%); }
+
 .nav-left ul li a { color: #00529c; }
+
+.nav-left ul li .logo-child { -webkit-filter: brightness(0) saturate(100%) invert(13%) sepia(52%) saturate(6248%) hue-rotate(197deg) brightness(103%) contrast(101%); -ms-filter: brightness(0) saturate(100%) invert(13%) sepia(52%) saturate(6248%) hue-rotate(197deg) brightness(103%) contrast(101%); filter: brightness(0) saturate(100%) invert(13%) sepia(52%) saturate(6248%) hue-rotate(197deg) brightness(103%) contrast(101%); }
 
 main { padding-bottom: 3rem; }
 
@@ -10,9 +14,9 @@ main { padding-bottom: 3rem; }
 
 .nav-right .item { margin-bottom: 1.5rem; }
 
-.nav-right .item .thumb { margin-bottom: .5rem; margin-top: 1rem; }
+.nav-right .item .thumb { margin-bottom: 0.5rem; margin-top: 1rem; }
 
 .product-logo { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
 
-.news .item .headline { padding-bottom: .5rem; }
+.news .item .headline { padding-bottom: 0.5rem; }
 /*# sourceMappingURL=page-1.css.map */

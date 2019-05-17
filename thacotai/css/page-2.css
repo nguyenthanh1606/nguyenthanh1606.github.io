@@ -4,15 +4,19 @@ main { padding-bottom: 3rem; }
 
 .nav-left ul li.active, .nav-left ul li:hover { background-color: #bc162c; }
 
+.nav-left ul li.active .logo-child, .nav-left ul li:hover .logo-child { -webkit-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5860%) hue-rotate(278deg) brightness(107%) contrast(102%); -ms-filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5860%) hue-rotate(278deg) brightness(107%) contrast(102%); filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5860%) hue-rotate(278deg) brightness(107%) contrast(102%); }
+
 .nav-left ul li a { color: #bc162c; }
+
+.nav-left ul li .logo-child { -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(95%) saturate(3457%) hue-rotate(342deg) brightness(79%) contrast(96%); -ms-filter: brightness(0) saturate(100%) invert(16%) sepia(95%) saturate(3457%) hue-rotate(342deg) brightness(79%) contrast(96%); filter: brightness(0) saturate(100%) invert(16%) sepia(95%) saturate(3457%) hue-rotate(342deg) brightness(79%) contrast(96%); }
 
 .product-main, .product-info { margin-top: 2rem; padding-bottom: 2rem; margin-left: 0; margin-right: 0; border-bottom: 1px solid #ccc; }
 
 .nav-right .item { margin-bottom: 1.5rem; }
 
-.nav-right .item .thumb { margin-bottom: .5rem; margin-top: 1rem; }
+.nav-right .item .thumb { margin-bottom: 0.5rem; margin-top: 1rem; }
 
 .product-logo { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
 
-.news .item .headline { padding-bottom: .5rem; }
+.news .item .headline { padding-bottom: 0.5rem; }
 /*# sourceMappingURL=page-2.css.map */
