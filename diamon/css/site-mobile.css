@@ -229,7 +229,7 @@ ul.list-htContact ul.htContact { background-color: #f3f3f3; }
 
 .our-hotel { padding-left: 1rem; padding-right: 1rem; }
 
-.our-hotel .item { position: relative; margin-left: 0; margin-right: 0; padding-top: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #ccc; }
+.our-hotel .item { -webkit-box-shadow: 0 0 10px 1px #ccc; box-shadow: 0 0 10px 1px #ccc; margin-bottom: 1.5rem; position: relative; margin-left: 0; margin-right: 0; border-bottom: 1px solid #ccc; }
 
 .our-hotel .item .left { padding-left: 0; }
 
@@ -237,19 +237,21 @@ ul.list-htContact ul.htContact { background-color: #f3f3f3; }
 
 .our-hotel .item:last-child { border-bottom: none; }
 
-.our-hotel .hotel-content .title { color: #e0e1e2; text-transform: uppercase; font-size: 1.2rem; font-weight: 500; margin-bottom: 0.75rem; display: inline-block; }
+.our-hotel .hotel-content .title { color: #9e884b; text-transform: uppercase; font-size: 1.2rem; font-weight: 500; margin-bottom: 0.75rem; display: inline-block; }
+
+.our-hotel .hotel-content .thumnails { margin-bottom: 1rem; }
 
 .our-hotel .hotel-content .address { color: #e0e1e2; }
 
 .our-hotel .hotel-content .rating { margin-bottom: 0.5rem; }
 
-.our-hotel .booking { position: absolute; top: calc(100% - 1.5rem - 7px); left: 15px; -webkit-transform: translate(0, -50%); transform: translate(0, -50%); }
+.our-hotel .booking { position: absolute; top: calc(100% - 1.5rem - 7px); left: 50%; }
 
 .rating { border: none; float: left; }
 
 .rating > input { display: none; }
 
-.rating > label:before { margin: 5px; font-size: 1.25em; font-family: "Font Awesome 5 Free"; display: inline-block; content: "\f005"; }
+.rating > label:before { margin: 5px; font-size: 1.25em; font-family: "Font Awesome 5 Free"; display: inline-block; content: "\f005"; font-weight: 600; }
 
 .rating > .half:before { content: "\f089"; position: absolute; }
 

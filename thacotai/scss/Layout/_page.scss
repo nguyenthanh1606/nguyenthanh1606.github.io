@@ -234,18 +234,24 @@
     ul.lv2 {
       > li {
         .logo-child2 {
-          height: 20px;
-          width: 100%;
           object-fit: none;
-          object-position: right -40px;
+          transition: filter .3s ease;
+          @include prefix(
+            filter,
+            brightness(0) saturate(100%) invert(77%) sepia(0%) saturate(0%) hue-rotate(94deg) brightness(98%) contrast(98%),
+            webkit ms
+          );
         }
-        a {
+        
           &.active,
           &:hover {
             .logo-child2 {
-              object-position: right -20px;
+              @include prefix(
+                filter,
+                brightness(0) saturate(100%) invert(18%) sepia(8%) saturate(6%) hue-rotate(28deg) brightness(94%) contrast(91%),
+                webkit ms
+              );
             }
-          }
         }
       }
     }
@@ -296,100 +302,101 @@
   font-size: 0;
   overflow: hidden;
   margin-bottom: 1rem;
+  box-shadow: 0px 0px 10px 1px rgba($color: #000000, $alpha: 0);
+  transition: 0.4s ease-in-out;
   img {
     transition: 0.4s ease;
     max-width: 100%;
   }
-  &:hover img {    
-    transform: scale(1.05);
+  &:hover {
+    box-shadow: 0px 0px 10px 1px rgba($color: #000000, $alpha: 0.66);
   }
 }
 
 //page news
-.page-content-1{
+.page-content-1 {
   margin-bottom: 3rem;
 }
-.page-content-2{
+.page-content-2 {
   margin-bottom: 3rem;
-  .contentWithGroup-1 .item{
+  .contentWithGroup-1 .item {
     margin-bottom: 2rem;
   }
 }
 
 .contentWithGroup-1 {
   position: relative;
-  .item{
+  .item {
     margin-bottom: 1.5rem;
   }
-  .content-bottom{
+  .content-bottom {
     margin-bottom: 1.5rem;
-    .publicDate{
-      margin-bottom: .5rem;
+    .publicDate {
+      margin-bottom: 0.5rem;
       color: $gray;
     }
-    .title{
+    .title {
       margin-bottom: 1rem;
       height: 3rem;
-      a:hover{
+      a:hover {
         text-decoration: none;
       }
     }
-    .sumary{
+    .sumary {
       overflow: hidden;
       height: 60px;
     }
-  }  
+  }
 }
-.contentWithGroup-2{
-  .item{
+.contentWithGroup-2 {
+  .item {
     margin-bottom: 3.5rem;
   }
-  .thumbnails{
+  .thumbnails {
     margin-bottom: 0;
-  }  
-  
-  .title{
+  }
+
+  .title {
     margin-bottom: 1.5rem;
   }
-  .publicDate{
+  .publicDate {
     margin-bottom: 1.5rem;
   }
-  
 }
-.ct-right{
+.ct-right {
   padding-top: 1rem;
   padding-bottom: 1rem;
   position: relative;
-  .content-bottom{
+  .content-bottom {
     height: 80%;
     border-bottom: 1px dotted #ccc;
   }
-  .readmore{
+  .readmore {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
   }
 }
 
-.publicDate{
+.publicDate {
   font-size: 12px;
 }
-.sumary{
+.sumary {
   color: $color-main;
 }
-.readmore{
+.readmore {
   position: relative;
   display: inline-block;
-  a:hover{
-    text-decoration: none;     
-    color: $color-hover; 
+  a:hover {
+    text-decoration: none;
+    color: $color-hover;
   }
-  &:hover:after{
+  &:hover:after {
     width: 100%;
   }
-  &::after{
+  &::after {
     content: "";
-    transition: .4s ease;
+    transition: 0.4s ease;
     height: 1px;
     left: 50%;
     transform: translateX(-50%);
@@ -400,10 +407,10 @@
     background-color: $color-hover;
   }
 }
-.seeAll{
+.seeAll {
   position: relative;
   text-align: right;
-  &::before{
+  &::before {
     content: "";
     width: 100%;
     height: 1px;
@@ -413,65 +420,65 @@
     left: 0;
     top: 50%;
   }
-  .seeAll-link{
+  .seeAll-link {
     padding: 5px 1rem 5px 2rem;
     background-color: white;
     color: $color-child;
-    transition: .4s ease;
-    &:hover{
+    transition: 0.4s ease;
+    &:hover {
       text-decoration: none;
       color: $color-hover;
     }
-    &:after{
+    &:after {
       padding-left: 1rem;
-      content: '\f0da';
-      font-family: 'Font Awesome 5 Pro';
+      content: "\f0da";
+      font-family: "Font Awesome 5 Pro";
       font-weight: 900;
     }
   }
 }
-.seeAll-2{
+.seeAll-2 {
   position: relative;
   text-align: right;
- 
-  .seeAll-link{
+
+  .seeAll-link {
     border-radius: 6px;
     padding: 10px 1rem 10px 2rem;
     background-color: $color-hover;
     border: 1px solid $color-hover;
     color: #fff;
-    transition: .4s ease;
-    &:hover{
+    transition: 0.4s ease;
+    &:hover {
       text-decoration: none;
       box-shadow: 0 0 15px 1px rgba($color: $color-hover, $alpha: 0.7);
     }
-    &:after{
+    &:after {
       padding-left: 1rem;
-      content: '\f0da';
-      font-family: 'Font Awesome 5 Pro';
+      content: "\f0da";
+      font-family: "Font Awesome 5 Pro";
       font-weight: 900;
     }
   }
 }
-.seeAll-3{
+.seeAll-3 {
   position: relative;
   text-align: right;
- 
-  .seeAll-link{
+
+  .seeAll-link {
     border-radius: 6px;
     padding: 10px 1rem 10px 2rem;
     background-color: $color-child;
     border: 1px solid $color-child;
     color: #fff;
-    transition: .4s ease;
-    &:hover{
+    transition: 0.4s ease;
+    &:hover {
       text-decoration: none;
       box-shadow: 0 0 15px 1px rgba($color: $color-child, $alpha: 0.7);
     }
-    &:after{
+    &:after {
       padding-left: 1rem;
-      content: '\f0da';
-      font-family: 'Font Awesome 5 Pro';
+      content: "\f0da";
+      font-family: "Font Awesome 5 Pro";
       font-weight: 900;
     }
   }
@@ -500,7 +507,7 @@
   .row {
     margin: 0;
   }
-  h4.title-headline{
+  h4.title-headline {
     color: $color-child;
     padding-left: 15px;
     font-weight: normal;
@@ -538,7 +545,132 @@
     }
   }
 }
-.orther-news{
+.orther-news {
   padding-top: 2rem;
   padding-bottom: 3rem;
+}
+//dv layout
+.nav-left {
+  ul.dv-layout {
+    >li>a{
+      text-align: center;
+      font-size: 1.2rem;
+      background-color: $color-child;
+    }
+    li {
+      &.active,
+      &:hover {
+        background-color: transparent;
+      }
+    }
+    > li {
+      text-align: left;
+      text-transform: uppercase;
+      a {
+        color: white;
+        font-family: "Arial";
+      }
+    }
+    ul.lv2 {
+      > li {        
+        >a{
+          position: relative;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 0;
+          border-bottom: 1px solid #ccc;
+          font-size: 1rem;
+          text-align: left;
+          color: $color-main;
+          transition: color .4s ease;
+        }
+        &.active>a, a:hover{
+          color: $color-child,
+        }
+        &.has-child{
+          >a:after{
+            content: "\f078";
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: 400;
+            color: $color-main;
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform .3s ease;
+          }
+          >a[aria-expanded="false"]::after{
+            @include prefix(transform, translateY(-50%) rotate(-180deg), webkit ms moz);
+          }
+        }
+        &.has-child.active > a:after{
+          color: $color-child;
+        }
+      }
+    }
+    ul.lv3 {
+      border-bottom: 1px solid #ccc;
+      li a{
+        text-transform: initial;
+        color: $color-main;
+        text-align: left;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+.nav-right {
+  .item {
+    margin-bottom: 1rem;
+    .thumb {
+      display: block;
+      overflow: hidden;
+      img {
+        transition: 0.4s ease;
+      }
+    }
+    &:hover {
+      img {
+        transform: translate(-50%, -50%) scale(1.05);
+      }
+    }
+  }
+} 
+
+// page download
+.thum-download{
+  a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover{
+    .download-hover{
+      z-index: 1;
+      opacity: 1;
+    }
+  }
+  .download-hover{
+    z-index: -1;
+    opacity: 0;
+    transition: .4s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: $color-child, $alpha: 0.8);
+    img{
+      width: auto;
+      height: auto;
+      object-fit: inherit;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      @include prefix(filter,invert(100%) sepia(0%) saturate(7484%) hue-rotate(131deg) brightness(91%) contrast(115%), ms webkit)
+    }
+  }
 }

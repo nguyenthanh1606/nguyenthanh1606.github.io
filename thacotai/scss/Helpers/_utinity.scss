@@ -41,6 +41,9 @@ body {
 .color-main {
   color: $color-main !important;
 }
+.color-child{
+  color: $color-child;
+}
 .color-black {
   color: #000;
 }
@@ -110,18 +113,21 @@ h3.title {
 }
 .breadcrumb {
   background-color: transparent;
-  .breadcrumb-item {
+  .breadcrumb-item a, .breadcrumb-item{
     text-transform: uppercase;
-    color: $color-main;
-    &:hover{
-        color: $color-child;
-    }
+    color: #999;    
+  }
+  .breadcrumb-item a:hover, .breadcrumb-item.active{
+      color: $color-child;
   }
 }
 .text-detail{
   p{
     margin-bottom: .5rem;
   }
+}
+.bt-gray{
+  border-top: 1px solid #ccc;
 }
 
 ::-webkit-scrollbar {

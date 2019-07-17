@@ -1,0 +1,57 @@
+.content-product {
+    padding: 1.5rem 0;
+    .download, .body-content-product{
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .body-content-product .title {
+        margin-bottom: 2.5rem;
+        text-align: center;
+        h1 {
+            font-size: 2.5rem;
+            color: #333333;
+        }
+    }
+    .gallery {
+        width: 100%;
+        display: block;
+        .sw-exterior {
+            width: 100%;
+            padding-bottom: 3rem;
+            .sw-pagi-exterior {
+                position: absolute;
+                bottom: 0;
+            }
+            .swiper-pagination-bullet-active {
+                background-color: #e50000 !important;
+            }
+        }
+        .gallery-item {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            .headline {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                padding: 1rem;
+                background-color: rgba(0, 0, 0, 0.4);
+                h3 {
+                    font-size: 1rem;
+                    color: #ffffff;
+                }
+            }
+        }
+        .gallery-img {
+            width: 100%;
+            position: relative;
+            height: 100%;
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+            }
+        }
+    }
+} 
